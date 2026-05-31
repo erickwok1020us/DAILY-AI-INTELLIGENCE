@@ -57,7 +57,7 @@ body::before{
 .lang-switch button{padding:10px 24px;font-size:15px;font-weight:700;border:none;background:var(--bg-card-2);color:var(--text-2);cursor:pointer;font-family:'Noto Sans TC',sans-serif;letter-spacing:.02em;}
 .lang-switch button.active{background:linear-gradient(180deg,var(--gold),var(--gold-dim));color:#1a1408;}
 .lang-switch button:not(.active):hover{background:var(--bg-card-3);color:var(--text-1);}
-@media(max-width:780px){ .lang-ico{display:none;} .lang-switch button{padding:5px 13px;font-size:12px;} }
+/* 語言鈕在手機維持電腦版大小(🌐 + 中文/EN,右上角) */
 
 header.top{text-align:center;margin-bottom:8px;}
 header.top h1{font-size:clamp(22px,4vw,34px);margin:0;font-weight:700;}
@@ -70,14 +70,26 @@ header.top .sub{color:var(--text-2);font-size:13px;letter-spacing:.06em;margin-t
 .legend{font-size:11.5px;color:var(--text-2);line-height:1.55;background:var(--bg-card-2);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:5px;padding:9px 13px;margin-bottom:12px;}
 
 /* mobile view switch (整體 / 本月最新) */
-.view-switch-wrap{text-align:center;margin-bottom:12px;}
+.view-switch-wrap{display:none;} /* 改為兩欄並排後,不再需要整體/本月切換 */
 .view-switch{display:none;}
+/* 手機版:沿用電腦版兩欄並排,僅縮小字級/間距以塞進窄螢幕 */
 @media(max-width:780px){
-  .view-switch{display:inline-flex;width:100%;max-width:420px;border:1px solid var(--border-strong);border-radius:7px;overflow:hidden;}
-  .view-switch button{flex:1;padding:9px 10px;font-size:13px;font-weight:700;border:none;background:var(--bg-card-2);color:var(--text-2);cursor:pointer;font-family:'Noto Sans TC',sans-serif;}
-  .view-switch button.active{background:linear-gradient(180deg,var(--gold),var(--gold-dim));color:#1a1408;}
-  #cats.m-overall .col-monthly{display:none;}
-  #cats.m-monthly .col-overall{display:none;}
+  .wrap{padding:22px 8px 0;}
+  header.top{padding-top:40px;}        /* 讓標題在右上角放大語言鈕下方,不重疊 */
+  .cat-sub{display:none;}
+  .card{padding:13px 11px;}
+  .cols{gap:8px;}
+  .col-box{padding:8px 7px;}
+  .col-label{font-size:10.5px;}
+  .row{gap:6px;padding:6px 2px;}
+  .rk{font-size:13px;width:14px;}
+  .nm{font-size:12px;}
+  .vendor{font-size:10px;}
+  .why{font-size:10.5px;line-height:1.4;}
+  .metaline{font-size:9.5px;}
+  .score-badge,.date-badge{font-size:9px;padding:1px 4px;}
+  .ver{font-size:9.5px;padding:0 4px;}
+  .ov,.new{font-size:9px;padding:0 4px;}
 }
 
 .card{background:linear-gradient(180deg,var(--bg-card) 0%, var(--bg-deep) 100%);border:1px solid var(--border);border-radius:8px;box-shadow:0 0 0 1px rgba(255,255,255,.02) inset,0 8px 24px rgba(0,0,0,.4);padding:16px 18px;margin-bottom:16px;}
@@ -94,7 +106,7 @@ header.top .sub{color:var(--text-2);font-size:13px;letter-spacing:.06em;margin-t
 .cat-title{font-size:17px;font-weight:700;color:var(--text-1);}
 .cat-sub{font-size:11.5px;color:var(--text-3);margin-left:auto;text-align:right;max-width:46%;}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px;}
-@media(max-width:780px){.cols{grid-template-columns:1fr;}.cat-sub{display:none;}}
+/* 兩欄並排在手機也保留(不再壓成單欄) */
 .col-box{background:var(--bg-card-2);border:1px solid var(--border);border-radius:6px;padding:10px 12px;}
 .col-box.col-overall{border-top:2px solid rgba(34,211,238,.5);}
 .col-box.col-monthly{border-top:2px solid rgba(251,191,36,.5);}
