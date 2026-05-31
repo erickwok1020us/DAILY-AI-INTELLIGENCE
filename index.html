@@ -57,7 +57,7 @@ body::before{
 .lang-switch button{padding:10px 24px;font-size:15px;font-weight:700;border:none;background:var(--bg-card-2);color:var(--text-2);cursor:pointer;font-family:'Noto Sans TC',sans-serif;letter-spacing:.02em;}
 .lang-switch button.active{background:linear-gradient(180deg,var(--gold),var(--gold-dim));color:#1a1408;}
 .lang-switch button:not(.active):hover{background:var(--bg-card-3);color:var(--text-1);}
-@media(max-width:780px){ .lang-bar{position:static;justify-content:center;margin:0 auto 14px;} }
+@media(max-width:780px){ .lang-ico{display:none;} .lang-switch button{padding:5px 13px;font-size:12px;} }
 
 header.top{text-align:center;margin-bottom:8px;}
 header.top h1{font-size:clamp(22px,4vw,34px);margin:0;font-weight:700;}
@@ -212,6 +212,11 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
     var sl = localStorage.getItem('digestLang'); if(sl==='zh'||sl==='en') lang = sl;
     var sv = localStorage.getItem('digestView'); if(sv==='overall'||sv==='monthly') mview = sv;
   } catch(e){}
+  // 網址 ?lang=en / ?lang=zh 指定語言(優先於記憶)— 方便分享語言專屬連結
+  try {
+    var qlang = new URLSearchParams(location.search).get('lang');
+    if(qlang==='en'||qlang==='zh') lang = qlang;
+  } catch(e){}
 
   if(!D){
     document.documentElement.lang = (lang==='en'?'en':'zh-Hant');
@@ -323,6 +328,7 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
     var b = e.target.closest('button'); if(!b) return;
     lang = b.getAttribute('data-lang');
     try { localStorage.setItem('digestLang', lang); } catch(err){}
+    try { var u = new URL(location.href); u.searchParams.set('lang', lang); history.replaceState(null, '', u); } catch(err){}
     render();
   });
   document.getElementById('viewSwitch').addEventListener('click', function(e){
