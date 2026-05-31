@@ -67,7 +67,7 @@ header.top .sub{color:var(--text-2);font-size:13px;letter-spacing:.06em;margin-t
 .btn{padding:6px 14px;border-radius:4px;font-size:12px;font-weight:600;letter-spacing:.03em;border:1px solid var(--border-strong);background:var(--bg-card-2);color:var(--text-1);cursor:pointer;transition:all .15s;font-family:'Noto Sans TC',sans-serif;}
 .btn:hover{border-color:var(--gold-dim);background:var(--bg-card-3);}
 
-.legend{font-size:11.5px;color:var(--text-2);line-height:1.55;background:var(--bg-card-2);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:5px;padding:9px 13px;margin-bottom:12px;}
+.col-desc{font-size:10.5px;color:var(--text-3);line-height:1.45;margin:-2px 0 8px;padding-bottom:7px;border-bottom:1px dashed rgba(47,74,120,.35);}
 
 /* mobile view switch (整體 / 本月最新) */
 .view-switch-wrap{display:none;} /* 改為兩欄並排後,不再需要整體/本月切換 */
@@ -156,8 +156,6 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
 
   <div class="gold-divider"></div>
 
-  <div class="legend" id="legend"></div>
-
   <div class="view-switch-wrap">
     <div class="view-switch" id="viewSwitch">
       <button data-view="overall"></button><button data-view="monthly"></button>
@@ -195,7 +193,8 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
       changes:'⚡ 今日重點變動', notes:'📌 看榜注意',
       overall:'① 整體 Top 5', overallTag:'主榜·先看這個', monthly:'② 本月最新 Top 5', monthlyTag:'新品',
       newBadge:'本月新',
-      legend:'① 整體 Top 5 = 納入本月新品比較後,該範疇目前最強·最值得用的(先看這個)。② 本月最新 = 只看本月新發佈;不足 5 個則補近期並標日期(綠色「本月新」=真本月新)。每項右側標籤 = 該名次的主要依據。',
+      overallDesc:'納入本月新品比較後,該範疇目前最強·最值得用的(先看這個)。右側標籤 = 排名依據。',
+      monthlyDesc:'只看本月新發佈;不足 5 個則補近期並標日期(綠色「本月新」= 真本月新)。',
       viewOverall:'① 整體 Top5', viewMonthly:'② 本月最新',
       foot1:'資料來源:Artificial Analysis · LMArena · 各廠商官方公告 ｜ 排名每日浮動,僅供快速參考',
       foot2:'本頁每日 GMT+8 00:00 自動更新 · Built with Claude Code',
@@ -210,7 +209,8 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
       changes:'⚡ Today’s highlights', notes:'📌 How to read this',
       overall:'① Overall Top 5', overallTag:'main · start here', monthly:'② This-month Top 5', monthlyTag:'new',
       newBadge:'NEW',
-      legend:'① Overall Top 5 = the strongest & most useful right now after weighing this month’s new models (start here). ② This-month = only this month’s new releases; if fewer than 5, recent ones fill in (dated; green “NEW” = truly new this month). The tag on the right of each item = the main basis for its rank.',
+      overallDesc:'The strongest & most useful right now, after weighing this month’s new models (start here). Right-side tag = basis for the rank.',
+      monthlyDesc:'Only this month’s new releases; if fewer than 5, recent ones fill in, dated (green “NEW” = truly new this month).',
       viewOverall:'① Overall', viewMonthly:'② This-month',
       foot1:'Sources: Artificial Analysis · LMArena · official vendor announcements | Rankings shift daily; quick reference only',
       foot2:'Auto-updated daily at 00:00 GMT+8 · Built with Claude Code',
@@ -290,7 +290,6 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
     document.getElementById('updated').textContent = fmtUpdated(D.updatedAt);
     document.getElementById('month-label').textContent = t.monthBasis + ' ' + esc(pick(D,'month'));
     var rb = document.getElementById('reloadBtn'); rb.textContent = t.reload; rb.title = t.reloadTip;
-    document.getElementById('legend').textContent = t.legend;
     document.getElementById('lbl-changes').textContent = t.changes;
     document.getElementById('lbl-notes').textContent = t.notes;
     document.getElementById('foot1').textContent = t.foot1;
@@ -319,11 +318,13 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
         + '</div>'
         + '<div class="cols">'
           + '<div class="col-box col-overall">'
-            + '<div class="col-label overall">'+esc(t.overall)+' <span class="tag">'+esc(t.overallTag)+'</span></div>'
+            + '<div class="col-label overall">'+esc(t.overall)+'</div>'
+            + '<div class="col-desc">'+esc(t.overallDesc)+'</div>'
             + ov
           + '</div>'
           + '<div class="col-box col-monthly">'
-            + '<div class="col-label monthly">'+esc(t.monthly)+' <span class="tag">'+esc(t.monthlyTag)+' · '+esc(pick(D,'month'))+'</span></div>'
+            + '<div class="col-label monthly">'+esc(t.monthly)+'</div>'
+            + '<div class="col-desc">'+esc(t.monthlyDesc)+'</div>'
             + mNote + mItems
           + '</div>'
         + '</div>'
