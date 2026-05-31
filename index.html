@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 每日情報儀表板 · Daily AI Intelligence</title>
+<meta name="description" content="每日自動更新的 AI 模型與工具排行 — 8 大範疇,整體 Top 5 + 本月最新 Top 5">
+
+<!-- 分享預覽卡(Open Graph / Twitter)— 朋友貼連結時顯示漂亮預覽 -->
+<meta property="og:title" content="AI 每日情報儀表板">
+<meta property="og:description" content="每天凌晨自動更新 · 8 大範疇 × 整體 Top5 + 本月最新 Top5(AI 模型與工具排行)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI 每日情報儀表板">
+<meta name="twitter:description" content="每天凌晨自動更新的 AI 模型/工具排行 — 8 大範疇,兩個 Top 5">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans+TC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg-abyss:#02060f; --bg-deep:#050d1c; --bg-card:#0c1830; --bg-card-2:#13213e; --bg-card-3:#1a2c50;
+  --border:#22365c; --border-strong:#2f4a78;
+  --gold:#e9c46a; --gold-dim:#b89236; --gold-glow:#fbbf24;
+  --text-1:#e6edf8; --text-2:#9cb0cc; --text-3:#5d7494;
+  --red:#f87171; --green:#34d399; --cyan:#22d3ee; --blue:#60a5fa; --purple:#a78bfa; --orange:#fb923c;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;background:var(--bg-abyss);color:var(--text-1);font-family:'Noto Sans TC',ui-sans-serif,system-ui,sans-serif;}
+body{
+  background:
+    radial-gradient(ellipse 1200px 800px at 15% -10%, rgba(34,211,238,.08), transparent 60%),
+    radial-gradient(ellipse 900px 600px at 95% 110%, rgba(233,196,106,.07), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 50% 50%, rgba(96,165,250,.04), transparent 70%),
+    linear-gradient(180deg,#02060f 0%, #050d1c 100%);
+  background-attachment:fixed; min-height:100vh; padding-bottom:64px;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.012) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.008) 0 1px, transparent 1px 3px);
+  mix-blend-mode:overlay;
+}
+.wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:28px 18px 0;}
+.font-display{font-family:'Cinzel',serif;letter-spacing:.08em;}
+.font-mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums;}
+.gold-text{color:var(--gold);}
+.gold-glow{color:var(--gold-glow);text-shadow:0 0 12px rgba(251,191,36,.35);}
+.gold-divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim) 20%,var(--gold) 50%,var(--gold-dim) 80%,transparent);opacity:.5;margin:14px 0;}
+
+/* ===== Header ===== */
+header.top{text-align:center;margin-bottom:8px;}
+header.top h1{font-size:clamp(22px,4vw,34px);margin:0;font-weight:700;}
+header.top .sub{color:var(--text-2);font-size:13px;letter-spacing:.06em;margin-top:6px;}
+.meta-bar{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:center;align-items:center;margin:14px 0;font-size:12.5px;color:var(--text-2);}
+.meta-bar .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);display:inline-block;margin-right:6px;vertical-align:middle;}
+.btn{padding:6px 14px;border-radius:4px;font-size:12px;font-weight:600;letter-spacing:.03em;border:1px solid var(--border-strong);background:var(--bg-card-2);color:var(--text-1);cursor:pointer;transition:all .15s;font-family:'Noto Sans TC',sans-serif;}
+.btn:hover{border-color:var(--gold-dim);background:var(--bg-card-3);}
+
+/* ===== Cards ===== */
+.card{background:linear-gradient(180deg,var(--bg-card) 0%, var(--bg-deep) 100%);border:1px solid var(--border);border-radius:8px;box-shadow:0 0 0 1px rgba(255,255,255,.02) inset,0 8px 24px rgba(0,0,0,.4);padding:16px 18px;margin-bottom:16px;}
+.banner{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start;}
+.banner .col{flex:1;min-width:240px;}
+.changes-title{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-bottom:8px;text-transform:uppercase;}
+.chip{display:block;font-size:12.5px;color:var(--text-1);background:var(--bg-card-2);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:4px;padding:6px 10px;margin-bottom:6px;line-height:1.45;}
+.note-li{font-size:11.5px;color:var(--text-3);line-height:1.5;margin-bottom:5px;padding-left:14px;position:relative;}
+.note-li::before{content:'▹';position:absolute;left:0;color:var(--gold-dim);}
+
+/* ===== Category ===== */
+.cat-head{display:flex;align-items:center;gap:10px;margin-bottom:2px;}
+.cat-num{font-family:'Cinzel',serif;font-size:13px;font-weight:700;color:#1a1408;background:linear-gradient(180deg,var(--gold),var(--gold-dim));width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;}
+.cat-icon{font-size:20px;}
+.cat-title{font-size:17px;font-weight:700;color:var(--text-1);}
+.cat-sub{font-size:11.5px;color:var(--text-3);margin-left:auto;text-align:right;max-width:46%;}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px;}
+@media(max-width:780px){.cols{grid-template-columns:1fr;}.cat-sub{display:none;}}
+.col-box{background:var(--bg-card-2);border:1px solid var(--border);border-radius:6px;padding:10px 12px;}
+.col-label{font-size:11.5px;font-weight:700;letter-spacing:.05em;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.col-label.overall{color:var(--cyan);}
+.col-label.monthly{color:var(--gold-glow);}
+.col-label .tag{font-size:10px;font-weight:500;color:var(--text-3);border:1px solid var(--border);border-radius:3px;padding:1px 6px;}
+.mnote{font-size:11px;color:var(--orange);line-height:1.45;margin-bottom:8px;background:rgba(251,146,60,.07);border:1px solid rgba(251,146,60,.2);border-radius:4px;padding:5px 8px;}
+
+/* ===== Rows ===== */
+.row{display:flex;gap:9px;padding:7px 4px;border-bottom:1px dashed rgba(47,74,120,.4);}
+.row:last-child{border-bottom:none;}
+.rk{font-family:'Cinzel',serif;font-weight:700;font-size:14px;color:var(--gold);width:18px;flex:none;text-align:center;line-height:1.4;}
+.row.r1 .rk{color:var(--gold-glow);text-shadow:0 0 10px rgba(251,191,36,.5);}
+.body{flex:1;min-width:0;}
+.nm{font-size:13px;font-weight:600;color:var(--text-1);line-height:1.35;}
+.ver{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10.5px;font-weight:700;color:#1a1408;background:var(--gold-glow);border-radius:3px;padding:0 5px;margin-left:5px;vertical-align:middle;}
+.ov{display:inline-block;font-size:10px;color:var(--gold);border:1px solid var(--gold-dim);border-radius:3px;padding:0 5px;margin-left:5px;vertical-align:middle;}
+.new{display:inline-block;font-size:9.5px;font-weight:700;color:#04240f;background:var(--green);border-radius:3px;padding:0 5px;margin-left:5px;vertical-align:middle;}
+.vendor{font-size:11px;color:var(--blue);margin-top:1px;}
+.why{font-size:11.5px;color:var(--text-2);line-height:1.45;margin-top:2px;}
+.metaline{font-size:10.5px;color:var(--text-3);font-family:'JetBrains Mono',monospace;margin-top:2px;}
+.date-badge{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);background:var(--bg-deep);border:1px solid var(--border-strong);border-radius:3px;padding:1px 5px;flex:none;height:fit-content;}
+footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line-height:1.7;}
+#err{display:none;text-align:center;color:var(--red);padding:40px;font-size:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="font-display gold-glow">AI 每日情報儀表板</h1>
+    <div class="sub font-display">DAILY AI INTELLIGENCE · 8 範疇 × 整體 Top5 + 本月最新 Top5</div>
+  </header>
+
+  <div class="meta-bar">
+    <span><span class="dot"></span>最後更新 <b id="updated" class="gold-text font-mono">—</b></span>
+    <span id="month-label">本月基準 —</span>
+    <button class="btn" onclick="location.reload()" title="重新載入最新已存資料(資料由每日排程自動更新)">↻ 重新載入</button>
+  </div>
+
+  <div class="gold-divider"></div>
+
+  <!-- 今日變動 + 看榜注意 -->
+  <div class="card banner">
+    <div class="col">
+      <div class="changes-title">⚡ 今日重點變動</div>
+      <div id="changes"></div>
+    </div>
+    <div class="col">
+      <div class="changes-title">📌 看榜注意</div>
+      <div id="notes"></div>
+      <div id="confidence" class="note-li" style="margin-top:8px;color:var(--text-2);"></div>
+    </div>
+  </div>
+
+  <div id="cats"></div>
+  <div id="err">⚠️ 找不到資料(data.js)。請確認 data.js 與 index.html 在同一資料夾。</div>
+
+  <footer>
+    資料來源:Artificial Analysis · LMArena · 各廠商官方公告 ｜ 排名每日浮動,僅供快速參考<br>
+    本頁由每日排程自動更新 · Built with Claude Code
+  </footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  var D = window.DIGEST;
+  if(!D){ document.getElementById('err').style.display='block'; return; }
+
+  // header
+  var dt = new Date(D.updatedAt);
+  var hh = String(dt.getHours()).padStart(2,'0'), mm = String(dt.getMinutes()).padStart(2,'0');
+  document.getElementById('updated').textContent = (D.updatedDateLabel || D.updatedAt) + '  ' + hh + ':' + mm;
+  document.getElementById('month-label').textContent = '本月基準 ' + (D.month || '');
+  document.title = 'AI 每日情報 · ' + (D.updatedDateLabel || '');
+
+  var ch = document.getElementById('changes');
+  (D.changesToday||[]).forEach(function(c){ var d=document.createElement('div'); d.className='chip'; d.textContent=c; ch.appendChild(d); });
+  var nt = document.getElementById('notes');
+  (D.notes||[]).forEach(function(n){ var d=document.createElement('div'); d.className='note-li'; d.textContent=n; nt.appendChild(d); });
+  if(D.dataConfidence) document.getElementById('confidence').textContent = '✓ ' + D.dataConfidence;
+
+  function esc(s){ return (s==null?'':String(s)); }
+
+  // overall row
+  function overallRow(it){
+    return '<div class="row r'+it.rank+'">'
+      + '<div class="rk">'+it.rank+'</div>'
+      + '<div class="body">'
+        + '<div class="nm">'+esc(it.name)+'</div>'
+        + '<div class="vendor">'+esc(it.vendor)+'</div>'
+        + '<div class="why">'+esc(it.why)+'</div>'
+        + (it.meta?'<div class="metaline">'+esc(it.meta)+'</div>':'')
+      + '</div></div>';
+  }
+  // monthly row
+  function monthlyRow(it){
+    var verChip = it.version ? '<span class="ver">'+esc(it.version)+'</span>' : '';
+    var newBadge = it.isNew ? '<span class="new">本月新</span>' : '';
+    var ovTag = it.overlap ? '<span class="ov">'+esc(it.overlap)+'</span>' : '';
+    return '<div class="row r'+it.rank+'">'
+      + '<div class="rk">'+it.rank+'</div>'
+      + '<div class="body">'
+        + '<div class="nm">'+esc(it.name)+verChip+newBadge+ovTag+'</div>'
+        + '<div class="vendor">'+esc(it.vendor)+'</div>'
+        + '<div class="why">'+esc(it.why)+'</div>'
+      + '</div>'
+      + (it.date?'<div class="date-badge">'+esc(it.date)+'</div>':'')
+      + '</div>';
+  }
+
+  var host = document.getElementById('cats');
+  (D.categories||[]).forEach(function(cat){
+    var ov = (cat.overall||[]).map(overallRow).join('');
+    var mItems = (cat.monthly && cat.monthly.items) ? cat.monthly.items.map(monthlyRow).join('') : '';
+    var mNote = (cat.monthly && cat.monthly.note) ? '<div class="mnote">'+esc(cat.monthly.note)+'</div>' : '';
+    var html =
+      '<div class="card">'
+      + '<div class="cat-head">'
+        + '<div class="cat-num">'+cat.id+'</div>'
+        + '<span class="cat-icon">'+esc(cat.icon)+'</span>'
+        + '<span class="cat-title">'+esc(cat.name)+'</span>'
+        + '<span class="cat-sub">'+esc(cat.subtitle)+'</span>'
+      + '</div>'
+      + '<div class="cols">'
+        + '<div class="col-box">'
+          + '<div class="col-label overall">① 整體 Top 5 <span class="tag">最強底盤</span></div>'
+          + ov
+        + '</div>'
+        + '<div class="col-box">'
+          + '<div class="col-label monthly">② 本月最新 Top 5 <span class="tag">'+esc(D.month||'')+'</span></div>'
+          + mNote + mItems
+        + '</div>'
+      + '</div>'
+      + '</div>';
+    host.insertAdjacentHTML('beforeend', html);
+  });
+})();
+</script>
+</body>
+</html>
