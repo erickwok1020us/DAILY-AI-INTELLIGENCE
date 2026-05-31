@@ -51,10 +51,13 @@ body::before{
 .gold-glow{color:var(--gold-glow);text-shadow:0 0 12px rgba(251,191,36,.35);}
 .gold-divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim) 20%,var(--gold) 50%,var(--gold-dim) 80%,transparent);opacity:.5;margin:14px 0;}
 
-.lang-switch{position:absolute;top:14px;right:14px;z-index:3;display:inline-flex;border:1px solid var(--border-strong);border-radius:5px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.4);}
-.lang-switch button{padding:5px 13px;font-size:12px;font-weight:700;border:none;background:var(--bg-card-2);color:var(--text-2);cursor:pointer;font-family:'Noto Sans TC',sans-serif;}
+.lang-bar{position:absolute;top:14px;right:14px;z-index:3;display:flex;align-items:center;gap:8px;}
+.lang-ico{font-size:19px;line-height:1;}
+.lang-switch{display:inline-flex;border:1px solid var(--border-strong);border-radius:8px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.5);}
+.lang-switch button{padding:10px 24px;font-size:15px;font-weight:700;border:none;background:var(--bg-card-2);color:var(--text-2);cursor:pointer;font-family:'Noto Sans TC',sans-serif;letter-spacing:.02em;}
 .lang-switch button.active{background:linear-gradient(180deg,var(--gold),var(--gold-dim));color:#1a1408;}
 .lang-switch button:not(.active):hover{background:var(--bg-card-3);color:var(--text-1);}
+@media(max-width:780px){ .lang-bar{position:static;justify-content:center;margin:0 auto 14px;} }
 
 header.top{text-align:center;margin-bottom:8px;}
 header.top h1{font-size:clamp(22px,4vw,34px);margin:0;font-weight:700;}
@@ -121,8 +124,11 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
 </head>
 <body>
 <div class="wrap">
-  <div class="lang-switch" id="langSwitch">
-    <button data-lang="zh">中文</button><button data-lang="en">EN</button>
+  <div class="lang-bar">
+    <span class="lang-ico" aria-hidden="true">🌐</span>
+    <div class="lang-switch" id="langSwitch">
+      <button data-lang="zh">中文</button><button data-lang="en">EN</button>
+    </div>
   </div>
 
   <header class="top">
