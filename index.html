@@ -6,7 +6,7 @@
 <title>AI 每日情報儀表板 · Daily AI Intelligence</title>
 <meta name="description" content="每日自動更新的 AI 模型與工具排行 — 8 大範疇,整體 Top 5 + 本月最新 Top 5">
 
-<!-- 分享預覽卡(Open Graph / Twitter)— 朋友貼連結時顯示漂亮預覽 -->
+<!-- 分享預覽卡(Open Graph / Twitter) -->
 <meta property="og:title" content="AI 每日情報儀表板 · Daily AI Intelligence">
 <meta property="og:description" content="每天凌晨自動更新 · 8 大範疇 × 整體 Top5 + 本月最新 Top5(AI 模型與工具排行)">
 <meta property="og:type" content="website">
@@ -51,9 +51,8 @@ body::before{
 .gold-glow{color:var(--gold-glow);text-shadow:0 0 12px rgba(251,191,36,.35);}
 .gold-divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim) 20%,var(--gold) 50%,var(--gold-dim) 80%,transparent);opacity:.5;margin:14px 0;}
 
-/* language switch (top-right) */
 .lang-switch{position:absolute;top:14px;right:14px;z-index:3;display:inline-flex;border:1px solid var(--border-strong);border-radius:5px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.4);}
-.lang-switch button{padding:5px 13px;font-size:12px;font-weight:700;border:none;background:var(--bg-card-2);color:var(--text-2);cursor:pointer;font-family:'Noto Sans TC',sans-serif;letter-spacing:.02em;}
+.lang-switch button{padding:5px 13px;font-size:12px;font-weight:700;border:none;background:var(--bg-card-2);color:var(--text-2);cursor:pointer;font-family:'Noto Sans TC',sans-serif;}
 .lang-switch button.active{background:linear-gradient(180deg,var(--gold),var(--gold-dim));color:#1a1408;}
 .lang-switch button:not(.active):hover{background:var(--bg-card-3);color:var(--text-1);}
 
@@ -64,6 +63,19 @@ header.top .sub{color:var(--text-2);font-size:13px;letter-spacing:.06em;margin-t
 .meta-bar .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);display:inline-block;margin-right:6px;vertical-align:middle;}
 .btn{padding:6px 14px;border-radius:4px;font-size:12px;font-weight:600;letter-spacing:.03em;border:1px solid var(--border-strong);background:var(--bg-card-2);color:var(--text-1);cursor:pointer;transition:all .15s;font-family:'Noto Sans TC',sans-serif;}
 .btn:hover{border-color:var(--gold-dim);background:var(--bg-card-3);}
+
+.legend{font-size:11.5px;color:var(--text-2);line-height:1.55;background:var(--bg-card-2);border:1px solid var(--border);border-left:3px solid var(--cyan);border-radius:5px;padding:9px 13px;margin-bottom:12px;}
+
+/* mobile view switch (整體 / 本月最新) */
+.view-switch-wrap{text-align:center;margin-bottom:12px;}
+.view-switch{display:none;}
+@media(max-width:780px){
+  .view-switch{display:inline-flex;width:100%;max-width:420px;border:1px solid var(--border-strong);border-radius:7px;overflow:hidden;}
+  .view-switch button{flex:1;padding:9px 10px;font-size:13px;font-weight:700;border:none;background:var(--bg-card-2);color:var(--text-2);cursor:pointer;font-family:'Noto Sans TC',sans-serif;}
+  .view-switch button.active{background:linear-gradient(180deg,var(--gold),var(--gold-dim));color:#1a1408;}
+  #cats.m-overall .col-monthly{display:none;}
+  #cats.m-monthly .col-overall{display:none;}
+}
 
 .card{background:linear-gradient(180deg,var(--bg-card) 0%, var(--bg-deep) 100%);border:1px solid var(--border);border-radius:8px;box-shadow:0 0 0 1px rgba(255,255,255,.02) inset,0 8px 24px rgba(0,0,0,.4);padding:16px 18px;margin-bottom:16px;}
 .banner{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start;}
@@ -81,6 +93,8 @@ header.top .sub{color:var(--text-2);font-size:13px;letter-spacing:.06em;margin-t
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px;}
 @media(max-width:780px){.cols{grid-template-columns:1fr;}.cat-sub{display:none;}}
 .col-box{background:var(--bg-card-2);border:1px solid var(--border);border-radius:6px;padding:10px 12px;}
+.col-box.col-overall{border-top:2px solid rgba(34,211,238,.5);}
+.col-box.col-monthly{border-top:2px solid rgba(251,191,36,.5);}
 .col-label{font-size:11.5px;font-weight:700;letter-spacing:.05em;margin-bottom:8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
 .col-label.overall{color:var(--cyan);}
 .col-label.monthly{color:var(--gold-glow);}
@@ -99,6 +113,7 @@ header.top .sub{color:var(--text-2);font-size:13px;letter-spacing:.06em;margin-t
 .vendor{font-size:11px;color:var(--blue);margin-top:1px;}
 .why{font-size:11.5px;color:var(--text-2);line-height:1.45;margin-top:2px;}
 .metaline{font-size:10.5px;color:var(--text-3);font-family:'JetBrains Mono',monospace;margin-top:2px;}
+.score-badge{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--cyan);background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.35);border-radius:3px;padding:1px 6px;flex:none;height:fit-content;white-space:nowrap;align-self:flex-start;}
 .date-badge{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);background:var(--bg-deep);border:1px solid var(--border-strong);border-radius:3px;padding:1px 5px;flex:none;height:fit-content;}
 footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line-height:1.7;}
 #err{display:none;text-align:center;color:var(--red);padding:40px;font-size:14px;}
@@ -116,12 +131,20 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
   </header>
 
   <div class="meta-bar">
-    <span><span class="dot"></span><span id="lbl-updated"></span> <b id="updated" class="gold-text font-mono" style="color:var(--gold)">—</b></span>
+    <span><span class="dot"></span><span id="lbl-updated"></span> <b id="updated" class="font-mono" style="color:var(--gold)">—</b></span>
     <span id="month-label"></span>
     <button class="btn" id="reloadBtn" onclick="location.reload()">↻</button>
   </div>
 
   <div class="gold-divider"></div>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="view-switch-wrap">
+    <div class="view-switch" id="viewSwitch">
+      <button data-view="overall"></button><button data-view="monthly"></button>
+    </div>
+  </div>
 
   <div class="card banner">
     <div class="col">
@@ -152,8 +175,10 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
       updated:'最後更新', monthBasis:'②本月最新 =', reload:'↻ 重新整理',
       reloadTip:'重新整理頁面、重讀已發佈的最新資料(每日 GMT+8 00:00 自動更新)。不會即時重新上網研究。',
       changes:'⚡ 今日重點變動', notes:'📌 看榜注意',
-      overall:'① 整體 Top 5', overallTag:'最強底盤', monthly:'② 本月最新 Top 5',
+      overall:'① 整體 Top 5', overallTag:'主榜·先看這個', monthly:'② 本月最新 Top 5', monthlyTag:'新品',
       newBadge:'本月新',
+      legend:'① 整體 Top 5 = 納入本月新品比較後,該範疇目前最強·最值得用的(先看這個)。② 本月最新 = 只看本月新發佈;不足 5 個則補近期並標日期(綠色「本月新」=真本月新)。每項右側標籤 = 該名次的主要依據。',
+      viewOverall:'① 整體 Top5', viewMonthly:'② 本月最新',
       foot1:'資料來源:Artificial Analysis · LMArena · 各廠商官方公告 ｜ 排名每日浮動,僅供快速參考',
       foot2:'本頁每日 GMT+8 00:00 自動更新 · Built with Claude Code',
       err:'⚠️ 找不到資料(data.js)。請確認 data.js 與 index.html 在同一資料夾。',
@@ -165,8 +190,10 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
       updated:'Last updated', monthBasis:'② This-month =', reload:'↻ Refresh',
       reloadTip:'Reloads the page with the latest published data (auto-updated daily at 00:00 GMT+8). It does NOT run a fresh web search on demand.',
       changes:'⚡ Today’s highlights', notes:'📌 How to read this',
-      overall:'① Overall Top 5', overallTag:'core leaders', monthly:'② This-month Top 5',
+      overall:'① Overall Top 5', overallTag:'main · start here', monthly:'② This-month Top 5', monthlyTag:'new',
       newBadge:'NEW',
+      legend:'① Overall Top 5 = the strongest & most useful right now after weighing this month’s new models (start here). ② This-month = only this month’s new releases; if fewer than 5, recent ones fill in (dated; green “NEW” = truly new this month). The tag on the right of each item = the main basis for its rank.',
+      viewOverall:'① Overall', viewMonthly:'② This-month',
       foot1:'Sources: Artificial Analysis · LMArena · official vendor announcements | Rankings shift daily; quick reference only',
       foot2:'Auto-updated daily at 00:00 GMT+8 · Built with Claude Code',
       err:'⚠️ data.js not found. Make sure data.js sits next to index.html.',
@@ -174,9 +201,11 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
     }
   };
 
-  // 語言:讀 localStorage,預設中文
-  var lang = 'zh';
-  try { var saved = localStorage.getItem('digestLang'); if(saved==='zh'||saved==='en') lang = saved; } catch(e){}
+  var lang = 'zh', mview = 'overall';
+  try {
+    var sl = localStorage.getItem('digestLang'); if(sl==='zh'||sl==='en') lang = sl;
+    var sv = localStorage.getItem('digestView'); if(sv==='overall'||sv==='monthly') mview = sv;
+  } catch(e){}
 
   if(!D){
     document.documentElement.lang = (lang==='en'?'en':'zh-Hant');
@@ -184,19 +213,18 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
   }
 
   function esc(s){ return (s==null?'':String(s)); }
-  // 依語言取欄位:有 _en 用 _en,否則退回中文
   function pick(o, key){ return (lang==='en' && o[key+'_en']!=null) ? o[key+'_en'] : o[key]; }
 
   function fmtUpdated(iso){
     try{
-      var d = new Date(iso);
-      var t = I18N[lang];
+      var d = new Date(iso), t = I18N[lang];
       var s = new Intl.DateTimeFormat(t.locale, {timeZone:'Asia/Taipei', year:'numeric', month:t.monthFmt, day:'numeric', hour:'2-digit', minute:'2-digit', hour12:false}).format(d);
       return s + ' (GMT+8)';
     }catch(e){ return (D.updatedDateLabel||iso) + ' (GMT+8)'; }
   }
 
   function overallRow(it){
+    var sc = pick(it,'score') ? '<div class="score-badge">'+esc(pick(it,'score'))+'</div>' : '';
     return '<div class="row r'+it.rank+'">'
       + '<div class="rk">'+it.rank+'</div>'
       + '<div class="body">'
@@ -204,7 +232,9 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
         + '<div class="vendor">'+esc(pick(it,'vendor'))+'</div>'
         + '<div class="why">'+esc(pick(it,'why'))+'</div>'
         + (pick(it,'meta')?'<div class="metaline">'+esc(pick(it,'meta'))+'</div>':'')
-      + '</div></div>';
+      + '</div>'
+      + sc
+      + '</div>';
   }
   function monthlyRow(it){
     var ver = pick(it,'version') ? '<span class="ver">'+esc(pick(it,'version'))+'</span>' : '';
@@ -221,30 +251,36 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
       + '</div>';
   }
 
+  function applyView(){
+    document.getElementById('cats').className = 'm-'+mview;
+    var vb = document.querySelectorAll('#viewSwitch button');
+    for(var i=0;i<vb.length;i++){ vb[i].classList.toggle('active', vb[i].getAttribute('data-view')===mview); }
+  }
+
   function render(){
     var t = I18N[lang];
     document.documentElement.lang = (lang==='en'?'en':'zh-Hant');
 
-    // header / labels
     document.getElementById('h1').textContent = t.h1;
     document.getElementById('subtitle').textContent = t.subtitle;
     document.getElementById('lbl-updated').textContent = t.updated;
     document.getElementById('updated').textContent = fmtUpdated(D.updatedAt);
     document.getElementById('month-label').textContent = t.monthBasis + ' ' + esc(pick(D,'month'));
     var rb = document.getElementById('reloadBtn'); rb.textContent = t.reload; rb.title = t.reloadTip;
+    document.getElementById('legend').textContent = t.legend;
     document.getElementById('lbl-changes').textContent = t.changes;
     document.getElementById('lbl-notes').textContent = t.notes;
     document.getElementById('foot1').textContent = t.foot1;
     document.getElementById('foot2').textContent = t.foot2;
+    document.querySelector('#viewSwitch button[data-view="overall"]').textContent = t.viewOverall;
+    document.querySelector('#viewSwitch button[data-view="monthly"]').textContent = t.viewMonthly;
 
-    // banner lists
     var ch = document.getElementById('changes'); ch.innerHTML='';
     (pick(D,'changesToday')||[]).forEach(function(c){ var d=document.createElement('div'); d.className='chip'; d.textContent=c; ch.appendChild(d); });
     var nt = document.getElementById('notes'); nt.innerHTML='';
     (pick(D,'notes')||[]).forEach(function(n){ var d=document.createElement('div'); d.className='note-li'; d.textContent=n; nt.appendChild(d); });
     document.getElementById('confidence').textContent = pick(D,'dataConfidence') ? ('✓ '+pick(D,'dataConfidence')) : '';
 
-    // categories
     var host = document.getElementById('cats'); host.innerHTML='';
     (D.categories||[]).forEach(function(cat){
       var ov = (cat.overall||[]).map(overallRow).join('');
@@ -259,12 +295,12 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
           + '<span class="cat-sub">'+esc(pick(cat,'subtitle'))+'</span>'
         + '</div>'
         + '<div class="cols">'
-          + '<div class="col-box">'
+          + '<div class="col-box col-overall">'
             + '<div class="col-label overall">'+esc(t.overall)+' <span class="tag">'+esc(t.overallTag)+'</span></div>'
             + ov
           + '</div>'
-          + '<div class="col-box">'
-            + '<div class="col-label monthly">'+esc(t.monthly)+' <span class="tag">'+esc(pick(D,'month'))+'</span></div>'
+          + '<div class="col-box col-monthly">'
+            + '<div class="col-label monthly">'+esc(t.monthly)+' <span class="tag">'+esc(t.monthlyTag)+' · '+esc(pick(D,'month'))+'</span></div>'
             + mNote + mItems
           + '</div>'
         + '</div>'
@@ -272,17 +308,22 @@ footer{text-align:center;color:var(--text-3);font-size:11px;margin-top:24px;line
       host.insertAdjacentHTML('beforeend', html);
     });
 
-    // 切換鈕 active 狀態
-    var btns = document.querySelectorAll('#langSwitch button');
-    for(var i=0;i<btns.length;i++){ btns[i].classList.toggle('active', btns[i].getAttribute('data-lang')===lang); }
+    var lb = document.querySelectorAll('#langSwitch button');
+    for(var i=0;i<lb.length;i++){ lb[i].classList.toggle('active', lb[i].getAttribute('data-lang')===lang); }
+    applyView();
   }
 
-  // 語言切換
   document.getElementById('langSwitch').addEventListener('click', function(e){
     var b = e.target.closest('button'); if(!b) return;
     lang = b.getAttribute('data-lang');
     try { localStorage.setItem('digestLang', lang); } catch(err){}
     render();
+  });
+  document.getElementById('viewSwitch').addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    mview = b.getAttribute('data-view');
+    try { localStorage.setItem('digestView', mview); } catch(err){}
+    applyView();
   });
 
   render();

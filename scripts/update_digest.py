@@ -60,7 +60,7 @@ CATEGORIES = [
 # 每個文字欄位都要中文 + `_en` 英文
 SCHEMA_HINT = '''{
   "overall": [
-    {"rank":1,"name":"模型/工具名稱+版本","vendor":"廠商(中文可加原名)","vendor_en":"vendor (English)","why":"一句話(繁中)","why_en":"one line (English)","meta":"發佈日 · 存取或價格(繁中)","meta_en":"date · access/price (English)"}
+    {"rank":1,"name":"模型/工具名稱+版本","vendor":"廠商","vendor_en":"vendor (English)","score":"排名依據短標籤(LLM 用公開分數如 AA 61 / SWE 88.7% / GPQA 94%;影音3D音訊用能力短語如 運鏡標竿 / 盲測 #1 / 開源自架)","score_en":"short basis tag in English (e.g. AA 61, SWE 88.7%, motion benchmark)","why":"一句話(繁中)","why_en":"one line (English)","meta":"發佈日 · 存取或價格","meta_en":"date · access/price (English)"}
   ],
   "monthly": {
     "note": null, "note_en": null,
@@ -81,7 +81,9 @@ def build_prompt(cat):
    - 若某項同時在 overall,請在 overlap/overlap_en 標「整體 #n」/「Overall #n」,並在 version 填它的新版本號(讓人知道它是因為新版本才登上本月榜)。
    - 若本月新發佈不足 5 個,用最近期(近 30–60 天)補滿、date 標日期、isNew 設 false,並在 note/note_en 用一句話說明;否則 note 與 note_en 皆為 null。
 
-【雙語】每個文字欄位都要同時提供繁體中文與英文:vendor+vendor_en、why+why_en、meta+meta_en、overlap+overlap_en、note+note_en。name 與 version 多為產品名,中英相同可只填一份。date 若含中文(如「2 月」),請另填 date_en(如「Feb」)。
+【排名依據】每個 overall 項目必須有 score:排名的主要依據短標籤。LLM 範疇(1/2/3)用公開 benchmark 分數(如「AA 61」「SWE 88.7%」「GPQA 94%」),影音/3D/Rigging/音訊範疇用能力短語(如「運鏡標竿」「盲測 #1」「開源自架」)。盡量讓 #1→#5 的依據可看出高低。
+
+【雙語】每個文字欄位都要同時提供繁體中文與英文:vendor+vendor_en、why+why_en、meta+meta_en、score+score_en、overlap+overlap_en、note+note_en。name 與 version 多為產品名,中英相同可只填一份。date 若含中文(如「2 月」),請另填 date_en(如「Feb」)。
 
 只輸出一個 JSON 物件,不要任何其他文字或解釋,嚴格符合:
 {SCHEMA_HINT}"""

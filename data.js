@@ -2,6 +2,8 @@
    AI 每日情報儀表板 — 資料檔(中英雙語 / bilingual)
    此檔由每日排程自動重寫;手動編輯也可。
    每個文字欄位都有中文 + `_en` 英文;網頁依語言切換顯示。
+   overall 項目含 `score`(排名依據短標籤):LLM 類為公開 benchmark 分數,
+   影音/3D/音訊類為 Arena 對戰排名+能力評估(部分為綜合判斷)。
    ===================================================================== */
 window.DIGEST = {
   updatedAt: "2026-05-31T00:00:00+08:00",
@@ -25,14 +27,14 @@ window.DIGEST = {
   ],
 
   notes: [
+    "右側標籤=排名主要依據:LLM 類為 AA 指數/SWE-bench 等公開分數;影音/3D 類為 Arena 對戰+能力(部分綜合判斷)。",
     "排名每天會動:AA 為 72 小時滾動、LMArena Elo 每天浮動,第 2~5 名常在誤差內。",
-    "Opus 4.8 為 5/28 剛發,目前多為廠商自測,獨立 benchmark 數週後才會定。",
-    "常見舊資料/誤傳:Veo 4(未發,現役 3.1)、Hunyuan3D「3.5」(誤,現役 3.0)、「GPT-5.4 / Opus 4.6」(過時)。"
+    "Opus 4.8 為 5/28 剛發,目前多為廠商自測,獨立 benchmark 數週後才會定。"
   ],
   notes_en: [
+    "The tag on the right = the main basis for the rank: LLMs use public scores (AA Index / SWE-bench); video/3D use Arena results + capability (partly editorial).",
     "Rankings shift daily: AA is a 72-hour rolling average and LMArena Elo moves; ranks 2–5 are often within noise.",
-    "Opus 4.8 just launched 5/28 — mostly vendor self-reported numbers; independent benchmarks settle in a few weeks.",
-    "Common stale/incorrect claims: Veo 4 (unreleased, current 3.1), Hunyuan3D '3.5' (wrong, current 3.0), 'GPT-5.4 / Opus 4.6' (outdated)."
+    "Opus 4.8 just launched 5/28 — mostly vendor self-reported numbers; independent benchmarks settle in a few weeks."
   ],
 
   categories: [
@@ -43,11 +45,11 @@ window.DIGEST = {
       subtitle: "General-Purpose AI Models · Gemini / Claude / GPT",
       subtitle_en: "General-Purpose AI Models · Gemini / Claude / GPT",
       overall: [
-        { rank: 1, name: "Claude Opus 4.8", vendor: "Anthropic", vendor_en: "Anthropic", why: "AA 智能指數 #1(61);agentic／編程 + 誠實度最佳", why_en: "#1 on AA Intelligence Index (61); best agentic/coding + honesty", meta: "5/28 發佈 · API $5/$25", meta_en: "Released 5/28 · API $5/$25" },
-        { rank: 2, name: "GPT-5.5 (xhigh)", vendor: "OpenAI", vendor_en: "OpenAI", why: "AA 60;最強全能、生態最大", why_en: "AA 60; strongest all-rounder, largest ecosystem", meta: "4/23 · ChatGPT/API", meta_en: "4/23 · ChatGPT/API" },
-        { rank: 3, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", why: "AA 57;推理領先(GPQA 94%),API 最便宜", why_en: "AA 57; reasoning leader (GPQA 94%), cheapest frontier API", meta: "~Q1 · AI Studio/Vertex", meta_en: "~Q1 · AI Studio/Vertex" },
-        { rank: 4, name: "Qwen3.7-Max", vendor: "Alibaba", vendor_en: "Alibaba", why: "AA 57;開放生態最強,1M context", why_en: "AA 57; best open-ecosystem model, 1M context", meta: "5/20 · Alibaba Cloud", meta_en: "5/20 · Alibaba Cloud" },
-        { rank: 5, name: "Gemini 3.5 Flash", vendor: "Google", vendor_en: "Google", why: "AA 55;性價比最佳", why_en: "AA 55; best value", meta: "5/19 · Gemini app", meta_en: "5/19 · Gemini app" }
+        { rank: 1, name: "Claude Opus 4.8", vendor: "Anthropic", vendor_en: "Anthropic", score: "AA 61", why: "AA 智能指數 #1(61.4);agentic／編程 + 誠實度最佳", why_en: "#1 on AA Intelligence Index (61.4); best agentic/coding + honesty", meta: "5/28 發佈 · API $5/$25", meta_en: "Released 5/28 · API $5/$25" },
+        { rank: 2, name: "GPT-5.5 (xhigh)", vendor: "OpenAI", vendor_en: "OpenAI", score: "AA 60", why: "AA 60;最強全能、生態最大", why_en: "AA 60; strongest all-rounder, largest ecosystem", meta: "4/23 · ChatGPT/API", meta_en: "4/23 · ChatGPT/API" },
+        { rank: 3, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", score: "AA 57", why: "AA 57;推理領先(GPQA 94%),API 最便宜", why_en: "AA 57; reasoning leader (GPQA 94%), cheapest frontier API", meta: "~Q1 · AI Studio/Vertex", meta_en: "~Q1 · AI Studio/Vertex" },
+        { rank: 4, name: "Qwen3.7-Max", vendor: "Alibaba", vendor_en: "Alibaba", score: "AA 57", why: "AA 57;開放生態最強,1M context", why_en: "AA 57; best open-ecosystem model, 1M context", meta: "5/20 · Alibaba Cloud", meta_en: "5/20 · Alibaba Cloud" },
+        { rank: 5, name: "Gemini 3.5 Flash", vendor: "Google", vendor_en: "Google", score: "AA 55", why: "AA 55;性價比最佳", why_en: "AA 55; best value", meta: "5/19 · Gemini app", meta_en: "5/19 · Gemini app" }
       ],
       monthly: {
         note: null, note_en: null,
@@ -68,11 +70,11 @@ window.DIGEST = {
       subtitle: "AI 編程 · 你的 Three.js + Claude Code + GitHub + Vercel pipeline",
       subtitle_en: "AI coding · your Three.js + Claude Code + GitHub + Vercel pipeline",
       overall: [
-        { rank: 1, name: "Claude Opus 4.8", vendor: "Anthropic", vendor_en: "Anthropic", why: "長程 agentic 編程最強;WebDev Arena 系第一,Claude Code 原生", why_en: "Best long-horizon agentic coding; #1 on WebDev Arena lineage, native to Claude Code", meta: "5/28 · 你前端遊戲首選", meta_en: "5/28 · top pick for your frontend games" },
-        { rank: 2, name: "GPT-5.5", vendor: "OpenAI", vendor_en: "OpenAI", why: "公開 SWE-bench Verified 最高(88.7%)", why_en: "Highest public SWE-bench Verified (88.7%)", meta: "4/23 · Codex/Copilot", meta_en: "4/23 · Codex/Copilot" },
-        { rank: 3, name: "Claude Opus 4.7", vendor: "Anthropic", vendor_en: "Anthropic", why: "前代旗艦,LMArena WebDev 仍第一(1567)", why_en: "Prior flagship; still #1 on LMArena WebDev (1567)", meta: "~4 月 · Claude API", meta_en: "~Apr · Claude API" },
-        { rank: 4, name: "GPT-5.3-Codex", vendor: "OpenAI", vendor_en: "OpenAI", why: "Codex 調校 agent 模型,SWE-bench 85.0%", why_en: "Codex-tuned agent model, SWE-bench 85.0%", meta: "Q1 · Codex CLI", meta_en: "Q1 · Codex CLI" },
-        { rank: 5, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", why: "性價比之王,1M context", why_en: "Best price/perf, 1M context", meta: "~Q1 · Gemini CLI", meta_en: "~Q1 · Gemini CLI" }
+        { rank: 1, name: "Claude Opus 4.8", vendor: "Anthropic", vendor_en: "Anthropic", score: "WebDev #1", why: "長程 agentic 編程最強;WebDev Arena 系第一,Claude Code 原生", why_en: "Best long-horizon agentic coding; #1 on WebDev Arena lineage, native to Claude Code", meta: "5/28 · 你前端遊戲首選", meta_en: "5/28 · top pick for your frontend games" },
+        { rank: 2, name: "GPT-5.5", vendor: "OpenAI", vendor_en: "OpenAI", score: "SWE 88.7%", why: "公開 SWE-bench Verified 最高(88.7%)", why_en: "Highest public SWE-bench Verified (88.7%)", meta: "4/23 · Codex/Copilot", meta_en: "4/23 · Codex/Copilot" },
+        { rank: 3, name: "Claude Opus 4.7", vendor: "Anthropic", vendor_en: "Anthropic", score: "WebDev 1567", why: "前代旗艦,LMArena WebDev 仍第一(1567)", why_en: "Prior flagship; still #1 on LMArena WebDev (1567)", meta: "~4 月 · Claude API", meta_en: "~Apr · Claude API" },
+        { rank: 4, name: "GPT-5.3-Codex", vendor: "OpenAI", vendor_en: "OpenAI", score: "SWE 85.0%", why: "Codex 調校 agent 模型,SWE-bench 85.0%", why_en: "Codex-tuned agent model, SWE-bench 85.0%", meta: "Q1 · Codex CLI", meta_en: "Q1 · Codex CLI" },
+        { rank: 5, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", score: "SWE 80.6%", why: "性價比之王,1M context", why_en: "Best price/perf, 1M context", meta: "~Q1 · Gemini CLI", meta_en: "~Q1 · Gemini CLI" }
       ],
       monthly: {
         note: "模型 + IDE 工具混合排名(IDE 標 [工具])", note_en: "Mixed models + IDE tools (IDEs marked [tool])",
@@ -93,11 +95,11 @@ window.DIGEST = {
       subtitle: "對應你的「深海奪寶」RTP / 機率沙盤",
       subtitle_en: "For your 'Abyss Treasury' RTP / probability sandbox",
       overall: [
-        { rank: 1, name: "Claude Opus 4.8 (max)", vendor: "Anthropic", vendor_en: "Anthropic", why: "AA #1;最會「寫 + 跑」模擬邏輯", why_en: "AA #1; best at writing + running simulation logic", meta: "5/28 · 寫/跑模擬程式", meta_en: "5/28 · build/run simulations" },
-        { rank: 2, name: "GPT-5.5 (xhigh)", vendor: "OpenAI", vendor_en: "OpenAI", why: "純機率數學最強,GPQA 93.5%", why_en: "Best at pure probability math, GPQA 93.5%", meta: "4/23 · 機率推導", meta_en: "4/23 · probability reasoning" },
-        { rank: 3, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", why: "GPQA Diamond 最高(94.1%),大 context 分析大量結果", why_en: "Highest GPQA Diamond (94.1%); big context for analyzing large result sets", meta: "~Q1 · 大數據分析", meta_en: "~Q1 · big-data analysis" },
-        { rank: 4, name: "Claude Opus 4.7 (max)", vendor: "Anthropic", vendor_en: "Anthropic", why: "幻覺率最低 → 數據推理較安全", why_en: "Lowest hallucination → safer data inference", meta: "~3 月 · Claude API", meta_en: "~Mar · Claude API" },
-        { rank: 5, name: "Qwen3.7-Max", vendor: "Alibaba", vendor_en: "Alibaba", why: "數學頂尖(HMMT 97.1)", why_en: "Top-tier math (HMMT 97.1)", meta: "5/20 · Alibaba Cloud", meta_en: "5/20 · Alibaba Cloud" }
+        { rank: 1, name: "Claude Opus 4.8 (max)", vendor: "Anthropic", vendor_en: "Anthropic", score: "AA 61", why: "AA #1;最會「寫 + 跑」模擬邏輯", why_en: "AA #1; best at writing + running simulation logic", meta: "5/28 · 寫/跑模擬程式", meta_en: "5/28 · build/run simulations" },
+        { rank: 2, name: "GPT-5.5 (xhigh)", vendor: "OpenAI", vendor_en: "OpenAI", score: "GPQA 93.5%", why: "純機率數學最強,GPQA 93.5%", why_en: "Best at pure probability math, GPQA 93.5%", meta: "4/23 · 機率推導", meta_en: "4/23 · probability reasoning" },
+        { rank: 3, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", score: "GPQA 94.1%", why: "GPQA Diamond 最高(94.1%),大 context 分析大量結果", why_en: "Highest GPQA Diamond (94.1%); big context for analyzing large result sets", meta: "~Q1 · 大數據分析", meta_en: "~Q1 · big-data analysis" },
+        { rank: 4, name: "Claude Opus 4.7 (max)", vendor: "Anthropic", vendor_en: "Anthropic", score: "AA 57", why: "幻覺率最低 → 數據推理較安全", why_en: "Lowest hallucination → safer data inference", meta: "~4 月 · Claude API", meta_en: "~Apr · Claude API" },
+        { rank: 5, name: "Qwen3.7-Max", vendor: "Alibaba", vendor_en: "Alibaba", score: "HMMT 97", why: "數學頂尖(HMMT 97.1)", why_en: "Top-tier math (HMMT 97.1)", meta: "5/20 · Alibaba Cloud", meta_en: "5/20 · Alibaba Cloud" }
       ],
       monthly: {
         note: null, note_en: null,
@@ -117,11 +119,11 @@ window.DIGEST = {
       name: "創建遊戲影片", name_en: "Game / Stylized Video",
       subtitle: "風格化 / 動畫向 Video", subtitle_en: "Stylized / animated video",
       overall: [
-        { rank: 1, name: "Kling 3.0 / 3.0 Omni", vendor: "快手 Kuaishou", vendor_en: "Kuaishou", why: "電影級運鏡,東亞/動漫風訓練深,多角色對嘴", why_en: "Cinematic motion; deep East-Asian/anime training; multi-character lip-sync", meta: "2/4 · 付費 ~$0.10/s", meta_en: "2/4 · paid ~$0.10/s" },
-        { rank: 2, name: "Dreamina Seedance 2.0", vendor: "ByteDance", vendor_en: "ByteDance", why: "多鏡頭風格化敘事,動漫 I2V 強,原生音訊", why_en: "Multi-shot stylized storytelling, strong anime I2V, native audio", meta: "2/12 · CapCut/fal", meta_en: "2/12 · CapCut/fal" },
-        { rank: 3, name: "PixVerse V6", vendor: "PixVerse", vendor_en: "PixVerse", why: "專為動漫/遊戲風格打造,20+ 運鏡控制", why_en: "Built for anime/game styles, 20+ camera controls", meta: "3/30 · 免費增值+API", meta_en: "3/30 · freemium + API" },
-        { rank: 4, name: "HappyHorse-1.0", vendor: "Alibaba 阿里", vendor_en: "Alibaba", why: "盲測 Arena 第一,50+ 風格,音訊同步", why_en: "#1 in blind-test Arena, 50+ styles, audio sync", meta: "4/27 · fal API", meta_en: "4/27 · fal API" },
-        { rank: 5, name: "Pika 2.x", vendor: "Pika", vendor_en: "Pika", why: "Pikaffects/Pikaswaps,快速社群/動漫短片", why_en: "Pikaffects/Pikaswaps; quick social/anime clips", meta: "2025–26 · 免費增值", meta_en: "2025–26 · freemium" }
+        { rank: 1, name: "Kling 3.0 / 3.0 Omni", vendor: "快手 Kuaishou", vendor_en: "Kuaishou", score: "運鏡標竿", score_en: "motion benchmark", why: "電影級運鏡,東亞/動漫風訓練深,多角色對嘴", why_en: "Cinematic motion; deep East-Asian/anime training; multi-character lip-sync", meta: "2/4 · 付費 ~$0.10/s", meta_en: "2/4 · paid ~$0.10/s" },
+        { rank: 2, name: "Dreamina Seedance 2.0", vendor: "ByteDance", vendor_en: "ByteDance", score: "多鏡頭敘事", score_en: "multi-shot story", why: "多鏡頭風格化敘事,動漫 I2V 強,原生音訊", why_en: "Multi-shot stylized storytelling, strong anime I2V, native audio", meta: "2/12 · CapCut/fal", meta_en: "2/12 · CapCut/fal" },
+        { rank: 3, name: "PixVerse V6", vendor: "PixVerse", vendor_en: "PixVerse", score: "動漫專精", score_en: "anime-tuned", why: "專為動漫/遊戲風格打造,20+ 運鏡控制", why_en: "Built for anime/game styles, 20+ camera controls", meta: "3/30 · 免費增值+API", meta_en: "3/30 · freemium + API" },
+        { rank: 4, name: "HappyHorse-1.0", vendor: "Alibaba", vendor_en: "Alibaba", score: "50+ 風格", score_en: "50+ styles", why: "盲測 Arena 第一,50+ 風格,音訊同步", why_en: "#1 in blind-test Arena, 50+ styles, audio sync", meta: "4/27 · fal API", meta_en: "4/27 · fal API" },
+        { rank: 5, name: "Pika 2.x", vendor: "Pika", vendor_en: "Pika", score: "社群快剪", score_en: "fast social", why: "Pikaffects/Pikaswaps,快速社群/動漫短片", why_en: "Pikaffects/Pikaswaps; quick social/anime clips", meta: "2025–26 · 免費增值", meta_en: "2025–26 · freemium" }
       ],
       monthly: {
         note: "⚠️ 本月(5 月)無專門影片新旗艦;以下為近 30–90 天最新(依新近度排)",
@@ -142,11 +144,11 @@ window.DIGEST = {
       name: "創建真人影片", name_en: "Live-Action Video",
       subtitle: "寫實 / 真人向 Video", subtitle_en: "Realistic / live-action video",
       overall: [
-        { rank: 1, name: "Dreamina Seedance 2.0 (720p)", vendor: "ByteDance", vendor_en: "ByteDance", why: "Arena 榜首級(T2V & I2V),寫實 + 同步音訊", why_en: "Top of Arena (T2V & I2V); realism + synced audio", meta: "2/12 · CapCut/fal", meta_en: "2/12 · CapCut/fal" },
-        { rank: 2, name: "HappyHorse-1.0", vendor: "Alibaba", vendor_en: "Alibaba", why: "無音訊 Arena #1,1080p 寫實,低 WER 對嘴", why_en: "#1 no-audio Arena; 1080p realism, low-WER lip-sync", meta: "4/27 · fal API", meta_en: "4/27 · fal API" },
-        { rank: 3, name: "Kling 3.0 Pro (1080p)", vendor: "快手 Kuaishou", vendor_en: "Kuaishou", why: "原生 4K,對白/寫實強", why_en: "Native 4K; strong dialogue/realism", meta: "2 月 · 付費", meta_en: "Feb · paid" },
-        { rank: 4, name: "Google Veo 3.1 (+Fast)", vendor: "Google", vendor_en: "Google", why: "提示遵從最佳,原生音訊,4K,最穩", why_en: "Best prompt adherence, native audio, 4K; most reliable", meta: "2025 末 · Flow/Gemini", meta_en: "late 2025 · Flow/Gemini" },
-        { rank: 5, name: "MiniMax Hailuo 2.3", vendor: "MiniMax", vendor_en: "MiniMax", why: "物理寫實/微表情強,便宜", why_en: "Strong physical realism/micro-expressions, cheap", meta: "2025/10 · App+API", meta_en: "2025/10 · App+API" }
+        { rank: 1, name: "Dreamina Seedance 2.0 (720p)", vendor: "ByteDance", vendor_en: "ByteDance", score: "Arena 榜首", score_en: "Arena top", why: "Arena 榜首級(T2V & I2V),寫實 + 同步音訊", why_en: "Top of Arena (T2V & I2V); realism + synced audio", meta: "2/12 · CapCut/fal", meta_en: "2/12 · CapCut/fal" },
+        { rank: 2, name: "HappyHorse-1.0", vendor: "Alibaba", vendor_en: "Alibaba", score: "盲測 #1", score_en: "blind-test #1", why: "無音訊 Arena #1,1080p 寫實,低 WER 對嘴", why_en: "#1 no-audio Arena; 1080p realism, low-WER lip-sync", meta: "4/27 · fal API", meta_en: "4/27 · fal API" },
+        { rank: 3, name: "Kling 3.0 Pro (1080p)", vendor: "快手 Kuaishou", vendor_en: "Kuaishou", score: "原生 4K", score_en: "native 4K", why: "原生 4K,對白/寫實強", why_en: "Native 4K; strong dialogue/realism", meta: "2 月 · 付費", meta_en: "Feb · paid" },
+        { rank: 4, name: "Google Veo 3.1 (+Fast)", vendor: "Google", vendor_en: "Google", score: "提示遵從佳", score_en: "best adherence", why: "提示遵從最佳,原生音訊,4K,最穩", why_en: "Best prompt adherence, native audio, 4K; most reliable", meta: "~1 月 · Flow/Gemini", meta_en: "~Jan · Flow/Gemini" },
+        { rank: 5, name: "MiniMax Hailuo 2.3", vendor: "MiniMax", vendor_en: "MiniMax", score: "物理寫實", score_en: "physical realism", why: "物理寫實/微表情強,便宜", why_en: "Strong physical realism/micro-expressions, cheap", meta: "2025/10 · App+API", meta_en: "2025/10 · App+API" }
       ],
       monthly: {
         note: "⚠️ 本月無真人影片新旗艦;Sora 已停用(消費端 4/26、API 9/24);Veo 4 仍未發佈(現役 3.1)",
@@ -156,7 +158,7 @@ window.DIGEST = {
           { rank: 2, name: "HappyHorse-1.0", version: "1.0", vendor: "Alibaba", vendor_en: "Alibaba", date: "4/27", isNew: false, overlap: "整體 #2", overlap_en: "Overall #2", why: "最近期專用模型,photoreal 1080p(補近期)", why_en: "Most recent dedicated model; photoreal 1080p (recent fill-in)" },
           { rank: 3, name: "Dreamina Seedance 2.0", version: "2.0", vendor: "ByteDance", vendor_en: "ByteDance", date: "2/12", isNew: false, overlap: "整體 #1", overlap_en: "Overall #1", why: "寫實 + 同步音訊(補近期)", why_en: "Realism + synced audio (recent fill-in)" },
           { rank: 4, name: "Kling 3.0 Pro", version: "3.0", vendor: "快手 Kuaishou", vendor_en: "Kuaishou", date: "2 月", date_en: "Feb", isNew: false, overlap: "整體 #3", overlap_en: "Overall #3", why: "原生 4K 寫實(補近期)", why_en: "Native 4K realism (recent fill-in)" },
-          { rank: 5, name: "Google Veo 3.1", version: "3.1", vendor: "Google", vendor_en: "Google", date: "2025 末", date_en: "late 2025", isNew: false, overlap: "整體 #4", overlap_en: "Overall #4", why: "最穩全能(現役旗艦,Veo 4 未發)", why_en: "Most reliable all-rounder (current flagship; Veo 4 unreleased)" }
+          { rank: 5, name: "Google Veo 3.1", version: "3.1", vendor: "Google", vendor_en: "Google", date: "~1 月", date_en: "~Jan", isNew: false, overlap: "整體 #4", overlap_en: "Overall #4", why: "最穩全能(現役旗艦,Veo 4 未發)", why_en: "Most reliable all-rounder (current flagship; Veo 4 unreleased)" }
         ]
       }
     },
@@ -167,11 +169,11 @@ window.DIGEST = {
       name: "創建遊戲模組", name_en: "3D Asset Generation",
       subtitle: "3D 模型生成 · 例如 Meshy", subtitle_en: "3D model generation · e.g. Meshy",
       overall: [
-        { rank: 1, name: "Meshy-6", vendor: "Meshy", vendor_en: "Meshy", why: "最均衡全流程(text/img→3D、PBR、低面數、匯出);盲測勝 Tripo", why_en: "Most balanced full pipeline (text/img→3D, PBR, low-poly, export); beat Tripo in blind tests", meta: "1/18 · 免費增值 ~$20/mo", meta_en: "1/18 · freemium ~$20/mo" },
-        { rank: 2, name: "Tripo P1.0 (+H3.1)", vendor: "Tripo AI", vendor_en: "Tripo AI", why: "原生 3D 擴散,~2 秒出引擎可用網格", why_en: "Native 3D diffusion; engine-ready meshes in ~2s", meta: "3/9 GDC · ~$12/mo", meta_en: "3/9 GDC · ~$12/mo" },
-        { rank: 3, name: "Rodin Gen-2", vendor: "Hyper3D", vendor_en: "Hyper3D", why: "表面寫實度最高,四邊面 + 3D 修補", why_en: "Highest surface realism; quad mesh + 3D inpainting", meta: "2/9 · ~$30/mo", meta_en: "2/9 · ~$30/mo" },
-        { rank: 4, name: "Hunyuan3D 3.0", vendor: "騰訊 Tencent", vendor_en: "Tencent", why: "免費/可自架,開源線,1536³ 解析度", why_en: "Free/self-hostable, open-source line, 1536³ resolution", meta: "2025/9 · 免費自架", meta_en: "2025/9 · free self-host" },
-        { rank: 5, name: "TRELLIS 2", vendor: "Microsoft(開源)", vendor_en: "Microsoft (open-source)", why: "開源材質品質最佳(Gaussian-splat)", why_en: "Best open-source texture quality (Gaussian-splat)", meta: "2025–26 · 開源免費", meta_en: "2025–26 · open-source, free" }
+        { rank: 1, name: "Meshy-6", vendor: "Meshy", vendor_en: "Meshy", score: "盲測勝出", score_en: "won blind test", why: "最均衡全流程(text/img→3D、PBR、低面數、匯出);盲測勝 Tripo", why_en: "Most balanced full pipeline (text/img→3D, PBR, low-poly, export); beat Tripo in blind tests", meta: "1/18 · 免費增值 ~$20/mo", meta_en: "1/18 · freemium ~$20/mo" },
+        { rank: 2, name: "Tripo P1.0 (+H3.1)", vendor: "Tripo AI", vendor_en: "Tripo AI", score: "~2 秒出模", score_en: "~2s mesh", why: "原生 3D 擴散,~2 秒出引擎可用網格", why_en: "Native 3D diffusion; engine-ready meshes in ~2s", meta: "3/9 GDC · ~$12/mo", meta_en: "3/9 GDC · ~$12/mo" },
+        { rank: 3, name: "Rodin Gen-2", vendor: "Hyper3D", vendor_en: "Hyper3D", score: "寫實最高", score_en: "top realism", why: "表面寫實度最高,四邊面 + 3D 修補", why_en: "Highest surface realism; quad mesh + 3D inpainting", meta: "2/9 · ~$30/mo", meta_en: "2/9 · ~$30/mo" },
+        { rank: 4, name: "Hunyuan3D 3.0", vendor: "騰訊 Tencent", vendor_en: "Tencent", score: "開源自架", score_en: "open-source", why: "免費/可自架,開源線,1536³ 解析度", why_en: "Free/self-hostable, open-source line, 1536³ resolution", meta: "2025/9 · 免費自架", meta_en: "2025/9 · free self-host" },
+        { rank: 5, name: "TRELLIS 2", vendor: "Microsoft(開源)", vendor_en: "Microsoft (open-source)", score: "開源材質佳", score_en: "open texture", why: "開源材質品質最佳(Gaussian-splat)", why_en: "Best open-source texture quality (Gaussian-splat)", meta: "2025–26 · 開源免費", meta_en: "2025–26 · open-source, free" }
       ],
       monthly: {
         note: "⚠️ 本月無新 3D 模型;最新動作在 4 月底(依新近度排)",
@@ -192,11 +194,11 @@ window.DIGEST = {
       name: "遊戲模組 Rigging", name_en: "Game Asset Rigging",
       subtitle: "綁骨 / 可動 · 例如 Anything World", subtitle_en: "Rigging / animation-ready · e.g. Anything World",
       overall: [
-        { rank: 1, name: "Meshy-6 Auto-Rig + Animate", vendor: "Meshy", vendor_en: "Meshy", why: "一站式,<30 秒自動綁人形/四足,500+ 預設動作", why_en: "One-stop; auto-rigs humanoids/quadrupeds in <30s, 500+ preset animations", meta: "2025–26 · ~$20/mo", meta_en: "2025–26 · ~$20/mo" },
-        { rank: 2, name: "Autodesk Flow Studio AI Rigging", vendor: "Autodesk", vendor_en: "Autodesk", why: "AI 自動關節 + AI 動捕,匯出 Maya/Blender/UE", why_en: "AI auto-joints + AI mocap; export to Maya/Blender/UE", meta: "4/28 · 全層免費預覽", meta_en: "4/28 · free preview, all tiers" },
-        { rank: 3, name: "Tripo Auto-Rigging (Uni-Rig)", vendor: "Tripo AI", vendor_en: "Tripo AI", why: "自動骨架 + 權重 + 自動動畫,風格化佳", why_en: "Auto-skeleton + weights + auto-animation; great for stylized", meta: "2025–26 · ~$12/mo", meta_en: "2025–26 · ~$12/mo" },
-        { rank: 4, name: "Cascadeur 2026.1", vendor: "Nekki", vendor_en: "Nekki", why: "AI AutoPosing/Physics + AI Root Motion,UE Live Link", why_en: "AI AutoPosing/Physics + AI Root Motion; UE Live Link", meta: "4/9 · 免費層+訂閱", meta_en: "4/9 · free tier + subscription" },
-        { rank: 5, name: "Anything World — Animate Anything", vendor: "Anything World", vendor_en: "Anything World", why: "任意靜態網格 AI 綁定(尤其動物/生物)", why_en: "AI-rig any static mesh (esp. animals/creatures)", meta: "Live · 免費起步+API", meta_en: "Live · free start + API" }
+        { rank: 1, name: "Meshy-6 Auto-Rig + Animate", vendor: "Meshy", vendor_en: "Meshy", score: "<30s·500+動作", score_en: "<30s · 500+ anims", why: "一站式,<30 秒自動綁人形/四足,500+ 預設動作", why_en: "One-stop; auto-rigs humanoids/quadrupeds in <30s, 500+ preset animations", meta: "2025–26 · ~$20/mo", meta_en: "2025–26 · ~$20/mo" },
+        { rank: 2, name: "Autodesk Flow Studio AI Rigging", vendor: "Autodesk", vendor_en: "Autodesk", score: "免費綁骨", score_en: "free rigging", why: "AI 自動關節 + AI 動捕,匯出 Maya/Blender/UE", why_en: "AI auto-joints + AI mocap; export to Maya/Blender/UE", meta: "4/28 · 全層免費預覽", meta_en: "4/28 · free preview, all tiers" },
+        { rank: 3, name: "Tripo Auto-Rigging (Uni-Rig)", vendor: "Tripo AI", vendor_en: "Tripo AI", score: "骨架+動畫", score_en: "rig + anim", why: "自動骨架 + 權重 + 自動動畫,風格化佳", why_en: "Auto-skeleton + weights + auto-animation; great for stylized", meta: "2025–26 · ~$12/mo", meta_en: "2025–26 · ~$12/mo" },
+        { rank: 4, name: "Cascadeur 2026.1", vendor: "Nekki", vendor_en: "Nekki", score: "AI 物理動作", score_en: "AI physics", why: "AI AutoPosing/Physics + AI Root Motion,UE Live Link", why_en: "AI AutoPosing/Physics + AI Root Motion; UE Live Link", meta: "4/9 · 免費層+訂閱", meta_en: "4/9 · free tier + subscription" },
+        { rank: 5, name: "Anything World — Animate Anything", vendor: "Anything World", vendor_en: "Anything World", score: "任意網格", score_en: "any mesh", why: "任意靜態網格 AI 綁定(尤其動物/生物)", why_en: "AI-rig any static mesh (esp. animals/creatures)", meta: "Live · 免費起步+API", meta_en: "Live · free start + API" }
       ],
       monthly: {
         note: "⚠️ 本月無新 rigging 發佈;最新在 4 月(依新近度排)",
@@ -217,17 +219,17 @@ window.DIGEST = {
       name: "創建聲音特效", name_en: "Sound Effects & Audio",
       subtitle: "SFX / 語音 / 音樂 · 例如 ElevenLabs", subtitle_en: "SFX / voice / music · e.g. ElevenLabs",
       overall: [
-        { rank: 1, name: "ElevenLabs SFX v2 + v3 voice", vendor: "ElevenLabs", vendor_en: "ElevenLabs", why: "遊戲音訊最全:文字轉 SFX(30s、可無縫循環)+ 頂級語音", why_en: "Most complete game-audio stack: text-to-SFX (30s, seamless loops) + top-tier voice", meta: "SFX 2025/9 · v3 2 月", meta_en: "SFX 2025/9 · v3 Feb" },
-        { rank: 2, name: "Stable Audio 3", vendor: "Stability AI", vendor_en: "Stability AI", why: "開源,音樂 + SFX/foley 統一,適合自架 pipeline", why_en: "Open-source; unified music + SFX/foley; great for self-hosted pipelines", meta: "5/20 · 開源權重", meta_en: "5/20 · open weights" },
-        { rank: 3, name: "ElevenLabs Music v2", vendor: "ElevenLabs", vendor_en: "ElevenLabs", why: "商用授權清晰,可在曲中嵌 SFX、中途換曲風", why_en: "Clear commercial licensing; embed SFX in tracks, mid-track genre switch", meta: "5/26 · 降價 40–50%", meta_en: "5/26 · 40–50% cheaper" },
-        { rank: 4, name: "Suno v5.5", vendor: "Suno", vendor_en: "Suno", why: "消費級音樂龍頭,語音擷取、自訂模型", why_en: "Consumer music leader; voice capture, custom models", meta: "3/27 · 訂閱制", meta_en: "3/27 · subscription" },
-        { rank: 5, name: "Lyria 3 Pro", vendor: "Google DeepMind", vendor_en: "Google DeepMind", why: "最長 3 分鐘結構化曲目,SynthID 浮水印", why_en: "Up to 3-min structured tracks; SynthID watermark", meta: "3/25 · Gemini/Vertex", meta_en: "3/25 · Gemini/Vertex" }
+        { rank: 1, name: "ElevenLabs SFX v2 + v3 voice", vendor: "ElevenLabs", vendor_en: "ElevenLabs", score: "SFX 龍頭", score_en: "SFX leader", why: "遊戲音訊最全:文字轉 SFX(30s、可無縫循環)+ 頂級語音", why_en: "Most complete game-audio stack: text-to-SFX (30s, seamless loops) + top-tier voice", meta: "SFX 2025/9 · v3 2 月", meta_en: "SFX 2025/9 · v3 Feb" },
+        { rank: 2, name: "Stable Audio 3", vendor: "Stability AI", vendor_en: "Stability AI", score: "開源·SFX", score_en: "open-source SFX", why: "開源,音樂 + SFX/foley 統一,適合自架 pipeline", why_en: "Open-source; unified music + SFX/foley; great for self-hosted pipelines", meta: "5/20 · 開源權重", meta_en: "5/20 · open weights" },
+        { rank: 3, name: "ElevenLabs Music v2", vendor: "ElevenLabs", vendor_en: "ElevenLabs", score: "商用授權", score_en: "licensed", why: "商用授權清晰,可在曲中嵌 SFX、中途換曲風", why_en: "Clear commercial licensing; embed SFX in tracks, mid-track genre switch", meta: "5/26 · 降價 40–50%", meta_en: "5/26 · 40–50% cheaper" },
+        { rank: 4, name: "Suno v5.5", vendor: "Suno", vendor_en: "Suno", score: "音樂龍頭", score_en: "music leader", why: "消費級音樂龍頭,語音擷取、自訂模型", why_en: "Consumer music leader; voice capture, custom models", meta: "3/27 · 訂閱制", meta_en: "3/27 · subscription" },
+        { rank: 5, name: "Lyria 3 Pro", vendor: "Google DeepMind", vendor_en: "Google DeepMind", score: "3 分鐘長曲", score_en: "3-min tracks", why: "最長 3 分鐘結構化曲目,SynthID 浮水印", why_en: "Up to 3-min structured tracks; SynthID watermark", meta: "3/25 · Gemini/Vertex", meta_en: "3/25 · Gemini/Vertex" }
       ],
       monthly: {
         note: null, note_en: null,
         items: [
           { rank: 1, name: "ElevenLabs Music v2", version: "v2", vendor: "ElevenLabs", vendor_en: "ElevenLabs", date: "5/26", isNew: true, overlap: "整體 #3", overlap_en: "Overall #3", why: "曲中換曲風、嵌入 SFX、分段重繪;舊價砍 40–50%", why_en: "Mid-track genre switch, embedded SFX, section inpainting; 40–50% price cut" },
-          { rank: 2, name: "Stable Audio 3", version: "3", vendor: "Stability AI", vendor_en: "Stability AI", date: "5/20", isNew: true, overlap: "整體 #2", overlap_en: "Overall #2", why: "本月對 SFX 最重要:開源 + 專用 SFX/foley 變體、可變長度、inpainting", why_en: "Most important SFX drop this month: open-source + dedicated SFX/foley variants, variable length, inpainting" },
+          { rank: 2, name: "Stable Audio 3", version: "3", vendor: "Stability AI", vendor_en: "Stability AI", date: "5/20", isNew: true, overlap: "整體 #2", overlap_en: "Overall #2", why: "本月對 SFX 最重要:開源 + 專用 SFX/foley 變體、最長 6:20、inpainting", why_en: "Most important SFX drop this month: open-source + dedicated SFX/foley variants, up to 6:20, inpainting" },
           { rank: 3, name: "Suno v5.5", version: "5.5", vendor: "Suno", vendor_en: "Suno", date: "3/27", isNew: false, overlap: "整體 #4", overlap_en: "Overall #4", why: "消費級音樂龍頭(補近期)", why_en: "Consumer music leader (recent fill-in)" },
           { rank: 4, name: "Lyria 3 Pro", version: "3 Pro", vendor: "Google", vendor_en: "Google", date: "3/25", isNew: false, overlap: "整體 #5", overlap_en: "Overall #5", why: "結構化長曲 + 浮水印(補近期)", why_en: "Structured long tracks + watermark (recent fill-in)" },
           { rank: 5, name: "ElevenLabs v3 voice", version: "v3", vendor: "ElevenLabs", vendor_en: "ElevenLabs", date: "2 月", date_en: "Feb", isNew: false, overlap: "整體 #1", overlap_en: "Overall #1", why: "頂級表情語音(補近期;SFX 本身本月無更新)", why_en: "Top-tier expressive voice (recent fill-in; SFX itself no update this month)" }
