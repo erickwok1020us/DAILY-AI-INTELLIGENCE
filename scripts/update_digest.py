@@ -12,7 +12,7 @@ import os, sys, json, re, datetime
 from google import genai
 from google.genai import types
 
-MODEL = os.environ.get("DIGEST_MODEL", "gemini-2.5-flash")  # 免費;改用 Gemini 免費額度取代付費 Anthropic
+MODEL = os.environ.get("DIGEST_MODEL") or "gemini-2.5-flash"  # 用 or:空字串(Actions 變數未設會傳空)也回退預設
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                 # repo 根目錄(scripts/ 的上一層)
 DATA_JS   = os.path.join(ROOT, "data.js")
