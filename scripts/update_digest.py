@@ -4,13 +4,15 @@
 使用 Anthropic Messages API + 內建 web_search 工具(伺服器端自動搜尋)。
 由 .github/workflows/daily-update.yml 每日排程觸發。
 
-本機手動跑:  ANTHROPIC_API_KEY=sk-... python3 scripts/update_digest.py
-切換模型:    DIGEST_MODEL=claude-sonnet-4-6 ...(省錢) 或 claude-opus-4-8(最佳)
+本機手動跑:  GEMINI_API_KEY=... python3 scripts/update_digest.py
+免費金鑰:    https://aistudio.google.com/apikey (Google AI Studio,免費額度足夠每天 9 次)
+切換模型:    DIGEST_MODEL=gemini-2.5-flash(預設,免費);若該名稱失效,改用 AI Studio 顯示的免費模型
 """
 import os, sys, json, re, datetime
-from anthropic import Anthropic
+from google import genai
+from google.genai import types
 
-MODEL = os.environ.get("DIGEST_MODEL", "claude-opus-4-8")
+MODEL = os.environ.get("DIGEST_MODEL", "gemini-2.5-flash")  # 免費;改用 Gemini 免費額度取代付費 Anthropic
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                 # repo 根目錄(scripts/ 的上一層)
 DATA_JS   = os.path.join(ROOT, "data.js")
@@ -108,17 +110,18 @@ def extract_json(text):
     return json.loads(raw)
 
 def research(client, cat):
-    msg = client.messages.create(
+    sys_inst = "你是嚴謹的 AI 產業研究員。先用 Google 搜尋查證最新資料,再只輸出符合指定結構的 JSON(用 ```json 包起來),文字欄位需中英雙語。"
+    resp = client.models.generate_content(
         model=MODEL,
-        max_tokens=4500,
-        system=[{"type":"text",
-                 "text":"你是嚴謹的 AI 產業研究員。先用 web_search 查證,再只輸出符合指定結構的 JSON,文字欄位需中英雙語。",
-                 "cache_control":{"type":"ephemeral"}}],
-        tools=[{"type":"web_search_20250305","name":"web_search","max_uses":10}],
-        messages=[{"role":"user","content":build_prompt(cat)}],
+        contents=build_prompt(cat),
+        config=types.GenerateContentConfig(
+            system_instruction=sys_inst,
+            tools=[types.Tool(google_search=types.GoogleSearch())],
+            temperature=0.3,
+            max_output_tokens=8000,
+        ),
     )
-    text = "".join(getattr(b,"text","") for b in msg.content if getattr(b,"type",None)=="text")
-    data = extract_json(text)
+    data = extract_json(resp.text)
     return {"id":cat["id"],"icon":cat["icon"],
             "name":cat["name"],"name_en":cat["name_en"],
             "subtitle":cat["subtitle"],"subtitle_en":cat["subtitle_en"],
@@ -132,9 +135,9 @@ def load_prev():
         return None
 
 def main():
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        sys.exit("ERROR: 缺少環境變數 ANTHROPIC_API_KEY")
-    client = Anthropic()
+    if not os.environ.get("GEMINI_API_KEY"):
+        sys.exit("ERROR: 缺少環境變數 GEMINI_API_KEY(免費,從 https://aistudio.google.com/apikey 取得)")
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     prev = load_prev()
     prev_cats = {c["id"]: c for c in prev["categories"]} if prev else {}
 

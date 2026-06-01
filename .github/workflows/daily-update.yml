@@ -1,0 +1,39 @@
+name: Daily AI Digest Update
+
+on:
+  schedule:
+    - cron: '0 16 * * *'     # 每日 16:00 UTC = 00:00(凌晨)台北/香港時間
+  workflow_dispatch: {}        # 也可在 GitHub Actions 頁面手動觸發
+
+permissions:
+  contents: write              # 允許把更新後的 data.js 推回 repo
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install -r requirements.txt
+
+      - name: 重新研究並重寫 data.js / data.json
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DIGEST_MODEL: ${{ vars.DIGEST_MODEL }}   # 選填;預設 gemini-2.5-flash(免費)
+        run: python scripts/update_digest.py
+
+      - name: 有變動才 commit & push(觸發 Vercel 重新部署)
+        run: |
+          git config user.name  "ai-digest-bot"
+          git config user.email "ai-digest-bot@users.noreply.github.com"
+          git add data.js data.json
+          if git diff --staged --quiet; then
+            echo "今日無變動,略過 commit。"
+          else
+            git commit -m "chore: 每日 AI 情報更新 ($(date -u +%Y-%m-%d))"
+            git push
+          fi
