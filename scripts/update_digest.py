@@ -26,15 +26,15 @@ CATEGORIES = [
   {"id":1,"icon":"🧠","name":"綜合 AI MODEL 排名","name_en":"Overall AI Model Ranking",
    "subtitle":"General-Purpose AI Models · Gemini / Claude / GPT","subtitle_en":"General-Purpose AI Models · Gemini / Claude / GPT",
    "scope":"通用旗艦大型語言模型(Gemini / Claude / GPT 之爭)的整體智能排名",
-   "sources":"Artificial Analysis Intelligence Index、LMArena (Chatbot Arena)、各官方部落格"},
+   "sources":"Artificial Analysis Intelligence Index、LMArena (Chatbot Arena)、各官方部落格","metric":"Artificial Analysis 智能指數"},
   {"id":2,"icon":"🎮","name":"創建遊戲的助手","name_en":"Game-Building Assistants",
    "subtitle":"AI 編程 · 你的 Three.js + Claude Code + GitHub + Vercel pipeline","subtitle_en":"AI coding · your Three.js + Claude Code + GitHub + Vercel pipeline",
    "scope":"AI 編程模型與 IDE/agent(用於 Three.js + GitHub + Vercel 開發網頁遊戲);整體榜列模型,本月榜可含 IDE 工具並標 [工具]/[tool]",
-   "sources":"LMArena WebDev/Code、SWE-bench Verified、Aider polyglot、Anthropic/OpenAI/Google/Cursor 官方"},
+   "sources":"LMArena WebDev/Code、SWE-bench Verified、Aider polyglot、Anthropic/OpenAI/Google/Cursor 官方","metric":"SWE-bench Verified"},
   {"id":3,"icon":"📊","name":"創建數據模擬器 & 數據推理","name_en":"Data Simulators & Reasoning",
    "subtitle":"對應你的「深海奪寶」RTP / 機率沙盤","subtitle_en":"For your 'Abyss Treasury' RTP / probability sandbox",
    "scope":"數據模擬、機率/統計建模、數據推理最強的模型(推理 benchmark 為重)",
-   "sources":"Artificial Analysis Intelligence Index、GPQA Diamond、AIME、MATH、LMArena"},
+   "sources":"Artificial Analysis Intelligence Index、GPQA Diamond、AIME、MATH、LMArena","metric":"GPQA Diamond"},
   {"id":4,"icon":"🎬","name":"創建遊戲影片","name_en":"Game / Stylized Video",
    "subtitle":"風格化 / 動畫向 Video","subtitle_en":"Stylized / animated video",
    "scope":"風格化 / 動畫 / 遊戲預告片向的 AI 影片生成",
@@ -58,7 +58,7 @@ CATEGORIES = [
   {"id":9,"icon":"🧩","name":"AI 工具組合 Combo","name_en":"AI Tool Combos",
    "subtitle":"好用的 AI 混搭 · 例如 Claude + Obsidian","subtitle_en":"Great AI tool stacks · e.g. Claude + Obsidian",
    "scope":"好用的 AI 工具「組合/混搭/stack」(多個工具搭配使用),例如 Claude + Obsidian、Claude Code + GitHub + Vercel、AI + n8n;無正式榜,依社群熱度 + 整合深度 + 實用性排",
-   "sources":"GitHub、官方部落格/changelog、Reddit/HN/YouTube 熱度、MCP 連接器公告、比較文章"},
+   "sources":"GitHub、官方部落格/changelog、Reddit/HN/YouTube 熱度、MCP 連接器公告、比較文章","topn":10},
 ]
 
 # 每個文字欄位都要中文 + `_en` 英文
@@ -75,15 +75,20 @@ SCHEMA_HINT = '''{
 }'''
 
 def build_prompt(cat):
+    n = cat.get("topn", 5)
+    metric = cat.get("metric", "")
+    neutral = (f"\n【排名中立·重要】本範疇請**依第三方獨立榜「{metric}」**排序,不可偏向任何廠商(包括 Anthropic/Claude);若不同 benchmark 各有領先者,就如實把該榜領先者排第一(例如編程第一可能是 GPT-5.5、推理第一可能是 Gemini)。"
+               if metric else
+               "\n【排名中立·重要】排名以第三方獨立榜/社群熱度為準,避免廠商偏向(包括 Anthropic/Claude);如實呈現各 benchmark 的領先者。")
     return f"""今天是 {NOW:%Y-%m-%d}。請研究範疇:「{cat['name']}」({cat['scope']})。
 
-務必用 web_search 查證「截至本月({NOW.year} 年 {NOW.month} 月)」的最新狀況,絕不可憑記憶。優先查:{cat['sources']}。
+務必用 web_search 查證「截至本月({NOW.year} 年 {NOW.month} 月)」的最新狀況,絕不可憑記憶。優先查:{cat['sources']}。{neutral}
 
-輸出兩個 Top 5:
-1) overall(整體 Top 5):目前最強/最值得用的 5 個,不論發佈時間,#1→#5。
-2) monthly(本月最新 Top 5):從「本月({NOW.year} 年 {NOW.month} 月)新發佈」中挑「最好用」的 5 個並排名。
+輸出兩個 Top {n}:
+1) overall(整體 Top {n}):目前最強/最值得用的 {n} 個,不論發佈時間,#1→#{n}。
+2) monthly(本月最新 Top {n}):從「本月({NOW.year} 年 {NOW.month} 月)新發佈」中挑「最好用」的 {n} 個並排名。
    - 若某項同時在 overall,請在 overlap/overlap_en 標「整體 #n」/「Overall #n」,並在 version 填它的新版本號(讓人知道它是因為新版本才登上本月榜)。
-   - 若本月新發佈不足 5 個,用最近期(近 30–60 天)補滿、date 標日期、isNew 設 false,並在 note/note_en 用一句話說明;否則 note 與 note_en 皆為 null。
+   - 若本月新發佈不足 {n} 個,用最近期(近 30–60 天)補滿、date 標日期、isNew 設 false,並在 note/note_en 用一句話說明;否則 note 與 note_en 皆為 null。
 
 【排名依據】每個 overall 項目必須有 score:排名的主要依據短標籤。LLM 範疇(1/2/3)用公開 benchmark 分數(如「AA 61」「SWE 88.7%」「GPQA 94%」),影音/3D/Rigging/音訊範疇用能力短語(如「運鏡標竿」「盲測 #1」「開源自架」)。盡量讓 #1→#5 的依據可看出高低。
 

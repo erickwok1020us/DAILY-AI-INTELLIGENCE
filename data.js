@@ -1,52 +1,53 @@
 /* =====================================================================
    AI 每日情報儀表板 — 資料檔(中英雙語 / bilingual)
-   此檔由每日排程自動重寫;手動編輯也可。
-   每個文字欄位都有中文 + `_en` 英文;網頁依語言切換顯示。
-   overall 項目含 `score`(排名依據短標籤):LLM 類為公開 benchmark 分數,
-   影音/3D/音訊類為 Arena 對戰排名+能力評估(部分為綜合判斷)。
+   排名中立原則:名次以第三方獨立榜為準(綜合=AA 智能指數、編程=SWE-bench、
+   推理=GPQA),非本 AI 或任何廠商觀點。影音/3D/音訊/Combo 無單一公認榜,
+   以 Arena 對戰 + 能力/社群熱度綜合判斷(屬參考向,已標明)。
+   overall 項目含 score(排名依據短標籤)。
    ===================================================================== */
 window.DIGEST = {
   updatedAt: "2026-05-31T00:00:00+08:00",
   updatedDateLabel: "2026 年 5 月 31 日",
   month: "2026 年 5 月",
   month_en: "May 2026",
-  dataConfidence: "已交叉比對 Artificial Analysis、LMArena 及各官方公告(2026/5/31 查證)",
-  dataConfidence_en: "Cross-checked against Artificial Analysis, LMArena & official announcements (verified 2026/5/31)",
+  dataConfidence: "已交叉比對 Artificial Analysis、LMArena、SWE-bench、GPQA 及各官方公告(2026/5/31 查證)",
+  dataConfidence_en: "Cross-checked against Artificial Analysis, LMArena, SWE-bench, GPQA & official announcements (verified 2026/5/31)",
 
   changesToday: [
-    "Claude Opus 4.8(5/28 發佈)登頂「綜合 / 遊戲助手 / 數據推理」三範疇 #1",
+    "Claude Opus 4.8(5/28)登頂綜合 AA 智能指數 #1;編程由 GPT-5.5、推理由 Gemini 各據第一",
     "Gemini 3.5 Flash(5/19, Google I/O)與 Qwen3.7-Max(5/20)進本月榜",
     "音訊雙更新:Stable Audio 3(5/20)+ ElevenLabs Music v2(5/26)",
     "影片本月無新旗艦 — Sora 已停用(4/26)、Veo 4 仍未發佈(現役 3.1)"
   ],
   changesToday_en: [
-    "Claude Opus 4.8 (released 5/28) takes #1 in Overall / Game-dev / Data-reasoning",
+    "Claude Opus 4.8 (5/28) tops the overall AA Intelligence Index; GPT-5.5 leads coding, Gemini leads reasoning",
     "Gemini 3.5 Flash (5/19, Google I/O) & Qwen3.7-Max (5/20) enter this month's lists",
     "Two audio drops: Stable Audio 3 (5/20) + ElevenLabs Music v2 (5/26)",
     "No new video flagship this month — Sora discontinued (4/26), Veo 4 still unreleased (current 3.1)"
   ],
 
   notes: [
-    "右側標籤=排名主要依據:LLM 類為 AA 指數/SWE-bench 等公開分數;影音/3D 類為 Arena 對戰+能力(部分綜合判斷)。",
+    "中立聲明:名次以第三方獨立榜為準(綜合=AA 智能指數、編程=SWE-bench、推理=GPQA),非本 AI 或廠商觀點 → 所以編程第一是 GPT-5.5、推理第一是 Gemini。",
+    "右側標籤=排名主要依據:LLM 類為公開 benchmark 分數;影音/3D/Combo 類為 Arena+能力/社群熱度(部分綜合判斷)。",
     "排名每天會動:AA 為 72 小時滾動、LMArena Elo 每天浮動,第 2~5 名常在誤差內。",
     "Opus 4.8 為 5/28 剛發,目前多為廠商自測,獨立 benchmark 數週後才會定。"
   ],
   notes_en: [
-    "The tag on the right = the main basis for the rank: LLMs use public scores (AA Index / SWE-bench); video/3D use Arena results + capability (partly editorial).",
+    "Neutrality: ranks follow independent third-party leaderboards (General = AA Intelligence Index, Coding = SWE-bench, Reasoning = GPQA), not this AI's or any vendor's view → hence GPT-5.5 leads coding and Gemini leads reasoning.",
+    "Right-side tag = main basis for the rank: LLMs use public benchmark scores; video/3D/combos use Arena + capability/community popularity (partly editorial).",
     "Rankings shift daily: AA is a 72-hour rolling average and LMArena Elo moves; ranks 2–5 are often within noise.",
     "Opus 4.8 just launched 5/28 — mostly vendor self-reported numbers; independent benchmarks settle in a few weeks."
   ],
 
   categories: [
-    /* ============ 1. 綜合 AI MODEL 排名 ============ */
+    /* ============ 1. 綜合 AI MODEL 排名(依 AA 智能指數) ============ */
     {
       id: 1, icon: "🧠",
       name: "綜合 AI MODEL 排名", name_en: "Overall AI Model Ranking",
-      subtitle: "General-Purpose AI Models · Gemini / Claude / GPT",
-      subtitle_en: "General-Purpose AI Models · Gemini / Claude / GPT",
+      subtitle: "依 AA 智能指數 · Gemini / Claude / GPT", subtitle_en: "By AA Intelligence Index · Gemini / Claude / GPT",
       overall: [
-        { rank: 1, name: "Claude Opus 4.8", vendor: "Anthropic", vendor_en: "Anthropic", score: "AA 61", why: "AA 智能指數 #1(61.4);agentic／編程 + 誠實度最佳", why_en: "#1 on AA Intelligence Index (61.4); best agentic/coding + honesty", meta: "5/28 發佈 · API $5/$25", meta_en: "Released 5/28 · API $5/$25" },
-        { rank: 2, name: "GPT-5.5 (xhigh)", vendor: "OpenAI", vendor_en: "OpenAI", score: "AA 60", why: "AA 60;最強全能、生態最大", why_en: "AA 60; strongest all-rounder, largest ecosystem", meta: "4/23 · ChatGPT/API", meta_en: "4/23 · ChatGPT/API" },
+        { rank: 1, name: "Claude Opus 4.8", vendor: "Anthropic", vendor_en: "Anthropic", score: "AA 61", why: "AA 智能指數 #1(61.4);獨立第三方確認", why_en: "#1 on AA Intelligence Index (61.4); independently confirmed", meta: "5/28 發佈 · API $5/$25", meta_en: "Released 5/28 · API $5/$25" },
+        { rank: 2, name: "GPT-5.5 (xhigh)", vendor: "OpenAI", vendor_en: "OpenAI", score: "AA 60", why: "AA 60.2;最強全能、生態最大", why_en: "AA 60.2; strongest all-rounder, largest ecosystem", meta: "4/23 · ChatGPT/API", meta_en: "4/23 · ChatGPT/API" },
         { rank: 3, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", score: "AA 57", why: "AA 57;推理領先(GPQA 94%),API 最便宜", why_en: "AA 57; reasoning leader (GPQA 94%), cheapest frontier API", meta: "~Q1 · AI Studio/Vertex", meta_en: "~Q1 · AI Studio/Vertex" },
         { rank: 4, name: "Qwen3.7-Max", vendor: "Alibaba", vendor_en: "Alibaba", score: "AA 57", why: "AA 57;開放生態最強,1M context", why_en: "AA 57; best open-ecosystem model, 1M context", meta: "5/20 · Alibaba Cloud", meta_en: "5/20 · Alibaba Cloud" },
         { rank: 5, name: "Gemini 3.5 Flash", vendor: "Google", vendor_en: "Google", score: "AA 55", why: "AA 55;性價比最佳", why_en: "AA 55; best value", meta: "5/19 · Gemini app", meta_en: "5/19 · Gemini app" }
@@ -54,7 +55,7 @@ window.DIGEST = {
       monthly: {
         note: null, note_en: null,
         items: [
-          { rank: 1, name: "Claude Opus 4.8", version: "4.8", vendor: "Anthropic", vendor_en: "Anthropic", date: "5/28", isNew: true, overlap: "整體 #1", overlap_en: "Overall #1", why: "因 4.8 新版登頂;agentic 可靠度 + 對齊大幅提升", why_en: "New v4.8 takes the crown; big gains in agentic reliability + alignment" },
+          { rank: 1, name: "Claude Opus 4.8", version: "4.8", vendor: "Anthropic", vendor_en: "Anthropic", date: "5/28", isNew: true, overlap: "整體 #1", overlap_en: "Overall #1", why: "因 4.8 新版登頂 AA;agentic 可靠度 + 對齊大幅提升", why_en: "New v4.8 tops AA; big gains in agentic reliability + alignment" },
           { rank: 2, name: "Qwen3.7-Max", version: "3.7-Max", vendor: "Alibaba", vendor_en: "Alibaba", date: "5/20", isNew: true, overlap: "整體 #4", overlap_en: "Overall #4", why: "1M context、延伸思考;示範 35 小時自主執行", why_en: "1M context, extended thinking; demoed 35-hr autonomous run" },
           { rank: 3, name: "Gemini 3.5 Flash", version: "3.5 Flash", vendor: "Google", vendor_en: "Google", date: "5/19", isNew: true, overlap: "整體 #5", overlap_en: "Overall #5", why: "I/O 發佈,快又便宜,多數 benchmark 勝 3.1 Pro", why_en: "Launched at I/O; fast & cheap, beats 3.1 Pro on most benchmarks" },
           { rank: 4, name: "Grok 4.3", version: "4.3", vendor: "xAI", vendor_en: "xAI", date: "5/6", isNew: true, overlap: null, overlap_en: null, why: "推理小改版(前五外,placement 未確認)", why_en: "Reasoning refresh (outside top 5; placement unconfirmed)" },
@@ -63,52 +64,53 @@ window.DIGEST = {
       }
     },
 
-    /* ============ 2. 創建遊戲的助手(AI 編程) ============ */
+    /* ============ 2. 創建遊戲的助手(依 SWE-bench Verified) ============ */
     {
       id: 2, icon: "🎮",
       name: "創建遊戲的助手", name_en: "Game-Building Assistants",
-      subtitle: "AI 編程 · 你的 Three.js + Claude Code + GitHub + Vercel pipeline",
-      subtitle_en: "AI coding · your Three.js + Claude Code + GitHub + Vercel pipeline",
+      subtitle: "AI 編程(依 SWE-bench) · 你的 Three.js + Claude Code + GitHub + Vercel pipeline",
+      subtitle_en: "AI coding (by SWE-bench) · your Three.js + Claude Code + GitHub + Vercel pipeline",
       overall: [
-        { rank: 1, name: "Claude Opus 4.8", vendor: "Anthropic", vendor_en: "Anthropic", score: "WebDev #1", why: "長程 agentic 編程最強;WebDev Arena 系第一,Claude Code 原生", why_en: "Best long-horizon agentic coding; #1 on WebDev Arena lineage, native to Claude Code", meta: "5/28 · 你前端遊戲首選", meta_en: "5/28 · top pick for your frontend games" },
-        { rank: 2, name: "GPT-5.5", vendor: "OpenAI", vendor_en: "OpenAI", score: "SWE 88.7%", why: "公開 SWE-bench Verified 最高(88.7%)", why_en: "Highest public SWE-bench Verified (88.7%)", meta: "4/23 · Codex/Copilot", meta_en: "4/23 · Codex/Copilot" },
-        { rank: 3, name: "Claude Opus 4.7", vendor: "Anthropic", vendor_en: "Anthropic", score: "WebDev 1567", why: "前代旗艦,LMArena WebDev 仍第一(1567)", why_en: "Prior flagship; still #1 on LMArena WebDev (1567)", meta: "~4 月 · Claude API", meta_en: "~Apr · Claude API" },
+        { rank: 1, name: "GPT-5.5", vendor: "OpenAI", vendor_en: "OpenAI", score: "SWE 88.7%", why: "公開 SWE-bench Verified 第一(88.7%);Codex/Copilot 內建", why_en: "#1 on public SWE-bench Verified (88.7%); built into Codex/Copilot", meta: "4/23 · ChatGPT/API", meta_en: "4/23 · ChatGPT/API" },
+        { rank: 2, name: "Claude Opus 4.8", vendor: "Anthropic", vendor_en: "Anthropic", score: "SWE 88.6%", why: "SWE 88.6%(幾乎並列第一);WebDev Arena 第一,最適合你的 Three.js 前端", why_en: "SWE 88.6% (near-tied for #1); #1 on WebDev Arena — best for your Three.js frontend", meta: "5/28 · Claude Code 原生", meta_en: "5/28 · native to Claude Code" },
+        { rank: 3, name: "Claude Opus 4.7", vendor: "Anthropic", vendor_en: "Anthropic", score: "SWE 87.6%", why: "前代旗艦,SWE 87.6%,WebDev 仍強", why_en: "Prior flagship, SWE 87.6%, still strong on WebDev", meta: "~4 月 · Claude API", meta_en: "~Apr · Claude API" },
         { rank: 4, name: "GPT-5.3-Codex", vendor: "OpenAI", vendor_en: "OpenAI", score: "SWE 85.0%", why: "Codex 調校 agent 模型,SWE-bench 85.0%", why_en: "Codex-tuned agent model, SWE-bench 85.0%", meta: "Q1 · Codex CLI", meta_en: "Q1 · Codex CLI" },
         { rank: 5, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", score: "SWE 80.6%", why: "性價比之王,1M context", why_en: "Best price/perf, 1M context", meta: "~Q1 · Gemini CLI", meta_en: "~Q1 · Gemini CLI" }
       ],
       monthly: {
-        note: "模型 + IDE 工具混合排名(IDE 標 [工具])", note_en: "Mixed models + IDE tools (IDEs marked [tool])",
+        note: "模型 + IDE 工具混合(IDE 標 [工具]);Claude Mythos(預覽,SWE 93.9%)未 GA,不列入",
+        note_en: "Models + IDE tools (IDEs marked [tool]); Claude Mythos (preview, SWE 93.9%) not GA, excluded",
         items: [
-          { rank: 1, name: "Claude Opus 4.8", version: "4.8", vendor: "Anthropic", vendor_en: "Anthropic", date: "5/28", isNew: true, overlap: "整體 #1", overlap_en: "Overall #1", why: "因 4.8 新版登頂;長 context 壓縮、tool 觸發更準", why_en: "New v4.8 takes #1; better long-context compaction & tool triggering" },
+          { rank: 1, name: "Claude Opus 4.8", version: "4.8", vendor: "Anthropic", vendor_en: "Anthropic", date: "5/28", isNew: true, overlap: "整體 #2", overlap_en: "Overall #2", why: "因 4.8 新版;長 context 壓縮、tool 觸發更準,WebDev 第一", why_en: "New v4.8; better long-context compaction & tool triggering, #1 on WebDev" },
           { rank: 2, name: "Claude Code v1.0.56 [工具]", name_en: "Claude Code v1.0.56 [tool]", version: "1.0.56", vendor: "Anthropic", vendor_en: "Anthropic", date: "5/29", isNew: true, overlap: null, overlap_en: null, why: "免費/學生用戶可選非 Auto 模型", why_en: "Free/Student users can pick non-Auto models" },
           { rank: 3, name: "Cursor v3.4 [工具]", name_en: "Cursor v3.4 [tool]", version: "3.4", vendor: "Anysphere", vendor_en: "Anysphere", date: "5 月", date_en: "May", isNew: true, overlap: null, overlap_en: null, why: "雲端 Dev 環境、Bugbot PR 審查、並行 subagent", why_en: "Cloud dev envs, Bugbot PR review, parallel subagents" },
           { rank: 4, name: "Gemini 3.5 Flash", version: "3.5 Flash", vendor: "Google", vendor_en: "Google", date: "5/19", isNew: true, overlap: null, overlap_en: null, why: "快速編程/agentic,Terminal-Bench 76.2%", why_en: "Fast coding/agentic, Terminal-Bench 76.2%" },
-          { rank: 5, name: "GPT-5.5", version: "5.5", vendor: "OpenAI", vendor_en: "OpenAI", date: "4/23", isNew: false, overlap: "整體 #2", overlap_en: "Overall #2", why: "近 5 週內最強,SWE-bench 公開榜首(補近期)", why_en: "Strongest in the last ~5 weeks, tops public SWE-bench (recent fill-in)" }
+          { rank: 5, name: "GPT-5.5", version: "5.5", vendor: "OpenAI", vendor_en: "OpenAI", date: "4/23", isNew: false, overlap: "整體 #1", overlap_en: "Overall #1", why: "SWE-bench 公開榜首(88.7%)(補近期)", why_en: "Tops public SWE-bench (88.7%) (recent fill-in)" }
         ]
       }
     },
 
-    /* ============ 3. 數據模擬器 & 數據推理 ============ */
+    /* ============ 3. 數據模擬器 & 數據推理(依 GPQA Diamond) ============ */
     {
       id: 3, icon: "📊",
       name: "創建數據模擬器 & 數據推理", name_en: "Data Simulators & Reasoning",
-      subtitle: "對應你的「深海奪寶」RTP / 機率沙盤",
-      subtitle_en: "For your 'Abyss Treasury' RTP / probability sandbox",
+      subtitle: "依 GPQA Diamond · 對應你的「深海奪寶」RTP 沙盤",
+      subtitle_en: "By GPQA Diamond · for your 'Abyss Treasury' RTP sandbox",
       overall: [
-        { rank: 1, name: "Claude Opus 4.8 (max)", vendor: "Anthropic", vendor_en: "Anthropic", score: "AA 61", why: "AA #1;最會「寫 + 跑」模擬邏輯", why_en: "AA #1; best at writing + running simulation logic", meta: "5/28 · 寫/跑模擬程式", meta_en: "5/28 · build/run simulations" },
-        { rank: 2, name: "GPT-5.5 (xhigh)", vendor: "OpenAI", vendor_en: "OpenAI", score: "GPQA 93.5%", why: "純機率數學最強,GPQA 93.5%", why_en: "Best at pure probability math, GPQA 93.5%", meta: "4/23 · 機率推導", meta_en: "4/23 · probability reasoning" },
-        { rank: 3, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", score: "GPQA 94.1%", why: "GPQA Diamond 最高(94.1%),大 context 分析大量結果", why_en: "Highest GPQA Diamond (94.1%); big context for analyzing large result sets", meta: "~Q1 · 大數據分析", meta_en: "~Q1 · big-data analysis" },
-        { rank: 4, name: "Claude Opus 4.7 (max)", vendor: "Anthropic", vendor_en: "Anthropic", score: "AA 57", why: "幻覺率最低 → 數據推理較安全", why_en: "Lowest hallucination → safer data inference", meta: "~4 月 · Claude API", meta_en: "~Apr · Claude API" },
+        { rank: 1, name: "Gemini 3.1 Pro", vendor: "Google", vendor_en: "Google", score: "GPQA 94.1%", why: "GPQA Diamond 第一(94.1%);大 context 適合分析大量模擬結果", why_en: "#1 on GPQA Diamond (94.1%); big context for analyzing large result sets", meta: "~Q1 · AI Studio/Vertex", meta_en: "~Q1 · AI Studio/Vertex" },
+        { rank: 2, name: "GPT-5.5 (xhigh)", vendor: "OpenAI", vendor_en: "OpenAI", score: "GPQA 93.5%", why: "GPQA 93.5%;純機率數學最強", why_en: "GPQA 93.5%; best at pure probability math", meta: "4/23 · 機率推導", meta_en: "4/23 · probability reasoning" },
+        { rank: 3, name: "Claude Opus 4.8 (max)", vendor: "Anthropic", vendor_en: "Anthropic", score: "AA 綜合#1", score_en: "AA overall #1", why: "綜合智能 AA #1;最會寫+跑模擬程式碼(GPQA 屬飽和帶,差距極小)", why_en: "#1 on AA overall; best at writing+running simulation code (GPQA saturated, tiny gaps)", meta: "5/28 · 寫/跑模擬", meta_en: "5/28 · build/run simulations" },
+        { rank: 4, name: "Claude Opus 4.7 (max)", vendor: "Anthropic", vendor_en: "Anthropic", score: "幻覺最低", score_en: "lowest halluc.", why: "幻覺率最低 → 數據推理較安全", why_en: "Lowest hallucination → safer data inference", meta: "~4 月 · Claude API", meta_en: "~Apr · Claude API" },
         { rank: 5, name: "Qwen3.7-Max", vendor: "Alibaba", vendor_en: "Alibaba", score: "HMMT 97", why: "數學頂尖(HMMT 97.1)", why_en: "Top-tier math (HMMT 97.1)", meta: "5/20 · Alibaba Cloud", meta_en: "5/20 · Alibaba Cloud" }
       ],
       monthly: {
-        note: null, note_en: null,
+        note: "GPQA 已飽和(前段約 7 個模型差 ~1.5%),名次僅供參考", note_en: "GPQA is saturated (top ~7 models within ~1.5%) — ranks are indicative only",
         items: [
-          { rank: 1, name: "Claude Opus 4.8", version: "4.8", vendor: "Anthropic", vendor_en: "Anthropic", date: "5/28", isNew: true, overlap: "整體 #1", overlap_en: "Overall #1", why: "因 4.8 新版;OSWorld 82.3%、Online-Mind2Web 84%", why_en: "New v4.8; OSWorld 82.3%, Online-Mind2Web 84%" },
+          { rank: 1, name: "Claude Opus 4.8", version: "4.8", vendor: "Anthropic", vendor_en: "Anthropic", date: "5/28", isNew: true, overlap: "整體 #3", overlap_en: "Overall #3", why: "綜合最強;OSWorld 82.3%、Online-Mind2Web 84%", why_en: "Top overall; OSWorld 82.3%, Online-Mind2Web 84%" },
           { rank: 2, name: "Qwen3.7-Max", version: "3.7-Max", vendor: "Alibaba", vendor_en: "Alibaba", date: "5/20", isNew: true, overlap: "整體 #5", overlap_en: "Overall #5", why: "數學最強之一(HMMT 97.1)", why_en: "Among the best at math (HMMT 97.1)" },
           { rank: 3, name: "Gemini 3.5 Flash", version: "3.5 Flash", vendor: "Google", vendor_en: "Google", date: "5/19", isNew: true, overlap: null, overlap_en: null, why: "高速推理;快速跑大量模擬分析", why_en: "Fast reasoning; quick large-scale simulation analysis" },
           { rank: 4, name: "Grok 4.3", version: "4.3", vendor: "xAI", vendor_en: "xAI", date: "5/6", isNew: true, overlap: null, overlap_en: null, why: "推理刷新版", why_en: "Reasoning refresh" },
-          { rank: 5, name: "GPT-5.5 (xhigh)", version: "5.5", vendor: "OpenAI", vendor_en: "OpenAI", date: "4/23", isNew: false, overlap: "整體 #2", overlap_en: "Overall #2", why: "純機率數學最強(補近期)", why_en: "Best at pure probability math (recent fill-in)" }
+          { rank: 5, name: "GPT-5.5 (xhigh)", version: "5.5", vendor: "OpenAI", vendor_en: "OpenAI", date: "4/23", isNew: false, overlap: "整體 #2", overlap_en: "Overall #2", why: "GPQA 93.5%、純機率數學最強(補近期)", why_en: "GPQA 93.5%, best pure probability math (recent fill-in)" }
         ]
       }
     },
@@ -237,27 +239,37 @@ window.DIGEST = {
       }
     },
 
-    /* ============ 9. AI 工具組合(Combo) ============ */
+    /* ============ 9. AI 工具組合(Combo)— 依社群熱度,Top 10 ============ */
     {
       id: 9, icon: "🧩",
       name: "AI 工具組合 Combo", name_en: "AI Tool Combos",
-      subtitle: "好用的 AI 混搭 · 例如 Claude + Obsidian", subtitle_en: "Great AI tool stacks · e.g. Claude + Obsidian",
+      subtitle: "依社群熱度 Top10 · 例如 Claude + Obsidian", subtitle_en: "By popularity, Top 10 · e.g. Claude + Obsidian",
       overall: [
-        { rank: 1, name: "Claude + Obsidian", vendor: "Anthropic + Obsidian", vendor_en: "Anthropic + Obsidian", score: "社群熱門·MCP", score_en: "community · MCP", why: "AI 第二大腦:Claude 讀寫/連結你的 Markdown 筆記庫;PKM、研究、長期記憶", why_en: "AI second brain: Claude reads/links your local Markdown vault — PKM, research, memory", meta: "MCP/社群外掛 · 2026 大熱", meta_en: "MCP/community plugins · hot in 2026" },
-        { rank: 2, name: "Claude Code + GitHub + Vercel", vendor: "Anthropic + GitHub + Vercel", vendor_en: "Anthropic + GitHub + Vercel", score: "官方·整合深", score_en: "official · deep", why: "build→push→自動部署 ~60–90 秒;標準 AI 網頁開發 pipeline(你正在用的)", why_en: "build→push→auto-deploy in ~60–90s; the standard AI web-dev pipeline (the one you use)", meta: "官方 Vercel 外掛/Skill", meta_en: "official Vercel plugin/skill" },
-        { rank: 3, name: "Cursor + Claude Code + Codex", vendor: "Anysphere + Anthropic + OpenAI", vendor_en: "Anysphere + Anthropic + OpenAI", score: "跨廠·社群熱", score_en: "cross-vendor · hot", why: "可組合式編程:跨三家並行調度 agent;OpenAI 官方外掛可在 Claude Code 內跑", why_en: "Composable coding: orchestrate parallel agents across all three; OpenAI plugin runs inside Claude Code", meta: "跨廠互通 · 2026", meta_en: "cross-vendor interop · 2026" },
-        { rank: 4, name: "Perplexity (Comet) + NotebookLM", vendor: "Perplexity + Google", vendor_en: "Perplexity + Google", score: "研究組合", score_en: "research duo", why: "研究神器:Perplexity 找來源 → NotebookLM 深入分析;側欄一鍵接力", why_en: "Research duo: Perplexity finds sources → NotebookLM analyzes them; one-click sidebar handoff", meta: "Comet iOS 3/18 免費", meta_en: "Comet free on iOS 3/18" },
-        { rank: 5, name: "AI + n8n / Make / Zapier", vendor: "n8n / Make / Zapier", vendor_en: "n8n / Make / Zapier", score: "自動化·開源", score_en: "automation · OSS", why: "把 LLM 當工作流引擎裡的推理節點;自動化、可擴充、可自架(n8n)", why_en: "LLM as a reasoning node inside workflow engines; automation, extensible, self-hostable (n8n)", meta: "原生 OpenAI/Claude/Gemini 節點", meta_en: "native OpenAI/Claude/Gemini nodes" }
+        { rank: 1, name: "Cursor + Claude Code + GitHub Copilot", vendor: "Anysphere + Anthropic + OpenAI/GitHub", vendor_en: "Anysphere + Anthropic + OpenAI/GitHub", score: "巨量採用", score_en: "huge adoption", why: "主流「出貨」編程組合:IDE agent + 終端 agent 並用;1.8M Copilot 開發者、~半數財星500用 Cursor", why_en: "The dominant 'ship software' coding stack; 1.8M Copilot devs, ~half of Fortune 500 on Cursor", meta: "媒體高曝光", meta_en: "heavy media coverage" },
+        { rank: 2, name: "Claude Code + GitHub + Vercel", vendor: "Anthropic + GitHub + Vercel", vendor_en: "Anthropic + GitHub + Vercel", score: "廣傳·官方", score_en: "viral · official", why: "prompt→push→自動部署上線;官方 Vercel 外掛(你正在用的)", why_en: "prompt→push→auto-deploy live; official Vercel plugin (the one you use)", meta: "YouTube/媒體廣傳", meta_en: "widely shared" },
+        { rank: 3, name: "n8n + LLM (OpenAI/Claude) + MCP", vendor: "n8n", vendor_en: "n8n", score: "GitHub 191k★", score_en: "GitHub 191k★", why: "可自架的視覺化 AI agent/工作流自動化;191k stars、$2.5B 估值", why_en: "Self-hosted visual AI-agent/workflow automation; 191k stars, $2.5B valuation", meta: "230k+ users", meta_en: "230k+ users" },
+        { rank: 4, name: "ComfyUI + Flux / Suno / ElevenLabs", vendor: "ComfyUI + community", vendor_en: "ComfyUI + community", score: "GitHub ~110k★", score_en: "GitHub ~110k★", why: "節點式創作流水線:圖→影→語音/音樂同一畫布;ElevenLabs 官方節點", why_en: "Node-graph creative pipeline: image→video→voice/music; official ElevenLabs node", meta: "~106k+ stars", meta_en: "~106k+ stars" },
+        { rank: 5, name: "ChatGPT / Claude + Notion", vendor: "OpenAI/Anthropic + Notion", vendor_en: "OpenAI/Anthropic + Notion", score: "高討論", score_en: "highly discussed", why: "LLM 在你的團隊 wiki/筆記上推理;最常被搜的生產力配對", why_en: "LLM reasoning over your team wiki/notes; most-searched productivity pairing", meta: "Reddit/媒體高討論", meta_en: "Reddit/media buzz" },
+        { rank: 6, name: "Microsoft Copilot (Agent 365) + Claude + GPT", vendor: "Microsoft + Anthropic + OpenAI", vendor_en: "Microsoft + Anthropic + OpenAI", score: "企業高曝光", score_en: "enterprise buzz", why: "企業多模型調度:「GPT 起草、Claude 審查」", why_en: "Enterprise multi-model orchestration: 'GPT drafts, Claude reviews'", meta: "Agent 365 GA 5/1", meta_en: "Agent 365 GA May 1" },
+        { rank: 7, name: "Claude + Obsidian", vendor: "Anthropic + Obsidian", vendor_en: "Anthropic + Obsidian", score: "YouTube 廣傳", score_en: "viral on YouTube", why: "AI 第二大腦:Claude 讀寫你的本地筆記(你同事推的那個)", why_en: "AI second brain: Claude reads/builds on your local notes (your colleague's pick)", meta: "XDA/多篇教學", meta_en: "XDA + many guides" },
+        { rank: 8, name: "Perplexity + NotebookLM + Claude", vendor: "Perplexity + Google + Anthropic", vendor_en: "Perplexity + Google + Anthropic", score: "研究熱門", score_en: "popular research", why: "研究組合:有來源的網搜 → 來源紮根 → 深入推理", why_en: "Research stack: cited web search → source grounding → deep reasoning", meta: "媒體高討論", meta_en: "heavy coverage" },
+        { rank: 9, name: "Midjourney + Runway/Veo + ElevenLabs + Suno + Descript", vendor: "多家 multi-vendor", vendor_en: "multi-vendor", score: "製片廣傳", score_en: "popular for video", why: "端到端 AI 影片:腳本→分鏡→畫面→配音→配樂→剪輯", why_en: "End-to-end AI video: script→storyboard→footage→VO→music→edit", meta: "標準製片流程", meta_en: "standard production stack" },
+        { rank: 10, name: "Raycast AI + Claude / Perplexity / NotebookLM", vendor: "Raycast + 多家", vendor_en: "Raycast + multi-vendor", score: "中討論", score_en: "modest buzz", why: "Mac 啟動器當各 AI 工具的黏合層(剪貼簿、片語、MCP)", why_en: "Mac launcher as the glue across AI tools (clipboard, snippets, MCP)", meta: "Substack 報導", meta_en: "Substack feature" }
       ],
       monthly: {
-        note: "本月以新 MCP 連接器/整合為主(讓既有工具互通);排名屬社群熱度,非 benchmark",
-        note_en: "Mostly new MCP connectors/integrations this month (linking existing tools); ranking is community popularity, not a benchmark",
+        note: "本月新整合在前(綠『本月新』);#7–10 為近期補上(非 5 月)。排名屬社群熱度,非 benchmark",
+        note_en: "May items first (green 'NEW'); #7–10 are recent fill-ins (not May). Ranking is community popularity, not a benchmark",
         items: [
-          { rank: 1, name: "Microsoft 365 Copilot + 聯邦 MCP 連接器", name_en: "Microsoft 365 Copilot + Federated MCP", version: "MCP", vendor: "Microsoft", vendor_en: "Microsoft", date: "5/5", isNew: true, overlap: null, overlap_en: null, why: "Canva/HubSpot/Linear/Notion 等聯邦 MCP 連接器,prompt 時即時查企業資料", why_en: "Federated MCP connectors (Canva/HubSpot/Linear/Notion…) — live enterprise data at prompt time" },
-          { rank: 2, name: "Claude + 法律 MCP 連接器", name_en: "Claude + legal MCP connectors", version: "MCP", vendor: "Anthropic", vendor_en: "Anthropic", date: "5 月", date_en: "May", isNew: true, overlap: null, overlap_en: null, why: "20+ 法律 MCP 連接器 + 12 個實務外掛(Thomson Reuters、Free Law 等)", why_en: "20+ legal MCP connectors + 12 practice plugins (Thomson Reuters, Free Law, etc.)" },
-          { rank: 3, name: "Mistral + Connectors (Studio)", version: "Connectors", vendor: "Mistral", vendor_en: "Mistral", date: "5/22", isNew: true, overlap: null, overlap_en: null, why: "Studio 內建 + 自訂 MCP 連接器(API/SDK)", why_en: "Built-in + custom MCP connectors in Studio (API/SDK)" },
-          { rank: 4, name: "Grok + Connectors", version: "Connectors", vendor: "xAI", vendor_en: "xAI", date: "5/6", isNew: true, overlap: null, overlap_en: null, why: "新增 Google Workspace、Notion、GitHub 連接器", why_en: "New Google Workspace, Notion, GitHub connectors" },
-          { rank: 5, name: "Snyk + Claude / Opsera + Cursor", version: "整合", version_en: "integration", vendor: "Snyk / Opsera", vendor_en: "Snyk / Opsera", date: "5 月", date_en: "May", isNew: true, overlap: null, overlap_en: null, why: "把資安/DevOps 接進編程 agent(來源僅搜尋摘要證實,待覆核)", why_en: "Security/DevOps into coding agents (source via snippet only — to be verified)" }
+          { rank: 1, name: "Microsoft Agent 365 + Claude + GPT", version: "GA", vendor: "Microsoft", vendor_en: "Microsoft", date: "5/1", isNew: true, overlap: "整體 #6", overlap_en: "Overall #6", why: "多模型 agent 治理平面正式上線($15/人)", why_en: "Multi-model agent governance plane GA ($15/user)" },
+          { rank: 2, name: "Snyk + Claude", version: "夥伴", version_en: "partner", vendor: "Snyk", vendor_en: "Snyk", date: "5/8", isNew: true, overlap: null, overlap_en: null, why: "Anthropic 模型嵌入 Snyk 資安平台(來源僅摘要,待覆核)", why_en: "Anthropic models embedded in Snyk security platform (snippet-only source, to verify)" },
+          { rank: 3, name: "Opsera + Cursor", version: "夥伴", version_en: "partner", vendor: "Opsera", vendor_en: "Opsera", date: "5/8", isNew: true, overlap: null, overlap_en: null, why: "把編程內環與 DevOps 外環打通(AI-SDLC)(待覆核)", why_en: "Unifies code inner-loop with DevOps outer-loop (AI-SDLC) (to verify)" },
+          { rank: 4, name: "Thomson Reuters CoCounsel + Claude", version: "MCP", vendor: "Thomson Reuters", vendor_en: "Thomson Reuters", date: "5/12", isNew: true, overlap: null, overlap_en: null, why: "把 Claude 接到有引用根據的法律工作", why_en: "Connects Claude to citation-grounded legal work" },
+          { rank: 5, name: "Capgemini + OpenAI Deployment Co", version: "夥伴", version_en: "partner", vendor: "Capgemini", vendor_en: "Capgemini", date: "5/12", isNew: true, overlap: null, overlap_en: null, why: "企業 OpenAI 部署夥伴/投資", why_en: "Enterprise OpenAI deployment partnership/investment" },
+          { rank: 6, name: "Prismatic Skills for Claude Code", version: "外掛", version_en: "plugin", vendor: "Prismatic", vendor_en: "Prismatic", date: "5/8", isNew: true, overlap: null, overlap_en: null, why: "開源外掛,在 Claude Code 內出貨整合(待覆核)", why_en: "Open-source plugin to ship integrations inside Claude Code (to verify)" },
+          { rank: 7, name: "ElevenLabs 節點進 ComfyUI", name_en: "ElevenLabs node in ComfyUI", version: "節點", version_en: "node", vendor: "ElevenLabs", vendor_en: "ElevenLabs", date: "3 月", date_en: "Mar", isNew: false, overlap: "整體 #4", overlap_en: "Overall #4", why: "高級 TTS/語音進 ComfyUI 圖(近期補上)", why_en: "Premium TTS/voice inside the ComfyUI graph (recent fill-in)" },
+          { rank: 8, name: "Microsoft Copilot Cowork(Anthropic)", name_en: "Microsoft Copilot Cowork (Anthropic)", version: "雲端", version_en: "cloud", vendor: "Microsoft", vendor_en: "Microsoft", date: "3/9", isNew: false, overlap: "整體 #6", overlap_en: "Overall #6", why: "雲端 Claude agents 跨 M365 各 App(近期補上)", why_en: "Cloud Claude agents across M365 apps (recent fill-in)" },
+          { rank: 9, name: "GPT-5.5 上 AWS Bedrock", name_en: "GPT-5.5 on AWS Bedrock", version: "上架", version_en: "available", vendor: "AWS", vendor_en: "AWS", date: "4/28", isNew: false, overlap: null, overlap_en: null, why: "GPT-5.5 進 Bedrock 技術棧(近期補上)", why_en: "GPT-5.5 available in the Bedrock stack (recent fill-in)" },
+          { rank: 10, name: "ChatGPT Shopping + Walmart/Target/Etsy", version: "購物", version_en: "shopping", vendor: "OpenAI", vendor_en: "OpenAI", date: "4 月底", date_en: "late Apr", isNew: false, overlap: null, overlap_en: null, why: "在 ChatGPT 內直接購物(近期補上)", why_en: "Purchase inside ChatGPT (recent fill-in)" }
         ]
       }
     }
