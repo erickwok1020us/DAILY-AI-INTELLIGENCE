@@ -59,7 +59,7 @@ CATEGORIES = [
    "sources":"ElevenLabs、Stability(Stable Audio)、Suno、Google(Lyria)官方、AI 音訊評比"},
   {"id":9,"icon":"🧩","name":"AI 工具組合 Combo","name_en":"AI Tool Combos",
    "subtitle":"好用的 AI 混搭 · 例如 Claude + Obsidian","subtitle_en":"Great AI tool stacks · e.g. Claude + Obsidian",
-   "scope":"好用的 AI 工具「組合/混搭/stack」(多個工具搭配使用),例如 Claude + Obsidian、Claude Code + GitHub + Vercel、AI + n8n;無正式榜,依社群熱度 + 整合深度 + 實用性排",
+   "scope":"⚠️每一項都必須是『多個工具的搭配組合(A + B[ + C])』,例如「Claude + Obsidian」「Cursor + Claude Code + GitHub Copilot」「AI + n8n」;**絕不可只列單一工具或單一模型**(只寫 Claude / ChatGPT / Gemini 是錯的)。無正式榜,依社群熱度 + 整合深度 + 實用性排",
    "sources":"GitHub、官方部落格/changelog、Reddit/HN/YouTube 熱度、MCP 連接器公告、比較文章","topn":10},
 ]
 
@@ -93,6 +93,12 @@ def build_prompt(cat):
    - 若本月新發佈不足 {n} 個,用最近期(近 30–60 天)補滿、date 標日期、isNew 設 false,並在 note/note_en 用一句話說明;否則 note 與 note_en 皆為 null。
 
 【排名依據】每個 overall 項目必須有 score:排名的主要依據短標籤。LLM 範疇(1/2/3)用公開 benchmark 分數(如「AA 61」「SWE 88.7%」「GPQA 94%」),影音/3D/Rigging/音訊範疇用能力短語(如「運鏡標竿」「盲測 #1」「開源自架」)。盡量讓 #1→#5 的依據可看出高低。
+
+【嚴謹要求·重要】
+- 只列「已正式發佈(GA)」的模型/工具;**排除 preview / beta / 未發佈 / 預計發佈**(名稱含 Preview/Beta 的不可列入排名)。
+- benchmark 數字必須**準確**;不確定就**不要寫數字**(score 改填簡短依據詞,如「SWE 榜首」),嚴禁臆造。
+- 只列**廣為人知、多人討論**的主流項目;不要冷門或 SEO 小工具。
+- 日期不可晚於今天({NOW:%Y-%m-%d});沒有可靠日期就不要編未來日期。
 
 【雙語】每個文字欄位都要同時提供繁體中文與英文:vendor+vendor_en、why+why_en、meta+meta_en、score+score_en、overlap+overlap_en、note+note_en。name 與 version 多為產品名,中英相同可只填一份。date 若含中文(如「2 月」),請另填 date_en(如「Feb」)。
 
@@ -191,11 +197,13 @@ def main():
         "changesToday": changes[:6],
         "changesToday_en": changes_en[:6],
         "notes": [
+            "中立聲明:名次以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA),只列已發佈模型,非本 AI 或任何廠商觀點。",
             "排名每天會動:AA 為 72 小時滾動、LMArena Elo 每天浮動,第 2~5 名常在誤差內。",
             "剛發佈的模型多為廠商自測數字,獨立 benchmark 通常數週後才定。",
             "本頁由每日排程自動研究產生,僅供快速參考;重大決策請點源連結覆核。",
         ],
         "notes_en": [
+            "Neutrality: ranks follow independent third-party leaderboards (General = AA Index, Coding = SWE-bench, Reasoning = GPQA), GA models only — not this AI's or any vendor's view.",
             "Rankings shift daily: AA is a 72-hour rolling average and LMArena Elo moves; ranks 2–5 are often within noise.",
             "Newly launched models are mostly vendor self-reported; independent benchmarks settle a few weeks later.",
             "This page is auto-generated daily; quick reference only — verify big decisions against the source links.",
