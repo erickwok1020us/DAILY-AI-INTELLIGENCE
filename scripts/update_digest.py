@@ -107,7 +107,16 @@ def extract_json(text):
         if i == -1 or j == -1:
             raise ValueError("回應中找不到 JSON")
         raw = text[i:j+1]
-    return json.loads(raw)
+    # 強韌解析:容許字串內裸控制字元(strict=False);失敗再清控制字元、再清尾逗號
+    for attempt in range(3):
+        try:
+            return json.loads(raw, strict=False)
+        except json.JSONDecodeError:
+            if attempt == 0:
+                raw = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", " ", raw)   # 去裸控制字元
+            else:
+                raw = re.sub(r",(\s*[}\]])", r"\1", raw)                  # 去尾逗號
+    return json.loads(raw, strict=False)
 
 def research(client, cat):
     sys_inst = "你是嚴謹的 AI 產業研究員。先用 Google 搜尋查證最新資料,再只輸出符合指定結構的 JSON(用 ```json 包起來),文字欄位需中英雙語。"
