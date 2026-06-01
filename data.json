@@ -1,5 +1,4 @@
-/* 自動產生 — 由 scripts/update_digest.py 每日重寫,勿手動編輯 */
-window.DIGEST = {
+{
   "updatedAt": "2026-06-02T02:03+08:00",
   "updatedDateLabel": "2026 年 6 月 2 日",
   "month": "2026 年 6 月",
@@ -1473,4 +1472,4 @@ window.DIGEST = {
       }
     }
   ]
-};
+}
