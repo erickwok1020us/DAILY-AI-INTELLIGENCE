@@ -8,7 +8,7 @@
 免費金鑰:    https://aistudio.google.com/apikey (Google AI Studio,免費額度足夠每天 9 次)
 切換模型:    DIGEST_MODEL=gemini-2.5-flash(預設,免費);若該名稱失效,改用 AI Studio 顯示的免費模型
 """
-import os, sys, json, re, datetime
+import os, sys, json, re, time, datetime
 from google import genai
 from google.genai import types
 
@@ -120,21 +120,27 @@ def extract_json(text):
 
 def research(client, cat):
     sys_inst = "你是嚴謹的 AI 產業研究員。先用 Google 搜尋查證最新資料,再只輸出符合指定結構的 JSON(用 ```json 包起來),文字欄位需中英雙語。"
-    resp = client.models.generate_content(
-        model=MODEL,
-        contents=build_prompt(cat),
-        config=types.GenerateContentConfig(
-            system_instruction=sys_inst,
-            tools=[types.Tool(google_search=types.GoogleSearch())],
-            temperature=0.3,
-            max_output_tokens=8000,
-        ),
+    cfg = types.GenerateContentConfig(
+        system_instruction=sys_inst,
+        tools=[types.Tool(google_search=types.GoogleSearch())],
+        temperature=0.3,
+        max_output_tokens=8000,
     )
-    data = extract_json(resp.text)
-    return {"id":cat["id"],"icon":cat["icon"],
-            "name":cat["name"],"name_en":cat["name_en"],
-            "subtitle":cat["subtitle"],"subtitle_en":cat["subtitle_en"],
-            "overall":data["overall"],"monthly":data["monthly"]}
+    last_err = None
+    for attempt in range(4):   # 遇到 503/429/暫時性錯誤或解析失敗就重試
+        try:
+            resp = client.models.generate_content(model=MODEL, contents=build_prompt(cat), config=cfg)
+            data = extract_json(resp.text)
+            return {"id":cat["id"],"icon":cat["icon"],
+                    "name":cat["name"],"name_en":cat["name_en"],
+                    "subtitle":cat["subtitle"],"subtitle_en":cat["subtitle_en"],
+                    "overall":data["overall"],"monthly":data["monthly"]}
+        except Exception as e:
+            last_err = e
+            print(f"  重試 {attempt+1}/4 ({type(e).__name__}): {str(e)[:120]}", flush=True)
+            if attempt < 3:
+                time.sleep(8 * (attempt + 1))   # 8s, 16s, 24s 退避
+    raise last_err
 
 def load_prev():
     try:
