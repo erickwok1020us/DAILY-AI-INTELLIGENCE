@@ -1,33 +1,35 @@
 {
-  "updatedAt": "2026-06-02T03:58:26+08:00",
+  "updatedAt": "2026-06-02T02:54:05+08:00",
   "updatedDateLabel": "2026 年 6 月 2 日",
   "month": "2026 年 6 月",
   "month_en": "June 2026",
-  "dataConfidence": "已交叉比對 Artificial Analysis、LMArena、SWE-bench、GPQA 及各官方公告(2026/5/31 查證)",
-  "dataConfidence_en": "Cross-checked against Artificial Analysis, LMArena, SWE-bench, GPQA & official announcements (verified 2026/5/31)",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/02 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/02",
   "changesToday": [
-    "Claude Opus 4.8(5/28)登頂綜合 AA 智能指數 #1;編程由 GPT-5.5、推理由 Gemini 各據第一",
-    "Gemini 3.5 Flash(5/19, Google I/O)與 Qwen3.7-Max(5/20)進本月榜",
-    "音訊雙更新:Stable Audio 3(5/20)+ ElevenLabs Music v2(5/26)",
-    "影片本月無新旗艦 — Sora 已停用(4/26)、Veo 4 仍未發佈(現役 3.1)"
+    "Claude Opus (2026年5月28日) — 綜合 AI MODEL 排名",
+    "GPT-5.5 Instant (2026年5月5日) — 綜合 AI MODEL 排名",
+    "Claude Opus 4.8 (5/28) — 創建遊戲的助手",
+    "Claude Code v1.0.56 [工具] (5/29) — 創建遊戲的助手",
+    "Claude Opus 4.8 (5/28) — 創建數據模擬器 & 數據推理",
+    "Qwen3.7-Max (5/20) — 創建數據模擬器 & 數據推理"
   ],
   "changesToday_en": [
-    "Claude Opus 4.8 (5/28) tops the overall AA Intelligence Index; GPT-5.5 leads coding, Gemini leads reasoning",
-    "Gemini 3.5 Flash (5/19, Google I/O) & Qwen3.7-Max (5/20) enter this month's lists",
-    "Two audio drops: Stable Audio 3 (5/20) + ElevenLabs Music v2 (5/26)",
-    "No new video flagship this month — Sora discontinued (4/26), Veo 4 still unreleased (current 3.1)"
+    "Claude Opus (2026年5月28日) — Overall AI Model Ranking",
+    "GPT-5.5 Instant (2026年5月5日) — Overall AI Model Ranking",
+    "Claude Opus 4.8 (5/28) — Game-Building Assistants",
+    "Claude Code v1.0.56 [工具] (5/29) — Game-Building Assistants",
+    "Claude Opus 4.8 (5/28) — Data Simulators & Reasoning",
+    "Qwen3.7-Max (5/20) — Data Simulators & Reasoning"
   ],
   "notes": [
-    "中立聲明:名次以第三方獨立榜為準(綜合=AA 智能指數、編程=SWE-bench、推理=GPQA),非本 AI 或廠商觀點 → 所以編程第一是 GPT-5.5、推理第一是 Gemini。",
-    "右側標籤=排名主要依據:LLM 類為公開 benchmark 分數;影音/3D/Combo 類為 Arena+能力/社群熱度(部分綜合判斷)。",
-    "排名每天會動:AA 為 72 小時滾動、LMArena Elo 每天浮動,第 2~5 名常在誤差內。",
-    "Opus 4.8 為 5/28 剛發,目前多為廠商自測,獨立 benchmark 數週後才會定。"
+    "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
+    "①整體=手工校正的權威版(穩定);②本月最新=每日免費自動研究(僅供速覽,偶有出入請點源覆核)。",
+    "排名每天會動:AA 為 72 小時滾動、LMArena Elo 每天浮動,第 2~5 名常在誤差內。"
   ],
   "notes_en": [
-    "Neutrality: ranks follow independent third-party leaderboards (General = AA Intelligence Index, Coding = SWE-bench, Reasoning = GPQA), not this AI's or any vendor's view → hence GPT-5.5 leads coding and Gemini leads reasoning.",
-    "Right-side tag = main basis for the rank: LLMs use public benchmark scores; video/3D/combos use Arena + capability/community popularity (partly editorial).",
-    "Rankings shift daily: AA is a 72-hour rolling average and LMArena Elo moves; ranks 2–5 are often within noise.",
-    "Opus 4.8 just launched 5/28 — mostly vendor self-reported numbers; independent benchmarks settle in a few weeks."
+    "Neutrality: ① follows independent third-party leaderboards (General=AA Index, Coding=SWE-bench, Reasoning=GPQA), GA models only, human-verified — not this AI's or any vendor's view.",
+    "① = hand-curated authoritative (stable); ② = free auto-research daily (quick reference; verify against sources).",
+    "Rankings shift daily: AA is a 72-hour rolling average and LMArena Elo moves; ranks 2–5 are often within noise."
   ],
   "categories": [
     {
@@ -100,68 +102,73 @@
         "items": [
           {
             "rank": 1,
-            "name": "Claude Opus 4.8",
+            "name": "Claude Opus",
             "version": "4.8",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "5/28",
+            "date": "2026年5月28日",
+            "date_en": "May 28, 2026",
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "因 4.8 新版登頂 AA;agentic 可靠度 + 對齊大幅提升",
-            "why_en": "New v4.8 tops AA; big gains in agentic reliability + alignment"
+            "why": "新一代旗艦模型，在 Artificial Analysis Intelligence Index 上以 61.4 分位居榜首，在代理任務和科學推理方面有顯著提升。",
+            "why_en": "New flagship model, leading the Artificial Analysis Intelligence Index at 61.4, with significant improvements in agentic tasks and scientific reasoning."
           },
           {
             "rank": 2,
-            "name": "Qwen3.7-Max",
-            "version": "3.7-Max",
-            "vendor": "Alibaba",
-            "vendor_en": "Alibaba",
-            "date": "5/20",
+            "name": "GPT-5.5 Instant",
+            "version": "Instant",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "2026年5月5日",
+            "date_en": "May 5, 2026",
             "isNew": true,
-            "overlap": "整體 #4",
-            "overlap_en": "Overall #4",
-            "why": "1M context、延伸思考;示範 35 小時自主執行",
-            "why_en": "1M context, extended thinking; demoed 35-hr autonomous run"
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "作為 ChatGPT 的新預設模型，提供更智能、清晰和個性化的回應，並在 Artificial Analysis Intelligence Index 上表現出色。",
+            "why_en": "The new default model for ChatGPT, offering smarter, clearer, and more personalized responses, and performing well on the Artificial Analysis Intelligence Index."
           },
           {
             "rank": 3,
-            "name": "Gemini 3.5 Flash",
+            "name": "Gemini",
             "version": "3.5 Flash",
             "vendor": "Google",
             "vendor_en": "Google",
-            "date": "5/19",
+            "date": "2026年5月19日",
+            "date_en": "May 19, 2026",
             "isNew": true,
             "overlap": "整體 #5",
             "overlap_en": "Overall #5",
-            "why": "I/O 發佈,快又便宜,多數 benchmark 勝 3.1 Pro",
-            "why_en": "Launched at I/O; fast & cheap, beats 3.1 Pro on most benchmarks"
+            "why": "在 Google I/O 2026 發布，以 Flash 系列的速度提供旗艦級智能，在編碼和代理基準測試中超越 Gemini 3.1 Pro。",
+            "why_en": "Released at Google I/O 2026, it delivers flagship-level intelligence at Flash series speeds, outperforming Gemini 3.1 Pro on coding and agentic benchmarks."
           },
           {
             "rank": 4,
-            "name": "Grok 4.3",
-            "version": "4.3",
-            "vendor": "xAI",
-            "vendor_en": "xAI",
-            "date": "5/6",
+            "name": "Qwen",
+            "version": "3.7-Max",
+            "vendor": "Alibaba Cloud",
+            "vendor_en": "Alibaba Cloud",
+            "date": "2026年5月26日",
+            "date_en": "May 26, 2026",
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "推理小改版(前五外,placement 未確認)",
-            "why_en": "Reasoning refresh (outside top 5; placement unconfirmed)"
+            "overlap": "整體 #4",
+            "overlap_en": "Overall #4",
+            "why": "阿里巴巴雲最新旗艦模型，在 Artificial Analysis Intelligence Index 上全球排名第五，中國模型中排名第一，得分 56.6。",
+            "why_en": "Alibaba Cloud's latest flagship model, ranked fifth globally and first among Chinese models on the Artificial Analysis Intelligence Index with a score of 56.6."
           },
           {
             "rank": 5,
-            "name": "GPT-5.5 Instant",
-            "version": "5.5 Instant",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "5/5",
+            "name": "NVIDIA Cosmos",
+            "version": "3",
+            "vendor": "NVIDIA",
+            "vendor_en": "NVIDIA",
+            "date": "2026年6月1日",
+            "date_en": "June 1, 2026",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "ChatGPT 免費預設輕量版(非旗艦;旗艦 GPT-5.5 為 4/23)",
-            "why_en": "ChatGPT's free lightweight default (not the flagship; flagship GPT-5.5 = 4/23)"
+            "why": "全球首個完全開放的物理 AI 基礎模型，結合視覺推理、世界生成和動作預測，支援多模態生成。",
+            "why_en": "The world's first fully open physical AI foundation model, combining vision reasoning, world generation, and action prediction, supporting multimodal generation."
           }
         ]
       }
