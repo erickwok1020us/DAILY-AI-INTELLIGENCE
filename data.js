@@ -235,6 +235,31 @@ window.DIGEST = {
           { rank: 5, name: "ElevenLabs v3 voice", version: "v3", vendor: "ElevenLabs", vendor_en: "ElevenLabs", date: "2 月", date_en: "Feb", isNew: false, overlap: "整體 #1", overlap_en: "Overall #1", why: "頂級表情語音(補近期;SFX 本身本月無更新)", why_en: "Top-tier expressive voice (recent fill-in; SFX itself no update this month)" }
         ]
       }
+    },
+
+    /* ============ 9. AI 工具組合(Combo) ============ */
+    {
+      id: 9, icon: "🧩",
+      name: "AI 工具組合 Combo", name_en: "AI Tool Combos",
+      subtitle: "好用的 AI 混搭 · 例如 Claude + Obsidian", subtitle_en: "Great AI tool stacks · e.g. Claude + Obsidian",
+      overall: [
+        { rank: 1, name: "Claude + Obsidian", vendor: "Anthropic + Obsidian", vendor_en: "Anthropic + Obsidian", score: "社群熱門·MCP", score_en: "community · MCP", why: "AI 第二大腦:Claude 讀寫/連結你的 Markdown 筆記庫;PKM、研究、長期記憶", why_en: "AI second brain: Claude reads/links your local Markdown vault — PKM, research, memory", meta: "MCP/社群外掛 · 2026 大熱", meta_en: "MCP/community plugins · hot in 2026" },
+        { rank: 2, name: "Claude Code + GitHub + Vercel", vendor: "Anthropic + GitHub + Vercel", vendor_en: "Anthropic + GitHub + Vercel", score: "官方·整合深", score_en: "official · deep", why: "build→push→自動部署 ~60–90 秒;標準 AI 網頁開發 pipeline(你正在用的)", why_en: "build→push→auto-deploy in ~60–90s; the standard AI web-dev pipeline (the one you use)", meta: "官方 Vercel 外掛/Skill", meta_en: "official Vercel plugin/skill" },
+        { rank: 3, name: "Cursor + Claude Code + Codex", vendor: "Anysphere + Anthropic + OpenAI", vendor_en: "Anysphere + Anthropic + OpenAI", score: "跨廠·社群熱", score_en: "cross-vendor · hot", why: "可組合式編程:跨三家並行調度 agent;OpenAI 官方外掛可在 Claude Code 內跑", why_en: "Composable coding: orchestrate parallel agents across all three; OpenAI plugin runs inside Claude Code", meta: "跨廠互通 · 2026", meta_en: "cross-vendor interop · 2026" },
+        { rank: 4, name: "Perplexity (Comet) + NotebookLM", vendor: "Perplexity + Google", vendor_en: "Perplexity + Google", score: "研究組合", score_en: "research duo", why: "研究神器:Perplexity 找來源 → NotebookLM 深入分析;側欄一鍵接力", why_en: "Research duo: Perplexity finds sources → NotebookLM analyzes them; one-click sidebar handoff", meta: "Comet iOS 3/18 免費", meta_en: "Comet free on iOS 3/18" },
+        { rank: 5, name: "AI + n8n / Make / Zapier", vendor: "n8n / Make / Zapier", vendor_en: "n8n / Make / Zapier", score: "自動化·開源", score_en: "automation · OSS", why: "把 LLM 當工作流引擎裡的推理節點;自動化、可擴充、可自架(n8n)", why_en: "LLM as a reasoning node inside workflow engines; automation, extensible, self-hostable (n8n)", meta: "原生 OpenAI/Claude/Gemini 節點", meta_en: "native OpenAI/Claude/Gemini nodes" }
+      ],
+      monthly: {
+        note: "本月以新 MCP 連接器/整合為主(讓既有工具互通);排名屬社群熱度,非 benchmark",
+        note_en: "Mostly new MCP connectors/integrations this month (linking existing tools); ranking is community popularity, not a benchmark",
+        items: [
+          { rank: 1, name: "Microsoft 365 Copilot + 聯邦 MCP 連接器", name_en: "Microsoft 365 Copilot + Federated MCP", version: "MCP", vendor: "Microsoft", vendor_en: "Microsoft", date: "5/5", isNew: true, overlap: null, overlap_en: null, why: "Canva/HubSpot/Linear/Notion 等聯邦 MCP 連接器,prompt 時即時查企業資料", why_en: "Federated MCP connectors (Canva/HubSpot/Linear/Notion…) — live enterprise data at prompt time" },
+          { rank: 2, name: "Claude + 法律 MCP 連接器", name_en: "Claude + legal MCP connectors", version: "MCP", vendor: "Anthropic", vendor_en: "Anthropic", date: "5 月", date_en: "May", isNew: true, overlap: null, overlap_en: null, why: "20+ 法律 MCP 連接器 + 12 個實務外掛(Thomson Reuters、Free Law 等)", why_en: "20+ legal MCP connectors + 12 practice plugins (Thomson Reuters, Free Law, etc.)" },
+          { rank: 3, name: "Mistral + Connectors (Studio)", version: "Connectors", vendor: "Mistral", vendor_en: "Mistral", date: "5/22", isNew: true, overlap: null, overlap_en: null, why: "Studio 內建 + 自訂 MCP 連接器(API/SDK)", why_en: "Built-in + custom MCP connectors in Studio (API/SDK)" },
+          { rank: 4, name: "Grok + Connectors", version: "Connectors", vendor: "xAI", vendor_en: "xAI", date: "5/6", isNew: true, overlap: null, overlap_en: null, why: "新增 Google Workspace、Notion、GitHub 連接器", why_en: "New Google Workspace, Notion, GitHub connectors" },
+          { rank: 5, name: "Snyk + Claude / Opsera + Cursor", version: "整合", version_en: "integration", vendor: "Snyk / Opsera", vendor_en: "Snyk / Opsera", date: "5 月", date_en: "May", isNew: true, overlap: null, overlap_en: null, why: "把資安/DevOps 接進編程 agent(來源僅搜尋摘要證實,待覆核)", why_en: "Security/DevOps into coding agents (source via snippet only — to be verified)" }
+        ]
+      }
     }
   ]
 };

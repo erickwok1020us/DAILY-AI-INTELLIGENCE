@@ -55,6 +55,10 @@ CATEGORIES = [
    "subtitle":"SFX / 語音 / 音樂 · 例如 ElevenLabs","subtitle_en":"SFX / voice / music · e.g. ElevenLabs",
    "scope":"遊戲音效 SFX 為主,兼顧語音 / 音樂(如 ElevenLabs)",
    "sources":"ElevenLabs、Stability(Stable Audio)、Suno、Google(Lyria)官方、AI 音訊評比"},
+  {"id":9,"icon":"🧩","name":"AI 工具組合 Combo","name_en":"AI Tool Combos",
+   "subtitle":"好用的 AI 混搭 · 例如 Claude + Obsidian","subtitle_en":"Great AI tool stacks · e.g. Claude + Obsidian",
+   "scope":"好用的 AI 工具「組合/混搭/stack」(多個工具搭配使用),例如 Claude + Obsidian、Claude Code + GitHub + Vercel、AI + n8n;無正式榜,依社群熱度 + 整合深度 + 實用性排",
+   "sources":"GitHub、官方部落格/changelog、Reddit/HN/YouTube 熱度、MCP 連接器公告、比較文章"},
 ]
 
 # 每個文字欄位都要中文 + `_en` 英文
