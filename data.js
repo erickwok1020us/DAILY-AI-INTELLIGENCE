@@ -1,26 +1,26 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-06-02T02:54:05+08:00",
-  "updatedDateLabel": "2026 年 6 月 2 日",
+  "updatedAt": "2026-06-03T03:34:15+08:00",
+  "updatedDateLabel": "2026 年 6 月 3 日",
   "month": "2026 年 6 月",
   "month_en": "June 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/02 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/02",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/03 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/03",
   "changesToday": [
-    "Claude Opus (2026年5月28日) — 綜合 AI MODEL 排名",
-    "GPT-5.5 Instant (2026年5月5日) — 綜合 AI MODEL 排名",
+    "Claude Opus (5/28) — 綜合 AI MODEL 排名",
     "Claude Opus 4.8 (5/28) — 創建遊戲的助手",
     "Claude Code v1.0.56 [工具] (5/29) — 創建遊戲的助手",
-    "Claude Opus 4.8 (5/28) — 創建數據模擬器 & 數據推理",
-    "Qwen3.7-Max (5/20) — 創建數據模擬器 & 數據推理"
+    "GPT-5.5 on Amazon Bedrock (6/1) — 創建數據模擬器 & 數據推理",
+    "PAI (6/2) — 創建遊戲影片",
+    "Gemini Omni (5/19) — 創建真人影片"
   ],
   "changesToday_en": [
-    "Claude Opus (2026年5月28日) — Overall AI Model Ranking",
-    "GPT-5.5 Instant (2026年5月5日) — Overall AI Model Ranking",
+    "Claude Opus (5/28) — Overall AI Model Ranking",
     "Claude Opus 4.8 (5/28) — Game-Building Assistants",
     "Claude Code v1.0.56 [工具] (5/29) — Game-Building Assistants",
-    "Claude Opus 4.8 (5/28) — Data Simulators & Reasoning",
-    "Qwen3.7-Max (5/20) — Data Simulators & Reasoning"
+    "GPT-5.5 on Amazon Bedrock (6/1) — Data Simulators & Reasoning",
+    "PAI (6/2) — Game / Stylized Video",
+    "Gemini Omni (5/19) — Live-Action Video"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -98,8 +98,8 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "截至 2026 年 6 月 3 日，本月尚未有新的旗艦級通用 AI 模型正式發佈。此列表包含近期（過去 30-60 天）發佈的頂級模型，以及一個雖發佈較早但仍保持領先地位的模型，以補足前五名。",
+        "note_en": "As of June 3, 2026, no new flagship general AI models have been officially released this month. This list includes top-performing models released recently (within the last 30-60 days), and one older but still leading model, to complete the top five.",
         "items": [
           {
             "rank": 1,
@@ -107,69 +107,69 @@ window.DIGEST = {
             "version": "4.8",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "2026年5月28日",
-            "date_en": "May 28, 2026",
+            "date": "5/28",
+            "date_en": null,
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "新一代旗艦模型，在 Artificial Analysis Intelligence Index 上以 61.4 分位居榜首，在代理任務和科學推理方面有顯著提升。",
-            "why_en": "New flagship model, leading the Artificial Analysis Intelligence Index at 61.4, with significant improvements in agentic tasks and scientific reasoning."
+            "why": "在 Artificial Analysis 智慧指數中位居榜首，在代理任務和前沿學術推理方面有顯著提升。",
+            "why_en": "Ranks #1 on the Artificial Analysis Intelligence Index, with significant improvements in agentic work and frontier academic reasoning."
           },
           {
             "rank": 2,
-            "name": "GPT-5.5 Instant",
-            "version": "Instant",
+            "name": "GPT",
+            "version": "5.5",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
-            "date": "2026年5月5日",
-            "date_en": "May 5, 2026",
-            "isNew": true,
+            "date": "4/23",
+            "date_en": null,
+            "isNew": false,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "作為 ChatGPT 的新預設模型，提供更智能、清晰和個性化的回應，並在 Artificial Analysis Intelligence Index 上表現出色。",
-            "why_en": "The new default model for ChatGPT, offering smarter, clearer, and more personalized responses, and performing well on the Artificial Analysis Intelligence Index."
+            "why": "OpenAI 最智能、最直觀的模型，擅長代理編碼、電腦使用、知識工作和科學研究。",
+            "why_en": "OpenAI's smartest and most intuitive model, excelling in agentic coding, computer use, knowledge work, and scientific research."
           },
           {
             "rank": 3,
             "name": "Gemini",
-            "version": "3.5 Flash",
+            "version": "3.1 Pro",
             "vendor": "Google",
             "vendor_en": "Google",
-            "date": "2026年5月19日",
-            "date_en": "May 19, 2026",
-            "isNew": true,
-            "overlap": "整體 #5",
-            "overlap_en": "Overall #5",
-            "why": "在 Google I/O 2026 發布，以 Flash 系列的速度提供旗艦級智能，在編碼和代理基準測試中超越 Gemini 3.1 Pro。",
-            "why_en": "Released at Google I/O 2026, it delivers flagship-level intelligence at Flash series speeds, outperforming Gemini 3.1 Pro on coding and agentic benchmarks."
+            "date": "2/19",
+            "date_en": null,
+            "isNew": false,
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "專為需要高級推理的任務設計，在複雜問題解決和多模態代碼生成方面有顯著進步。",
+            "why_en": "Designed for tasks requiring advanced reasoning, with significant advancements in complex problem-solving and native multimodal code generation."
           },
           {
             "rank": 4,
             "name": "Qwen",
             "version": "3.7-Max",
-            "vendor": "Alibaba Cloud",
+            "vendor": "阿里巴巴雲",
             "vendor_en": "Alibaba Cloud",
-            "date": "2026年5月26日",
-            "date_en": "May 26, 2026",
+            "date": "5/19",
+            "date_en": null,
             "isNew": true,
             "overlap": "整體 #4",
             "overlap_en": "Overall #4",
-            "why": "阿里巴巴雲最新旗艦模型，在 Artificial Analysis Intelligence Index 上全球排名第五，中國模型中排名第一，得分 56.6。",
-            "why_en": "Alibaba Cloud's latest flagship model, ranked fifth globally and first among Chinese models on the Artificial Analysis Intelligence Index with a score of 56.6."
+            "why": "在 Artificial Analysis 智慧指數中排名全球第五，是中國 AI 模型中的最高排名，擅長長週期代理工作流。",
+            "why_en": "Ranked #5 globally on the Artificial Analysis Intelligence Index and the highest-ranked Chinese AI model, strong for long-horizon agent workflows."
           },
           {
             "rank": 5,
-            "name": "NVIDIA Cosmos",
-            "version": "3",
-            "vendor": "NVIDIA",
-            "vendor_en": "NVIDIA",
-            "date": "2026年6月1日",
-            "date_en": "June 1, 2026",
+            "name": "Gemini",
+            "version": "3.5 Flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "5/19",
+            "date_en": null,
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "全球首個完全開放的物理 AI 基礎模型，結合視覺推理、世界生成和動作預測，支援多模態生成。",
-            "why_en": "The world's first fully open physical AI foundation model, combining vision reasoning, world generation, and action prediction, supporting multimodal generation."
+            "overlap": "整體 #5",
+            "overlap_en": "Overall #5",
+            "why": "提供代理和編碼的前沿性能，在代理和編碼基準測試中超越 Gemini 3.1 Pro，速度更快且成本更低。",
+            "why_en": "Delivers frontier performance for agents and coding, outperforming Gemini 3.1 Pro on agentic and coding benchmarks, with faster speed and lower cost."
           }
         ]
       }
@@ -380,8 +380,8 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "GPQA 已飽和(前段約 7 個模型差 ~1.5%),名次僅供參考",
-        "note_en": "GPQA is saturated (top ~7 models within ~1.5%) — ranks are indicative only",
+        "note": null,
+        "note_en": null,
         "items": [
           {
             "rank": 1,
@@ -390,24 +390,26 @@ window.DIGEST = {
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "5/28",
-            "isNew": true,
+            "date_en": null,
+            "isNew": false,
             "overlap": "整體 #3",
             "overlap_en": "Overall #3",
-            "why": "綜合最強;OSWorld 82.3%、Online-Mind2Web 84%",
-            "why_en": "Top overall; OSWorld 82.3%, Online-Mind2Web 84%"
+            "why": "在長週期代理工作、知識工作和記憶任務中表現卓越，並增強了數據分析能力。",
+            "why_en": "Excels in long-horizon agentic work, knowledge work, and memory tasks, with enhanced data analysis capabilities."
           },
           {
             "rank": 2,
-            "name": "Qwen3.7-Max",
-            "version": "3.7-Max",
-            "vendor": "Alibaba",
-            "vendor_en": "Alibaba",
-            "date": "5/20",
+            "name": "GPT-5.5 on Amazon Bedrock",
+            "version": "5.5",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "6/1",
+            "date_en": null,
             "isNew": true,
-            "overlap": "整體 #5",
-            "overlap_en": "Overall #5",
-            "why": "數學最強之一(HMMT 97.1)",
-            "why_en": "Among the best at math (HMMT 97.1)"
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "透過 Amazon Bedrock 實現全面可用，顯著提升企業級代理編碼和知識工作的能力，並提供 AWS 治理控制。",
+            "why_en": "Achieved general availability on Amazon Bedrock, significantly enhancing enterprise-grade agentic coding and knowledge work with AWS governance controls."
           },
           {
             "rank": 3,
@@ -416,11 +418,12 @@ window.DIGEST = {
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "5/19",
-            "isNew": true,
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "高速推理;快速跑大量模擬分析",
-            "why_en": "Fast reasoning; quick large-scale simulation analysis"
+            "why": "作為 Google 最智能的 Flash 模型，在代理和編碼任務中提供持續的領先性能，並更有效地利用代幣。",
+            "why_en": "Google's most intelligent Flash model, delivering sustained frontier performance in agentic and coding tasks with more efficient token usage."
           },
           {
             "rank": 4,
@@ -428,25 +431,27 @@ window.DIGEST = {
             "version": "4.3",
             "vendor": "xAI",
             "vendor_en": "xAI",
-            "date": "5/6",
-            "isNew": true,
+            "date": "5/31",
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "推理刷新版",
-            "why_en": "Reasoning refresh"
+            "why": "在 Microsoft Foundry 中可用，專注於高級代理工作負載和特定領域場景，是 Grok 4.2 的重要升級。",
+            "why_en": "Available in Microsoft Foundry, focusing on advanced agentic workloads and domain-specific scenarios, a significant upgrade from Grok 4.2."
           },
           {
             "rank": 5,
-            "name": "GPT-5.5 (xhigh)",
-            "version": "5.5",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "4/23",
+            "name": "DeepSeek V4 Pro",
+            "version": "V4 Pro",
+            "vendor": "DeepSeek",
+            "vendor_en": "DeepSeek",
+            "date": "5月",
+            "date_en": "May",
             "isNew": false,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "GPQA 93.5%、純機率數學最強(補近期)",
-            "why_en": "GPQA 93.5%, best pure probability math (recent fill-in)"
+            "overlap": null,
+            "overlap_en": null,
+            "why": "透過 Fireworks AI 在 Microsoft Foundry 中提供，擴展了高性能開源模型的選擇，適用於數據推理。",
+            "why_en": "Available in Microsoft Foundry via Fireworks AI, expanding the choice of high-performance open-source models for data reasoning."
           }
         ]
       }
@@ -521,73 +526,78 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "⚠️ 本月(5 月)無專門影片新旗艦;以下為近 30–90 天最新(依新近度排)",
-        "note_en": "⚠️ No dedicated new video flagship this month; below are the most recent (last 30–90 days), by recency",
+        "note": "本月(2026 年 6 月)新發佈不足五項，已使用近期(近 30-60 天)發佈補足。",
+        "note_en": "Fewer than five new releases in June 2026, supplemented with recent releases (last 30-60 days).",
         "items": [
           {
             "rank": 1,
-            "name": "Gemini Omni",
-            "version": "Omni",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "5/19",
+            "name": "PAI",
+            "version": "2.0",
+            "vendor": "Utopai Studios",
+            "vendor_en": "Utopai Studios",
+            "date": "6/2",
+            "date_en": "Jun 2",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "I/O 發佈,Veo 驅動影片輸出(本月唯一新進,非專門影片模型)",
-            "why_en": "Launched at I/O; Veo-powered video output (only May entry; not a dedicated video model)"
+            "why": "本月最新發佈，專為電影級敘事設計，提供更強大的創意控制、一致性及製作彈性，適合長篇遊戲影片製作。",
+            "why_en": "Latest release this month, designed for cinematic storytelling, offering enhanced creative control, consistency, and production flexibility, suitable for long-form game video creation."
           },
           {
             "rank": 2,
-            "name": "HappyHorse-1.0",
-            "version": "1.0",
-            "vendor": "Alibaba",
-            "vendor_en": "Alibaba",
-            "date": "4/27",
-            "isNew": false,
-            "overlap": "整體 #4",
-            "overlap_en": "Overall #4",
-            "why": "fal 上線,盲測 Arena 第一(補近期)",
-            "why_en": "Launched on fal; #1 blind-test Arena (recent fill-in)"
-          },
-          {
-            "rank": 3,
-            "name": "PixVerse V6",
-            "version": "V6",
-            "vendor": "PixVerse",
-            "vendor_en": "PixVerse",
-            "date": "3/30",
-            "isNew": false,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "動漫/遊戲風格、多鏡頭(補近期)",
-            "why_en": "Anime/game styles, multi-shot (recent fill-in)"
-          },
-          {
-            "rank": 4,
-            "name": "Dreamina Seedance 2.0",
-            "version": "2.0",
-            "vendor": "ByteDance",
-            "vendor_en": "ByteDance",
-            "date": "2/12",
-            "isNew": false,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "風格化敘事(補近期)",
-            "why_en": "Stylized storytelling (recent fill-in)"
-          },
-          {
-            "rank": 5,
-            "name": "Kling 3.0 Omni",
-            "version": "3.0",
-            "vendor": "快手 Kuaishou",
+            "name": "Kling AI",
+            "version": "4K Native / 3.5",
+            "vendor": "快手 (Kuaishou)",
             "vendor_en": "Kuaishou",
-            "date": "2/4",
+            "date": "5/20",
+            "date_en": "May 20",
             "isNew": false,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "電影級運鏡(補近期)",
-            "why_en": "Cinematic motion (recent fill-in)"
+            "why": "Kling 3.5 於 5 月發佈，帶來超真實動作和物理效果；5/20 宣布原生 4K 輸出，提供電影級品質，適用於寫實或風格化遊戲過場動畫。",
+            "why_en": "Kling 3.5 released in May, offering hyper-realistic motion and physics; native 4K output announced on May 20, providing cinematic quality suitable for realistic or stylized game cinematics."
+          },
+          {
+            "rank": 3,
+            "name": "Wan",
+            "version": "2.7",
+            "vendor": "阿里巴巴 (Alibaba)",
+            "vendor_en": "Alibaba",
+            "date": "4月",
+            "date_en": "Apr",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "4 月發佈，專注於風格化和藝術輸出，擅長動漫風格視覺、創意場景生成和富有表現力的故事講述，非常適合動畫向遊戲影片。",
+            "why_en": "Released in April, focused on stylized and artistic output, excelling in anime-style visuals, creative scene generation, and expressive storytelling, ideal for animated game videos."
+          },
+          {
+            "rank": 4,
+            "name": "PixVerse",
+            "version": "V6",
+            "vendor": "PixVerse",
+            "vendor_en": "PixVerse",
+            "date": "5/30",
+            "date_en": "May 30",
+            "isNew": false,
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "5 月底的評測中被提及，以快速、使用者友善、強大的圖像轉影片動畫和風格化影片生成聞名，適合風格化遊戲影片和動畫。",
+            "why_en": "Mentioned in late May reviews, known for fast, user-friendly, powerful image-to-video animation and stylized video generation, suitable for stylized game videos and animations."
+          },
+          {
+            "rank": 5,
+            "name": "Seedance",
+            "version": "2.0",
+            "vendor": "字節跳動 (ByteDance)",
+            "vendor_en": "ByteDance",
+            "date": "2月",
+            "date_en": "Feb",
+            "isNew": false,
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "雖於 2 月發佈，但在 5-6 月持續被評為頂級工具，以高保真、即時影片、時間一致性、物理動態和多模態輸入著稱，適用於遊戲過場動畫和角色動畫。",
+            "why_en": "Released in February, but consistently ranked as a top tool in May-June, known for high-fidelity, real-time video, temporal consistency, physics-based motion, and multimodal input, suitable for game cinematics and character animation."
           }
         ]
       }
@@ -1089,74 +1099,78 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月(2026 年 6 月)未發現新的正式發佈產品，此列表包含 5 月和 3 月最新發佈的正式版產品以補足名額。",
+        "note_en": "No new GA products were found for this month (June 2026). This list includes the latest GA releases from May and March to complete the top 5.",
         "items": [
           {
             "rank": 1,
-            "name": "ElevenLabs Music v2",
+            "name": "Music",
             "version": "v2",
             "vendor": "ElevenLabs",
             "vendor_en": "ElevenLabs",
             "date": "5/26",
+            "date_en": null,
             "isNew": true,
             "overlap": "整體 #3",
             "overlap_en": "Overall #3",
-            "why": "曲中換曲風、嵌入 SFX、分段重繪;舊價砍 40–50%",
-            "why_en": "Mid-track genre switch, embedded SFX, section inpainting; 40–50% price cut"
+            "why": "提供更優異的人聲、樂器和編曲，支援多語言，並能實現曲內流派轉換及分段創作。",
+            "why_en": "Offers superior vocals, instrumentation, and arrangement, with multilingual support, mid-track genre transitions, and section-by-section composition."
           },
           {
             "rank": 2,
-            "name": "Stable Audio 3",
-            "version": "3",
+            "name": "Stable Audio",
+            "version": "3.0",
             "vendor": "Stability AI",
             "vendor_en": "Stability AI",
             "date": "5/20",
+            "date_en": null,
             "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "本月對 SFX 最重要:開源 + 專用 SFX/foley 變體、最長 6:20、inpainting",
-            "why_en": "Most important SFX drop this month: open-source + dedicated SFX/foley variants, up to 6:20, inpainting"
+            "why": "包含四個模型，可生成長達 6 分 20 秒的音樂和音效，並支援文字轉音訊、音訊編輯及修補。",
+            "why_en": "A family of four models capable of generating music and sound effects up to 6 minutes and 20 seconds, supporting text-to-audio, audio-to-audio editing, and inpainting."
           },
           {
             "rank": 3,
-            "name": "Suno v5.5",
-            "version": "5.5",
+            "name": "Suno",
+            "version": "v5.5",
             "vendor": "Suno",
             "vendor_en": "Suno",
-            "date": "3/27",
+            "date": "3/26",
+            "date_en": null,
             "isNew": false,
             "overlap": "整體 #4",
             "overlap_en": "Overall #4",
-            "why": "消費級音樂龍頭(補近期)",
-            "why_en": "Consumer music leader (recent fill-in)"
+            "why": "引入了聲音捕捉、自訂模型訓練和個人化偏好學習功能，並支援生成超過 8 分鐘的音軌。",
+            "why_en": "Introduces voice capture, custom model training, and personalized preference learning, supporting tracks over 8 minutes."
           },
           {
             "rank": 4,
-            "name": "Lyria 3 Pro",
+            "name": "Lyria",
             "version": "3 Pro",
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "3/25",
+            "date_en": null,
             "isNew": false,
             "overlap": "整體 #5",
             "overlap_en": "Overall #5",
-            "why": "結構化長曲 + 浮水印(補近期)",
-            "why_en": "Structured long tracks + watermark (recent fill-in)"
+            "why": "可生成長達 3 分鐘的音樂，並提供對歌曲結構（如前奏、主歌、副歌）的更精細控制。",
+            "why_en": "Generates music up to 3 minutes long with enhanced control over song structure, including intros, verses, and choruses."
           },
           {
             "rank": 5,
-            "name": "ElevenLabs v3 voice",
+            "name": "Eleven",
             "version": "v3",
             "vendor": "ElevenLabs",
             "vendor_en": "ElevenLabs",
-            "date": "2 月",
-            "date_en": "Feb",
+            "date": "3/14",
+            "date_en": null,
             "isNew": false,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "頂級表情語音(補近期;SFX 本身本月無更新)",
-            "why_en": "Top-tier expressive voice (recent fill-in; SFX itself no update this month)"
+            "why": "最先進的文字轉語音模型，支援 70 多種語言，並透過音訊標籤提供情感控制。",
+            "why_en": "The most advanced text-to-speech model, supporting over 70 languages and offering emotional control via audio tags."
           }
         ]
       }
