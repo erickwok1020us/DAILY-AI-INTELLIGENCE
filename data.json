@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-06-05T02:05:55+08:00",
-  "updatedDateLabel": "2026 年 6 月 5 日",
+  "updatedAt": "2026-06-06T01:44:11+08:00",
+  "updatedDateLabel": "2026 年 6 月 6 日",
   "month": "2026 年 6 月",
   "month_en": "June 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/05 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/05",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/06 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/06",
   "changesToday": [
-    "Nemotron-3-Ultra (6/4) — 創建數據模擬器 & 數據推理",
-    "MiniMax M3 (6/3) — 創建數據模擬器 & 數據推理",
+    "Cursor (6/4) — 創建遊戲的助手",
+    "Cosmos 3 Super (6/1) — 創建數據模擬器 & 數據推理",
+    "Nemotron 3 Ultra (6/4) — 創建數據模擬器 & 數據推理",
     "Veo (4/2026) — 創建真人影片",
     "HappyHorse (4/26/2026) — 創建真人影片",
-    "Meshy Auto-Rigging + Animation (Meshy 6 updates) (5/15) — 遊戲模組 Rigging",
-    "Autodesk Flow Studio AI Rigging (5/14) — 遊戲模組 Rigging"
+    "Meshy Auto-Rigging & Animation API (5/15) — 遊戲模組 Rigging"
   ],
   "changesToday_en": [
-    "Nemotron-3-Ultra (6/4) — Data Simulators & Reasoning",
-    "MiniMax M3 (6/3) — Data Simulators & Reasoning",
+    "Cursor (6/4) — Game-Building Assistants",
+    "Cosmos 3 Super (6/1) — Data Simulators & Reasoning",
+    "Nemotron 3 Ultra (6/4) — Data Simulators & Reasoning",
     "Veo (4/2026) — Live-Action Video",
     "HappyHorse (4/26/2026) — Live-Action Video",
-    "Meshy Auto-Rigging + Animation (Meshy 6 updates) (5/15) — Game Asset Rigging",
-    "Autodesk Flow Studio AI Rigging (5/14) — Game Asset Rigging"
+    "Meshy Auto-Rigging & Animation API (5/15) — Game Asset Rigging"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -238,8 +238,8 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 6 月)新發佈的項目不足 5 個，已用最近期(近 30-60 天)的正式發佈項目補足。",
-        "note_en": "Fewer than 5 new releases in June 2026; filled with recent (last 30-60 days) officially released items.",
+        "note": "本月(2026 年 6 月)發佈不足 5 個,故用近期(近 30 天)發佈補足。",
+        "note_en": "Fewer than 5 releases in June 2026, so recent releases (last 30 days) were used to complete the top 5.",
         "items": [
           {
             "rank": 1,
@@ -248,68 +248,68 @@
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "5/28",
-            "date_en": null,
+            "date_en": "May 28",
             "isNew": false,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "作為最強大的電腦使用和瀏覽器代理模型，其動態工作流程能有效處理大規模遊戲開發任務。",
-            "why_en": "As the strongest computer-use and browser-agent model, its dynamic workflows effectively handle large-scale game development tasks."
+            "why": "Anthropic 最強大的公開模型，在 SWE-bench Verified 編碼基準測試中表現領先，為遊戲開發中的複雜編程任務提供強大基礎。",
+            "why_en": "Anthropic's most capable publicly available model, leading in SWE-bench Verified coding benchmarks, providing a strong foundation for complex programming tasks in game development."
           },
           {
             "rank": 2,
-            "name": "GPT",
-            "version": "5.5",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "4/23",
-            "date_en": null,
-            "isNew": false,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "目前最強大的代理式編碼模型，在偵錯、複雜工作流程和跨工具協調方面表現卓越，適合複雜的遊戲邏輯開發。",
-            "why_en": "Currently the strongest agentic coding model, excelling in debugging, complex workflows, and cross-tool coordination, suitable for intricate game logic development."
-          },
-          {
-            "rank": 3,
-            "name": "Gemini Flash",
-            "version": "3.5",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "5/19",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "針對代理式和編碼任務提供持續的領先性能，並優化了速度和成本，適合快速迭代的遊戲開發。",
-            "why_en": "Offers sustained frontier performance on agentic and coding tasks, optimized for speed and cost, suitable for rapid iteration in game development."
-          },
-          {
-            "rank": 4,
-            "name": "MAI-Code-1-Flash",
-            "version": null,
-            "vendor": "Microsoft",
-            "vendor_en": "Microsoft",
-            "date": "6/2",
-            "date_en": null,
+            "name": "Cursor",
+            "version": "3.7",
+            "vendor": "Cursor",
+            "vendor_en": "Cursor",
+            "date": "6/4",
+            "date_en": "June 4",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "專為快速高效的日常開發工作流程而設計的編碼模型，並整合至 GitHub Copilot，提升編碼效率。",
-            "why_en": "A coding model designed for fast, efficient everyday developer workflows, integrated with GitHub Copilot to enhance coding efficiency."
+            "why": "AI 優先的程式碼編輯器，新增 Canvas 設計模式和上下文使用報告，直接提升遊戲開發者的編碼效率和協作能力。",
+            "why_en": "AI-first code editor with new Canvas Design Mode and Context Usage Report, directly enhancing coding efficiency and collaboration for game developers."
+          },
+          {
+            "rank": 3,
+            "name": "Snowflake CoCo",
+            "version": null,
+            "vendor": "Snowflake",
+            "vendor_en": "Snowflake",
+            "date": "6/2",
+            "date_en": "June 2",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "受管理的 AI 編碼代理，能協助開發者在任何開發環境中加速端到端開發流程，對遊戲編程至關重要。",
+            "why_en": "A governed AI coding agent that accelerates end-to-end development wherever you build, crucial for game programming."
+          },
+          {
+            "rank": 4,
+            "name": "Holo Models",
+            "version": "3.1",
+            "vendor": "H Company",
+            "vendor_en": "H Company",
+            "date": "6/2",
+            "date_en": "June 2",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "專為「電腦使用」模式設計，使 AI 代理能夠透過視覺互動操作應用程式，極大地擴展了 AI 在遊戲開發工具中的代理能力。",
+            "why_en": "Models tuned for 'Computer Use' mode, enabling AI agents to interact with applications by seeing and clicking, greatly expanding AI agent capabilities within game development tools."
           },
           {
             "rank": 5,
-            "name": "Claude Opus",
-            "version": "4.7",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "4/16",
-            "date_en": null,
-            "isNew": false,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "在進階軟體工程和編碼方面有顯著提升，SWE-bench Verified 和 CursorBench 基準測試分數大幅提高。",
-            "why_en": "Significant improvements in advanced software engineering and coding, with substantial gains in SWE-bench Verified and CursorBench benchmarks."
+            "name": "NVIDIA OpenShell",
+            "version": null,
+            "vendor": "NVIDIA",
+            "vendor_en": "NVIDIA",
+            "date": "6/2",
+            "date_en": "June 2",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "與 Microsoft 合作推出，為 Windows 上的 AI 代理提供安全且整合的開發工具，是構建遊戲開發 AI 代理的基礎設施。",
+            "why_en": "Released in collaboration with Microsoft, providing secure and integrated development tools for AI agents on Windows, serving as foundational infrastructure for building game development AI agents."
           }
         ]
       }
@@ -381,78 +381,78 @@
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月(2026 年 6 月)新發佈的數據模擬與數據推理模型不足 5 個,已用近期(近 30–60 天)發佈補足。",
+        "note_en": "Fewer than 5 new data simulation and data reasoning models were released this month (June 2026); the list has been supplemented with recent releases (last 30-60 days).",
         "items": [
           {
             "rank": 1,
-            "name": "Nemotron-3-Ultra",
-            "version": "550B-A55B-NVFP4",
+            "name": "Cosmos 3 Super",
+            "version": "3 Super",
             "vendor": "NVIDIA",
             "vendor_en": "NVIDIA",
-            "date": "6/4",
+            "date": "6/1",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "領先的開源推理模型，專為複雜代理工作流、長上下文推理和高風險分析工作負載而優化。",
-            "why_en": "Leading open-weight reasoning model optimized for complex agentic workflows, long-context reasoning, and high-stakes analytical workloads."
+            "why": "專為物理 AI 推理、世界模型和行動模型設計，並提供用於訓練機器人與自動駕駛車輛的模擬環境。",
+            "why_en": "Designed for physical AI reasoning, world models, and action models, providing simulated environments for training robots and autonomous vehicles."
           },
           {
             "rank": 2,
-            "name": "MiniMax M3",
-            "version": "M3",
-            "vendor": "MiniMax",
-            "vendor_en": "MiniMax",
-            "date": "6/3",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "首個結合前沿軟體工程能力、百萬級上下文窗口和原生多模態電腦使用能力的開源模型。",
-            "why_en": "First open-weight model combining frontier software engineering capabilities, 1M context window, and native multimodal computer use."
-          },
-          {
-            "rank": 3,
-            "name": "Gemma 4",
-            "version": "12B",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "6/3",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "可在本地運行、無需單獨編碼器即可處理多模態數據的開源模型，具備強大的科學推理能力。",
-            "why_en": "Open-weight model capable of local multimodal data processing without separate encoders, demonstrating strong scientific reasoning."
-          },
-          {
-            "rank": 4,
-            "name": "Cosmos 3",
-            "version": "Super/Nano",
+            "name": "Nemotron 3 Ultra",
+            "version": "3 Ultra",
             "vendor": "NVIDIA",
             "vendor_en": "NVIDIA",
-            "date": "6/2",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "開源物理AI基礎模型，原生結合視覺推理、世界生成和動作預測，適用於物理AI模擬。",
-            "why_en": "Open physical AI foundation model natively combining vision reasoning, world generation, and action prediction for physical AI simulation."
-          },
-          {
-            "rank": 5,
-            "name": "Gemini Spark / Antigravity 2.0",
-            "version": "Agentic System / Platform",
-            "vendor": "Google",
-            "vendor_en": "Google",
             "date": "6/4",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "24/7自主工作區代理和多代理編排平台，推動數據推理和代理模擬。",
-            "why_en": "24/7 autonomous workspace agent and multi-agent orchestration platform, advancing data reasoning and agentic simulation."
+            "why": "一個開放的 MoE 模型，專注於長時間運行的代理工作負載，提供高效率和智能，適用於複雜的數據推理與模擬。",
+            "why_en": "An open MoE model focused on long-running agent workloads, offering high efficiency and intelligence for complex data reasoning and simulation."
+          },
+          {
+            "rank": 3,
+            "name": "Claude Opus",
+            "version": "4.8",
+            "vendor": "Anthropic",
+            "vendor_en": "Anthropic",
+            "date": "5/27",
+            "date_en": null,
+            "isNew": false,
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "在複雜多步驟編碼任務、長週期代理工作和工具選擇方面表現出色，展現了先進的數據推理能力。",
+            "why_en": "Excels in complex multi-step coding tasks, long-horizon agentic work, and tool selection, demonstrating advanced data reasoning capabilities."
+          },
+          {
+            "rank": 4,
+            "name": "Gemini Flash",
+            "version": "3.5 Flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "5/19",
+            "date_en": null,
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "以四倍速度提供前沿智能，在編碼和代理任務上超越 Gemini 3.1 Pro，適合快速數據推理與代理工作流。",
+            "why_en": "Delivers frontier-level intelligence at 4x the speed, surpassing Gemini 3.1 Pro in coding and agent tasks, suitable for fast data reasoning and agentic workflows."
+          },
+          {
+            "rank": 5,
+            "name": "Qwen",
+            "version": "3.7 Max",
+            "vendor": "Alibaba",
+            "vendor_en": "Alibaba",
+            "date": "5/18",
+            "date_en": null,
+            "isNew": false,
+            "overlap": "整體 #5",
+            "overlap_en": "Overall #5",
+            "why": "作為一個領先的通用大型語言模型，具備強大的通用推理能力，可應用於多種數據相關任務。",
+            "why_en": "As a leading general-purpose large language model, it possesses strong general reasoning capabilities applicable to various data-related tasks."
           }
         ]
       }
@@ -956,13 +956,13 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 6 月)發佈的遊戲模組 Rigging 工具不足 5 個，已用最近期(近 30–60 天)的正式發佈項目補足。Tripo Auto-Rigging (Uni-Rig) 並非本月新發佈，但因其在 2026 年 5 月的評測中被強調為頂級功能，故列入榜單。Cascadeur 2026.1 於 4 月發佈，但仍在近 60 天內，且包含重要更新。",
-        "note_en": "Fewer than 5 game module rigging tools were officially released this month (June 2026), so the list has been supplemented with recent (within 30-60 days) official releases. Tripo Auto-Rigging (Uni-Rig) is not a new release this month, but is included due to its prominence as a top feature in May 2026 reviews. Cascadeur 2026.1 was released in April but is within the last 60 days and includes significant updates.",
+        "note": null,
+        "note_en": null,
         "items": [
           {
             "rank": 1,
-            "name": "Meshy Auto-Rigging + Animation (Meshy 6 updates)",
-            "version": "Meshy 6",
+            "name": "Meshy Auto-Rigging & Animation API",
+            "version": "API",
             "vendor": "Meshy",
             "vendor_en": "Meshy",
             "date": "5/15",
@@ -970,13 +970,13 @@
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "Meshy 6 帶來顯著的自動綁骨與動畫功能改進，特別是權重繪製和動畫庫整合，大幅提升遊戲開發流程效率。",
-            "why_en": "Meshy 6 brings significant improvements to auto-rigging and animation features, especially in weight painting and animation library integration, greatly enhancing game development workflow efficiency."
+            "why": "提供了強大的自動綁骨與動畫 API，讓生成式 AI 3D 模型能快速具備可動性，大幅加速遊戲開發與內容創作流程。",
+            "why_en": "Offers a powerful auto-rigging and animation API, enabling generative AI 3D models to quickly become animatable, significantly accelerating game development and content creation workflows."
           },
           {
             "rank": 2,
             "name": "Autodesk Flow Studio AI Rigging",
-            "version": "AI Rigging Feature",
+            "version": "Feature",
             "vendor": "Autodesk",
             "vendor_en": "Autodesk",
             "date": "5/14",
@@ -984,26 +984,40 @@
             "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "Autodesk Flow Studio 新增 AI 綁骨功能，可自動化骨骼與控制器設置，在數分鐘內將 3D 模型轉化為可動畫角色。",
-            "why_en": "Autodesk Flow Studio introduces AI Rigging, automating bone and controller setup to transform 3D models into animatable characters in minutes."
+            "why": "將 AI 綁骨功能深度整合至其雲端角色與影片創作平台，大幅簡化 3D 角色動畫準備流程，並支援導出至主流 DCC 工具。",
+            "why_en": "Deeply integrates AI rigging into its cloud-based character and video creation platform, significantly streamlining 3D character animation preparation, with export support to major DCC tools."
           },
           {
             "rank": 3,
+            "name": "Tripo AI Rigging (Uni-Rig)",
+            "version": "Feature",
+            "vendor": "Tripo",
+            "vendor_en": "Tripo",
+            "date": "5/6",
+            "date_en": "May 6",
+            "isNew": true,
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "提供一鍵式通用 AI 綁骨，能快速將任何 3D 模型轉化為可動畫角色，並強調其速度與易用性，適合快速原型開發。",
+            "why_en": "Provides one-click universal AI rigging, quickly transforming any 3D model into an animatable character, emphasizing speed and ease of use, ideal for rapid prototyping."
+          },
+          {
+            "rank": 4,
             "name": "Cascadeur 2026.1",
             "version": "2026.1",
             "vendor": "Nekki",
             "vendor_en": "Nekki",
             "date": "4/9",
             "date_en": "April 9",
-            "isNew": false,
+            "isNew": true,
             "overlap": "整體 #4",
             "overlap_en": "Overall #4",
-            "why": "Cascadeur 2026.1 引入了 AI 驅動的 Root Motion 工具、增強的四足動物 AutoPosing 和碰撞穿透清理功能，提升動畫製作效率。",
-            "why_en": "Cascadeur 2026.1 introduces an AI-powered Root Motion Tool, enhanced quadruped AutoPosing, and Collision Penetration Cleaning, improving animation production efficiency."
+            "why": "推出 AI 驅動的 Root Motion 工具與改進的四足動物自動擺姿，強化物理輔助動畫功能，並新增 Unreal Engine Live Link。",
+            "why_en": "Introduced AI-powered Root Motion tool and improved quadruped AutoPosing, enhancing physics-assisted animation capabilities, and added Unreal Engine Live Link."
           },
           {
-            "rank": 4,
-            "name": "Hive Autorigger (Zoo Tools Pro 2.12.4a update)",
+            "rank": 5,
+            "name": "Hive Autorigger (Zoo Tools Pro 2.12.4a)",
             "version": "2.12.4a",
             "vendor": "Create3dcharacters",
             "vendor_en": "Create3dcharacters",
@@ -1012,22 +1026,8 @@
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Hive Autorigger 的最新更新優化了頸部扭曲行為和四足動物踝關節對齊，使角色變形更自然。",
-            "why_en": "The latest update to Hive Autorigger refines neck twist behavior and quad leg ankle alignment for more natural character deformation."
-          },
-          {
-            "rank": 5,
-            "name": "Tripo Auto-Rigging (Uni-Rig)",
-            "version": "Uni-Rig",
-            "vendor": "Tripo AI",
-            "vendor_en": "Tripo AI",
-            "date": "5/2026",
-            "date_en": "May 2026",
-            "isNew": false,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "Tripo AI 提供整合的 AI 自動綁骨功能，強調從 3D 模型生成到動畫的無縫工作流程，在 2026 年 5 月的評測中被高度評價。",
-            "why_en": "Tripo AI offers integrated AI-powered auto-rigging, emphasizing a seamless workflow from 3D model generation to animation, highly praised in May 2026 reviews."
+            "why": "針對 Maya 提供精煉的自動綁骨功能，特別是改進了頸部扭轉和四足動物腳踝對齊，並新增 MetaHuman 支援，提升專業工作流效率。",
+            "why_en": "Offers refined auto-rigging for Maya, with improvements in neck twist and quadruped ankle alignment, and added MetaHuman support, enhancing professional workflow efficiency."
           }
         ]
       }
