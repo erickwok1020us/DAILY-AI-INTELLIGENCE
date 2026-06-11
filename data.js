@@ -1,11 +1,11 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-06-11T23:11:42+08:00",
-  "updatedDateLabel": "2026 年 6 月 11 日",
+  "updatedAt": "2026-06-12T02:38:54+08:00",
+  "updatedDateLabel": "2026 年 6 月 12 日",
   "month": "2026 年 6 月",
   "month_en": "June 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/11 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/11",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/12 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/12",
   "changesToday": [
     "Claude Fable (6/9) — 綜合 AI MODEL 排名",
     "Claude Fable 5 (6/9) — 創建遊戲的助手",
