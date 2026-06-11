@@ -1,6 +1,6 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-06-11T22:54:06+08:00",
+  "updatedAt": "2026-06-11T23:11:42+08:00",
   "updatedDateLabel": "2026 年 6 月 11 日",
   "month": "2026 年 6 月",
   "month_en": "June 2026",
@@ -43,6 +43,17 @@ window.DIGEST = {
       "overall": [
         {
           "rank": 1,
+          "name": "Claude Fable 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "AA 65",
+          "why": "AA 智能指數 #1(64.9,領先第二名約 5 分);10 項 benchmark 中 5 項最高",
+          "why_en": "#1 on AA Intelligence Index (64.9, ~5 pts clear); tops 5 of 10 benchmarks",
+          "meta": "6/9 發佈 · Mythos 級",
+          "meta_en": "Released 6/9 · Mythos-class"
+        },
+        {
+          "rank": 2,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -53,7 +64,7 @@ window.DIGEST = {
           "meta_en": "Released 5/28 · API $5/$25"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "GPT-5.5 (xhigh)",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -64,7 +75,7 @@ window.DIGEST = {
           "meta_en": "4/23 · ChatGPT/API"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Gemini 3.1 Pro",
           "vendor": "Google",
           "vendor_en": "Google",
@@ -75,7 +86,7 @@ window.DIGEST = {
           "meta_en": "~Q1 · AI Studio/Vertex"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "Qwen3.7-Max",
           "vendor": "Alibaba",
           "vendor_en": "Alibaba",
@@ -84,17 +95,6 @@ window.DIGEST = {
           "why_en": "AA 57; best open-ecosystem model, 1M context",
           "meta": "5/20 · Alibaba Cloud",
           "meta_en": "5/20 · Alibaba Cloud"
-        },
-        {
-          "rank": 5,
-          "name": "Gemini 3.5 Flash",
-          "vendor": "Google",
-          "vendor_en": "Google",
-          "score": "AA 55",
-          "why": "AA 55;性價比最佳",
-          "why_en": "AA 55; best value",
-          "meta": "5/19 · Gemini app",
-          "meta_en": "5/19 · Gemini app"
         }
       ],
       "monthly": {
@@ -184,6 +184,18 @@ window.DIGEST = {
       "overall": [
         {
           "rank": 1,
+          "name": "Claude Fable 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "編程 #1",
+          "score_en": "coding #1",
+          "why": "AA 編程榜第一(314 模型中);agentic 任務亦第一",
+          "why_en": "#1 for coding on AA (of 314); also #1 on agentic tasks",
+          "meta": "6/9 · Mythos 級",
+          "meta_en": "6/9 · Mythos-class"
+        },
+        {
+          "rank": 2,
           "name": "GPT-5.5",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -194,7 +206,7 @@ window.DIGEST = {
           "meta_en": "4/23 · ChatGPT/API"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -205,7 +217,7 @@ window.DIGEST = {
           "meta_en": "5/28 · native to Claude Code"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Claude Opus 4.7",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -216,7 +228,7 @@ window.DIGEST = {
           "meta_en": "~Apr · Claude API"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "GPT-5.3-Codex",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -225,17 +237,6 @@ window.DIGEST = {
           "why_en": "Codex-tuned agent model, SWE-bench 85.0%",
           "meta": "Q1 · Codex CLI",
           "meta_en": "Q1 · Codex CLI"
-        },
-        {
-          "rank": 5,
-          "name": "Gemini 3.1 Pro",
-          "vendor": "Google",
-          "vendor_en": "Google",
-          "score": "SWE 80.6%",
-          "why": "性價比之王,1M context",
-          "why_en": "Best price/perf, 1M context",
-          "meta": "~Q1 · Gemini CLI",
-          "meta_en": "~Q1 · Gemini CLI"
         }
       ],
       "monthly": {
@@ -336,6 +337,18 @@ window.DIGEST = {
         },
         {
           "rank": 2,
+          "name": "Claude Fable 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "AA 綜合#1",
+          "score_en": "AA overall #1",
+          "why": "綜合智能 #1;推理屬頂段(GPQA 與前段同級)",
+          "why_en": "#1 overall intelligence; top-tier reasoning (GPQA in the leading pack)",
+          "meta": "6/9 · Mythos 級",
+          "meta_en": "6/9 · Mythos-class"
+        },
+        {
+          "rank": 3,
           "name": "GPT-5.5 (xhigh)",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -346,7 +359,7 @@ window.DIGEST = {
           "meta_en": "4/23 · probability reasoning"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Claude Opus 4.8 (max)",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -356,18 +369,6 @@ window.DIGEST = {
           "why_en": "#1 on AA overall; best at writing+running simulation code (GPQA saturated, tiny gaps)",
           "meta": "5/28 · 寫/跑模擬",
           "meta_en": "5/28 · build/run simulations"
-        },
-        {
-          "rank": 4,
-          "name": "Claude Opus 4.7 (max)",
-          "vendor": "Anthropic",
-          "vendor_en": "Anthropic",
-          "score": "幻覺最低",
-          "score_en": "lowest halluc.",
-          "why": "幻覺率最低 → 數據推理較安全",
-          "why_en": "Lowest hallucination → safer data inference",
-          "meta": "~4 月 · Claude API",
-          "meta_en": "~Apr · Claude API"
         },
         {
           "rank": 5,
