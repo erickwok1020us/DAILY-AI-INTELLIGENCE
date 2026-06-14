@@ -1,26 +1,26 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-06-14T01:06:20+08:00",
-  "updatedDateLabel": "2026 年 6 月 14 日",
+  "updatedAt": "2026-06-15T01:05:14+08:00",
+  "updatedDateLabel": "2026 年 6 月 15 日",
   "month": "2026 年 6 月",
   "month_en": "June 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/14 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/14",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/15 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/15",
   "changesToday": [
     "Claude Fable 5 (6/9) — 創建遊戲的助手",
-    "Google Cloud AI Agents for Game Development (6/9) — 創建遊戲的助手",
+    "Google Cloud 遊戲開發 AI 代理 (Living Games) (6/9) — 創建遊戲的助手",
     "Claude Fable 5 (6/9) — 創建數據模擬器 & 數據推理",
-    "MAI-Thinking-1 (6/2) — 創建數據模擬器 & 數據推理",
+    "Oasis 3 (6/10) — 創建數據模擬器 & 數據推理",
     "Kling (6/12) — 創建真人影片",
-    "Dreamina Seedance (6/10) — 創建真人影片"
+    "AI Creator Lab (6/4) — 創建遊戲模組"
   ],
   "changesToday_en": [
     "Claude Fable 5 (6/9) — Game-Building Assistants",
-    "Google Cloud AI Agents for Game Development (6/9) — Game-Building Assistants",
+    "Google Cloud 遊戲開發 AI 代理 (Living Games) (6/9) — Game-Building Assistants",
     "Claude Fable 5 (6/9) — Data Simulators & Reasoning",
-    "MAI-Thinking-1 (6/2) — Data Simulators & Reasoning",
+    "Oasis 3 (6/10) — Data Simulators & Reasoning",
     "Kling (6/12) — Live-Action Video",
-    "Dreamina Seedance (6/10) — Live-Action Video"
+    "AI Creator Lab (6/4) — 3D Asset Generation"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -246,7 +246,7 @@ window.DIGEST = {
           {
             "rank": 1,
             "name": "Claude Fable 5",
-            "version": "5",
+            "version": "Mythos-class",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "6/9",
@@ -254,64 +254,64 @@ window.DIGEST = {
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "Anthropic 最新發佈的旗艦模型，在 SWE-bench Pro 和 SWE-bench Verified 編程基準測試中表現領先，是處理複雜多檔案程式碼任務的強大工具。",
-            "why_en": "Anthropic's latest flagship model, leading in SWE-bench Pro and SWE-bench Verified coding benchmarks, is a powerful tool for complex, multi-file coding tasks."
+            "why": "Anthropic 最強大的通用模型，在軟體工程和長程代理任務上表現卓越，為遊戲開發提供頂級程式碼生成與代理能力。",
+            "why_en": "Anthropic's most capable general-purpose model, excelling in software engineering and long-horizon agentic tasks, providing top-tier code generation and agent capabilities for game development."
           },
           {
             "rank": 2,
-            "name": "Google Cloud AI Agents for Game Development",
-            "version": "Living Games Platform",
-            "vendor": "Google",
-            "vendor_en": "Google",
+            "name": "Google Cloud 遊戲開發 AI 代理 (Living Games)",
+            "version": "套件/平台",
+            "vendor": "Google Cloud",
+            "vendor_en": "Google Cloud",
             "date": "6/9",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Google Cloud 推出的自主 AI 代理平台，專為遊戲開發設計，提供動態遊戲玩法、自動化遊戲測試和 AI 輔助內容創作功能。",
-            "why_en": "Google Cloud's platform of autonomous AI agents, designed for game development, offers dynamic gameplay, automated playtesting, and AI-assisted content creation."
+            "why": "一套專為遊戲開發設計的自主 AI 代理，提供自動化遊戲測試、程式碼生成和 AI 輔助內容創作，並引入「Living Games」概念。",
+            "why_en": "A suite of autonomous AI agents specifically designed for game development, offering automated playtesting, code generation, and AI-assisted content creation, introducing the 'Living Games' concept."
           },
           {
             "rank": 3,
-            "name": "Cursor Design Mode Improvements",
-            "version": "3.7",
+            "name": "Cursor 3.7",
+            "version": "IDE",
             "vendor": "Anysphere",
             "vendor_en": "Anysphere",
-            "date": "6/5",
+            "date": "6/10",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Cursor AI-first IDE 的最新更新，透過視覺提示直接引導代理進行設計模式操作，增強了遊戲開發中的代理協作能力。",
-            "why_en": "The latest update to Cursor's AI-first IDE enhances agent collaboration in game development by allowing direct agent guidance with visual prompts in Design Mode."
+            "why": "AI 優先的整合開發環境，具備強大的代理功能和多模型支援，近期更新提升了設計模式和錯誤修復能力。",
+            "why_en": "An AI-first integrated development environment with powerful agentic features and multi-model support, with recent updates enhancing design mode and bug fixing capabilities."
           },
           {
             "rank": 4,
-            "name": "Microsoft Rayfin",
-            "version": "SDK & CLI",
-            "vendor": "Microsoft",
-            "vendor_en": "Microsoft",
-            "date": "6/3",
+            "name": "GitHub Copilot with Claude Fable 5",
+            "version": "整合",
+            "vendor": "Microsoft/GitHub",
+            "vendor_en": "Microsoft/GitHub",
+            "date": "6/9",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "一個新的開源 SDK 和 CLI，使開發者和編程代理能夠描述並獲得企業級應用程式後端，包括資料庫和身份驗證，加速網頁遊戲基礎設施開發。",
-            "why_en": "A new open-source SDK and CLI enabling developers and coding agents to describe and obtain enterprise-grade application backends, including databases and authentication, accelerating web game infrastructure development."
+            "why": "將頂級模型 Claude Fable 5 整合至 Copilot，顯著提升了其在自主程式碼生成和複雜工作流程中的效率和能力。",
+            "why_en": "Integration of the frontier model Claude Fable 5 into Copilot significantly enhances its efficiency and capabilities in autonomous code generation and complex workflows."
           },
           {
             "rank": 5,
-            "name": "Microsoft Aion 1.0 Plan",
-            "version": "1.0",
-            "vendor": "Microsoft",
-            "vendor_en": "Microsoft",
-            "date": "6/2",
+            "name": "JetBrains Mellum 2",
+            "version": "程式碼模型",
+            "vendor": "JetBrains",
+            "vendor_en": "JetBrains",
+            "date": "6/4",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Windows 內建的 140 億參數推理和工具調用模型，支援應用程式在設備上進行代理工作流程，為遊戲開發助手提供強大的本地 AI 基礎。",
-            "why_en": "A 14-billion parameter reasoning and tool-calling model built into Windows, enabling on-device agentic workflows for applications, providing a powerful local AI foundation for game development assistants."
+            "why": "由領先 IDE 廠商發布的開源程式碼模型，利用其深厚的開發者工作流程背景，提供優化的程式碼生成能力。",
+            "why_en": "An open-source coding model released by a leading IDE vendor, leveraging its deep developer workflow context to provide optimized code generation capabilities."
           }
         ]
       }
@@ -383,50 +383,50 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 6 月)發佈的項目不足 5 個，因此使用最近期(近 30-60 天，即 2026 年 5 月)的項目補足。",
-        "note_en": "Fewer than 5 items were released this month (June 2026), so the list is supplemented with recent items (last 30-60 days, i.e., May 2026).",
+        "note": "本月(2026 年 6 月)不足 5 個正式發佈項目,故用近期(近 30–60 天)發佈補足。",
+        "note_en": "Not enough officially released items in June 2026, so supplemented with recent (30-60 days) releases.",
         "items": [
           {
             "rank": 1,
             "name": "Claude Fable 5",
-            "version": null,
+            "version": "Mythos-class",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "6/9",
-            "date_en": "June 9",
+            "date_en": null,
             "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "Anthropic 本月發布的最強大模型，專為嚴苛的推理和長週期代理工作而設計，在 GPQA Diamond 和 SWE-Bench Pro 表現優異。",
-            "why_en": "Anthropic's most powerful model released this month, designed for demanding reasoning and long-horizon agentic work, with excellent performance on GPQA Diamond and SWE-Bench Pro."
+            "why": "Anthropic 最強大的通用模型，專為複雜推理、長期代理工作和科學研究而設計，在多項基準測試中表現卓越。",
+            "why_en": "Anthropic's most powerful generally available model, designed for complex reasoning, long-horizon agentic work, and scientific research, showing exceptional performance across benchmarks."
           },
           {
             "rank": 2,
-            "name": "MAI-Thinking-1",
-            "version": null,
-            "vendor": "Microsoft AI",
-            "vendor_en": "Microsoft AI",
-            "date": "6/2",
-            "date_en": "June 2",
+            "name": "Oasis 3",
+            "version": "World Model",
+            "vendor": "Decart",
+            "vendor_en": "Decart",
+            "date": "6/10",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Microsoft AI 首個專用推理模型，展現了先進的數學推理能力，在 AIME 基準測試中取得高分。",
-            "why_en": "Microsoft AI's first dedicated reasoning model, demonstrating advanced mathematical reasoning capabilities with high scores on AIME benchmarks."
+            "why": "首個用於物理 AI (如機器人) 的即時互動世界模型，能生成動態環境以進行閉環模擬訓練，直接符合數據模擬範疇。",
+            "why_en": "The first real-time interactive world model for Physical AI (e.g., robotics), capable of generating dynamic environments for closed-loop simulation training, directly fitting the data simulation category."
           },
           {
             "rank": 3,
-            "name": "Nemotron 3 Ultra",
+            "name": "MiniMax 3",
             "version": null,
-            "vendor": "NVIDIA",
-            "vendor_en": "NVIDIA",
-            "date": "6/11",
-            "date_en": "June 11",
+            "vendor": "MiniMax",
+            "vendor_en": "MiniMax",
+            "date": "6/1",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "NVIDIA 的開放模型，提供前沿的推理和代理性能，適合企業級 AI 部署。",
-            "why_en": "NVIDIA's open model offering frontier reasoning and agentic performance, suitable for enterprise-grade AI deployments."
+            "why": "一款多模態、高效能模型，在編碼和代理任務上表現強勁，並以極具競爭力的價格提供 100 萬 token 的上下文窗口。",
+            "why_en": "A multimodal, hyper-efficient model with strong coding and agentic capabilities, offering a 1M token context window at a highly competitive price."
           },
           {
             "rank": 4,
@@ -435,26 +435,26 @@ window.DIGEST = {
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "5/28",
-            "date_en": "May 28",
+            "date_en": null,
             "isNew": false,
             "overlap": "整體 #4",
             "overlap_en": "Overall #4",
-            "why": "Anthropic 最新的 Opus 模型，專為高級編碼、AI 代理和長上下文推理設計，在數學基準測試中表現出色。",
-            "why_en": "Anthropic's latest Opus model, designed for advanced coding, AI agents, and long-context reasoning, with strong performance in mathematical benchmarks."
+            "why": "在 Artificial Analysis 智能指數上被評為頂級推理引擎，在工程和代理任務中表現出色，並支援 100 萬 token 上下文窗口。",
+            "why_en": "Ranked as a top reasoning engine on the Artificial Analysis Intelligence Index, excelling in engineering and agentic tasks, with a 1M token context window."
           },
           {
             "rank": 5,
             "name": "Qwen3.7-Max",
             "version": null,
-            "vendor": "Alibaba Cloud",
-            "vendor_en": "Alibaba Cloud",
+            "vendor": "Alibaba",
+            "vendor_en": "Alibaba",
             "date": "5/19",
-            "date_en": "May 19",
+            "date_en": null,
             "isNew": false,
             "overlap": "整體 #5",
             "overlap_en": "Overall #5",
-            "why": "阿里巴巴雲的旗艦推理模型，作為代理基礎模型，在複雜邏輯推理和數學能力方面有顯著提升。",
-            "why_en": "Alibaba Cloud's flagship reasoning model, designed as an agent foundation model, with significant advancements in complex logical reasoning and mathematical capabilities."
+            "why": "專為長期代理工作流程、編碼代理和辦公自動化設計，具有 100 萬 token 上下文窗口和強大的多步驟推理能力。",
+            "why_en": "Designed for long-horizon agent workflows, coding agents, and office automation, featuring a 1M token context window and strong multi-step reasoning capabilities."
           }
         ]
       }
@@ -675,13 +675,13 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": null,
+        "note": "本月(2026 年 6 月)僅有 1 個新發佈項目，其餘 4 個為近 30-60 天內發佈的最新項目。/ Only 1 new release this month (June 2026); the other 4 are recent releases from the past 30-60 days.",
         "note_en": null,
         "items": [
           {
             "rank": 1,
             "name": "Kling",
-            "version": "3.0 系列 (4K)",
+            "version": "3.0 Pro",
             "vendor": "快手",
             "vendor_en": "Kuaishou",
             "date": "6/12",
@@ -689,64 +689,64 @@ window.DIGEST = {
             "isNew": true,
             "overlap": "整體 #3",
             "overlap_en": "Overall #3",
-            "why": "推出原生 4K 影片生成、15 秒片段、音視訊同步及多語言唇形同步，大幅提升寫實度與控制力。",
-            "why_en": "Launched native 4K video generation, 15-second clips, joint audio-visual, and expanded multilingual lip-sync, significantly enhancing realism and control."
+            "why": "本月最新發佈，提供卓越的電影級寫實感、4K 輸出及多鏡頭敘事控制。/ Newly released this month, offering exceptional cinematic realism, 4K output, and multi-shot narrative control.",
+            "why_en": "Newly released this month, offering exceptional cinematic realism, 4K output, and multi-shot narrative control."
           },
           {
             "rank": 2,
             "name": "Dreamina Seedance",
-            "version": "2.0 Mini",
+            "version": "2.0",
             "vendor": "字節跳動",
             "vendor_en": "ByteDance",
-            "date": "6/10",
+            "date": "4/15",
             "date_en": null,
-            "isNew": true,
+            "isNew": false,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "作為 Seedance 2.0 的精簡版，專注於提升易用性、速度及彈性工作流程，讓更多創作者能生成高品質影片。",
-            "why_en": "As a refined version of Seedance 2.0, it focuses on enhancing usability, speed, and flexible creative workflows, enabling more creators to generate high-quality videos."
+            "why": "全球正式發佈，在多鏡頭影片、音訊同步及角色一致性方面表現出色。/ Globally launched, excelling in multi-shot videos, synchronized audio, and character consistency.",
+            "why_en": "Globally launched, excelling in multi-shot videos, synchronized audio, and character consistency."
           },
           {
             "rank": 3,
+            "name": "HappyHorse",
+            "version": "1.0",
+            "vendor": "阿里巴巴",
+            "vendor_en": "Alibaba",
+            "date": "4/27",
+            "date_en": null,
+            "isNew": false,
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "以其卓越的原始視覺品質和動態細節，在寫實影片生成方面表現出色。/ Stands out for its exceptional raw visual quality and dynamic details in realistic video generation.",
+            "why_en": "Stands out for its exceptional raw visual quality and dynamic details in realistic video generation."
+          },
+          {
+            "rank": 4,
+            "name": "WAN",
+            "version": "2.7",
+            "vendor": "阿里巴巴",
+            "vendor_en": "Alibaba",
+            "date": "4/1",
+            "date_en": null,
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "大幅提升視覺品質、動作流暢度及一致性，並引入專業級編輯功能。/ Significantly enhances visual quality, motion fluidity, and consistency, introducing professional-grade editing features.",
+            "why_en": "Significantly enhances visual quality, motion fluidity, and consistency, introducing professional-grade editing features."
+          },
+          {
+            "rank": 5,
             "name": "MiniMax Hailuo",
             "version": "2.3",
             "vendor": "MiniMax",
             "vendor_en": "MiniMax",
-            "date": "6/5",
+            "date": "4/20",
             "date_en": null,
-            "isNew": true,
+            "isNew": false,
             "overlap": "整體 #5",
             "overlap_en": "Overall #5",
-            "why": "本月確認為最新版本，以其「運動擴散引擎」提供流暢自然的動作，有效解決 AI 影片常見的抖動問題。",
-            "why_en": "Confirmed as the latest version this month, it offers smooth and natural motion with its 'Motion Diffusion Engine,' effectively addressing common AI video jitter issues."
-          },
-          {
-            "rank": 4,
-            "name": "Runway",
-            "version": "Gen-4 更新",
-            "vendor": "Runway AI",
-            "vendor_en": "Runway AI",
-            "date": "5/3",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Gen-4 於本月更新，新增原生音訊、社群媒體模板及 API 接口，強化專業影片製作流程。",
-            "why_en": "Gen-4 received an update this month, adding native audio, social media templates, and API hooks, enhancing professional video production workflows."
-          },
-          {
-            "rank": 5,
-            "name": "HitPaw VikPea",
-            "version": "V5.3.0",
-            "vendor": "HitPaw",
-            "vendor_en": "HitPaw",
-            "date": "5/8",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "專注於提升影片中人物主體的真實感，提供即時皮膚平滑、光線調整及面部特徵優化等功能。",
-            "why_en": "Focuses on enhancing realism for human subjects in videos, offering features like real-time skin smoothing, lighting adjustments, and facial feature refinement."
+            "why": "擅長快速生成短片內容，具有良好的色彩和風格穩定性，適合社群媒體應用。/ Excels in rapid generation of short-form content with good color and style stability, ideal for social media applications.",
+            "why_en": "Excels in rapid generation of short-form content with good color and style stability, ideal for social media applications."
           }
         ]
       }
