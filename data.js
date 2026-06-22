@@ -1,6 +1,6 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-06-23T00:01:07+08:00",
+  "updatedAt": "2026-06-23T03:01:24+08:00",
   "updatedDateLabel": "2026 年 6 月 23 日",
   "month": "2026 年 6 月",
   "month_en": "June 2026",
