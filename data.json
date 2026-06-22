@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-06-22T01:14:58+08:00",
-  "updatedDateLabel": "2026 年 6 月 22 日",
+  "updatedAt": "2026-06-23T00:01:07+08:00",
+  "updatedDateLabel": "2026 年 6 月 23 日",
   "month": "2026 年 6 月",
   "month_en": "June 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/22 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/22",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/06/23 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/06/23",
   "changesToday": [
     "Claude Fable (6/9) — 綜合 AI MODEL 排名",
     "MiniMax M (6/1) — 綜合 AI MODEL 排名",
     "Google Cloud 遊戲開發 AI 代理 (6/9) — 創建遊戲的助手",
     "Summer Engine (6/6) — 創建遊戲的助手",
-    "Claude Fable 5 (6/9) — 創建數據模擬器 & 數據推理",
-    "MAI-Thinking-1 (6/2) — 創建數據模擬器 & 數據推理"
+    "NVIDIA Cosmos 3 (6/3) — 創建數據模擬器 & 數據推理",
+    "MAI-Thinking-1 (6/8) — 創建數據模擬器 & 數據推理"
   ],
   "changesToday_en": [
     "Claude Fable (6/9) — Overall AI Model Ranking",
     "MiniMax M (6/1) — Overall AI Model Ranking",
     "Google Cloud 遊戲開發 AI 代理 (6/9) — Game-Building Assistants",
     "Summer Engine (6/6) — Game-Building Assistants",
-    "Claude Fable 5 (6/9) — Data Simulators & Reasoning",
-    "MAI-Thinking-1 (6/2) — Data Simulators & Reasoning"
+    "NVIDIA Cosmos 3 (6/3) — Data Simulators & Reasoning",
+    "MAI-Thinking-1 (6/8) — Data Simulators & Reasoning"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -42,17 +42,6 @@
       "overall": [
         {
           "rank": 1,
-          "name": "Claude Fable 5",
-          "vendor": "Anthropic",
-          "vendor_en": "Anthropic",
-          "score": "AA 65",
-          "why": "AA 智能指數 #1(64.9,領先第二名約 5 分);10 項 benchmark 中 5 項最高",
-          "why_en": "#1 on AA Intelligence Index (64.9, ~5 pts clear); tops 5 of 10 benchmarks",
-          "meta": "6/9 發佈 · Mythos 級",
-          "meta_en": "Released 6/9 · Mythos-class"
-        },
-        {
-          "rank": 2,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -63,7 +52,7 @@
           "meta_en": "Released 5/28 · API $5/$25"
         },
         {
-          "rank": 3,
+          "rank": 2,
           "name": "GPT-5.5 (xhigh)",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -74,7 +63,7 @@
           "meta_en": "4/23 · ChatGPT/API"
         },
         {
-          "rank": 4,
+          "rank": 3,
           "name": "Gemini 3.1 Pro",
           "vendor": "Google",
           "vendor_en": "Google",
@@ -85,7 +74,7 @@
           "meta_en": "~Q1 · AI Studio/Vertex"
         },
         {
-          "rank": 5,
+          "rank": 4,
           "name": "Qwen3.7-Max",
           "vendor": "Alibaba",
           "vendor_en": "Alibaba",
@@ -94,6 +83,17 @@
           "why_en": "AA 57; best open-ecosystem model, 1M context",
           "meta": "5/20 · Alibaba Cloud",
           "meta_en": "5/20 · Alibaba Cloud"
+        },
+        {
+          "rank": 5,
+          "name": "Gemini 3.5 Flash",
+          "vendor": "Google",
+          "vendor_en": "Google",
+          "score": "AA 55",
+          "why": "AA 55;性價比最佳",
+          "why_en": "AA 55; best value",
+          "meta": "5/19 · Gemini app",
+          "meta_en": "5/19 · Gemini app"
         }
       ],
       "monthly": {
@@ -183,18 +183,6 @@
       "overall": [
         {
           "rank": 1,
-          "name": "Claude Fable 5",
-          "vendor": "Anthropic",
-          "vendor_en": "Anthropic",
-          "score": "編程 #1",
-          "score_en": "coding #1",
-          "why": "AA 編程榜第一(314 模型中);agentic 任務亦第一",
-          "why_en": "#1 for coding on AA (of 314); also #1 on agentic tasks",
-          "meta": "6/9 · Mythos 級",
-          "meta_en": "6/9 · Mythos-class"
-        },
-        {
-          "rank": 2,
           "name": "GPT-5.5",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -205,7 +193,7 @@
           "meta_en": "4/23 · ChatGPT/API"
         },
         {
-          "rank": 3,
+          "rank": 2,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -216,7 +204,7 @@
           "meta_en": "5/28 · native to Claude Code"
         },
         {
-          "rank": 4,
+          "rank": 3,
           "name": "Claude Opus 4.7",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -227,7 +215,7 @@
           "meta_en": "~Apr · Claude API"
         },
         {
-          "rank": 5,
+          "rank": 4,
           "name": "GPT-5.3-Codex",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -236,6 +224,17 @@
           "why_en": "Codex-tuned agent model, SWE-bench 85.0%",
           "meta": "Q1 · Codex CLI",
           "meta_en": "Q1 · Codex CLI"
+        },
+        {
+          "rank": 5,
+          "name": "Gemini 3.1 Pro",
+          "vendor": "Google",
+          "vendor_en": "Google",
+          "score": "SWE 80.6%",
+          "why": "性價比之王,1M context",
+          "why_en": "Best price/perf, 1M context",
+          "meta": "~Q1 · Gemini CLI",
+          "meta_en": "~Q1 · Gemini CLI"
         }
       ],
       "monthly": {
@@ -336,18 +335,6 @@
         },
         {
           "rank": 2,
-          "name": "Claude Fable 5",
-          "vendor": "Anthropic",
-          "vendor_en": "Anthropic",
-          "score": "AA 綜合#1",
-          "score_en": "AA overall #1",
-          "why": "綜合智能 #1;推理屬頂段(GPQA 與前段同級)",
-          "why_en": "#1 overall intelligence; top-tier reasoning (GPQA in the leading pack)",
-          "meta": "6/9 · Mythos 級",
-          "meta_en": "6/9 · Mythos-class"
-        },
-        {
-          "rank": 3,
           "name": "GPT-5.5 (xhigh)",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -358,7 +345,7 @@
           "meta_en": "4/23 · probability reasoning"
         },
         {
-          "rank": 4,
+          "rank": 3,
           "name": "Claude Opus 4.8 (max)",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -368,6 +355,18 @@
           "why_en": "#1 on AA overall; best at writing+running simulation code (GPQA saturated, tiny gaps)",
           "meta": "5/28 · 寫/跑模擬",
           "meta_en": "5/28 · build/run simulations"
+        },
+        {
+          "rank": 4,
+          "name": "Claude Opus 4.7 (max)",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "幻覺最低",
+          "score_en": "lowest halluc.",
+          "why": "幻覺率最低 → 數據推理較安全",
+          "why_en": "Lowest hallucination → safer data inference",
+          "meta": "~4 月 · Claude API",
+          "meta_en": "~Apr · Claude API"
         },
         {
           "rank": 5,
@@ -387,73 +386,73 @@
         "items": [
           {
             "rank": 1,
-            "name": "Claude Fable 5",
-            "version": null,
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "6/9",
-            "date_en": null,
+            "name": "NVIDIA Cosmos 3",
+            "version": "Omnimodal World Models",
+            "vendor": "NVIDIA",
+            "vendor_en": "NVIDIA",
+            "date": "6/3",
+            "date_en": "June 3",
             "isNew": true,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "作為 Anthropic 最強大的公開模型，在軟體工程、研究、視覺和網路安全方面展現卓越推理能力。",
-            "why_en": "As Anthropic's most powerful public model, it demonstrates exceptional reasoning capabilities across software engineering, research, vision, and cybersecurity."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "統一語言、圖像、影片、音訊和物理動作序列，實現生成式模擬和機器人策略執行，適用於物理AI。",
+            "why_en": "Unifies language, image, video, audio, and physical action sequences for generative simulation and robot policy execution in Physical AI."
           },
           {
             "rank": 2,
             "name": "MAI-Thinking-1",
-            "version": null,
-            "vendor": "Microsoft",
-            "vendor_en": "Microsoft",
-            "date": "6/2",
-            "date_en": null,
+            "version": "MAI-Thinking-1",
+            "vendor": "Microsoft AI",
+            "vendor_en": "Microsoft AI",
+            "date": "6/8",
+            "date_en": "June 8",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "在 AIME 2025 達到 97.0% 和 AIME 2026 達到 94.5%，展現強大的數學與科學推理能力。",
-            "why_en": "Achieves 97.0% on AIME 2025 and 94.5% on AIME 2026, showcasing strong mathematical and scientific reasoning capabilities."
+            "why": "Microsoft AI 的旗艦推理模型，在軟體工程基準測試中表現出色，並展示了進階的數學推理能力。",
+            "why_en": "Microsoft AI's flagship reasoning model, excelling in software engineering benchmarks and demonstrating advanced mathematical reasoning capabilities."
           },
           {
             "rank": 3,
             "name": "GLM-5.2",
-            "version": null,
+            "version": "753B MoE",
             "vendor": "Zhipu AI",
             "vendor_en": "Zhipu AI",
-            "date": "6/15",
-            "date_en": null,
+            "date": "6/13",
+            "date_en": "June 13",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為領先的開源模型，在 AIME26 基準測試中以 99.2% 的成績領先，擅長數學推理。",
-            "why_en": "As a leading open-source model, it tops the AIME26 benchmark at 99.2%, excelling in mathematical reasoning."
+            "why": "開源混合專家模型，在長程編碼和推理基準測試中表現強勁，並在Artificial Analysis Intelligence Index中領先開源模型。",
+            "why_en": "Open-weight Mixture-of-Experts model, demonstrating strong performance in long-horizon coding and reasoning benchmarks, leading open-source models on the Artificial Analysis Intelligence Index."
           },
           {
             "rank": 4,
-            "name": "Kimi K2.7 Code",
-            "version": null,
-            "vendor": "Moonshot AI",
-            "vendor_en": "Moonshot AI",
-            "date": "6/11",
-            "date_en": null,
+            "name": "Deployment Simulation System",
+            "version": "System",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "6/16",
+            "date_en": "June 16",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "透過減少 30% 推理代幣使用量，顯著提升編碼、通用程式設計及多語言工作的效率與工具使用能力，適用於數據模擬與處理。",
-            "why_en": "Significantly improves coding, general programming, and multi-language work efficiency and tool-use capabilities by reducing reasoning token usage by 30%, suitable for data simulation and processing."
+            "why": "一種在部署前使用真實對話數據預測AI模型行為的方法，以提高安全性和評估準確性。",
+            "why_en": "A method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy."
           },
           {
             "rank": 5,
-            "name": "Gemma 4 12B",
-            "version": null,
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "6/3",
-            "date_en": null,
+            "name": "NVIDIA ALCHEMI Toolkit & DAQIRI Library",
+            "version": "Toolkit & Library",
+            "vendor": "NVIDIA",
+            "vendor_en": "NVIDIA",
+            "date": "6/22",
+            "date_en": "June 22",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "採用新穎的統一架構，提供先進推理能力和多模態支援，並以開源形式提供，便於數據模擬與推理模型開發。",
-            "why_en": "Features a novel unified architecture, offering advanced reasoning and multimodal support, released open-source for flexible data simulation and reasoning model development."
+            "why": "加速化學和材料發現的AI軟體，以及用於從科學實驗中提取見解的即時數據處理庫。",
+            "why_en": "AI software accelerating chemical and materials discovery through simulation, and a real-time data processing library for extracting insights from scientific experiments."
           }
         ]
       }
@@ -674,78 +673,78 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 6 月)新發佈不足 5 個,故以近期(近 30-60 天)發佈補足。HappyHorse-1.0 於 4 月底發佈 API,5 月底發佈桌面應用程式。",
-        "note_en": "Fewer than 5 new releases in June 2026, so recent releases (last 30-60 days) are included. HappyHorse-1.0 released its API in late April and desktop app in late May.",
+        "note": "本月新發佈不足 5 個,故以近期(5 月底)項目補足。",
+        "note_en": "Fewer than 5 new releases this month, so a recent item (late May) was included to complete the top 5.",
         "items": [
           {
             "rank": 1,
-            "name": "RunwayML",
-            "version": "Gen-3 Alpha",
-            "vendor": "RunwayML",
-            "vendor_en": "RunwayML",
-            "date": "6/15",
+            "name": "Seedance",
+            "version": "2.5",
+            "vendor": "ByteDance 字節跳動",
+            "vendor_en": "ByteDance",
+            "date": "6/20",
             "date_en": null,
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "提供卓越的電影級真實感和精細控制,適合專業創作者進行複雜的電影製作和視覺特效。",
-            "why_en": "Offers superior cinematic realism and granular controls, ideal for professional creators in complex filmmaking and visual effects."
+            "overlap": "整體 #1 (新版本)",
+            "overlap_en": "Overall #1 (New Version)",
+            "why": "顯著提升多鏡頭敘事、角色與品牌一致性及導演級運鏡控制，並支援原生音訊同步。",
+            "why_en": "Significantly enhanced multi-shot storytelling, character and brand consistency, director-grade camera control, and native audio synchronization."
           },
           {
             "rank": 2,
-            "name": "HappyHorse",
-            "version": "1.0",
-            "vendor": "Alibaba",
-            "vendor_en": "Alibaba",
-            "date": "4/26 (API) / 5/26 (Desktop App)",
+            "name": "Intellemo AI",
+            "version": "4.2",
+            "vendor": "Intellemo AI",
+            "vendor_en": "Intellemo AI",
+            "date": "6/21",
             "date_en": null,
-            "isNew": false,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "在 Artificial Analysis 影片排行榜上名列前茅,以其高原始品質、聯合音訊-視訊生成和 7 種語言唇形同步功能脫穎而出。",
-            "why_en": "Ranks highly on Artificial Analysis Video Arena for its high raw quality, joint audio-video generation, and 7-language lip-sync capabilities."
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "最新版本處理 4K 影片速度提升 40%，同時保持卓越的細節保留，在獨立評測中表現領先。",
+            "why_en": "Latest version processes 4K footage 40% faster while maintaining exceptional detail retention, leading in independent benchmarks."
           },
           {
             "rank": 3,
-            "name": "Dreamina Seedance",
-            "version": "2.0 4K / mini",
-            "vendor": "ByteDance",
-            "vendor_en": "ByteDance",
-            "date": "6/17",
+            "name": "InVideo AI",
+            "version": "更新",
+            "vendor": "InVideo AI",
+            "vendor_en": "InVideo AI",
+            "date": "6/21",
             "date_en": null,
             "isNew": true,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "推出 4K 和 mini 版本,增強了商業內容的解析度、提示遵循和角色一致性,特別適合動畫風格敘事。",
-            "why_en": "Introduced 4K and mini versions, enhancing resolution, prompt adherence, and character consistency for commercial content, especially for anime-style narratives."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "平台更新引入了自動場景轉換的突破性功能，大幅減少複雜專案的手動編輯時間。",
+            "why_en": "Platform update introduced a breakthrough in automated scene transitions, significantly reducing manual editing time for complex projects."
           },
           {
             "rank": 4,
-            "name": "Pika Labs",
-            "version": "2.5",
-            "vendor": "Pika Labs",
-            "vendor_en": "Pika Labs",
-            "date": "6/1",
+            "name": "Dreamina Seedance",
+            "version": "2.0 4K",
+            "vendor": "Dreamina",
+            "vendor_en": "Dreamina",
+            "date": "6/17",
             "date_en": null,
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "以其快速、有趣和適合社群媒體的 AI 影片生成而聞名,具有獨特的 Pikaffects 效果,非常適合快速原型製作。",
-            "why_en": "Known for its fast, fun, and social-media-friendly AI video generation, featuring unique Pikaffects, ideal for rapid prototyping."
+            "overlap": "整體 #1 (4K 版本)",
+            "overlap_en": "Overall #1 (4K Version)",
+            "why": "Seedance 2.0 的 4K 版本，提供超高細節輸出，擴展了 AI 影片創作的視覺品質。",
+            "why_en": "4K variant of Seedance 2.0, offering ultra-detailed output and expanding the visual quality of AI video creation."
           },
           {
             "rank": 5,
-            "name": "OpenArt",
-            "version": null,
-            "vendor": "OpenArt",
-            "vendor_en": "OpenArt",
-            "date": "6/16 (Featured)",
+            "name": "Grok Imagine Video",
+            "version": "1.5",
+            "vendor": "xAI",
+            "vendor_en": "xAI",
+            "date": "5/30",
             "date_en": null,
-            "isNew": true,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "被譽為 2026 年最佳整體 AI 影片生成器,提供靈活且視覺優先的平台,整合了文字轉影片、圖像轉影片和角色創建工作流程。",
-            "why_en": "Cited as the best overall AI video generator for 2026, offering a flexible, visual-first platform integrating text-to-video, image-to-video, and character creation workflows."
+            "why": "xAI 首個原生圖像轉影片 API，在 Artificial Analysis 圖像轉影片競技場中表現出色。",
+            "why_en": "xAI's first native image-to-video API, showing strong performance in the Artificial Analysis Image-to-Video arena."
           }
         ]
       }
