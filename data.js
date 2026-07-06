@@ -1,6 +1,6 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-07-07T01:38:37+08:00",
+  "updatedAt": "2026-07-07T02:02:05+08:00",
   "updatedDateLabel": "2026 年 7 月 7 日",
   "month": "2026 年 7 月",
   "month_en": "July 2026",
@@ -10,7 +10,7 @@ window.DIGEST = {
     "Claude Fable (7/1) — 綜合 AI MODEL 排名",
     "MAI-Thinking (7月) — 綜合 AI MODEL 排名",
     "Claude Fable 5 (7/1) — 創建遊戲的助手",
-    "Tencent Hunyuan Hy3 (7/6) — 創建遊戲的助手",
+    "DEPIN Studios (7/6) — 創建遊戲的助手",
     "Claude Fable 5 (7/1) — 創建數據模擬器 & 數據推理",
     "Hailuo AI (7/4) — 創建遊戲影片"
   ],
@@ -18,7 +18,7 @@ window.DIGEST = {
     "Claude Fable (7/1) — Overall AI Model Ranking",
     "MAI-Thinking (7月) — Overall AI Model Ranking",
     "Claude Fable 5 (7/1) — Game-Building Assistants",
-    "Tencent Hunyuan Hy3 (7/6) — Game-Building Assistants",
+    "DEPIN Studios (7/6) — Game-Building Assistants",
     "Claude Fable 5 (7/1) — Data Simulators & Reasoning",
     "Hailuo AI (7/4) — Game / Stylized Video"
   ],
@@ -240,78 +240,78 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "本月僅有 3 項新發佈,已用近期(近 30–60 天)的 2 項補足。",
-        "note_en": "Only 3 new releases this month, supplemented with 2 recent items (within 30-60 days).",
+        "note": null,
+        "note_en": null,
         "items": [
           {
             "rank": 1,
             "name": "Claude Fable 5",
-            "version": null,
+            "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "7/1",
-            "date_en": null,
+            "date_en": "July 1",
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "重新部署後,Fable 5 再次成為遊戲開發領域最強大的模型,在多項遊戲開發相關基準測試中表現卓越。",
-            "why_en": "After re-deployment, Fable 5 is once again the most powerful model for game development, excelling in multiple game development-related benchmarks."
+            "why": "作為 Anthropic 最強大的公開模型，Fable 5 於本月重新上架，並在遊戲移植等 AI 輔助編碼任務中展現卓越能力，是遊戲開發的頂級選擇。",
+            "why_en": "As Anthropic's most powerful public model, Fable 5 was re-released this month, demonstrating exceptional capabilities in AI-assisted coding tasks like game porting, making it a top choice for game development."
           },
           {
             "rank": 2,
-            "name": "Tencent Hunyuan Hy3",
-            "version": "Hy3",
-            "vendor": "騰訊",
-            "vendor_en": "Tencent",
-            "date": "7/6",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "正式發佈的 Hy3 在軟體開發和遊戲製作方面取得顯著進展,並支援遊戲中的 AI 助手功能,且為開源模型。",
-            "why_en": "The officially released Hy3 shows significant progress in software development and game production, supporting in-game AI assistants, and is an open-source model."
-          },
-          {
-            "rank": 3,
-            "name": "Google Cloud AI Agents for Game Development",
-            "version": null,
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "6/9",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Google Cloud 推出一套自主 AI 代理,旨在透過自動化測試、程式碼生成和資產創建,改變遊戲開發方式並創建「活生生」的遊戲世界。",
-            "why_en": "Google Cloud rolled out a suite of autonomous AI agents designed to transform game development by automating playtesting, code generation, and asset creation, creating 'living' game worlds."
-          },
-          {
-            "rank": 4,
-            "name": "Claude Sonnet 5",
-            "version": null,
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "6/30",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "作為 Anthropic 最具代理能力的 Sonnet 模型,它在程式設計、代理和專業工作方面提供頂級性能,且性價比高。",
-            "why_en": "As Anthropic's most agentic Sonnet model, it delivers top-tier performance in coding, agents, and professional work at scale, offering great value."
-          },
-          {
-            "rank": 5,
             "name": "DEPIN Studios",
-            "version": null,
+            "version": "N/A",
             "vendor": "Tianrong Internet Products and Services Inc.",
             "vendor_en": "Tianrong Internet Products and Services Inc.",
             "date": "7/6",
-            "date_en": null,
+            "date_en": "July 6",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "一個 AI 驅動的瀏覽器遊戲開發平台,結合去中心化 GPU 網路和 Web3 貨幣化,實現快速、低成本的遊戲創建。",
-            "why_en": "An AI-powered, browser-based game development platform combining decentralized GPU networks and Web3 monetization for rapid, low-cost game creation."
+            "why": "本月正式發佈的 AI 驅動瀏覽器遊戲開發平台，提供快速、低成本的遊戲設計與部署，特別適合網頁遊戲開發。",
+            "why_en": "Officially launched this month, DEPIN Studios is an AI-powered, browser-based game development platform offering rapid, low-cost game design and deployment, especially suitable for web game development."
+          },
+          {
+            "rank": 3,
+            "name": "Hunyuan Hy3",
+            "version": "3",
+            "vendor": "Tencent",
+            "vendor_en": "Tencent",
+            "date": "7/6",
+            "date_en": "July 6",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "騰訊本月正式發佈的通用 AI 模型，在軟體開發和遊戲製作等生產力任務上取得顯著進展，並增強了其作業系統級 AI 助手 Marvis Agent 的遊戲相關能力。",
+            "why_en": "Tencent's general-purpose AI model, officially released this month, shows significant progress in productivity tasks like software development and game production, enhancing game-related capabilities of its OS-level AI assistant, Marvis Agent."
+          },
+          {
+            "rank": 4,
+            "name": "Google Cloud AI Agents for Game Development",
+            "version": "N/A",
+            "vendor": "Google Cloud",
+            "vendor_en": "Google Cloud",
+            "date": "6/9",
+            "date_en": "June 9",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "於上月發佈，這套自主 AI 代理旨在革新遊戲開發方式，提供自動化遊戲測試、程式碼生成和資產創建，是遊戲開發的全面解決方案。",
+            "why_en": "Released last month, this suite of autonomous AI agents aims to revolutionize game development by offering automated playtesting, code generation, and asset creation, providing a comprehensive solution for game developers."
+          },
+          {
+            "rank": 5,
+            "name": "Claude Sonnet 5",
+            "version": "5",
+            "vendor": "Anthropic",
+            "vendor_en": "Anthropic",
+            "date": "6/30",
+            "date_en": "June 30",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "上月正式發佈，作為 Anthropic 最具代理能力的 Sonnet 模型，提供接近 Opus 級別的性能，在程式碼編寫和推理方面表現出色，非常適用於遊戲開發。",
+            "why_en": "Officially launched last month, Claude Sonnet 5 is Anthropic's most agentic Sonnet model yet, offering near-Opus performance with strong capabilities in coding and reasoning, making it highly suitable for game development."
           }
         ]
       }
