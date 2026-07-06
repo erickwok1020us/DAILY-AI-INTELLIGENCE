@@ -56,7 +56,7 @@ def build_monthly_prompt(cat_name, hint, overall):
 - 本月不足 {n} 個,就用最近期(近 30–60 天)補滿、date 標日期、isNew 設 false,並在 note 用一句話說明;否則 note 為 null。
 - 本範疇①整體榜(僅供標 overlap 用,不要重排):{ov}。若某本月項目同時在①,overlap 標「整體 #n」。
 
-【嚴謹·重要】只列「已正式發佈(GA)」的,**排除 preview/beta/未發佈/預計發佈**;benchmark 數字要準,**不確定就不要寫數字**;只列**廣為人知**的,不要冷門/SEO 小工具;**日期不可晚於 {NOW:%Y-%m-%d}**,不要編未來日期。
+【嚴謹·重要】只列「已正式發佈(GA)」的,**排除 preview/beta/未發佈/預計發佈**;benchmark 數字要準,**不確定就不要寫數字**;只列**廣為人知**的,不要冷門/SEO 小工具;**日期不可晚於 {NOW:%Y-%m-%d}**,不要編未來日期。**型號名稱要完整精確**(例:Claude Fable 5、Claude Sonnet 5、Gemini 3.5 Flash),**不可截短**(不可只寫 Claude Fable / Claude Sonnet)。若某本月項目**同時也在①整體榜**,務必在 `overlap` 標「整體 #n」,讓 ①②兩欄一致、不互相矛盾。舊模型若因「返場/重新上架」成為本月焦點,可列出但要在 `why` 註明「返場」、`version` 寫清版本,不可假裝是全新型號。
 【雙語】每個文字欄位中英都要:vendor+vendor_en、why+why_en、overlap+overlap_en、note+note_en;date 含中文要加 date_en。
 
 只輸出一個 JSON 物件(繁中內容),不要任何其他文字,嚴格符合:
