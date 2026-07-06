@@ -40,6 +40,17 @@
       "overall": [
         {
           "rank": 1,
+          "name": "Claude Fable 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "AA #1",
+          "why": "AA 智能指數第一(7/1 全球返場後);Mythos 級,清楚領先",
+          "why_en": "#1 on AA Intelligence Index (after 7/1 global return); Mythos-class, clear lead",
+          "meta": "7/1 全球返場 · 曾因出口管制暫停 18 天",
+          "meta_en": "Returned globally 7/1 · was suspended 18 days"
+        },
+        {
+          "rank": 2,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -50,7 +61,7 @@
           "meta_en": "Released 5/28 · API $5/$25"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "GPT-5.5 (xhigh)",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -61,7 +72,7 @@
           "meta_en": "4/23 · ChatGPT/API"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Gemini 3.1 Pro",
           "vendor": "Google",
           "vendor_en": "Google",
@@ -72,7 +83,7 @@
           "meta_en": "~Q1 · AI Studio/Vertex"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "Qwen3.7-Max",
           "vendor": "Alibaba",
           "vendor_en": "Alibaba",
@@ -81,17 +92,6 @@
           "why_en": "AA 57; best open-ecosystem model, 1M context",
           "meta": "5/20 · Alibaba Cloud",
           "meta_en": "5/20 · Alibaba Cloud"
-        },
-        {
-          "rank": 5,
-          "name": "Gemini 3.5 Flash",
-          "vendor": "Google",
-          "vendor_en": "Google",
-          "score": "AA 55",
-          "why": "AA 55;性價比最佳",
-          "why_en": "AA 55; best value",
-          "meta": "5/19 · Gemini app",
-          "meta_en": "5/19 · Gemini app"
         }
       ],
       "monthly": {
@@ -176,6 +176,18 @@
       "overall": [
         {
           "rank": 1,
+          "name": "Claude Fable 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "SWE 95%",
+          "score_en": "SWE 95%",
+          "why": "SWE-bench Verified 95%、SWE-bench Pro 80.3%;編程第一",
+          "why_en": "SWE-bench Verified 95%, SWE-bench Pro 80.3%; #1 coding",
+          "meta": "7/1 返場 · Mythos 級",
+          "meta_en": "Returned 7/1 · Mythos-class"
+        },
+        {
+          "rank": 2,
           "name": "GPT-5.5",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -186,7 +198,7 @@
           "meta_en": "4/23 · ChatGPT/API"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -197,7 +209,7 @@
           "meta_en": "5/28 · native to Claude Code"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Claude Opus 4.7",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -208,7 +220,7 @@
           "meta_en": "~Apr · Claude API"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "GPT-5.3-Codex",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -217,17 +229,6 @@
           "why_en": "Codex-tuned agent model, SWE-bench 85.0%",
           "meta": "Q1 · Codex CLI",
           "meta_en": "Q1 · Codex CLI"
-        },
-        {
-          "rank": 5,
-          "name": "Gemini 3.1 Pro",
-          "vendor": "Google",
-          "vendor_en": "Google",
-          "score": "SWE 80.6%",
-          "why": "性價比之王,1M context",
-          "why_en": "Best price/perf, 1M context",
-          "meta": "~Q1 · Gemini CLI",
-          "meta_en": "~Q1 · Gemini CLI"
         }
       ],
       "monthly": {
@@ -326,6 +327,18 @@
         },
         {
           "rank": 2,
+          "name": "Claude Fable 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "AA 綜合#1",
+          "score_en": "AA overall #1",
+          "why": "綜合智能第一;推理屬頂段(GPQA 前段)",
+          "why_en": "#1 overall intelligence; top-tier reasoning (GPQA leading pack)",
+          "meta": "7/1 返場 · Mythos 級",
+          "meta_en": "Returned 7/1 · Mythos-class"
+        },
+        {
+          "rank": 3,
           "name": "GPT-5.5 (xhigh)",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -336,7 +349,7 @@
           "meta_en": "4/23 · probability reasoning"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Claude Opus 4.8 (max)",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -346,18 +359,6 @@
           "why_en": "#1 on AA overall; best at writing+running simulation code (GPQA saturated, tiny gaps)",
           "meta": "5/28 · 寫/跑模擬",
           "meta_en": "5/28 · build/run simulations"
-        },
-        {
-          "rank": 4,
-          "name": "Claude Opus 4.7 (max)",
-          "vendor": "Anthropic",
-          "vendor_en": "Anthropic",
-          "score": "幻覺最低",
-          "score_en": "lowest halluc.",
-          "why": "幻覺率最低 → 數據推理較安全",
-          "why_en": "Lowest hallucination → safer data inference",
-          "meta": "~4 月 · Claude API",
-          "meta_en": "~Apr · Claude API"
         },
         {
           "rank": 5,
