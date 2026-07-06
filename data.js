@@ -1,25 +1,25 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-07-06T00:51:21+08:00",
-  "updatedDateLabel": "2026 年 7 月 6 日",
+  "updatedAt": "2026-07-07T01:38:37+08:00",
+  "updatedDateLabel": "2026 年 7 月 7 日",
   "month": "2026 年 7 月",
   "month_en": "July 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/07/06 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/07/06",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/07/07 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/07/07",
   "changesToday": [
     "Claude Fable (7/1) — 綜合 AI MODEL 排名",
-    "Claude Sonnet (7/1) — 綜合 AI MODEL 排名",
+    "MAI-Thinking (7月) — 綜合 AI MODEL 排名",
     "Claude Fable 5 (7/1) — 創建遊戲的助手",
+    "Tencent Hunyuan Hy3 (7/6) — 創建遊戲的助手",
     "Claude Fable 5 (7/1) — 創建數據模擬器 & 數據推理",
-    "Claude Sonnet 5 (6/30) — 創建數據模擬器 & 數據推理",
     "Hailuo AI (7/4) — 創建遊戲影片"
   ],
   "changesToday_en": [
     "Claude Fable (7/1) — Overall AI Model Ranking",
-    "Claude Sonnet (7/1) — Overall AI Model Ranking",
+    "MAI-Thinking (7月) — Overall AI Model Ranking",
     "Claude Fable 5 (7/1) — Game-Building Assistants",
+    "Tencent Hunyuan Hy3 (7/6) — Game-Building Assistants",
     "Claude Fable 5 (7/1) — Data Simulators & Reasoning",
-    "Claude Sonnet 5 (6/30) — Data Simulators & Reasoning",
     "Hailuo AI (7/4) — Game / Stylized Video"
   ],
   "notes": [
@@ -43,6 +43,17 @@ window.DIGEST = {
       "overall": [
         {
           "rank": 1,
+          "name": "Claude Fable 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "AA #1",
+          "why": "AA 智能指數第一(7/1 全球返場後);Mythos 級,清楚領先",
+          "why_en": "#1 on AA Intelligence Index (after 7/1 global return); Mythos-class, clear lead",
+          "meta": "7/1 全球返場 · 曾因出口管制暫停 18 天",
+          "meta_en": "Returned globally 7/1 · was suspended 18 days"
+        },
+        {
+          "rank": 2,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -53,7 +64,7 @@ window.DIGEST = {
           "meta_en": "Released 5/28 · API $5/$25"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "GPT-5.5 (xhigh)",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -64,7 +75,7 @@ window.DIGEST = {
           "meta_en": "4/23 · ChatGPT/API"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Gemini 3.1 Pro",
           "vendor": "Google",
           "vendor_en": "Google",
@@ -75,7 +86,7 @@ window.DIGEST = {
           "meta_en": "~Q1 · AI Studio/Vertex"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "Qwen3.7-Max",
           "vendor": "Alibaba",
           "vendor_en": "Alibaba",
@@ -84,22 +95,11 @@ window.DIGEST = {
           "why_en": "AA 57; best open-ecosystem model, 1M context",
           "meta": "5/20 · Alibaba Cloud",
           "meta_en": "5/20 · Alibaba Cloud"
-        },
-        {
-          "rank": 5,
-          "name": "Gemini 3.5 Flash",
-          "vendor": "Google",
-          "vendor_en": "Google",
-          "score": "AA 55",
-          "why": "AA 55;性價比最佳",
-          "why_en": "AA 55; best value",
-          "meta": "5/19 · Gemini app",
-          "meta_en": "5/19 · Gemini app"
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月新發佈的旗艦通用大型語言模型不足五個，因此列表包含近期（過去 30-60 天內）發佈的模型以補足數量。",
+        "note_en": "Fewer than five flagship general-purpose large language models were released this month, so the list includes recently released models (within the last 30-60 days) to complete the count.",
         "items": [
           {
             "rank": 1,
@@ -108,40 +108,40 @@ window.DIGEST = {
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "7/1",
-            "date_en": null,
+            "date_en": "July 1",
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "本月重新全球發佈，在多個綜合品質指標中領先，被評為業界最佳。",
-            "why_en": "Globally re-released this month, it leads in multiple composite quality indices and is rated as the industry's best."
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "在經歷短暫的出口管制後，Claude Fable 5 於本月重新全面發佈，並在多項綜合基準測試中表現卓越，鞏固其領先地位。",
+            "why_en": "After a brief period of export controls, Claude Fable 5 was fully re-released this month, demonstrating exceptional performance across multiple composite benchmarks, solidifying its leading position."
           },
           {
             "rank": 2,
+            "name": "MAI-Thinking",
+            "version": "1",
+            "vendor": "Microsoft AI",
+            "vendor_en": "Microsoft AI",
+            "date": "7月",
+            "date_en": "July",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "作為 Microsoft AI 全新 MAI 系列的旗艦推理引擎，MAI-Thinking-1 專為複雜的多步驟指令和軟體工程任務而設計，於本月中旬正式推出。",
+            "why_en": "As the flagship reasoning engine of Microsoft AI's new MAI family, MAI-Thinking-1 is designed for complex multi-step instructions and software engineering tasks, officially launched mid-month."
+          },
+          {
+            "rank": 3,
             "name": "Claude Sonnet",
             "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "7/1",
-            "date_en": null,
+            "date": "6/29",
+            "date_en": "June 29",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "本月發佈，提供接近 Opus 4.8 的旗艦級性能，並具備高度代理能力。",
-            "why_en": "Released this month, it offers flagship performance close to Opus 4.8 and possesses strong agentic capabilities."
-          },
-          {
-            "rank": 3,
-            "name": "Qwen3.7-Max",
-            "version": null,
-            "vendor": "阿里巴巴雲",
-            "vendor_en": "Alibaba Cloud",
-            "date": "7/1",
-            "date_en": null,
-            "isNew": true,
-            "overlap": "整體 #4",
-            "overlap_en": "Overall #4",
-            "why": "本月發佈的旗艦級代理中心模型，性能可與頂級全球系統媲美。",
-            "why_en": "A flagship agent-centric model released this month, its performance is comparable to top global systems."
+            "why": "Claude Sonnet 5 於上月底發佈，提供在程式碼、代理和大規模專業工作方面的領先性能，被視為本月的重要新模型。",
+            "why_en": "Released late last month, Claude Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale, making it a significant new model this month."
           },
           {
             "rank": 4,
@@ -149,27 +149,27 @@ window.DIGEST = {
             "version": "5.2",
             "vendor": "智譜AI",
             "vendor_en": "Zhipu AI",
-            "date": "6/15",
-            "date_en": null,
+            "date": "6月中旬",
+            "date_en": "Mid-June",
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "近期發佈的旗艦級大型語言模型，具備 100 萬 token 上下文窗口，專為代理編碼和長週期任務設計。",
-            "why_en": "A recently released flagship large language model with a 1M-token context window, designed for agentic coding and long-horizon tasks."
+            "why": "GLM 5.2 是一款在 6 月中旬發佈的開源旗艦模型，擁有 1M token 的上下文窗口，在 Artificial Analysis 智能指數中位居開源模型之首。",
+            "why_en": "GLM 5.2, an open-source flagship model released mid-June, features a 1M-token context window and ranks as the top open-weight model on the Artificial Analysis Intelligence Index."
           },
           {
             "rank": 5,
-            "name": "MiniMax M",
-            "version": "3",
+            "name": "MiniMax",
+            "version": "M3",
             "vendor": "MiniMax",
             "vendor_en": "MiniMax",
             "date": "6/1",
-            "date_en": null,
+            "date_en": "June 1",
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "近期發佈的開源模型，結合了前沿的編碼能力、100 萬 token 上下文和原生多模態功能。",
-            "why_en": "A recently released open-weight model combining frontier-level coding performance, 1M context, and native multimodal capabilities."
+            "why": "MiniMax M3 是一款於 6 月初發佈的多模態開源模型，具備前沿的編碼性能和 1M token 的上下文窗口。",
+            "why_en": "MiniMax M3 is a multimodal open-source model released in early June, featuring frontier-level coding performance and a 1M-token context window."
           }
         ]
       }
@@ -184,6 +184,18 @@ window.DIGEST = {
       "overall": [
         {
           "rank": 1,
+          "name": "Claude Fable 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "SWE 95%",
+          "score_en": "SWE 95%",
+          "why": "SWE-bench Verified 95%、SWE-bench Pro 80.3%;編程第一",
+          "why_en": "SWE-bench Verified 95%, SWE-bench Pro 80.3%; #1 coding",
+          "meta": "7/1 返場 · Mythos 級",
+          "meta_en": "Returned 7/1 · Mythos-class"
+        },
+        {
+          "rank": 2,
           "name": "GPT-5.5",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -194,7 +206,7 @@ window.DIGEST = {
           "meta_en": "4/23 · ChatGPT/API"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -205,7 +217,7 @@ window.DIGEST = {
           "meta_en": "5/28 · native to Claude Code"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Claude Opus 4.7",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -216,7 +228,7 @@ window.DIGEST = {
           "meta_en": "~Apr · Claude API"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "GPT-5.3-Codex",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -225,41 +237,44 @@ window.DIGEST = {
           "why_en": "Codex-tuned agent model, SWE-bench 85.0%",
           "meta": "Q1 · Codex CLI",
           "meta_en": "Q1 · Codex CLI"
-        },
-        {
-          "rank": 5,
-          "name": "Gemini 3.1 Pro",
-          "vendor": "Google",
-          "vendor_en": "Google",
-          "score": "SWE 80.6%",
-          "why": "性價比之王,1M context",
-          "why_en": "Best price/perf, 1M context",
-          "meta": "~Q1 · Gemini CLI",
-          "meta_en": "~Q1 · Gemini CLI"
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月僅有 3 項新發佈,已用近期(近 30–60 天)的 2 項補足。",
+        "note_en": "Only 3 new releases this month, supplemented with 2 recent items (within 30-60 days).",
         "items": [
           {
             "rank": 1,
             "name": "Claude Fable 5",
-            "version": "5",
+            "version": null,
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "7/1",
             "date_en": null,
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "憑藉頂尖的 SWE-bench 分數和強大的代理能力，Claude Fable 5 在複雜軟體工程任務中表現卓越，特別適用於遊戲開發，並於本月恢復全球可用性。",
-            "why_en": "With top-tier SWE-bench scores and powerful agentic capabilities, Claude Fable 5 excels in complex software engineering tasks, making it highly suitable for game development, with global availability restored this month."
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "重新部署後,Fable 5 再次成為遊戲開發領域最強大的模型,在多項遊戲開發相關基準測試中表現卓越。",
+            "why_en": "After re-deployment, Fable 5 is once again the most powerful model for game development, excelling in multiple game development-related benchmarks."
           },
           {
             "rank": 2,
+            "name": "Tencent Hunyuan Hy3",
+            "version": "Hy3",
+            "vendor": "騰訊",
+            "vendor_en": "Tencent",
+            "date": "7/6",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "正式發佈的 Hy3 在軟體開發和遊戲製作方面取得顯著進展,並支援遊戲中的 AI 助手功能,且為開源模型。",
+            "why_en": "The officially released Hy3 shows significant progress in software development and game production, supporting in-game AI assistants, and is an open-source model."
+          },
+          {
+            "rank": 3,
             "name": "Google Cloud AI Agents for Game Development",
-            "version": "N/A",
+            "version": null,
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "6/9",
@@ -267,50 +282,36 @@ window.DIGEST = {
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "此平台提供專為遊戲開發設計的自主 AI 代理，用於自動化遊戲測試、程式碼生成和資產創建，大幅加速開發流程。",
-            "why_en": "This platform offers autonomous AI agents specifically designed for game development, automating playtesting, code generation, and asset creation, significantly accelerating the development process."
+            "why": "Google Cloud 推出一套自主 AI 代理,旨在透過自動化測試、程式碼生成和資產創建,改變遊戲開發方式並創建「活生生」的遊戲世界。",
+            "why_en": "Google Cloud rolled out a suite of autonomous AI agents designed to transform game development by automating playtesting, code generation, and asset creation, creating 'living' game worlds."
           },
           {
-            "rank": 3,
+            "rank": 4,
             "name": "Claude Sonnet 5",
-            "version": "5",
+            "version": null,
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "7/1",
+            "date": "6/30",
+            "date_en": null,
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "作為 Anthropic 最具代理能力的 Sonnet 模型,它在程式設計、代理和專業工作方面提供頂級性能,且性價比高。",
+            "why_en": "As Anthropic's most agentic Sonnet model, it delivers top-tier performance in coding, agents, and professional work at scale, offering great value."
+          },
+          {
+            "rank": 5,
+            "name": "DEPIN Studios",
+            "version": null,
+            "vendor": "Tianrong Internet Products and Services Inc.",
+            "vendor_en": "Tianrong Internet Products and Services Inc.",
+            "date": "7/6",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為一個高度代理化的中階模型，Claude Sonnet 5 在編碼和自主代理任務上表現出色，以 Sonnet 的成本提供接近 Opus 的性能。",
-            "why_en": "Positioned as a highly agentic intermediate model, Claude Sonnet 5 excels in coding and autonomous agent tasks, delivering near-Opus performance at a Sonnet-tier cost."
-          },
-          {
-            "rank": 4,
-            "name": "Meta Pocket",
-            "version": "N/A",
-            "vendor": "Meta",
-            "vendor_en": "Meta",
-            "date": "6/29",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "這是一款使用者友好的 AI 應用程式，允許使用者透過簡單的文字提示創建可玩的迷你遊戲和互動體驗，無需編碼。",
-            "why_en": "This user-friendly AI app allows users to create playable mini-games and interactive experiences using simple text prompts, making game creation accessible without coding."
-          },
-          {
-            "rank": 5,
-            "name": "Cursor SDK June 2026 Update",
-            "version": "N/A",
-            "vendor": "Cursor",
-            "vendor_en": "Cursor",
-            "date": "6/5",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "此次 SDK 更新將 Cursor 轉變為可程式化的代理平台，允許開發者將自定義功能公開為可呼叫工具，並實施自動審查流程，顯著增強 IDE 的代理開發能力。",
-            "why_en": "This SDK update transforms Cursor into a programmable agent platform, allowing developers to expose custom functions as callable tools and implement auto-review flows, significantly enhancing the IDE's agentic development capabilities."
+            "why": "一個 AI 驅動的瀏覽器遊戲開發平台,結合去中心化 GPU 網路和 Web3 貨幣化,實現快速、低成本的遊戲創建。",
+            "why_en": "An AI-powered, browser-based game development platform combining decentralized GPU networks and Web3 monetization for rapid, low-cost game creation."
           }
         ]
       }
@@ -336,6 +337,18 @@ window.DIGEST = {
         },
         {
           "rank": 2,
+          "name": "Claude Fable 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "AA 綜合#1",
+          "score_en": "AA overall #1",
+          "why": "綜合智能第一;推理屬頂段(GPQA 前段)",
+          "why_en": "#1 overall intelligence; top-tier reasoning (GPQA leading pack)",
+          "meta": "7/1 返場 · Mythos 級",
+          "meta_en": "Returned 7/1 · Mythos-class"
+        },
+        {
+          "rank": 3,
           "name": "GPT-5.5 (xhigh)",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -346,7 +359,7 @@ window.DIGEST = {
           "meta_en": "4/23 · probability reasoning"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Claude Opus 4.8 (max)",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -356,18 +369,6 @@ window.DIGEST = {
           "why_en": "#1 on AA overall; best at writing+running simulation code (GPQA saturated, tiny gaps)",
           "meta": "5/28 · 寫/跑模擬",
           "meta_en": "5/28 · build/run simulations"
-        },
-        {
-          "rank": 4,
-          "name": "Claude Opus 4.7 (max)",
-          "vendor": "Anthropic",
-          "vendor_en": "Anthropic",
-          "score": "幻覺最低",
-          "score_en": "lowest halluc.",
-          "why": "幻覺率最低 → 數據推理較安全",
-          "why_en": "Lowest hallucination → safer data inference",
-          "meta": "~4 月 · Claude API",
-          "meta_en": "~Apr · Claude API"
         },
         {
           "rank": 5,
@@ -388,72 +389,72 @@ window.DIGEST = {
           {
             "rank": 1,
             "name": "Claude Fable 5",
-            "version": "Mythos-class",
+            "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "7/1",
-            "date_en": null,
+            "date_en": "July 1",
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "作為 Anthropic 的 Mythos 級模型，它在軟體工程、知識工作、視覺和科學研究等領域表現卓越，是目前公開可用的最強大 AI 模型，適用於複雜數據推理與模擬。",
-            "why_en": "As Anthropic's Mythos-class model, it excels in software engineering, knowledge work, vision, and scientific research, making it the strongest publicly available AI model for complex data reasoning and simulation."
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "本月重新上線,在複雜推理、程式碼生成和代理能力方面表現卓越,是數據推理和模擬的頂級模型。",
+            "why_en": "Re-launched this month, it excels in complex reasoning, code generation, and agentic capabilities, making it a top model for data reasoning and simulation."
           },
           {
             "rank": 2,
+            "name": "GLM-5.2",
+            "version": "5.2",
+            "vendor": "Z.AI (智譜AI)",
+            "vendor_en": "Z.AI (Zhipu AI)",
+            "date": "6/13-16",
+            "date_en": "June 13-16",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "在AIME26數學推理基準測試中領先,並在程式碼生成方面表現出色,且為開源模型,對於數據模擬和推理至關重要。",
+            "why_en": "Leads the AIME26 mathematical reasoning benchmark and shows strong performance in code generation, as an open-weight model, crucial for data simulation and reasoning."
+          },
+          {
+            "rank": 3,
+            "name": "OpenScience",
+            "version": "1.0",
+            "vendor": "Synthetic Sciences",
+            "vendor_en": "Synthetic Sciences",
+            "date": "7/6",
+            "date_en": "July 6",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "一個開源、模型不可知論的AI工作台,專為科學研究中的機器學習、生物學、物理學和化學數據分析與實驗而設計。",
+            "why_en": "An open-source, model-agnostic AI workbench designed for data analysis and experimentation in machine learning, biology, physics, and chemistry research."
+          },
+          {
+            "rank": 4,
+            "name": "Databricks Genie Family (Unity AI Gateway)",
+            "version": "GA",
+            "vendor": "Databricks",
+            "vendor_en": "Databricks",
+            "date": "7月",
+            "date_en": "July",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "其Unity AI Gateway正式發佈,提供模型路由和治理,並透過Genie Code和Genie Agents增強企業級數據推理和ML工程。",
+            "why_en": "Its Unity AI Gateway reached General Availability, offering model routing and governance, enhancing enterprise-grade data reasoning and ML engineering through Genie Code and Genie Agents."
+          },
+          {
+            "rank": 5,
             "name": "Claude Sonnet 5",
             "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "6/30",
-            "date_en": null,
-            "isNew": true,
+            "date_en": "June 30",
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為 Anthropic 新一代模型，它在 Terminal-Bench 2.1 和 GDPval-AA 知識工作上超越或持平 Opus 4.8，且更具成本效益，適合日常專業數據推理工作。",
-            "why_en": "As Anthropic's next-generation model, it surpasses or matches Opus 4.8 on Terminal-Bench 2.1 and GDPval-AA knowledge work, offering better cost-efficiency for daily professional data reasoning tasks."
-          },
-          {
-            "rank": 3,
-            "name": "GLM-5.2",
-            "version": "5.2",
-            "vendor": "Zhipu AI (Z.ai)",
-            "vendor_en": "Zhipu AI (Z.ai)",
-            "date": "6/16",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "這是一個開源的 MoE 模型，擁有 1M token 上下文窗口，在代理編碼和通用代理工作流程中表現出色，甚至在編碼基準測試中擊敗 GPT-5.5，非常適合基於代碼的數據推理與模擬。",
-            "why_en": "An open-source MoE model with a 1M token context window, it excels in agentic coding and general agentic workflows, even beating GPT-5.5 on coding benchmarks, making it ideal for code-based data reasoning and simulation."
-          },
-          {
-            "rank": 4,
-            "name": "Qwen open-source world model",
-            "version": "World Model",
-            "vendor": "Qwen (Alibaba Cloud)",
-            "vendor_en": "Qwen (Alibaba Cloud)",
-            "date": "6/26",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "該模型明確設計用於模擬 7 種代理環境，直接符合數據模擬器的範疇，為複雜系統的行為預測提供強大工具。",
-            "why_en": "Explicitly designed to simulate 7 agent environments, this model directly fits the data simulator category, providing a powerful tool for predicting complex system behaviors."
-          },
-          {
-            "rank": 5,
-            "name": "Liquid Foundation Models 2.5 230M",
-            "version": "2.5 230M",
-            "vendor": "Liquid AI",
-            "vendor_en": "Liquid AI",
-            "date": "6/26",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "這是一個緊湊的非 Transformer 模型，在核心邊緣推理和序列生成基準測試中達到與三倍大小 Transformer 模型相當的性能，適用於高效的數據推理和序列模擬。",
-            "why_en": "A compact non-Transformer model, it achieves performance parity with Transformer models three times its size on core edge reasoning and sequence generation benchmarks, suitable for efficient data reasoning and sequence-based simulations."
+            "why": "作為Anthropic的新預設模型,提供強大的推理和程式碼生成能力,且性價比高,適用於多種數據推理任務。",
+            "why_en": "As Anthropic's new default model, it offers strong reasoning and code generation capabilities with good value, suitable for various data reasoning tasks."
           }
         ]
       }
