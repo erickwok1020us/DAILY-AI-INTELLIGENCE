@@ -27,15 +27,16 @@ EN_MONTHS = ["January","February","March","April","May","June",
 
 # 研究提示(scope/sources/topn);名稱/副標/icon/overall 一律由 curated.json 提供
 HINTS = {
-  1: {"topn":5,  "scope":"通用旗艦大型語言模型整體智能", "sources":"Artificial Analysis、LMArena、各官方部落格"},
-  2: {"topn":5,  "scope":"AI 編程模型與 IDE/agent(網頁遊戲開發)", "sources":"SWE-bench Verified、LMArena WebDev、Anthropic/OpenAI/Google/Cursor 官方"},
-  3: {"topn":5,  "scope":"數據模擬/機率/數據推理模型", "sources":"GPQA Diamond、AIME、Artificial Analysis"},
-  4: {"topn":5,  "scope":"風格化/動畫向 AI 影片生成", "sources":"Artificial Analysis Video Arena、Kling/Seedance/PixVerse 官方"},
-  5: {"topn":5,  "scope":"寫實/真人向 AI 影片生成", "sources":"Artificial Analysis Video Arena、Veo/Kling/Seedance/Hailuo 官方"},
-  6: {"topn":5,  "scope":"text/image→3D 模型生成", "sources":"Meshy/Tripo/Rodin/Hunyuan3D 官方、3D-AI 評比"},
-  7: {"topn":5,  "scope":"3D 自動綁骨/可動化", "sources":"Meshy/Autodesk Flow Studio/Tripo/Cascadeur/Anything World 官方"},
-  8: {"topn":5,  "scope":"遊戲音效 SFX/語音/音樂", "sources":"ElevenLabs/Stability/Suno/Google 官方、AI 音訊評比"},
-  9: {"topn":10, "scope":"AI 工具『組合/stack』(多工具搭配,如 Claude+Obsidian),非單一工具", "sources":"GitHub stars、官方部落格、Reddit/HN/YouTube 熱度、MCP 連接器公告"},
+  1:  {"topn":5,  "scope":"通用旗艦大型語言模型整體智能", "sources":"Artificial Analysis、LMArena、各官方部落格"},
+  2:  {"topn":5,  "scope":"AI 編程模型與 IDE/agent(網頁遊戲開發)", "sources":"SWE-bench Verified、LMArena WebDev、Anthropic/OpenAI/Google/Cursor 官方"},
+  3:  {"topn":5,  "scope":"數據模擬/機率/數據推理模型", "sources":"GPQA Diamond、AIME、Artificial Analysis"},
+  4:  {"topn":5,  "scope":"文生圖/圖片生成質量(遊戲美術、概念圖、貼圖)", "sources":"LMArena 文生圖 Arena、Artificial Analysis Image Arena、OpenAI/Google/Meta/Black Forest Labs/Reve 官方"},
+  5:  {"topn":5,  "scope":"風格化/動畫向 AI 影片生成", "sources":"Artificial Analysis Video Arena、Kling/Seedance/PixVerse 官方"},
+  6:  {"topn":5,  "scope":"寫實/真人向 AI 影片生成", "sources":"Artificial Analysis Video Arena、Veo/Kling/Seedance/Hailuo 官方"},
+  7:  {"topn":5,  "scope":"text/image→3D 模型生成", "sources":"Meshy/Tripo/Rodin/Hunyuan3D 官方、3D-AI 評比"},
+  8:  {"topn":5,  "scope":"3D 自動綁骨/可動化", "sources":"Meshy/Autodesk Flow Studio/Tripo/Cascadeur/Anything World 官方"},
+  9:  {"topn":5,  "scope":"遊戲音效 SFX/語音/音樂", "sources":"ElevenLabs/Stability/Suno/Google 官方、AI 音訊評比"},
+  10: {"topn":10, "scope":"AI 工具『組合/stack』(多工具搭配,如 Claude+Obsidian),非單一工具", "sources":"GitHub stars、官方部落格、Reddit/HN/YouTube 熱度、MCP 連接器公告"},
 }
 
 MONTHLY_SCHEMA = '''{
@@ -158,12 +159,12 @@ def main():
         "changesToday": changes[:6],
         "changesToday_en": changes_en[:6],
         "notes": [
-            "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
+            "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA、圖片=LMArena Arena)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
             "①整體=手工校正的權威版(穩定);②本月最新=每日免費自動研究(僅供速覽,偶有出入請點源覆核)。",
             "排名每天會動:AA 為 72 小時滾動、LMArena Elo 每天浮動,第 2~5 名常在誤差內。",
         ],
         "notes_en": [
-            "Neutrality: ① follows independent third-party leaderboards (General=AA Index, Coding=SWE-bench, Reasoning=GPQA), GA models only, human-verified — not this AI's or any vendor's view.",
+            "Neutrality: ① follows independent third-party leaderboards (General=AA Index, Coding=SWE-bench, Reasoning=GPQA, Image=LMArena Arena), GA models only, human-verified — not this AI's or any vendor's view.",
             "① = hand-curated authoritative (stable); ② = free auto-research daily (quick reference; verify against sources).",
             "Rankings shift daily: AA is a 72-hour rolling average and LMArena Elo moves; ranks 2–5 are often within noise.",
         ],

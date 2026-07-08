@@ -446,6 +446,71 @@
     },
     {
       "id": 4,
+      "icon": "🖼️",
+      "name": "創建圖片美術",
+      "name_en": "Image & Art Generation",
+      "subtitle": "文生圖質量 · 依 LMArena 文生圖 Arena",
+      "subtitle_en": "Text-to-image quality · by LMArena T2I Arena",
+      "overall": [
+        {
+          "rank": 1,
+          "name": "GPT Image 2",
+          "vendor": "OpenAI",
+          "vendor_en": "OpenAI",
+          "score": "Arena #1",
+          "why": "LMArena 文生圖 Arena 第一,分數大幅領先",
+          "why_en": "#1 on LMArena text-to-image Arena by a wide margin",
+          "meta": "OpenAI 現役旗艦圖像",
+          "meta_en": "OpenAI current flagship image model"
+        },
+        {
+          "rank": 2,
+          "name": "Muse Image",
+          "vendor": "Meta",
+          "vendor_en": "Meta",
+          "score": "Arena #2",
+          "why": "Meta 官方稱 Arena #2(文生圖+編修);人像/場景強",
+          "why_en": "Meta claims #2 on Arena (t2i + editing); strong portraits/scenes",
+          "meta": "7/8 發佈 · Meta Superintelligence Labs",
+          "meta_en": "Launched 7/8 · Meta Superintelligence Labs"
+        },
+        {
+          "rank": 3,
+          "name": "Reve 2.0",
+          "vendor": "Reve AI",
+          "vendor_en": "Reve AI",
+          "score": "Arena #3",
+          "why": "版面優先、4K 高解析;獨立 Reve AI(Palo Alto)",
+          "why_en": "Layout-first 4K; from indie Reve AI (Palo Alto)",
+          "meta": "6/3 發佈",
+          "meta_en": "Released 6/3"
+        },
+        {
+          "rank": 4,
+          "name": "Gemini 3.1 Flash Image",
+          "vendor": "Google",
+          "vendor_en": "Google",
+          "score": "Arena #4",
+          "why": "Google 快速高質圖像(Nano-Banana 後繼)",
+          "why_en": "Google fast high-quality image (Nano-Banana successor)",
+          "meta": "preview",
+          "meta_en": "preview"
+        },
+        {
+          "rank": 5,
+          "name": "MAI-Image 2.5",
+          "vendor": "Microsoft",
+          "vendor_en": "Microsoft",
+          "score": "Arena #5",
+          "why": "微軟 MAI 自研圖像模型",
+          "why_en": "Microsoft's in-house MAI image model",
+          "meta": "preview · 5/26 入榜",
+          "meta_en": "preview · on leaderboard since 5/26"
+        }
+      ]
+    },
+    {
+      "id": 5,
       "icon": "🎬",
       "name": "創建遊戲影片",
       "name_en": "Game / Stylized Video",
@@ -586,7 +651,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 6,
       "icon": "🎥",
       "name": "創建真人影片",
       "name_en": "Live-Action Video",
@@ -729,7 +794,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 7,
       "icon": "🧊",
       "name": "創建遊戲模組",
       "name_en": "3D Asset Generation",
@@ -871,7 +936,7 @@
       }
     },
     {
-      "id": 7,
+      "id": 8,
       "icon": "🦴",
       "name": "遊戲模組 Rigging",
       "name_en": "Game Asset Rigging",
@@ -1013,7 +1078,7 @@
       }
     },
     {
-      "id": 8,
+      "id": 9,
       "icon": "🔊",
       "name": "創建聲音特效",
       "name_en": "Sound Effects & Audio",
@@ -1155,7 +1220,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 10,
       "icon": "🧩",
       "name": "AI 工具組合 Combo",
       "name_en": "AI Tool Combos",
