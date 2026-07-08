@@ -543,18 +543,6 @@
         },
         {
           "rank": 3,
-          "name": "PixVerse V6",
-          "vendor": "PixVerse",
-          "vendor_en": "PixVerse",
-          "score": "動漫專精",
-          "score_en": "anime-tuned",
-          "why": "專為動漫/遊戲風格打造,20+ 運鏡控制",
-          "why_en": "Built for anime/game styles, 20+ camera controls",
-          "meta": "3/30 · 免費增值+API",
-          "meta_en": "3/30 · freemium + API"
-        },
-        {
-          "rank": 4,
           "name": "HappyHorse-1.0",
           "vendor": "Alibaba",
           "vendor_en": "Alibaba",
@@ -564,6 +552,18 @@
           "why_en": "#1 in blind-test Arena, 50+ styles, audio sync",
           "meta": "4/27 · fal API",
           "meta_en": "4/27 · fal API"
+        },
+        {
+          "rank": 4,
+          "name": "PixVerse V6",
+          "vendor": "PixVerse",
+          "vendor_en": "PixVerse",
+          "score": "動漫專精",
+          "score_en": "anime-tuned",
+          "why": "專為動漫/遊戲風格打造,20+ 運鏡控制",
+          "why_en": "Built for anime/game styles, 20+ camera controls",
+          "meta": "3/30 · 免費增值+API",
+          "meta_en": "3/30 · freemium + API"
         },
         {
           "rank": 5,
@@ -660,30 +660,6 @@
       "overall": [
         {
           "rank": 1,
-          "name": "Dreamina Seedance 2.0 (720p)",
-          "vendor": "ByteDance",
-          "vendor_en": "ByteDance",
-          "score": "Arena 榜首",
-          "score_en": "Arena top",
-          "why": "Arena 榜首級(T2V & I2V),寫實 + 同步音訊",
-          "why_en": "Top of Arena (T2V & I2V); realism + synced audio",
-          "meta": "2/12 · CapCut/fal",
-          "meta_en": "2/12 · CapCut/fal"
-        },
-        {
-          "rank": 2,
-          "name": "HappyHorse-1.0",
-          "vendor": "Alibaba",
-          "vendor_en": "Alibaba",
-          "score": "盲測 #1",
-          "score_en": "blind-test #1",
-          "why": "無音訊 Arena #1,1080p 寫實,低 WER 對嘴",
-          "why_en": "#1 no-audio Arena; 1080p realism, low-WER lip-sync",
-          "meta": "4/27 · fal API",
-          "meta_en": "4/27 · fal API"
-        },
-        {
-          "rank": 3,
           "name": "Kling 3.0 Pro (1080p)",
           "vendor": "快手 Kuaishou",
           "vendor_en": "Kuaishou",
@@ -695,7 +671,19 @@
           "meta_en": "Feb · paid"
         },
         {
-          "rank": 4,
+          "rank": 2,
+          "name": "Dreamina Seedance 2.0 (720p)",
+          "vendor": "ByteDance",
+          "vendor_en": "ByteDance",
+          "score": "含音訊·敘事強",
+          "score_en": "Audio + strong narrative",
+          "why": "Arena 榜首級(T2V & I2V),寫實 + 同步音訊",
+          "why_en": "Top of Arena (T2V & I2V); realism + synced audio",
+          "meta": "2/12 · CapCut/fal",
+          "meta_en": "2/12 · CapCut/fal"
+        },
+        {
+          "rank": 3,
           "name": "Google Veo 3.1 (+Fast)",
           "vendor": "Google",
           "vendor_en": "Google",
@@ -707,16 +695,28 @@
           "meta_en": "~Jan · Flow/Gemini"
         },
         {
+          "rank": 4,
+          "name": "HappyHorse-1.0",
+          "vendor": "Alibaba",
+          "vendor_en": "Alibaba",
+          "score": "盲測前段",
+          "score_en": "Top blind-test tier",
+          "why": "無音訊 Arena #1,1080p 寫實,低 WER 對嘴",
+          "why_en": "#1 no-audio Arena; 1080p realism, low-WER lip-sync",
+          "meta": "4/27 · fal API",
+          "meta_en": "4/27 · fal API"
+        },
+        {
           "rank": 5,
-          "name": "MiniMax Hailuo 2.3",
-          "vendor": "MiniMax",
-          "vendor_en": "MiniMax",
-          "score": "物理寫實",
-          "score_en": "physical realism",
-          "why": "物理寫實/微表情強,便宜",
-          "why_en": "Strong physical realism/micro-expressions, cheap",
-          "meta": "2025/10 · App+API",
-          "meta_en": "2025/10 · App+API"
+          "name": "Runway Gen-4.5",
+          "vendor": "Runway",
+          "vendor_en": "Runway",
+          "score": "專業運鏡",
+          "score_en": "Pro control",
+          "why": "專業製片首選:運鏡、結構化提示、可控性與後製銜接強",
+          "why_en": "Pro film choice: camera moves, structured prompting, editability",
+          "meta": "2026 · 專業工作流首選",
+          "meta_en": "2026 · go-to pro workflow"
         }
       ],
       "monthly": {
@@ -1099,15 +1099,15 @@
         },
         {
           "rank": 2,
-          "name": "Stable Audio 3",
-          "vendor": "Stability AI",
-          "vendor_en": "Stability AI",
-          "score": "開源·SFX",
-          "score_en": "open-source SFX",
-          "why": "開源,音樂 + SFX/foley 統一,適合自架 pipeline",
-          "why_en": "Open-source; unified music + SFX/foley; great for self-hosted pipelines",
-          "meta": "5/20 · 開源權重",
-          "meta_en": "5/20 · open weights"
+          "name": "Suno v5",
+          "vendor": "Suno",
+          "vendor_en": "Suno",
+          "score": "音樂 ELO 1293",
+          "score_en": "Music ELO 1293",
+          "why": "音樂盲測第一(ELO 1293);全曲+人聲質量標竿",
+          "why_en": "#1 in music blind tests (ELO 1293); full-song + vocal benchmark",
+          "meta": "3/27 · 訂閱制",
+          "meta_en": "3/27 · subscription"
         },
         {
           "rank": 3,
@@ -1123,15 +1123,15 @@
         },
         {
           "rank": 4,
-          "name": "Suno v5.5",
-          "vendor": "Suno",
-          "vendor_en": "Suno",
-          "score": "音樂龍頭",
-          "score_en": "music leader",
-          "why": "消費級音樂龍頭,語音擷取、自訂模型",
-          "why_en": "Consumer music leader; voice capture, custom models",
-          "meta": "3/27 · 訂閱制",
-          "meta_en": "3/27 · subscription"
+          "name": "Stable Audio 3",
+          "vendor": "Stability AI",
+          "vendor_en": "Stability AI",
+          "score": "開源·SFX",
+          "score_en": "open-source SFX",
+          "why": "開源,音樂 + SFX/foley 統一,適合自架 pipeline",
+          "why_en": "Open-source; unified music + SFX/foley; great for self-hosted pipelines",
+          "meta": "5/20 · 開源權重",
+          "meta_en": "5/20 · open weights"
         },
         {
           "rank": 5,
