@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-13T22:11:04+08:00",
-  "updatedDateLabel": "2026 年 7 月 13 日",
+  "updatedAt": "2026-07-14T01:46:47+08:00",
+  "updatedDateLabel": "2026 年 7 月 14 日",
   "month": "2026 年 7 月",
   "month_en": "July 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/07/13 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/07/13",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/07/14 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/07/14",
   "changesToday": [
     "Claude Fable 5 (7/1) — 綜合 AI MODEL 排名",
     "GPT-5.6 Sol (7/9) — 綜合 AI MODEL 排名",
@@ -245,7 +245,7 @@
           {
             "rank": 1,
             "name": "GPT-5.6 Sol",
-            "version": "5.6 Sol",
+            "version": "Sol",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
             "date": "7/9",
@@ -253,8 +253,8 @@
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "OpenAI 的旗艦模型，於本月正式發佈，在編程和代理任務方面表現出色，並顯著提升了 token 效率，是複雜開發工作的頂級選擇。",
-            "why_en": "OpenAI's flagship model, officially released this month, excels in coding and agent tasks with significant token efficiency, making it a top choice for complex development work."
+            "why": "OpenAI 的旗艦模型，於 7 月 9 日正式發佈，在編程和代理任務上表現卓越，引入了程式化工具調用和多代理協調功能，對遊戲開發至關重要。",
+            "why_en": "OpenAI's flagship model, officially released on July 9, demonstrates exceptional performance in coding and agentic tasks, introducing programmatic tool calling and multi-agent orchestration, crucial for game development."
           },
           {
             "rank": 2,
@@ -267,50 +267,50 @@
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "在經歷暫停後於本月恢復全球訪問，並延長了使用期限，是 Anthropic 最強大的模型，專為雄心勃勃的編程項目和多日自主會話設計，在 SWE-bench Verified 和 SWE-bench Pro 基準測試中表現領先。",
-            "why_en": "Globally restored this month after a suspension, with extended access, Anthropic's most powerful model is designed for ambitious coding projects and multi-day autonomous sessions, leading on SWE-bench Verified and SWE-bench Pro benchmarks."
+            "why": "雖於 6 月發佈，但在經歷暫停後於 7 月 1 日全球恢復，並在 7 月 12 日前延長了付費方案的存取權限，以其在多步驟編程任務上的卓越能力而聞名。",
+            "why_en": "Although released in June, it was globally restored on July 1 after a suspension, with extended access for paid plans until July 12, and is renowned for its superior capability in long, multi-step coding tasks."
           },
           {
             "rank": 3,
-            "name": "Grok 4.5",
-            "version": "4.5",
-            "vendor": "xAI",
-            "vendor_en": "xAI",
-            "date": "7/8",
-            "date_en": null,
+            "name": "Gemini 3.5 Flash",
+            "version": "3.5 Flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "7月",
+            "date_en": "July",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "xAI 與 Cursor 合作推出的編程優化模型，利用真實世界開發者互動數據訓練，在多文件代碼庫理解和開發者意圖對齊方面表現出色。",
-            "why_en": "A coding-optimized model from xAI in collaboration with Cursor, trained on real-world developer interaction data, excelling in multi-file codebase understanding and developer intent alignment."
+            "why": "Google 最新且更高效的模型，具備「電腦使用」能力，可讓自訂代理程式在桌面、行動和瀏覽器環境中執行操作，非常適合遊戲開發中的自動化和測試。",
+            "why_en": "Google's latest and more efficient model, featuring 'computer use' capabilities for custom agents to act across desktop, mobile, and browser environments, ideal for automation and testing in game development."
           },
           {
             "rank": 4,
-            "name": "Tencent Hunyuan Hy3",
-            "version": "Hy3",
-            "vendor": "騰訊",
-            "vendor_en": "Tencent",
-            "date": "7/6",
+            "name": "Muse Spark 1.1",
+            "version": "1.1",
+            "vendor": "Meta",
+            "vendor_en": "Meta",
+            "date": "7/9",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "本月正式發佈，在軟體開發和遊戲製作等生產力任務方面取得顯著進展，增強了代理能力並支持多代理協作，並以 Apache 2.0 許可證開源。",
-            "why_en": "Officially released this month, it shows notable progress in productivity tasks like software development and game production, enhancing agent capabilities and supporting multi-agent collaboration, and is open-sourced under Apache 2.0 license."
+            "why": "Meta 的多模態推理模型重大更新，支援工具使用、視覺思維鏈和多代理協調，為遊戲開發提供強大的新功能。",
+            "why_en": "Meta's significant update to its multimodal reasoning model, supporting tool-use, visual chain-of-thought, and multi-agent orchestration, offering powerful new capabilities for game development."
           },
           {
             "rank": 5,
-            "name": "Game Designer Mind",
-            "version": "AI Agent",
-            "vendor": "Minds by Animoca Brands",
-            "vendor_en": "Minds by Animoca Brands",
-            "date": "7/13",
+            "name": "Cursor 3.11",
+            "version": "3.11",
+            "vendor": "Cursor",
+            "vendor_en": "Cursor",
+            "date": "7/10",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "於本月公開亮相，是一款專門用於簡化遊戲設計流程的 AI 代理，能夠從單行提示生成全面的遊戲設計，特別適合網頁遊戲的快速原型開發。",
-            "why_en": "Publicly debuted this month, this specialized AI agent streamlines game design, generating comprehensive game designs from single-line prompts, particularly suitable for rapid prototyping in web game development."
+            "why": "AI 優先的程式碼編輯器更新，新增了側邊聊天和對話搜尋功能，並強化了雲端代理程式的掛鉤，使其成為遊戲開發者不可或缺的工具。",
+            "why_en": "An update to the AI-first code editor, adding side chats and conversation search, and enhancing cloud agent hooks, making it an indispensable tool for game developers."
           }
         ]
       }
