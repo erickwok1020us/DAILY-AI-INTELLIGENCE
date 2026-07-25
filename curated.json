@@ -40,18 +40,30 @@
       "overall": [
         {
           "rank": 1,
+          "name": "Claude Opus 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "AA 61",
+          "score_en": "AA 61",
+          "why": "AA 智能指數世界第一(61, v4.1);Claude Max 新預設,價僅 Fable 半價",
+          "why_en": "#1 in the world on AA Intelligence Index (61, v4.1); new Claude Max default at half Fable's price",
+          "meta": "7/24 發佈 · $5/$25 · Max 預設",
+          "meta_en": "Released 7/24 · $5/$25 · Max default"
+        },
+        {
+          "rank": 2,
           "name": "Claude Fable 5",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
           "score": "AA 60",
-          "why": "AA 智能指數第一(60);Mythos 級,公開可用最強",
-          "why_en": "#1 on AA Intelligence Index (60); Mythos-class, strongest publicly available",
+          "why": "AA 智能指數 60,僅次於 Opus 5;公開可用最強之一",
+          "why_en": "AA Index 60, just behind Opus 5; among the strongest available",
           "meta": "7/1 全球返場 · 曾因出口管制暫停 18 天",
           "meta_en": "Returned globally 7/1 · was suspended 18 days",
           "score_en": "AA 60"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "GPT-5.6 Sol",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -63,7 +75,7 @@
           "meta_en": "Released 7/9"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Kimi K3",
           "vendor": "Moonshot AI 月之暗面",
           "vendor_en": "Moonshot AI",
@@ -75,7 +87,7 @@
           "meta_en": "New on the board, July 2026"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -85,18 +97,6 @@
           "meta": "5/28 發佈 · API $5/$25",
           "meta_en": "Released 5/28 · API $5/$25",
           "score_en": "AA 56"
-        },
-        {
-          "rank": 5,
-          "name": "GPT-5.5 (xhigh)",
-          "vendor": "OpenAI",
-          "vendor_en": "OpenAI",
-          "score": "AA 55",
-          "why": "AA 60.2;最強全能、生態最大",
-          "why_en": "AA 60.2; strongest all-rounder, largest ecosystem",
-          "meta": "4/23 · ChatGPT/API",
-          "meta_en": "4/23 · ChatGPT/API",
-          "score_en": "AA 55"
         }
       ],
       "monthly": {
@@ -181,18 +181,30 @@
       "overall": [
         {
           "rank": 1,
+          "name": "Claude Opus 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "AA 編程#1",
+          "score_en": "AA Coding #1",
+          "why": "領先 AA 編程指數(SWE-Atlas-QnA 最高);搭 Claude Code 最強",
+          "why_en": "#1 on AA Coding Index (top SWE-Atlas-QnA); strongest paired with Claude Code",
+          "meta": "7/24 · Max 預設",
+          "meta_en": "7/24 · Max default"
+        },
+        {
+          "rank": 2,
           "name": "Claude Fable 5",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
           "score": "SWE 95%",
           "score_en": "SWE 95%",
-          "why": "SWE-bench Verified 95%,公開可用最高(Mythos 5 雖 95.5%,僅限受邀試用)",
-          "why_en": "SWE-bench Verified 95% — highest publicly available (Mythos 5 hits 95.5% but is invite-only)",
+          "why": "SWE-bench Verified 95%;編程次於 Opus 5(公開可用第二強)",
+          "why_en": "SWE-bench Verified 95%; #2 coding behind Opus 5",
           "meta": "7/1 返場 · Mythos 級",
           "meta_en": "Returned 7/1 · Mythos-class"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "GPT-5.5",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -203,7 +215,7 @@
           "meta_en": "4/23 · ChatGPT/API"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Claude Opus 4.8",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -214,7 +226,7 @@
           "meta_en": "5/28 · native to Claude Code"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "Claude Opus 4.7",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
@@ -223,17 +235,6 @@
           "why_en": "Prior flagship, SWE 87.6%, still strong on WebDev",
           "meta": "~4 月 · Claude API",
           "meta_en": "~Apr · Claude API"
-        },
-        {
-          "rank": 5,
-          "name": "GPT-5.3-Codex",
-          "vendor": "OpenAI",
-          "vendor_en": "OpenAI",
-          "score": "SWE 85.0%",
-          "why": "Codex 調校 agent 模型,SWE-bench 85.0%",
-          "why_en": "Codex-tuned agent model, SWE-bench 85.0%",
-          "meta": "Q1 · Codex CLI",
-          "meta_en": "Q1 · Codex CLI"
         }
       ],
       "monthly": {
@@ -332,18 +333,30 @@
         },
         {
           "rank": 2,
+          "name": "Claude Opus 5",
+          "vendor": "Anthropic",
+          "vendor_en": "Anthropic",
+          "score": "AA 61",
+          "score_en": "AA 61",
+          "why": "AA 綜合智能世界第一(61);推理屬頂段",
+          "why_en": "#1 overall on AA (61); top-tier reasoning",
+          "meta": "7/24 · Max 預設",
+          "meta_en": "7/24 · Max default"
+        },
+        {
+          "rank": 3,
           "name": "Claude Fable 5",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
-          "score": "AA 綜合#1",
-          "score_en": "AA overall #1",
+          "score": "AA 60",
+          "score_en": "AA 60",
           "why": "綜合智能第一;推理屬頂段(GPQA 前段)",
           "why_en": "#1 overall intelligence; top-tier reasoning (GPQA leading pack)",
           "meta": "7/1 返場 · Mythos 級",
           "meta_en": "Returned 7/1 · Mythos-class"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "GPT-5.5 (xhigh)",
           "vendor": "OpenAI",
           "vendor_en": "OpenAI",
@@ -354,27 +367,16 @@
           "meta_en": "4/23 · probability reasoning"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "Claude Opus 4.8 (max)",
           "vendor": "Anthropic",
           "vendor_en": "Anthropic",
-          "score": "AA 綜合#1",
-          "score_en": "AA overall #1",
+          "score": "AA 56",
+          "score_en": "AA 56",
           "why": "綜合智能 AA #1;最會寫+跑模擬程式碼(GPQA 屬飽和帶,差距極小)",
           "why_en": "#1 on AA overall; best at writing+running simulation code (GPQA saturated, tiny gaps)",
           "meta": "5/28 · 寫/跑模擬",
           "meta_en": "5/28 · build/run simulations"
-        },
-        {
-          "rank": 5,
-          "name": "Qwen3.7-Max",
-          "vendor": "Alibaba",
-          "vendor_en": "Alibaba",
-          "score": "HMMT 97",
-          "why": "數學頂尖(HMMT 97.1)",
-          "why_en": "Top-tier math (HMMT 97.1)",
-          "meta": "5/20 · Alibaba Cloud",
-          "meta_en": "5/20 · Alibaba Cloud"
         }
       ],
       "monthly": {
