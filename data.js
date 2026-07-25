@@ -1,13 +1,13 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-07-25T20:49:01+08:00",
-  "updatedDateLabel": "2026 年 7 月 25 日",
+  "updatedAt": "2026-07-26T00:41:29+08:00",
+  "updatedDateLabel": "2026 年 7 月 26 日",
   "month": "2026 年 7 月",
   "month_en": "July 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/07/25 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/07/25",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/07/26 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/07/26",
   "changesToday": [
-    "Claude Fable 5 (7/1) — 綜合 AI MODEL 排名",
+    "Claude Opus 5 (7/24) — 綜合 AI MODEL 排名",
     "GPT-5.6 Sol (7/9) — 綜合 AI MODEL 排名",
     "GPT-5.6 Sol (7/9) — 創建遊戲的助手",
     "Claude Fable 5 (7/1) — 創建遊戲的助手",
@@ -15,7 +15,7 @@ window.DIGEST = {
     "Claude Opus 5 (7/24) — 創建數據模擬器 & 數據推理"
   ],
   "changesToday_en": [
-    "Claude Fable 5 (7/1) — Overall AI Model Ranking",
+    "Claude Opus 5 (7/24) — Overall AI Model Ranking",
     "GPT-5.6 Sol (7/9) — Overall AI Model Ranking",
     "GPT-5.6 Sol (7/9) — Game-Building Assistants",
     "Claude Fable 5 (7/1) — Game-Building Assistants",
@@ -108,17 +108,17 @@ window.DIGEST = {
         "items": [
           {
             "rank": 1,
-            "name": "Claude Fable 5",
+            "name": "Claude Opus 5",
             "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "7/1",
-            "date_en": null,
+            "date": "7/24",
+            "date_en": "Jul 24",
             "isNew": true,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "本月重新上線，在多個綜合榜單中位居榜首，展現卓越的綜合能力。",
-            "why_en": "Re-launched this month, it ranks first in multiple overall leaderboards, demonstrating exceptional general capabilities."
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "Anthropic 的旗艦模型，提供接近 Fable 5 的智能，且成本更低，在編碼和知識工作方面表現卓越。",
+            "why_en": "Anthropic's flagship model, offering near-Fable 5 intelligence at a lower cost, excelling in coding and knowledge work."
           },
           {
             "rank": 2,
@@ -127,12 +127,12 @@ window.DIGEST = {
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
             "date": "7/9",
-            "date_en": null,
+            "date_en": "Jul 9",
             "isNew": true,
             "overlap": "整體 #3",
             "overlap_en": "Overall #3",
-            "why": "OpenAI 最新旗艦模型，在代理編碼和網路代理等任務中表現領先。",
-            "why_en": "OpenAI's latest flagship model, leading in tasks such as agentic coding and web agents."
+            "why": "OpenAI 的最新旗艦模型，專為前沿推理和長週期代理工作設計，是 GPT-5.6 系列中最頂級的版本。",
+            "why_en": "OpenAI's newest flagship model, designed for frontier reasoning and long-horizon agentic work, the top tier of the GPT-5.6 family."
           },
           {
             "rank": 3,
@@ -141,26 +141,26 @@ window.DIGEST = {
             "vendor": "Moonshot AI",
             "vendor_en": "Moonshot AI",
             "date": "7/16",
-            "date_en": null,
+            "date_en": "Jul 16",
             "isNew": true,
             "overlap": "整體 #4",
             "overlap_en": "Overall #4",
-            "why": "Moonshot AI 的新旗艦模型，在網頁代理和推理任務上表現出色，API 已正式發佈。",
-            "why_en": "Moonshot AI's new flagship model, excelling in web agent and reasoning tasks, with API generally available."
+            "why": "月之暗面發布的 2.8 兆參數開源模型，具備 100 萬 token 上下文窗口，在前端編碼方面表現出色。",
+            "why_en": "Moonshot AI's 2.8-trillion-parameter open-weight model, featuring a 1-million-token context window and strong performance in front-end coding."
           },
           {
             "rank": 4,
-            "name": "Claude Opus 5",
-            "version": "5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "7/24",
-            "date_en": null,
+            "name": "Muse Spark 1.1",
+            "version": "1.1",
+            "vendor": "Meta",
+            "vendor_en": "Meta",
+            "date": "7/9",
+            "date_en": "Jul 9",
             "isNew": true,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "Anthropic 最新發佈的模型，以接近 Fable 5 的能力和更低的成本提供高效能。",
-            "why_en": "Anthropic's latest model, offering high performance with capabilities close to Fable 5 at a lower cost."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Meta AI 服務的更新版本，旨在理解用戶上下文並自主執行任務，是邁向個人超級智能的重要一步。",
+            "why_en": "An updated version of Meta AI, designed to understand user context and execute tasks autonomously, marking a step towards personal superintelligence."
           },
           {
             "rank": 5,
@@ -169,12 +169,12 @@ window.DIGEST = {
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "7/21",
-            "date_en": null,
+            "date_en": "Jul 21",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Google 最新 Flash 模型，提升了 token 效率、編碼和代理規劃能力，且價格更低。",
-            "why_en": "Google's newest Flash model, featuring improved token efficiency, coding, and agentic planning capabilities at a lower price point."
+            "why": "Google Gemini 系列的最新成員，通常針對速度和效率進行優化，提供更快的響應能力。",
+            "why_en": "The latest addition to the Google Gemini family, typically optimized for speed and efficiency, offering faster response capabilities."
           }
         ]
       }
