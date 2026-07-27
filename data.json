@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-07-27T00:42:16+08:00",
-  "updatedDateLabel": "2026 年 7 月 27 日",
+  "updatedAt": "2026-07-28T01:26:11+08:00",
+  "updatedDateLabel": "2026 年 7 月 28 日",
   "month": "2026 年 7 月",
   "month_en": "July 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/07/27 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/07/27",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/07/28 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/07/28",
   "changesToday": [
     "Claude Opus 5 (7/24) — 綜合 AI MODEL 排名",
     "Claude Fable 5 (7/1) — 綜合 AI MODEL 排名",
     "Claude Opus 5 (7/24) — 創建遊戲的助手",
     "GPT-5.6 Sol (7/9) — 創建遊戲的助手",
-    "Claude Opus 5 (7/24) — 創建數據模擬器 & 數據推理",
-    "GPT-5.6 Sol (7/9) — 創建數據模擬器 & 數據推理"
+    "GPT-5.6 Sol (7/9) — 創建數據模擬器 & 數據推理",
+    "Claude Opus 5 (7/24) — 創建數據模擬器 & 數據推理"
   ],
   "changesToday_en": [
     "Claude Opus 5 (7/24) — Overall AI Model Ranking",
     "Claude Fable 5 (7/1) — Overall AI Model Ranking",
     "Claude Opus 5 (7/24) — Game-Building Assistants",
     "GPT-5.6 Sol (7/9) — Game-Building Assistants",
-    "Claude Opus 5 (7/24) — Data Simulators & Reasoning",
-    "GPT-5.6 Sol (7/9) — Data Simulators & Reasoning"
+    "GPT-5.6 Sol (7/9) — Data Simulators & Reasoning",
+    "Claude Opus 5 (7/24) — Data Simulators & Reasoning"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA、圖片=LMArena Arena)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -108,72 +108,72 @@
           {
             "rank": 1,
             "name": "Claude Opus 5",
-            "version": null,
+            "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "7/24",
-            "date_en": "July 24",
+            "date_en": null,
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "Anthropic最新旗艦模型，在多個智能指數榜單中位居榜首，展現卓越的通用智能和代理能力。",
-            "why_en": "Anthropic's newest flagship model, topping multiple intelligence index leaderboards and demonstrating exceptional general intelligence and agentic capabilities."
+            "why": "在 Artificial Analysis 智慧指數和代理指數中均位居榜首，展現卓越的代理編碼能力和複雜任務處理能力。",
+            "why_en": "Topped Artificial Analysis's Intelligence Index and Agentic Index, demonstrating superior agentic coding and complex task handling capabilities."
           },
           {
             "rank": 2,
             "name": "Claude Fable 5",
-            "version": null,
+            "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "7/1",
-            "date_en": "July 1",
+            "date_en": null,
             "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "本月重新上架並持續在多個榜單中表現優異，尤其在編碼和代理任務方面保持領先地位。",
-            "why_en": "Re-released this month and continues to perform excellently in multiple rankings, maintaining a leading position, especially for coding and agentic tasks."
+            "why": "在美國政府解除出口管制後於本月重新上線，其強大的綜合能力使其在 Artificial Analysis 智慧指數中排名第二。",
+            "why_en": "Re-launched this month after US government export controls were lifted, its powerful general capabilities place it second on Artificial Analysis's Intelligence Index."
           },
           {
             "rank": 3,
             "name": "GPT-5.6 Sol",
-            "version": null,
+            "version": "5.6 Sol",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
             "date": "7/9",
-            "date_en": "July 9",
+            "date_en": null,
             "isNew": true,
             "overlap": "整體 #3",
             "overlap_en": "Overall #3",
-            "why": "OpenAI最新旗艦模型，已正式發佈並在通用智能、複雜問題解決及編碼能力方面表現強勁。",
-            "why_en": "OpenAI's latest flagship model, officially released and demonstrating strong performance in general intelligence, complex problem-solving, and coding capabilities."
+            "why": "OpenAI 最新旗艦模型，提供領先的解決問題能力，在 Artificial Analysis 智慧指數中表現出色。",
+            "why_en": "OpenAI's newest flagship model, offering leading problem-solving capabilities and strong performance on Artificial Analysis's Intelligence Index."
           },
           {
             "rank": 4,
             "name": "Kimi K3",
-            "version": null,
+            "version": "K3",
             "vendor": "Moonshot AI",
             "vendor_en": "Moonshot AI",
-            "date": "7/17",
-            "date_en": "July 17",
+            "date": "7/16",
+            "date_en": null,
             "isNew": true,
             "overlap": "整體 #4",
             "overlap_en": "Overall #4",
-            "why": "月之暗面最新旗艦模型，擁有2.8兆參數和1百萬token上下文窗口，在智能指數榜單中表現突出。",
-            "why_en": "Moonshot AI's latest flagship model, featuring 2.8 trillion parameters and a 1 million token context window, showing prominent performance in intelligence index rankings."
+            "why": "作為首個達到 2.8 兆參數的開源模型，在 Artificial Analysis 榜單上首次亮相即位居前列，尤其擅長長文本編碼和知識工作。",
+            "why_en": "The first open-source model to reach 2.8 trillion parameters, debuting high on Artificial Analysis's leaderboard, particularly strong in long-context coding and knowledge work."
           },
           {
             "rank": 5,
             "name": "Grok 4.5",
-            "version": null,
+            "version": "4.5",
             "vendor": "xAI",
             "vendor_en": "xAI",
-            "date": "7/16",
-            "date_en": "July 16",
+            "date": "7/8",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "xAI最新模型，以其競爭力的成本和高效率在市場上脫穎而出，尤其在編碼任務上表現出色。",
-            "why_en": "xAI's latest model, standing out in the market for its competitive cost and high efficiency, particularly excelling in coding tasks."
+            "why": "xAI 推出的 Opus 級模型，以更快的速度、更高的代幣效率和更低的成本提供強大的編碼和代理工作能力。",
+            "why_en": "xAI's Opus-class model, offering strong coding and agentic work capabilities with faster speed, higher token efficiency, and lower cost."
           }
         ]
       }
@@ -394,59 +394,59 @@
         "items": [
           {
             "rank": 1,
+            "name": "GPT-5.6 Sol",
+            "version": "Sol",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "7/9",
+            "date_en": "Jul 9",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "OpenAI 的旗艦模型，在編碼、Agentic 工作流程和科學推理方面表現卓越，超越了 Claude Fable 5。",
+            "why_en": "OpenAI's flagship model, excelling in coding, agentic workflows, and scientific reasoning, surpassing Claude Fable 5."
+          },
+          {
+            "rank": 2,
             "name": "Claude Opus 5",
             "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "7/24",
-            "date_en": null,
+            "date_en": "Jul 24",
             "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "Anthropic 的新旗艦模型，在 Artificial Analysis 智能指數和代理指數中均位居榜首，在科學研究和多步推理方面表現卓越，適用於複雜數據推理與模擬。",
-            "why_en": "Anthropic's new flagship model, topping both the Artificial Analysis Intelligence Index and Agentic Index, demonstrating excellent performance in scientific research and multi-step reasoning, suitable for complex data reasoning and simulation."
-          },
-          {
-            "rank": 2,
-            "name": "GPT-5.6 Sol",
-            "version": "5.6 Sol",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "7/9",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "OpenAI 新推出的旗艦模型，在網絡安全、科學研究和編碼代理方面表現出色，並在 Artificial Analysis 編碼代理指數中領先，有助於數據推理與科學模擬。",
-            "why_en": "OpenAI's new flagship model, demonstrating outstanding performance in cybersecurity, scientific research, and coding agents, leading the Artificial Analysis Coding Agent Index, beneficial for data reasoning and scientific simulation."
+            "why": "新一代模型，在編碼和知識工作評估中達到最新水平，並在解決新穎問題方面表現出色，接近 Fable 5 的智能但成本減半。",
+            "why_en": "Next-generation model, achieving state-of-the-art in coding and knowledge work evaluations, and excelling in novel problem-solving, close to Fable 5's intelligence at half the price."
           },
           {
             "rank": 3,
-            "name": "Kimi K3",
-            "version": "K3",
-            "vendor": "Moonshot AI",
-            "vendor_en": "Moonshot AI",
-            "date": "7/16",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "最大的開源模型之一，擁有 2.8 兆參數和 100 萬 token 上下文窗口，其獨特的思維鏈方法使其在複雜數據推理和代理工作流中表現強勁。",
-            "why_en": "One of the largest open-weight models, with 2.8 trillion parameters and a 1 million token context window, its unique chain-of-thought approach makes it strong in complex data reasoning and agentic workflows."
-          },
-          {
-            "rank": 4,
             "name": "Claude Fable 5",
             "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "7/1",
-            "date_en": null,
+            "date_en": "Jul 1",
             "isNew": true,
             "overlap": "整體 #3",
             "overlap_en": "Overall #3",
-            "why": "在 6 月因出口管制下架後於本月重新上架，作為 Mythos 級旗艦模型，在 Artificial Analysis 智能指數中位居前列，提供卓越的數據推理能力。",
-            "why_en": "Redeployed this month after being taken offline in June due to export controls, this Mythos-class flagship model ranks high on the Artificial Analysis Intelligence Index, offering excellent data reasoning capabilities."
+            "why": "本月重新部署並全面開放，仍是功能最強大的模型之一，擅長長文件解析和複雜推理，其姊妹模型 Mythos 5 被譽為最強大的網路安全模型。",
+            "why_en": "Re-deployed and fully available this month, remaining one of the most powerful models, excelling in long document parsing and complex reasoning, with its twin Mythos 5 hailed as the strongest cybersecurity model."
+          },
+          {
+            "rank": 4,
+            "name": "Kimi K3",
+            "version": "K3",
+            "vendor": "Moonshot AI",
+            "vendor_en": "Moonshot AI",
+            "date": "7/16",
+            "date_en": "Jul 16",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "擁有 2.8 兆參數，在 HLE-Full (Human-level Expert) 基準測試中表現出色，並在前端生成和長代碼 Agent 方面具有先進能力。",
+            "why_en": "Features 2.8 trillion parameters, demonstrates impressive performance on the HLE-Full (Human-level Expert) benchmark, and shows advanced capabilities in frontend generation and long-code agents."
           },
           {
             "rank": 5,
@@ -455,12 +455,12 @@
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "7/21",
-            "date_en": null,
+            "date_en": "Jul 21",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "升級版的 Flash 模型，具有改進的 token 效率和代碼/代理規劃能力，適用於多步驟數據分析和自動化模擬任務。",
-            "why_en": "An upgraded Flash model featuring improved token efficiency and code/agentic planning capabilities, suitable for multi-step data analysis and automated simulation tasks."
+            "why": "專為擴展 Agentic 工作流程而設計的主力模型，在編碼、知識工作和多模態性能方面有所提升，同時提供更高的效率和更低的成本。",
+            "why_en": "A workhorse model designed for scaling agentic workflows, offering improved coding, knowledge work, and multimodal performance with enhanced efficiency and lower cost."
           }
         ]
       }
