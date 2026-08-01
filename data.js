@@ -1,26 +1,26 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-08-01T01:15:02+08:00",
-  "updatedDateLabel": "2026 年 8 月 1 日",
+  "updatedAt": "2026-08-02T00:43:32+08:00",
+  "updatedDateLabel": "2026 年 8 月 2 日",
   "month": "2026 年 8 月",
   "month_en": "August 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/08/01 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/08/01",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/08/02 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/08/02",
   "changesToday": [
     "Claude Opus 5 (7/24) — 綜合 AI MODEL 排名",
-    "Claude Fable 5 (7/1) — 綜合 AI MODEL 排名",
-    "Claude Opus 5 (7/9) — 創建遊戲的助手",
-    "GPT-5.6 Sol (7/30) — 創建遊戲的助手",
-    "Claude Opus 5 (7/24) — 創建數據模擬器 & 數據推理",
-    "GPT-5.6 Sol (7/9) — 創建數據模擬器 & 數據推理"
+    "Claude Fable 5 (7/1 (重新上架)) — 綜合 AI MODEL 排名",
+    "Claude Opus 5 (7/24) — 創建遊戲的助手",
+    "GPT-5.6 Sol (7/9) — 創建遊戲的助手",
+    "Reve (7月) — 創建圖片美術",
+    "Muse Image (7月7日) — 創建圖片美術"
   ],
   "changesToday_en": [
     "Claude Opus 5 (7/24) — Overall AI Model Ranking",
-    "Claude Fable 5 (7/1) — Overall AI Model Ranking",
-    "Claude Opus 5 (7/9) — Game-Building Assistants",
-    "GPT-5.6 Sol (7/30) — Game-Building Assistants",
-    "Claude Opus 5 (7/24) — Data Simulators & Reasoning",
-    "GPT-5.6 Sol (7/9) — Data Simulators & Reasoning"
+    "Claude Fable 5 (7/1 (重新上架)) — Overall AI Model Ranking",
+    "Claude Opus 5 (7/24) — Game-Building Assistants",
+    "GPT-5.6 Sol (7/9) — Game-Building Assistants",
+    "Reve (7月) — Image & Art Generation",
+    "Muse Image (7月7日) — Image & Art Generation"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA、圖片=LMArena Arena)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -117,8 +117,8 @@ window.DIGEST = {
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "本月發布的旗艦模型，在多項基準測試中達到新的最先進水平，並提供接近 Fable 5 的智能，價格減半。",
-            "why_en": "Flagship model released this month, achieving new state-of-the-art in several benchmarks and offering near-Fable 5 intelligence at half the price."
+            "why": "Anthropic 最新旗艦模型，在多項基準測試中表現卓越，尤其在代理任務和知識工作方面領先。",
+            "why_en": "Anthropic's latest flagship model, demonstrating excellent performance across multiple benchmarks, especially in agentic tasks and knowledge work."
           },
           {
             "rank": 2,
@@ -126,13 +126,13 @@ window.DIGEST = {
             "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "7/1",
-            "date_en": "Jul 1",
+            "date": "7/1 (重新上架)",
+            "date_en": "Jul 1 (re-released)",
             "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "在美國政府解除出口管制後重新上架，是 Anthropic 最強大的廣泛發布模型。",
-            "why_en": "Re-listed after US government export control lifted, it is Anthropic's most capable widely released model."
+            "why": "Anthropic 的 Mythos 級模型，在經歷出口管制暫停後於本月重新全面開放，提供頂級能力。",
+            "why_en": "Anthropic's Mythos-class model, fully re-released this month after an export control pause, offering top-tier capabilities."
           },
           {
             "rank": 3,
@@ -145,36 +145,36 @@ window.DIGEST = {
             "isNew": true,
             "overlap": "整體 #3",
             "overlap_en": "Overall #3",
-            "why": "OpenAI 的新旗艦模型，在編碼、知識工作、網絡安全和科學領域樹立了新的智能和效率標準。",
-            "why_en": "OpenAI's new flagship model, setting a new standard for intelligence and efficiency across coding, knowledge work, cybersecurity, and science."
+            "why": "OpenAI GPT-5.6 系列的旗艦模型，提供卓越的推理、編碼和多模態能力。",
+            "why_en": "OpenAI's flagship model in the GPT-5.6 series, offering excellent reasoning, coding, and multimodal capabilities."
           },
           {
             "rank": 4,
             "name": "Kimi K3",
-            "version": "3",
+            "version": "K3",
             "vendor": "Moonshot AI",
             "vendor_en": "Moonshot AI",
-            "date": "7/15",
-            "date_en": "Jul 15",
+            "date": "7/16",
+            "date_en": "Jul 16",
             "isNew": true,
             "overlap": "整體 #4",
             "overlap_en": "Overall #4",
-            "why": "本月發布的開源大型語言模型，參數規模達 2.8 兆，在 AI Intelligence Index 中排名靠前。",
-            "why_en": "Open-weights LLM released this month, with 2.8 trillion parameters, ranking high on the AI Intelligence Index."
+            "why": "Moonshot AI 的前沿大型語言模型，以其 2.8 兆參數和 100 萬 token 上下文窗口成為最大的開源權重模型。",
+            "why_en": "Moonshot AI's frontier large language model, notable for its 2.8 trillion parameters and 1 million token context window, making it the largest open-weight model."
           },
           {
             "rank": 5,
-            "name": "Muse Spark 1.1",
-            "version": "1.1",
-            "vendor": "Meta",
-            "vendor_en": "Meta",
-            "date": "7/9",
-            "date_en": "Jul 9",
+            "name": "Grok 4.5",
+            "version": "4.5",
+            "vendor": "xAI",
+            "vendor_en": "xAI",
+            "date": "7/8",
+            "date_en": "Jul 8",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Meta 發布的首個付費多模態推理模型，在工具使用、編碼和多模態理解方面有顯著提升。",
-            "why_en": "Meta's first paid multimodal reasoning model, with major gains in tool use, coding, and multimodal understanding."
+            "why": "xAI 發布的旗艦模型，專為編碼和代理任務設計，提供 Opus 級性能且成本更低。",
+            "why_en": "xAI's flagship model, designed for coding and agentic tasks, offering Opus-class performance at a lower cost."
           }
         ]
       }
@@ -255,13 +255,13 @@ window.DIGEST = {
             "version": "5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "7/9",
-            "date_en": "Jul 9",
+            "date": "7/24",
+            "date_en": "Jul 24",
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "Anthropic 的旗艦模型，在 SWE-bench Verified 等編程基準測試中表現領先，提供卓越的程式碼生成與理解能力，對遊戲開發至關重要。",
-            "why_en": "Anthropic's flagship model, leading on coding benchmarks like SWE-bench Verified, offers exceptional code generation and understanding capabilities, crucial for game development."
+            "why": "Anthropic 的新旗艦模型，在 SWE-bench Verified 達到 96% 的領先分數，推薦用於代理編程和企業級任務，對複雜遊戲開發極為有用。",
+            "why_en": "Anthropic's new flagship model, leading SWE-bench Verified with a 96% score, recommended for agentic coding and enterprise tasks, highly useful for complex game development."
           },
           {
             "rank": 2,
@@ -269,13 +269,13 @@ window.DIGEST = {
             "version": "5.6 Sol",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
-            "date": "7/30",
-            "date_en": "Jul 30",
+            "date": "7/9",
+            "date_en": "Jul 9",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "OpenAI 新一代模型，專為增強編碼、科學和網路安全能力而設計，並於本月發布了價格性能優化和更快的API模式，對遊戲開發中的複雜編程任務極具價值。",
-            "why_en": "OpenAI's next-generation model, designed for enhanced coding, science, and cybersecurity capabilities, with price-performance optimizations and a faster API mode released this month, highly valuable for complex programming tasks in game development."
+            "why": "OpenAI 最新且最佳的編程模型，在 Artificial Analysis Coding Agent Index 和 SWE-bench Verified 表現卓越，特別適合處理困難的工具密集型代理任務。",
+            "why_en": "OpenAI's latest and best coding model, excelling in Artificial Analysis Coding Agent Index and SWE-bench Verified, particularly suited for difficult, tool-heavy agent tasks."
           },
           {
             "rank": 3,
@@ -288,36 +288,36 @@ window.DIGEST = {
             "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "於本月重新全面上線，在 SWE-bench Verified 等編程基準測試中表現優異，提供高效且可靠的程式碼生成和代理能力，適用於遊戲開發工作流程。",
-            "why_en": "Globally redeployed this month, demonstrating excellent performance on coding benchmarks like SWE-bench Verified, offering efficient and reliable code generation and agent capabilities for game development workflows."
+            "why": "專為雄心勃勃的編程項目而設計，被評為在 Unreal C++、Unity C#、Godot 等遊戲開發維度上的首選模型。",
+            "why_en": "Designed for ambitious coding projects, rated as the top model across game development dimensions including Unreal C++, Unity C#, and Godot."
           },
           {
             "rank": 4,
-            "name": "Cursor Start",
-            "version": "N/A (IDE/Agent)",
+            "name": "Cursor (Grok 4.5 & Router/iPad Updates)",
+            "version": "IDE/Agent with Grok 4.5",
             "vendor": "Cursor",
             "vendor_en": "Cursor",
-            "date": "7/28",
-            "date_en": "Jul 28",
+            "date": "7/29",
+            "date_en": "Jul 29",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Cursor 推出專為開發者設計的新方案，整合 Grok 4.5 和 Composer 模型，提供常駐雲端代理和 iOS 遠端控制，顯著提升遊戲開發者的編程效率和協作能力。",
-            "why_en": "Cursor launched a new plan for developers, integrating Grok 4.5 and Composer models, offering always-on cloud agents and iOS remote control, significantly boosting programming efficiency and collaboration for game developers."
+            "why": "作為領先的 AI 原生 IDE，本月透過 iPad 支援、智能模型路由 (Cursor Router) 和深度整合 Grok 4.5 模型，顯著增強了遊戲開發者的體驗。",
+            "why_en": "As a leading AI-native IDE, this month's updates including iPad support, intelligent model routing (Cursor Router), and deep integration of Grok 4.5 model significantly enhance the experience for game developers."
           },
           {
             "rank": 5,
-            "name": "GPT-5.5 Instant",
-            "version": "5.5 Instant",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "7/15",
-            "date_en": "Jul 15",
+            "name": "Gemini 3.6 Flash",
+            "version": "3.6 Flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "7/21",
+            "date_en": "Jul 21",
             "isNew": true,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "ChatGPT 的預設模型更新，提供更智能、更準確的回答，減少幻覺並改進個性化控制，作為廣泛使用的編程助手，其改進直接惠及遊戲開發者。",
-            "why_en": "An update to ChatGPT's default model, offering smarter, more accurate answers, reduced hallucinations, and improved personalization controls. As a widely used coding assistant, its enhancements directly benefit game developers."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Google 最新發布的模型，以更低的輸出成本和更快的速度，提供強大的代理和編程性能，其多模態能力對遊戲資產開發有益。",
+            "why_en": "Google's latest model, offering powerful agentic and coding performance with lower output cost and faster speed, its multimodal capabilities are beneficial for game asset development."
           }
         ]
       }
@@ -390,78 +390,78 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月(2026 年 8 月)尚未有正式發佈,故榜單由最近期(2026 年 7 月)的正式發佈項目補足。",
+        "note_en": "No official releases for this month (August 2026) yet, so the list is filled with recent official releases from July 2026.",
         "items": [
           {
             "rank": 1,
-            "name": "Claude Opus 5",
-            "version": "5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "7/24",
-            "date_en": "Jul 24",
-            "isNew": true,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "Anthropic 最新旗艦模型，在推理和代理知識工作方面表現卓越，被評為新領導者。",
-            "why_en": "Anthropic's latest flagship model, demonstrating superior performance in reasoning and agentic knowledge work, hailed as a new leader."
+            "name": "Simcenter PhysicsAI",
+            "version": "最新版",
+            "vendor": "西門子",
+            "vendor_en": "Siemens",
+            "date": "7/28",
+            "date_en": null,
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "將模擬數據轉化為高擬真預測模型,加速工程設計評估達千倍,直接強化數據模擬能力。",
+            "why_en": "Transforms simulation data into high-fidelity predictive models, accelerating engineering design evaluation by up to 1,000x, directly enhancing data simulation capabilities."
           },
           {
             "rank": 2,
             "name": "GPT-5.6 Sol",
-            "version": "5.6 Sol",
+            "version": "旗艦版",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
             "date": "7/9",
-            "date_en": "Jul 9",
-            "isNew": true,
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "OpenAI 新一代旗艦模型，在科學、編碼和知識工作等領域樹立了新的智能和效率標準。",
-            "why_en": "OpenAI's next-generation flagship model, setting new standards for intelligence and efficiency across science, coding, and knowledge work."
+            "why": "作為旗艦模型,在科學推理、代理工作和通用能力方面表現卓越,適用於複雜數據推理和假設生成。",
+            "why_en": "As the flagship model, it excels in scientific reasoning, agentic work, and general capabilities, suitable for complex data reasoning and hypothesis generation."
           },
           {
             "rank": 3,
-            "name": "Claude Fable 5",
-            "version": "5",
+            "name": "Claude Opus 5",
+            "version": "最新版",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "6/9",
-            "date_en": "Jun 9",
+            "date": "7/24",
+            "date_en": null,
             "isNew": false,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "Anthropic 推出的新 Mythos 層級模型，在複雜推理任務中表現出色，是數據推理領域的強大選擇。",
-            "why_en": "Anthropic's new Mythos tier model, excelling in complex reasoning tasks and a strong choice for data reasoning."
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "以其深度推理和代理協調能力著稱,在數學和複雜問題解決方面表現出色,是數據推理的強大工具。",
+            "why_en": "Known for its deep reasoning and agent orchestration capabilities, it excels in mathematics and complex problem-solving, making it a powerful tool for data reasoning."
           },
           {
             "rank": 4,
             "name": "Kimi K3",
-            "version": "K3",
-            "vendor": "Moonshot AI",
+            "version": "2.8兆參數",
+            "vendor": "月之暗面",
             "vendor_en": "Moonshot AI",
             "date": "7/16",
-            "date_en": "Jul 16",
-            "isNew": true,
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "月之暗面推出的開源多模態推理模型，在網頁代理和GPQA基準測試中展現出強大能力。",
-            "why_en": "Moonshot AI's open-weight multimodal reasoning model, demonstrating strong capabilities in web agents and GPQA benchmarks."
+            "why": "擁有2.8兆參數和先進的代理能力,在處理複雜數據推理和多步驟工作流程方面展現強大潛力。",
+            "why_en": "With 2.8 trillion parameters and advanced agentic capabilities, it shows strong potential for complex data reasoning and multi-step workflows."
           },
           {
             "rank": 5,
-            "name": "NVIDIA Agent Toolkit / Cosmos 3 Edge",
-            "version": "N/A",
-            "vendor": "NVIDIA",
-            "vendor_en": "NVIDIA",
-            "date": "7/27",
-            "date_en": "Jul 27",
-            "isNew": true,
+            "name": "Gemini 3.6 Flash",
+            "version": "輕量版",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "7/20",
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "NVIDIA 推出用於創建模擬就緒虛擬環境和物理 AI 應用的工具，直接支持數據模擬範疇。",
-            "why_en": "NVIDIA's tools for creating simulation-ready virtual environments and physical AI applications, directly supporting the data simulation category."
+            "why": "作為輕量級模型,提供高效的推理能力,適用於需要快速數據分析和決策的場景。",
+            "why_en": "As a lightweight model, it offers efficient reasoning capabilities, suitable for scenarios requiring rapid data analysis and decision-making."
           }
         ]
       }
@@ -531,78 +531,78 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "由於今天是 2026 年 8 月 1 日，本月尚未有廣為人知的正式發佈，因此列表包含近期 (近 30-60 天) 的發佈以補足數量。",
-        "note_en": "As today is August 1, 2026, there are no widely known official releases for this month yet. Therefore, the list includes recent (last 30-60 days) releases to complete the count.",
+        "note": null,
+        "note_en": null,
         "items": [
           {
             "rank": 1,
-            "name": "Reve 2.1",
+            "name": "Reve",
             "version": "2.1",
             "vendor": "Reve",
             "vendor_en": "Reve",
-            "date": "7/25",
-            "date_en": null,
+            "date": "7月",
+            "date_en": "Jul",
             "isNew": true,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "顯著提升了圖像細節與風格一致性，強化了遊戲美術與概念圖的表現。",
-            "why_en": "Significantly improved image detail and style consistency, enhancing performance for game art and concept design."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "本月在多個權威排行榜上躍居第二，顯示其在圖片生成質量方面有顯著提升。",
+            "why_en": "Ranked second on multiple authoritative leaderboards this month, demonstrating significant improvement in image generation quality."
           },
           {
             "rank": 2,
-            "name": "Gemini 3.5 Pro Image",
-            "version": "3.5 Pro Image",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "6/18",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "提供更精細的控制與更高解析度輸出，特別適合專業級美術創作。",
-            "why_en": "Offers more precise control and higher resolution output, especially suitable for professional-grade art creation."
+            "name": "Muse Image",
+            "version": null,
+            "vendor": "Meta",
+            "vendor_en": "Meta",
+            "date": "7月7日",
+            "date_en": "Jul 7",
+            "isNew": true,
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "Meta推出的首個內部AI圖片生成模型，深度整合至Meta AI、Instagram和WhatsApp，具備高質量生成、編輯和文本渲染能力。",
+            "why_en": "Meta's first in-house AI image generation model, deeply integrated into Meta AI, Instagram, and WhatsApp, offering high-quality generation, editing, and text rendering capabilities."
           },
           {
             "rank": 3,
-            "name": "Forest Canvas 1.0",
-            "version": "1.0",
-            "vendor": "Black Forest Labs",
-            "vendor_en": "Black Forest Labs",
-            "date": "7/10",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "專為遊戲環境與材質設計，生成逼真且細節豐富的貼圖與場景概念圖。",
-            "why_en": "Designed for game environments and materials, generating realistic and detailed textures and scene concept art."
+            "name": "MAI-Image",
+            "version": "2.5",
+            "vendor": "Microsoft AI",
+            "vendor_en": "Microsoft AI",
+            "date": "6月",
+            "date_en": "Jun",
+            "isNew": false,
+            "overlap": "整體 #5",
+            "overlap_en": "Overall #5",
+            "why": "於6月發布，在本月多個排行榜上持續保持前三名，性能表現穩定且強勁。",
+            "why_en": "Released in June, it consistently ranks in the top three on multiple leaderboards this month, demonstrating stable and strong performance."
           },
           {
             "rank": 4,
-            "name": "Meta Imagine Pro",
-            "version": "Pro",
-            "vendor": "Meta",
-            "vendor_en": "Meta",
-            "date": "7/5",
-            "date_en": null,
+            "name": "Ideogram",
+            "version": "4.0",
+            "vendor": "Ideogram",
+            "vendor_en": "Ideogram",
+            "date": "7月",
+            "date_en": "Jul",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "強化了真實感與多樣化風格生成能力，適用於廣泛的藝術創作需求。",
-            "why_en": "Enhanced realism and diverse style generation capabilities, suitable for a wide range of artistic creation needs."
+            "why": "本月新增至排行榜，尤其在圖像中的文字渲染和排版方面表現卓越，適合需要精確文本的藝術創作。",
+            "why_en": "Added to leaderboards this month, it excels in text rendering and typography within images, making it suitable for art creation requiring precise text."
           },
           {
             "rank": 5,
-            "name": "ArtGenius Studio 1.0",
-            "version": "1.0",
-            "vendor": "ArtGenius Labs",
-            "vendor_en": "ArtGenius Labs",
-            "date": "6/28",
-            "date_en": null,
-            "isNew": false,
+            "name": "Seedream",
+            "version": "5.0 Pro",
+            "vendor": "ByteDance",
+            "vendor_en": "ByteDance",
+            "date": "7月",
+            "date_en": "Jul",
+            "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "獨特的藝術濾鏡與構圖輔助工具，為藝術家提供更多創意可能性。",
-            "why_en": "Unique artistic filters and composition assistance tools, offering artists more creative possibilities."
+            "why": "本月新增至排行榜，在文生圖和圖片編輯任務中均表現良好，是值得關注的新版本。",
+            "why_en": "Added to leaderboards this month, it performs well in both text-to-image and image editing tasks, making it a notable new version."
           }
         ]
       }
