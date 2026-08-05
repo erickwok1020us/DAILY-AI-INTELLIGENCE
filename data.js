@@ -1,11 +1,11 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-08-05T01:26:45+08:00",
-  "updatedDateLabel": "2026 年 8 月 5 日",
+  "updatedAt": "2026-08-06T01:15:16+08:00",
+  "updatedDateLabel": "2026 年 8 月 6 日",
   "month": "2026 年 8 月",
   "month_en": "August 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/08/05 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/08/05",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/08/06 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/08/06",
   "changesToday": [
     "Claude Opus 5 (7/23) — 綜合 AI MODEL 排名",
     "Claude Fable 5 (7/1) — 綜合 AI MODEL 排名",
@@ -531,78 +531,78 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "本月不足 5 個新發佈,故以近期發佈補足。Ideogram 4.0 於 2026 年 6 月發佈。",
-        "note_en": "Fewer than 5 new releases this month, supplemented with recent releases. Ideogram 4.0 was released in June 2026.",
+        "note": null,
+        "note_en": null,
         "items": [
           {
             "rank": 1,
-            "name": "Qwen3.8-Max",
-            "version": "3.8-Max",
+            "name": "Qwen-Image",
+            "version": "3.0 Pro/Standard",
             "vendor": "阿里巴巴",
             "vendor_en": "Alibaba",
-            "date": "8/3",
+            "date": "8/5",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為多模態模型發佈，在 Arena.AI 視覺排行榜上表現出色，具備強大的圖像分析能力。",
-            "why_en": "Released as a multimodal model, demonstrating strong image analysis capabilities and high ranking on Arena.AI's Vision leaderboard."
+            "why": "支援超長輸入、精準文字渲染和多語言生成，全面向用戶開放。",
+            "why_en": "Supports ultra-long input, precise text rendering, and multi-language generation, fully open to users."
           },
           {
             "rank": 2,
-            "name": "Reve",
-            "version": "2.1",
-            "vendor": "Reve",
-            "vendor_en": "Reve",
-            "date": "7月",
-            "date_en": "July",
-            "isNew": true,
-            "overlap": "整體 #3 (前版 2.0)",
-            "overlap_en": "Overall #3 (previous version 2.0)",
-            "why": "在盲測圖像生成競技場中表現優異，是其前一版本 Reve 2.0 的顯著改進。",
-            "why_en": "Showcased excellent performance in blind image generation arenas, representing a significant improvement over its predecessor, Reve 2.0."
-          },
-          {
-            "rank": 3,
             "name": "Muse Image",
             "version": null,
             "vendor": "Meta",
             "vendor_en": "Meta",
-            "date": "7/7-8",
-            "date_en": "July 7-8",
-            "isNew": true,
+            "date": "7/7",
+            "date_en": null,
+            "isNew": false,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "Meta 首個專用 AI 圖像生成模型，提供高品質圖像生成和編輯功能，並整合 Meta AI。",
-            "why_en": "Meta's first dedicated AI image generation model, offering high-quality image generation and editing features, integrated with Meta AI."
+            "why": "Meta首款專用圖像生成模型，整合至Meta AI應用程式和社群平台。",
+            "why_en": "Meta's first dedicated image generation model, integrated into Meta AI apps and social platforms."
+          },
+          {
+            "rank": 3,
+            "name": "Reve",
+            "version": "2.0",
+            "vendor": "Reve AI",
+            "vendor_en": "Reve AI",
+            "date": "6/4",
+            "date_en": null,
+            "isNew": false,
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "採用佈局優先的4K圖像生成，提供精準編輯和專業文字渲染，並在Arena.ai榜單中表現出色。",
+            "why_en": "Utilizes layout-first 4K image generation, offering precise editing and professional text rendering, performing well on Arena.ai leaderboards."
           },
           {
             "rank": 4,
-            "name": "FLUX",
-            "version": "3",
-            "vendor": "Black Forest Labs",
-            "vendor_en": "Black Forest Labs",
-            "date": "7/23",
-            "date_en": "July 23",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "多模態前沿模型，具備增強的圖像生成能力，延續 FLUX 系列的良好聲譽。",
-            "why_en": "A multimodal frontier model with enhanced image generation capabilities, building on the strong reputation of the FLUX family."
-          },
-          {
-            "rank": 5,
-            "name": "Ideogram",
-            "version": "4.0",
-            "vendor": "Ideogram",
-            "vendor_en": "Ideogram",
-            "date": "6/3",
-            "date_en": "June 3",
+            "name": "Nano Banana",
+            "version": "2 Lite",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "7/1",
+            "date_en": null,
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "在生成圖像中文字渲染方面表現最佳，對平面設計和概念藝術至關重要。",
-            "why_en": "Offers best-in-class text rendering within generated images, crucial for graphic design and concept art."
+            "why": "Google Cloud正式推出，主打高速、低成本的圖片生成，採用Gemini 3.1 Flash-Lite Image模型。",
+            "why_en": "Officially launched by Google Cloud, featuring high-speed, low-cost image generation, powered by Gemini 3.1 Flash-Lite Image."
+          },
+          {
+            "rank": 5,
+            "name": "Gemini",
+            "version": "3.6 Flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "7月",
+            "date_en": "July",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Gemini系列最新模型，提升推理能力和處理速度，並新增個人化圖片生成功能。",
+            "why_en": "The latest model in the Gemini series, enhancing reasoning capabilities and processing speed, with new personalized image generation features."
           }
         ]
       }
