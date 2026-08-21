@@ -1,26 +1,26 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-08-21T00:18:33+08:00",
-  "updatedDateLabel": "2026 年 8 月 21 日",
+  "updatedAt": "2026-08-22T00:16:53+08:00",
+  "updatedDateLabel": "2026 年 8 月 22 日",
   "month": "2026 年 8 月",
   "month_en": "August 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/08/21 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/08/21",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/08/22 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/08/22",
   "changesToday": [
-    "Hi3D (8/18) — 創建遊戲的助手",
-    "DeepSeek (8/15) — 創建遊戲的助手",
-    "Hi3D V3.0 (8/18) — 創建圖片美術",
-    "Google Pics (8/18) — 創建圖片美術",
-    "Wan (8月 2026) — 創建遊戲影片",
-    "Dreamina Seedance (8月 2026) — 創建遊戲影片"
+    "Qwen3.8-Max (8/3) — 綜合 AI MODEL 排名",
+    "Grok 4.6 (8/19) — 綜合 AI MODEL 排名",
+    "Gemini 3.7 Flash (8/13) — 創建遊戲的助手",
+    "Meta Muse Code (8/12) — 創建遊戲的助手",
+    "Skala (8/21) — 創建數據模擬器 & 數據推理",
+    "Advanced Materials AI Modeling Approach (8/3) — 創建數據模擬器 & 數據推理"
   ],
   "changesToday_en": [
-    "Hi3D (8/18) — Game-Building Assistants",
-    "DeepSeek (8/15) — Game-Building Assistants",
-    "Hi3D V3.0 (8/18) — Image & Art Generation",
-    "Google Pics (8/18) — Image & Art Generation",
-    "Wan (8月 2026) — Game / Stylized Video",
-    "Dreamina Seedance (8月 2026) — Game / Stylized Video"
+    "Qwen3.8-Max (8/3) — Overall AI Model Ranking",
+    "Grok 4.6 (8/19) — Overall AI Model Ranking",
+    "Gemini 3.7 Flash (8/13) — Game-Building Assistants",
+    "Meta Muse Code (8/12) — Game-Building Assistants",
+    "Skala (8/21) — Data Simulators & Reasoning",
+    "Advanced Materials AI Modeling Approach (8/3) — Data Simulators & Reasoning"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA、圖片=LMArena Arena)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -103,50 +103,50 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 8 月)發佈的旗艦通用 AI 模型不足 5 個，因此補足了近期(近 30-60 天)發佈的頂級模型。",
-        "note_en": "Fewer than 5 flagship general-purpose AI models were released this month (August 2026), so the list includes top models released recently (within the last 30-60 days).",
+        "note": null,
+        "note_en": null,
         "items": [
           {
             "rank": 1,
-            "name": "Claude Fable 5",
-            "version": "5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "7/1",
-            "date_en": "July 1",
-            "isNew": false,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "在 2026 年 8 月的 LMSys Arena 綜合品質指數中排名第一，並於 7 月 1 日重新啟用。",
-            "why_en": "Ranked #1 in LMSys Arena composite quality index in August 2026 and re-enabled on July 1."
+            "name": "Qwen3.8-Max",
+            "version": "3.8 Max",
+            "vendor": "Alibaba",
+            "vendor_en": "Alibaba",
+            "date": "8/3",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "本月發佈的旗艦開源模型，擁有2.4兆參數和1M上下文窗口，在多模態和長程代理編碼方面表現卓越，並在BenchLM.ai上獲得高分。",
+            "why_en": "This month's flagship open-source model, featuring 2.4 trillion parameters and a 1M context window, excels in multimodal and long-horizon agentic coding, achieving a high score on BenchLM.ai."
           },
           {
             "rank": 2,
-            "name": "Claude Opus 5",
-            "version": "5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "7/24",
-            "date_en": "July 24",
-            "isNew": false,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "在 2026 年 8 月的 Artificial Analysis 公開快照中排名第一，是 Anthropic 最強大的 Opus 級模型。",
-            "why_en": "Ranked #1 in Artificial Analysis public snapshot in August 2026 and is Anthropic's most capable Opus-tier model."
+            "name": "Grok 4.6",
+            "version": "4.6",
+            "vendor": "xAI",
+            "vendor_en": "xAI",
+            "date": "8/19",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "本月正式發佈於Amazon Bedrock，在Artificial Analysis Intelligence Index中表現出色，具備500K上下文窗口。",
+            "why_en": "Officially released this month on Amazon Bedrock, demonstrating strong performance in the Artificial Analysis Intelligence Index with a 500K context window."
           },
           {
             "rank": 3,
-            "name": "GPT-5.6 Sol",
-            "version": "5.6 Sol",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "7/9",
-            "date_en": "July 9",
-            "isNew": false,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "在 2026 年 8 月的 Artificial Analysis 排行榜中領先，並在 LMSys Arena 中表現出色。",
-            "why_en": "Leads the Artificial Analysis leaderboard in August 2026 and performs strongly in LMSys Arena."
+            "name": "GLM-5.3",
+            "version": "5.3",
+            "vendor": "Z.AI",
+            "vendor_en": "Z.AI",
+            "date": "8/14",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "本月發佈，在Artificial Analysis排行榜上獲得59.5%的評分，顯示出強大的通用智能。",
+            "why_en": "Released this month, achieving a 59.5% score on the Artificial Analysis leaderboard, indicating strong general intelligence."
           },
           {
             "rank": 4,
@@ -155,26 +155,26 @@ window.DIGEST = {
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "8/13",
-            "date_en": "August 13",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "本月發佈的最新旗艦模型，在軟體工程、網頁開發和代理工作流程方面有實質性改進。",
-            "why_en": "The latest flagship model released this month, with substantial improvements across software engineering, web development, and agentic workflows."
+            "why": "本月正式發佈，被譽為Google最智能的工作模型，尤其擅長編碼和代理任務，在Artificial Analysis中得分56.0%。",
+            "why_en": "Generally available this month, hailed as Google's most intelligent workhorse model for coding and agents, scoring 56.0% on Artificial Analysis."
           },
           {
             "rank": 5,
-            "name": "Qwen3.8-Max",
-            "version": "3.8 Max",
-            "vendor": "Alibaba",
-            "vendor_en": "Alibaba",
-            "date": "8/3",
-            "date_en": "August 3",
+            "name": "DeepSeek V4-Pro-0813",
+            "version": "V4-Pro-0813",
+            "vendor": "DeepSeek",
+            "vendor_en": "DeepSeek",
+            "date": "8/13",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "本月發佈的最大開源模型，具有 1M token 上下文和原生多模態能力，被評為最佳開源模型。",
-            "why_en": "The largest open-weight model released this month, featuring 1M token context and native multimodal capabilities, rated as the best open-source model."
+            "why": "本月正式發佈，在代理基準測試中表現出色，其生產級代理能力正逼近頂級專有模型。",
+            "why_en": "Reached general availability this month, demonstrating strong performance in agentic benchmarks with production-grade agentic gains, closing in on top proprietary agent tiers."
           }
         ]
       }
@@ -251,35 +251,7 @@ window.DIGEST = {
         "items": [
           {
             "rank": 1,
-            "name": "Hi3D",
-            "version": "V3.0",
-            "vendor": "Hi3D",
-            "vendor_en": "Hi3D",
-            "date": "8/18",
-            "date_en": "Aug 18",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "首個商用 AI 3D 模型，具備 2048³ 體素解析度，大幅減少遊戲、電影等製作管線中的手動網格修復需求。",
-            "why_en": "The first commercially available AI 3D model with 2048³ voxel resolution, significantly reducing manual mesh repair in game and film production pipelines."
-          },
-          {
-            "rank": 2,
-            "name": "DeepSeek",
-            "version": "V4-Pro-0813",
-            "vendor": "DeepSeek",
-            "vendor_en": "DeepSeek",
-            "date": "8/15",
-            "date_en": "Aug 15",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "正式發佈，被譽為遊戲開發的「演算法秘密武器」，在路徑搜尋、程序生成、物理優化和著色器數學方面表現卓越。",
-            "why_en": "Officially released, hailed as the 'algorithmic secret weapon' for game development, excelling in pathfinding, procedural generation, physics optimization, and shader math."
-          },
-          {
-            "rank": 3,
-            "name": "Gemini",
+            "name": "Gemini 3.7 Flash",
             "version": "3.7 Flash",
             "vendor": "Google",
             "vendor_en": "Google",
@@ -288,26 +260,40 @@ window.DIGEST = {
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Google 最智能的工作模型，在軟體工程、網頁開發和代理工作流程方面有實質性改進，非常適用於遊戲邏輯和腳本編寫。",
-            "why_en": "Google's most intelligent workhorse model, with substantial improvements across software engineering, web development, and agentic workflows, highly suitable for game logic and scripting."
+            "why": "本月最新發佈，作為最智能的編碼和代理模型，在軟體工程、知識工作和網頁開發工作流程方面有顯著提升，並在 Arena.ai 的 WebDev Arena 上表現優異，非常適合網頁遊戲開發。",
+            "why_en": "Newly released this month as the most intelligent workhorse model for coding and agents, it delivers substantial improvements across software engineering, knowledge work, and web development workflows, outperforming on Arena.ai's WebDev Arena, making it highly suitable for web game development."
           },
           {
-            "rank": 4,
-            "name": "Cursor",
-            "version": "Cloud Agents & Harness Improvements",
-            "vendor": "Cursor (SpaceXAI)",
-            "vendor_en": "Cursor (SpaceXAI)",
-            "date": "8/19",
-            "date_en": "Aug 19",
+            "rank": 2,
+            "name": "Meta Muse Code",
+            "version": "Muse Spark 1.2",
+            "vendor": "Meta",
+            "vendor_en": "Meta",
+            "date": "8/12",
+            "date_en": "Aug 12",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "AI 原生 IDE 的雲端代理和工具改進，增強了其在雄心勃勃的軟體開發（包括遊戲）中的核心功能。",
-            "why_en": "Improvements to the AI-native IDE's cloud agents and harness, enhancing its core functionality for ambitious software development, including games."
+            "why": "Meta 首個 AI 編碼代理，專為處理複雜的軟體工程任務而設計，能夠並行執行多個子代理，對於遊戲開發中的複雜編程任務極具潛力。",
+            "why_en": "Meta's first AI coding agent, designed for long and complex software-engineering tasks and capable of executing multiple sub-agents concurrently, showing great potential for complex programming tasks in game development."
           },
           {
-            "rank": 5,
-            "name": "Qwen",
+            "rank": 3,
+            "name": "DeepSeek V4-Pro-0813",
+            "version": "V4-Pro-0813",
+            "vendor": "DeepSeek",
+            "vendor_en": "DeepSeek",
+            "date": "8/13",
+            "date_en": "Aug 13",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "本月正式發佈，帶來了重大的代理功能升級，在演算法和代理能力方面表現出色，是強大的 AI 編程模型。",
+            "why_en": "Graduated to general availability this month with major agent upgrades, it excels in algorithmic strength and agentic capabilities, making it a powerful AI programming model."
+          },
+          {
+            "rank": 4,
+            "name": "Qwen 3.8-Max",
             "version": "3.8-Max",
             "vendor": "Alibaba",
             "vendor_en": "Alibaba",
@@ -316,8 +302,22 @@ window.DIGEST = {
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "阿里巴巴的旗艦開放權重模型，具備長週期代理編碼能力，能夠自主編寫程式碼，適用於複雜的遊戲專案。",
-            "why_en": "Alibaba's flagship open-weight model with long-horizon agentic coding capabilities, able to autonomously code for complex game projects."
+            "why": "本月作為史上最大的開源權重模型發佈，具備長程代理編碼能力，對於處理複雜的遊戲邏輯和大規模項目非常有用。",
+            "why_en": "Released this month as the largest open-weight model ever, it features long-horizon agentic coding capabilities, proving highly useful for complex game logic and large-scale projects."
+          },
+          {
+            "rank": 5,
+            "name": "Google Agent Development Kit",
+            "version": "N/A",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "8/17",
+            "date_en": "Aug 17",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "雖然不是直接的模型，但作為本月發佈的代理開發套件，它使開發者能夠構建自定義的 AI 代理，對於創建遊戲開發助手至關重要。",
+            "why_en": "While not a direct model, this agent development kit released this month enables developers to build custom AI agents, which is crucial for creating game development assistants."
           }
         ]
       }
@@ -395,73 +395,73 @@ window.DIGEST = {
         "items": [
           {
             "rank": 1,
-            "name": "Claude Opus 5",
-            "version": "5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "7/24",
-            "date_en": "Jul 24",
-            "isNew": false,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "在代理式編碼、知識工作和複雜問題解決方面表現卓越，具備自適應思維，並在多項推理基準測試中取得高分，特別適合數據推理任務。",
-            "why_en": "Excels in agentic coding, knowledge work, and complex problem-solving with adaptive thinking, achieving high scores in multiple reasoning benchmarks, making it highly suitable for data reasoning tasks."
-          },
-          {
-            "rank": 2,
-            "name": "Claude Fable 5",
-            "version": "5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "7/1",
-            "date_en": "Jul 1",
-            "isNew": false,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "Anthropic 最強大的通用模型，專為長期、自主編碼和知識工作任務設計，在軟體工程、知識工作和科學研究方面表現出色，適用於複雜的數據模擬與推理。",
-            "why_en": "Anthropic's most capable generally available model, designed for long-horizon, autonomous coding and knowledge-work tasks, excelling in software engineering, knowledge work, and scientific research, suitable for complex data simulation and reasoning."
-          },
-          {
-            "rank": 3,
-            "name": "Grok 4.6",
-            "version": "4.6",
-            "vendor": "xAI",
-            "vendor_en": "xAI",
-            "date": "8/12",
-            "date_en": "Aug 12",
+            "name": "Skala",
+            "version": "AI Model",
+            "vendor": "微軟研究院 AI for Science",
+            "vendor_en": "Microsoft Research AI for Science",
+            "date": "8/21",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Grok 4.5 的後訓練更新版本，在 Artificial Analysis 智慧指數中顯著提升至 61 分，並在 GPQA Diamond 基準測試中取得 94.9% 的高分，擅長處理長期代理任務。",
-            "why_en": "A post-training refresh of Grok 4.5, showing a significant jump to 61 on the Artificial Analysis Intelligence Index and achieving a high score of 94.9% on the GPQA Diamond benchmark, excelling in long agentic jobs."
+            "why": "該AI模型現已透過CP2K軟體生態系統提供，能以更高準確度進行更大分子系統的量子力學模擬，直接支援數據模擬。",
+            "why_en": "This AI model is now available through the CP2K software ecosystem, enabling quantum mechanical simulations of larger molecular systems with higher accuracy, directly supporting data simulation."
           },
           {
-            "rank": 4,
+            "rank": 2,
+            "name": "Advanced Materials AI Modeling Approach",
+            "version": "Research Model",
+            "vendor": "勞倫斯柏克萊國家實驗室",
+            "vendor_en": "Lawrence Berkeley National Laboratory",
+            "date": "8/3",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "首次實現的數據驅動機器學習模型，能準確快速預測固態反應如何隨時間演變，加速先進材料開發。",
+            "why_en": "A first-of-its-kind, data-driven machine learning model that accurately and rapidly predicts how reactions between solid materials unfold over time, accelerating advanced materials development."
+          },
+          {
+            "rank": 3,
             "name": "Gemini 3.7 Flash",
             "version": "3.7 Flash",
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "8/13",
-            "date_en": "Aug 13",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "儘管是 Flash 模型，但其在 GPQA Diamond 基準測試中取得 94.5% 的極高分數，顯示出強大的推理能力，並在編碼和代理工作方面有所改進。",
-            "why_en": "Despite being a Flash model, it achieved an exceptionally high score of 94.5% on the GPQA Diamond benchmark, demonstrating strong reasoning capabilities and improvements in coding and agentic work."
+            "why": "Gemini 3模型系列的最新迭代，其核心推理基礎經過演算法改進，並在GPQA Diamond基準測試中取得領先表現。",
+            "why_en": "The latest iteration in the Gemini 3 model family, featuring algorithmic improvements to its core reasoning foundation and achieving leading performance on the GPQA Diamond benchmark."
+          },
+          {
+            "rank": 4,
+            "name": "Grok 4.6",
+            "version": "4.6",
+            "vendor": "xAI",
+            "vendor_en": "xAI",
+            "date": "8/6",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "在Artificial Analysis GPQA Diamond基準測試中取得領先成績，展現強大的推理能力。",
+            "why_en": "Achieves leading performance on the Artificial Analysis GPQA Diamond benchmark, demonstrating strong reasoning capabilities."
           },
           {
             "rank": 5,
-            "name": "GLM-5.3",
-            "version": "5.3",
-            "vendor": "Z.AI",
-            "vendor_en": "Z.AI",
-            "date": "8/14",
-            "date_en": "Aug 14",
+            "name": "MAI-Thinking-1",
+            "version": "1",
+            "vendor": "Microsoft",
+            "vendor_en": "Microsoft",
+            "date": "8/13",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "GLM-5.2 的後訓練更新版本，在代理能力方面有顯著提升，並在推理基準測試中表現出競爭力，適合需要強大代理和推理能力的應用。",
-            "why_en": "A post-training refresh of GLM-5.2, featuring significant agentic jumps and competitive reasoning scores, suitable for applications requiring strong agentic and reasoning capabilities."
+            "why": "一款中型推理模型，專為程式編碼、數學和知識任務中具成本效益的企業工作負載設計，並在AIME 2025基準測試中領先。",
+            "why_en": "A medium-sized reasoning model aimed at cost-efficient enterprise workloads across coding, math, and knowledge tasks, leading the AIME 2025 benchmark."
           }
         ]
       }
@@ -536,49 +536,49 @@ window.DIGEST = {
         "items": [
           {
             "rank": 1,
-            "name": "Hi3D V3.0",
-            "version": "V3.0",
-            "vendor": "Math Magic",
-            "vendor_en": "Math Magic",
-            "date": "8/18",
-            "date_en": "Aug 18",
+            "name": "FLUX",
+            "version": "3",
+            "vendor": "Black Forest Labs",
+            "vendor_en": "Black Forest Labs",
+            "date": "8/上旬",
+            "date_en": "Early Aug",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "首個商用 AI 3D 模型,具備 2048³ 體素解析度,顯著減少 3D 資產和紋理的生產所需的手動網格修復。",
-            "why_en": "First commercially available AI 3D model with 2048³ voxel resolution, significantly reducing manual mesh repair for production-ready 3D assets and textures."
+            "why": "作為多模態旗艦模型，FLUX 3在圖像生成方面展現出卓越的真實感、提示遵循能力和文本渲染，並在AI基準測試中表現出色。",
+            "why_en": "As a multimodal flagship model, FLUX 3 demonstrates excellent realism, prompt adherence, and text rendering in image generation, performing strongly in AI benchmarks."
           },
           {
             "rank": 2,
-            "name": "Google Pics",
-            "version": "N/A (powered by Nano Banana 2)",
-            "vendor": "Google",
-            "vendor_en": "Google",
+            "name": "Reve",
+            "version": "2.1",
+            "vendor": "Reve AI",
+            "vendor_en": "Reve AI",
+            "date": "7/中旬",
+            "date_en": "Mid-Jul",
+            "isNew": true,
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "Reve 2.1以其「佈局優先」架構、原生4K輸出和精確的編輯功能脫穎而出，在圖像生成和編輯競技場中均名列前茅，特別適合產品和品牌內容。",
+            "why_en": "Reve 2.1 stands out with its 'layout-first' architecture, native 4K output, and precise editing capabilities, ranking high in both image generation and editing arenas, especially suitable for product and brand content."
+          },
+          {
+            "rank": 3,
+            "name": "Hi3D",
+            "version": "V3.0",
+            "vendor": "Hi3D",
+            "vendor_en": "Hi3D",
             "date": "8/18",
             "date_en": "Aug 18",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "整合至 Google Workspace 的全新 AI 圖片生成與編輯平台,讓進階圖片創作廣泛適用於商業和教育使用者。",
-            "why_en": "New AI-powered image generation and editing platform integrated into Google Workspace, making advanced image creation widely accessible for business and education users."
-          },
-          {
-            "rank": 3,
-            "name": "Gemini 3.7 Flash",
-            "version": "3.7 Flash",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "8/13",
-            "date_en": "Aug 13",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Google Flash 模型的最新迭代,為圖片生成提供更快的速度和效率。",
-            "why_en": "Latest iteration of Google's Flash model, offering improved speed and efficiency for image generation."
+            "why": "Hi3D V3.0是首個商用2048³體素解析度AI 3D模型，提供8K紋理和改進的結構推理，對於遊戲美術、概念圖和紋理生成至關重要。",
+            "why_en": "Hi3D V3.0 is the first commercially available AI 3D model with 2048³ voxel resolution, offering 8K textures and improved structural reasoning, crucial for game art, concept art, and texture generation."
           },
           {
             "rank": 4,
-            "name": "Grok Imagine Image 2.0",
+            "name": "Grok Imagine Image",
             "version": "2.0",
             "vendor": "xAI",
             "vendor_en": "xAI",
@@ -587,12 +587,12 @@ window.DIGEST = {
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "xAI 推出的全新圖片生成模型,以增強功能進入競爭格局。",
-            "why_en": "New image generation model from xAI, entering the competitive landscape with enhanced capabilities."
+            "why": "Grok Imagine Image 2.0以其電影般的視覺效果和對xAI原生工作流程的優化而聞名，非常適合概念藝術創作。",
+            "why_en": "Grok Imagine Image 2.0 is known for its cinematic visuals and optimization for xAI-native workflows, making it highly suitable for concept art creation."
           },
           {
             "rank": 5,
-            "name": "Muse Spark 1.2",
+            "name": "Muse Spark",
             "version": "1.2",
             "vendor": "Meta",
             "vendor_en": "Meta",
@@ -601,8 +601,8 @@ window.DIGEST = {
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Meta 推出的全新圖片生成模型,擴展其 AI 創意產品。",
-            "why_en": "New image generation model from Meta, expanding its AI creative offerings."
+            "why": "Muse Spark 1.2是Meta最新推出的圖像生成模型，預計將在Meta AI平台內提供高品質的視覺創作和編輯功能，包括遊戲美術風格轉換。",
+            "why_en": "Muse Spark 1.2 is Meta's latest image generation model, expected to offer high-quality visual creation and editing capabilities within Meta AI platforms, including game art style transformations."
           }
         ]
       }
@@ -823,8 +823,8 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "本月發佈不足五項，此為近期發佈以補足名額。",
-        "note_en": "Fewer than five new releases this month; this item is a recent release to complete the list.",
+        "note": "本月(2026 年 8 月)新發佈不足 5 個,故以最近期(近 30–60 天)已正式發佈的項目補足。/Not enough new releases in August 2026, so the list is supplemented with recent (last 30-60 days) generally available items.",
+        "note_en": "Not enough new releases in August 2026, so the list is supplemented with recent (last 30-60 days) generally available items.",
         "items": [
           {
             "rank": 1,
@@ -832,69 +832,69 @@ window.DIGEST = {
             "version": "2.5",
             "vendor": "字節跳動",
             "vendor_en": "ByteDance",
-            "date": "7/31",
-            "date_en": "Jul 31",
+            "date": "8 月",
+            "date_en": "August",
             "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "新一代模型，顯著提升長影片生成能力及多模態參考輸入。",
-            "why_en": "New generation model with significant improvements in long-form video generation and multimodal reference input."
+            "why": "作為 Seedance 2.0 的重大升級,提供更強大的視覺品質、場景建構與創意控制,並於本月正式發佈。",
+            "why_en": "A significant upgrade to Seedance 2.0, offering enhanced visual quality, scene construction, and creative control, officially released this month."
           },
           {
             "rank": 2,
-            "name": "Gemini",
-            "version": "3.7 Flash",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "8/12",
-            "date_en": "Aug 12",
+            "name": "Video Enhancer Master Model",
+            "version": "Master Model Update",
+            "vendor": "Vmake Labs",
+            "vendor_en": "Vmake Labs",
+            "date": "8 月 21 日",
+            "date_en": "August 21",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Google發佈的輕量級專有模型，在文字轉影片與音訊生成方面表現突出。",
-            "why_en": "Google's new lightweight proprietary model, excelling in text-to-video and audio generation."
+            "why": "推出 Master 模型更新,為現有真人影片提供高達 8K 的電影級增強品質,提升真實感與專業度。",
+            "why_en": "Released Master model update, providing cinema-grade enhancement up to 8K for existing live-action footage, boosting realism and professionalism."
           },
           {
             "rank": 3,
-            "name": "Kling AI Apparel Replicator",
-            "version": null,
-            "vendor": "快手",
-            "vendor_en": "Kuaishou",
-            "date": "8/18",
-            "date_en": "Aug 18",
+            "name": "Runway Gen-4.5",
+            "version": "HDR Output & Ruby",
+            "vendor": "Runway AI",
+            "vendor_en": "Runway AI",
+            "date": "8 月 20 日",
+            "date_en": "August 20",
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Kling AI推出針對服裝產品展示的全新功能，可根據參考影片生成產品展示影片。",
-            "why_en": "Kling AI launched a new capability for apparel product showcasing, generating product videos based on reference footage."
+            "overlap": "整體 #5",
+            "overlap_en": "Overall #5",
+            "why": "為 Gen-4.5 模型新增 HDR 輸出格式與 Ruby 影片轉 HDR 功能,顯著提升專業後期製作能力。",
+            "why_en": "Added HDR output formats and the Ruby video-to-HDR feature for Gen-4.5, significantly enhancing professional post-production capabilities."
           },
           {
             "rank": 4,
             "name": "Kling",
-            "version": "v3.0 Pro Motion Control",
+            "version": "3.0 Turbo / Omni",
             "vendor": "快手",
             "vendor_en": "Kuaishou",
-            "date": "8/11",
-            "date_en": "Aug 11",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Kling 3.0 Pro的運動控制增強功能，提供更高保真度的動作轉移。",
-            "why_en": "Enhanced motion control feature for Kling 3.0 Pro, offering higher-fidelity motion transfer."
-          },
-          {
-            "rank": 5,
-            "name": "Kling",
-            "version": "3.0 Turbo and Omni engine",
-            "vendor": "快手",
-            "vendor_en": "Kuaishou",
-            "date": "6/17",
-            "date_en": "Jun 17",
+            "date": "6 月 17 日",
+            "date_en": "June 17",
             "isNew": false,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "Kling 3.0的重大升級，引入4K編輯、更長片段及Omni One引擎以實現電影級控制。",
-            "why_en": "Major upgrade to Kling 3.0, introducing 4K editing, longer clips, and the Omni One engine for cinematic control."
+            "why": "Kling 3.0 的重要升級版本,提供 4K 編輯、更長影片片段與更精細的電影級控制。",
+            "why_en": "Significant upgraded versions of Kling 3.0, offering 4K editing, longer clips, and enhanced cinematic control."
+          },
+          {
+            "rank": 5,
+            "name": "Dreamina Seedance",
+            "version": "2.0 4K",
+            "vendor": "字節跳動",
+            "vendor_en": "ByteDance",
+            "date": "6 月 17 日",
+            "date_en": "June 17",
+            "isNew": false,
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "Seedance 2.0 的 4K 版本,提供超高解析度輸出,顯著提升影片細節與品質。",
+            "why_en": "The 4K variant of Seedance 2.0, offering ultra-high-resolution output, significantly enhancing video detail and quality."
           }
         ]
       }
