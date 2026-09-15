@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-15T03:58:21+08:00",
-  "updatedDateLabel": "2026 年 9 月 15 日",
+  "updatedAt": "2026-09-16T03:18:33+08:00",
+  "updatedDateLabel": "2026 年 9 月 16 日",
   "month": "2026 年 9 月",
   "month_en": "September 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/09/15 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/09/15",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/09/16 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/09/16",
   "changesToday": [
     "Claude Fable 5.1 (9/1) — 綜合 AI MODEL 排名",
-    "GPT-6 Astra (9/4) — 綜合 AI MODEL 排名",
+    "GPT-6 Astra (9/3 (GA 9/4)) — 綜合 AI MODEL 排名",
     "GPT-6 Astra (9/4) — 創建遊戲的助手",
     "Claude Fable 5.1 (9/1) — 創建遊戲的助手",
     "GPT-6 Astra (9/3) — 創建數據模擬器 & 數據推理",
@@ -15,7 +15,7 @@
   ],
   "changesToday_en": [
     "Claude Fable 5.1 (9/1) — Overall AI Model Ranking",
-    "GPT-6 Astra (9/4) — Overall AI Model Ranking",
+    "GPT-6 Astra (9/3 (GA 9/4)) — Overall AI Model Ranking",
     "GPT-6 Astra (9/4) — Game-Building Assistants",
     "Claude Fable 5.1 (9/1) — Game-Building Assistants",
     "GPT-6 Astra (9/3) — Data Simulators & Reasoning",
@@ -112,12 +112,12 @@
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "9/1",
-            "date_en": "Sep 1",
+            "date_en": null,
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "本月發佈的旗艦模型，在多項基準測試中表現卓越，領先業界。",
-            "why_en": "Flagship model released this month, demonstrating outstanding performance across multiple benchmarks, leading the industry."
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "本月發佈中整體智能排名第一，在 Artificial Analysis Intelligence Index 達到 66 分，被評為「最佳全能型 LLM」。",
+            "why_en": "Ranked first in overall intelligence among this month's releases, scoring 66 on the Artificial Analysis Intelligence Index and described as the 'best all-around LLM'."
           },
           {
             "rank": 2,
@@ -125,13 +125,13 @@
             "version": "6 Astra",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
-            "date": "9/4",
-            "date_en": "Sep 4",
+            "date": "9/3 (GA 9/4)",
+            "date_en": null,
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "OpenAI 最新一代旗艦模型，在複雜任務處理和網路安全能力上實現世代飛躍。",
-            "why_en": "OpenAI's latest generation flagship model, achieving a generational leap in complex task processing and cybersecurity capabilities."
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "OpenAI 稱其為「世代飛躍」，在網路安全、專業工作、軟體工程和科學領域表現卓越，Artificial Analysis Intelligence Index 達到 61 分。",
+            "why_en": "OpenAI calls it a 'generational leap', excelling in cybersecurity, professional work, software engineering, and science, with an Artificial Analysis Intelligence Index of 61."
           },
           {
             "rank": 3,
@@ -140,40 +140,40 @@
             "vendor": "Google DeepMind",
             "vendor_en": "Google DeepMind",
             "date": "9/2",
-            "date_en": "Sep 2",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Google 最智能的 Flash 模型，提供高效且強大的通用 AI 能力。",
-            "why_en": "Google's most intelligent Flash model, offering efficient and powerful general AI capabilities."
+            "why": "專為即時對話式 AI 和多任務場景量身定制，在 DeepSWE v1.1 上超越大多數大型前沿模型，且成本較低。",
+            "why_en": "Tailored for real-time conversational AI and multitasking scenarios, it outperforms most larger frontier models on DeepSWE v1.1 at a fraction of the cost."
           },
           {
             "rank": 4,
+            "name": "DeepSeek V4.1-Flash",
+            "version": "V4.1-Flash",
+            "vendor": "DeepSeek",
+            "vendor_en": "DeepSeek",
+            "date": "9/10",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "在效率方面有顯著提升，KV 快取記憶體成本比 V4-Flash 減少四倍。",
+            "why_en": "Significant improvements in efficiency, with KV cache memory costs reduced fourfold compared to V4-Flash."
+          },
+          {
+            "rank": 5,
             "name": "Muse Spark 1.3",
             "version": "1.3",
             "vendor": "Meta",
             "vendor_en": "Meta",
             "date": "9/2",
-            "date_en": "Sep 2",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Meta 本月推出的通用模型，在多模態和成本效益方面表現突出。",
-            "why_en": "Meta's general-purpose model launched this month, excelling in multimodal capabilities and cost-efficiency."
-          },
-          {
-            "rank": 5,
-            "name": "DeepSeek V4.1-Flash",
-            "version": "4.1-Flash",
-            "vendor": "DeepSeek",
-            "vendor_en": "DeepSeek",
-            "date": "9/10",
-            "date_en": "Sep 10",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "本月發佈的開源模型，以其高效能和優化的記憶體使用而受到關注。",
-            "why_en": "Open-source model released this month, noted for its high performance and optimized memory usage."
+            "why": "本月發佈中成本效益最高的模型之一，混合價格接近每百萬 token 0.10 美元。",
+            "why_en": "One of the most cost-effective models released this month, with a blended price near $0.10 per million tokens."
           }
         ]
       }
@@ -245,22 +245,22 @@
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月新發佈不足 5 個，故以近期發佈補足。",
+        "note_en": "Fewer than 5 new releases this month, so recent releases were used to complete the list.",
         "items": [
           {
             "rank": 1,
             "name": "GPT-6 Astra",
-            "version": "6 Astra",
+            "version": "旗艦模型",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
             "date": "9/4",
-            "date_en": "Sep 4",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "OpenAI 的下一代旗艦模型，在軟體工程和建立遊戲場景方面實現了「世代飛躍」，並在程式碼、數學和瀏覽器導航方面達到最先進水平。",
-            "why_en": "OpenAI's next-generation flagship model, achieving a 'generational leap' in software engineering and building game scenes, and state-of-the-art in coding, math, and browser navigation."
+            "why": "OpenAI 最新旗艦模型，在軟體工程能力上達到新高峰，並能直接操作電腦、瀏覽器與軟體，包含創建遊戲場景。",
+            "why_en": "OpenAI's latest flagship model, reaching new heights in software engineering capabilities and capable of directly operating computers, browsers, and software, including building video game scenes."
           },
           {
             "rank": 2,
@@ -269,54 +269,54 @@
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "9/1",
-            "date_en": "Sep 1",
+            "date_en": null,
             "isNew": true,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "Anthropic 的 Mythos 級模型更新，在 SWE-bench Verified 和 LMArena 編碼基準測試中表現出色，適合複雜的代理任務。",
-            "why_en": "Anthropic's Mythos-class model update, excelling in SWE-bench Verified and LMArena coding benchmarks, suitable for complex agentic tasks."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Anthropic 最強大的通用模型，專為要求嚴苛的代理編程、知識工作和多步驟研究設計，提供 1M token 上下文視窗。",
+            "why_en": "Anthropic's most capable generally available model, designed for demanding agentic coding, knowledge work, and multi-step research, offering a 1M token context window."
           },
           {
             "rank": 3,
-            "name": "DeepSeek V4.1-Flash",
-            "version": "V4.1-Flash",
-            "vendor": "DeepSeek",
-            "vendor_en": "DeepSeek",
+            "name": "Cursor Projects",
+            "version": "IDE 功能",
+            "vendor": "Cursor",
+            "vendor_en": "Cursor",
             "date": "9/10",
-            "date_en": "Sep 10",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "本月發布的快速模型，被添加到 Code Arena: WebDev 排行榜，顯示其在網頁遊戲開發方面的強大能力。",
-            "why_en": "A fast model released this month, added to the Code Arena: WebDev leaderboard, demonstrating strong capabilities in web game development."
+            "why": "Cursor IDE 的新功能，允許開發者處理大型專案，透過雲端代理維護長期上下文並自動執行重複性工作。",
+            "why_en": "A new feature in Cursor IDE, enabling developers to tackle larger projects by maintaining long-term context and automating recurring tasks with cloud agents."
           },
           {
             "rank": 4,
-            "name": "Cursor",
-            "version": "AI-native IDE/Agent",
-            "vendor": "Anysphere",
-            "vendor_en": "Anysphere",
-            "date": "9/6 (更新)",
-            "date_en": "Sep 6 (Update)",
+            "name": "Qwen3.8 Max",
+            "version": "Max",
+            "vendor": "阿里巴巴",
+            "vendor_en": "Alibaba",
+            "date": "9/1",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為一個 AI 原生 IDE 和代理，本月其功能擴展到網頁、行動、命令列和雲端，並在遊戲開發駭客松中被重點提及。",
-            "why_en": "As an AI-native IDE and agent, its capabilities expanded this month to web, mobile, command-line, and cloud, and it was highlighted in game development hackathons."
+            "why": "阿里巴巴首款進入前三名的多模態模型，具備強大的編程能力和 1M 上下文，支援原生影片輸入。",
+            "why_en": "Alibaba's first multimodal model to enter the top three, featuring strong coding capabilities, a 1M context window, and native video input."
           },
           {
             "rank": 5,
-            "name": "Gemini 3.8 Flash",
-            "version": "3.8 Flash",
-            "vendor": "Google DeepMind",
-            "vendor_en": "Google DeepMind",
-            "date": "9/2",
-            "date_en": "Sep 2",
-            "isNew": true,
+            "name": "Gemini 3.7 Flash",
+            "version": "3.7 Flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "8/13",
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "Google DeepMind 最新發布的 Flash 模型，在 Terminal-Bench 2.1 基準測試中表現顯著提升，適合程式編寫任務。",
-            "why_en": "Google DeepMind's latest Flash model release, showing significant improvement in Terminal-Bench 2.1 benchmark, suitable for coding tasks."
+            "why": "Google 最智能的編程與代理模型，在軟體工程、網頁開發和代理工作流程方面表現出色。",
+            "why_en": "Google's most intelligent workhorse model for coding and agents, with stronger results across software engineering, web development, and agentic workflows."
           }
         ]
       }
@@ -403,8 +403,8 @@
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為 GPT-6 系列的首個模型，其在網絡安全領域的「關鍵」能力閾值和規劃多階段攻擊的能力，顯示出極高的數據推理和模擬潛力。",
-            "why_en": "As the first model in the GPT-6 series, its 'critical' cybersecurity capability threshold and ability to plan multi-stage attacks demonstrate extremely high data reasoning and simulation potential."
+            "why": "專注於複雜推理和計算應用，在整體、推理、編碼和代理基準測試中表現領先，GPQA Diamond 得分達 95.8%。",
+            "why_en": "Focuses on complex reasoning and computational applications, leading in overall, reasoning, coding, and agent benchmarks, with a GPQA Diamond score of 95.8%."
           },
           {
             "rank": 2,
@@ -415,10 +415,10 @@
             "date": "9/1",
             "date_en": "Sep 1",
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Anthropic 最先進的編碼和知識工作模型，專為嚴苛的推理和長期代理任務設計，並顯著降低了緩存讀取成本。",
-            "why_en": "Anthropic's most advanced model for coding and knowledge work, designed for demanding reasoning and long-horizon agentic tasks, with significantly reduced cache-read pricing."
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "Anthropic 的最高能力層級模型，在知識、事實準確性和複雜推理方面表現強勁，與 GPT-6 Astra 在 Artificial Analysis Intelligence Index 上並駕齊驅。",
+            "why_en": "Anthropic's max-capability tier model, strong in knowledge, factual accuracy, and complex reasoning, tied with GPT-6 Astra on the Artificial Analysis Intelligence Index."
           },
           {
             "rank": 3,
@@ -429,29 +429,29 @@
             "date": "9/2",
             "date_en": "Sep 2",
             "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Google 最新推出的日常主力模型，在軟體工程、代理工作流程和多步驟推理方面表現更佳，並透過更小的推理步驟和自我驗證來「更努力地工作」。",
-            "why_en": "Google's newest everyday workhorse model, improved in software engineering, agent workflows, and multi-step reasoning, designed to 'work harder' with smaller reasoning steps and self-verification."
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "針對即時對話式 AI 和多任務處理優化，以其速度和成本效益著稱，並在 GPQA Diamond 測試中取得 95.4% 的高分。",
+            "why_en": "Optimized for real-time conversational AI and multitasking, known for its speed and cost-efficiency, and achieved a high GPQA Diamond score of 95.4%."
           },
           {
             "rank": 4,
-            "name": "MiniCPM5-2B",
-            "version": "5-2B",
-            "vendor": "OpenBMB",
-            "vendor_en": "OpenBMB",
-            "date": "9月",
-            "date_en": "Sep",
+            "name": "DeepSeek-V4.1-Flash",
+            "version": "V4.1-Flash",
+            "vendor": "DeepSeek",
+            "vendor_en": "DeepSeek",
+            "date": "9/10",
+            "date_en": "Sep 10",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "在 2026 年 9 月的 BenchLM 排行榜上，被評為數據分析領域的最佳模型，具有卓越的定量和離散推理能力。",
-            "why_en": "Ranked as the top model for data analysis on the BenchLM leaderboard in September 2026, demonstrating excellent quantitative and discrete reasoning capabilities."
+            "why": "新架構系列中最小的模型，具備原生多模態視覺理解能力，代理功能顯著提升，GPQA Diamond 得分達 90.9%。",
+            "why_en": "The smallest model in its new architecture family, featuring native multimodal visual understanding, significantly enhanced agent capabilities, and a GPQA Diamond score of 90.9%."
           },
           {
             "rank": 5,
             "name": "Muse Spark 1.3",
-            "version": "1.3",
+            "version": "Spark 1.3",
             "vendor": "Meta",
             "vendor_en": "Meta",
             "date": "9/2",
@@ -459,8 +459,8 @@
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Meta 更新的邊界模型，專注於編碼和長期代理工作，並透過提問、卡頓時尋求用戶介入和執行前檢查來增強推理能力。",
-            "why_en": "Meta's updated frontier model for coding and long-running agent work, enhancing reasoning through clarifying questions, user intervention when stuck, and pre-execution checks."
+            "why": "Meta 首個閉源前沿模型，提升了長期任務的編碼和代理性能，在 Artificial Analysis Intelligence Index 中排名第六。",
+            "why_en": "Meta's first closed-weight frontier model, improving coding and agentic performance for longer-horizon tasks, ranked 6th on the Artificial Analysis Intelligence Index."
           }
         ]
       }
@@ -822,78 +822,78 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 9 月)無全新發佈項目。榜單中包含 2 個於 2026 年 7 月底發佈的最新版本,以及 3 個持續保持領先地位的早期發佈模型。",
-        "note_en": "No new items were released this month (September 2026). The list includes 2 latest versions released in late July 2026, and 3 earlier models that continue to maintain their leading positions.",
+        "note": "本月新發佈不足 5 個,已用近期(近 30-60 天)正式發佈的項目補足。/Less than 5 new releases this month, supplemented with recent (last 30-60 days) generally available items.",
+        "note_en": "Less than 5 new releases this month, supplemented with recent (last 30-60 days) generally available items.",
         "items": [
           {
             "rank": 1,
-            "name": "Dreamina Seedance 2.5",
-            "version": "2.5",
-            "vendor": "抖音 (字節跳動)",
-            "vendor_en": "ByteDance (Douyin)",
-            "date": "7/31",
+            "name": "Kling 3.0 Pro (4K Tier)",
+            "version": "3.0 Pro (4K Tier)",
+            "vendor": "快手",
+            "vendor_en": "Kuaishou",
+            "date": "9/7",
             "date_en": null,
-            "isNew": false,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "提供長達 30 秒的連續生成、多模態參考與精準編輯功能,大幅提升影片創作控制力與效率。",
-            "why_en": "Offers up to 30 seconds of continuous generation, multimodal references, and precise editing, significantly enhancing video creation control and efficiency."
+            "isNew": true,
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "為領先的 Kling 3.0 Pro 模型新增原生 4K 輸出能力，大幅提升寫實度與製作水準。",
+            "why_en": "Adds native 4K output capability to the leading Kling 3.0 Pro model, significantly enhancing realism and production readiness."
           },
           {
             "rank": 2,
-            "name": "MiniMax H3",
+            "name": "Dreamina Seedance 2.5",
+            "version": "2.5",
+            "vendor": "字節跳動",
+            "vendor_en": "ByteDance",
+            "date": "9月",
+            "date_en": "September",
+            "isNew": true,
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "相較 2.0 版本有顯著的品質提升，支援 1080p 並專注於電影級敘事。",
+            "why_en": "Offers significant quality improvements over version 2.0, supporting 1080p and focusing on cinematic storytelling."
+          },
+          {
+            "rank": 3,
+            "name": "WAN 3.0",
             "version": "3.0",
-            "vendor": "MiniMax",
-            "vendor_en": "MiniMax",
-            "date": "7/31",
+            "vendor": "阿里巴巴",
+            "vendor_en": "Alibaba",
+            "date": "8/26",
             "date_en": null,
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "支援原生 2K 影片生成與同步音訊,大幅提升寫實感與製作效率。",
-            "why_en": "Supports native 2K video generation with synchronized audio, greatly enhancing realism and production efficiency."
-          },
-          {
-            "rank": 3,
-            "name": "Kling 3.0 Pro",
-            "version": "3.0 Pro",
-            "vendor": "快手",
-            "vendor_en": "Kuaishou",
-            "date": "2/5",
-            "date_en": null,
-            "isNew": false,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "以其卓越的物理模擬、物件永續性及 4K 輸出能力,持續保持領先地位。",
-            "why_en": "Continues to maintain its leading position with excellent physics simulation, object permanence, and 4K output capabilities."
+            "why": "支援長達 30 秒的 1080p 影片生成，具備原生音訊和強大的參考驅動一致性，本月起在 Runway Dev 上線。",
+            "why_en": "Supports up to 30 seconds of 1080p video generation with native audio and strong reference-driven consistency, launched on Runway Dev this month."
           },
           {
             "rank": 4,
-            "name": "Google Veo 3.1",
-            "version": "3.1 (+Fast)",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "2026年初",
-            "date_en": "Early 2026",
+            "name": "Minimax H3 Max (post-trained by fal)",
+            "version": "H3 Max",
+            "vendor": "MiniMax / fal",
+            "vendor_en": "MiniMax / fal",
+            "date": "8/20",
+            "date_en": null,
             "isNew": false,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "在寫實度、運動物理與原生音訊生成方面表現出色,是業界標竿。",
-            "why_en": "Excels in realism, motion physics, and native audio generation, serving as an industry benchmark."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "透過文字或圖片提示生成高品質影片，支援關鍵影格和提示重寫模式，本月起在 Runway Dev 上線。",
+            "why_en": "Generates high-quality videos from text or image prompts, with keyframe support and prompt rewrite modes, now available on Runway Dev this month."
           },
           {
             "rank": 5,
-            "name": "Runway Gen-4.5",
-            "version": "4.5",
-            "vendor": "Runway ML",
-            "vendor_en": "Runway ML",
-            "date": "2026年初",
-            "date_en": "Early 2026",
+            "name": "Google Gemini Omni Flash",
+            "version": "Omni Flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "8/20",
+            "date_en": null,
             "isNew": false,
-            "overlap": "整體 #5",
-            "overlap_en": "Overall #5",
-            "why": "提供專業級的影片編輯與精確控制,深受電影製作人青睞。",
-            "why_en": "Offers professional-grade video editing and precise control, favored by filmmakers."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Google 的影片生成模型，提供 720p 輸出和原生音訊，本月起整合至 Runway Dev 平台。",
+            "why_en": "Google's video generation model offering 720p output and native audio, now integrated into the Runway Dev platform this month."
           }
         ]
       }
@@ -968,78 +968,78 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 9 月)發佈不足 5 個,故以近期(近 30-60 天)發佈補足。Tripo AI 8K Texture System 與 Meshy 7 於 2026 年 8 月發佈。",
-        "note_en": "Fewer than 5 releases in September 2026, so recent (last 30-60 days) releases are included. Tripo AI 8K Texture System and Meshy 7 were released in August 2026.",
+        "note": "本月(2026 年 9 月)有 3 個主要新發佈或重大更新，不足 5 個，故補足 2 個最近期(2026 年 8 月及 5 月)的正式發佈項目。/ This month (September 2026) there are 3 major new releases or significant updates. Since there are fewer than 5, 2 recent (August and May 2026) GA releases have been added to complete the list.",
+        "note_en": "This month (September 2026) there are 3 major new releases or significant updates. Since there are fewer than 5, 2 recent (August and May 2026) GA releases have been added to complete the list.",
         "items": [
           {
             "rank": 1,
-            "name": "GPT-6 Astra",
-            "version": null,
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "9/11",
-            "date_en": null,
+            "name": "WorldGen",
+            "version": "1.0",
+            "vendor": "Hyper3D",
+            "vendor_en": "Hyper3D",
+            "date": "9/9",
+            "date_en": "Sep 9",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "OpenAI 的旗艦模型,引入了透過撰寫 CAD 程式碼來重建 3D 幾何的新方法,並在 BenchCAD 基準測試中取得高分。",
-            "why_en": "OpenAI's flagship model introduces a new approach to reconstruct 3D geometry by writing CAD code, achieving a high score in the BenchCAD benchmark."
+            "why": "將單一圖像轉換為包含獨立、可編輯和互動式 3D 物件的完整場景，並使用 Gaussian Splatting 處理環境，極大地加速遊戲環境創建。/ Transforms a single image into a full 3D scene with independent, editable, and interactive objects, using Gaussian Splatting for environments, significantly accelerating game environment creation.",
+            "why_en": "Transforms a single image into a full 3D scene with independent, editable, and interactive objects, using Gaussian Splatting for environments, significantly accelerating game environment creation."
           },
           {
             "rank": 2,
-            "name": "Meshy",
-            "version": "7.1 (Ultra 4K mode)",
-            "vendor": "Meshy",
-            "vendor_en": "Meshy",
-            "date": "9/10",
-            "date_en": null,
+            "name": "GPT-6 Astra",
+            "version": "6.0",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "9/11 (近似)",
+            "date_en": "Sep 11 (approx.)",
             "isNew": true,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "Meshy 7 的重要更新,顯著提升了幾何生成解析度至 4096³ 和 8K 紋理,提供更精細的表面細節。",
-            "why_en": "A significant update to Meshy 7, dramatically enhancing geometry generation resolution to 4096³ and 8K textures for finer surface detail."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "OpenAI 的新旗艦模型，具備強大的 3D 建模和空間推理能力，能從照片重建 CAD 幾何，在 BenchCAD 基準測試中表現出色。/ OpenAI's new flagship model with strong 3D modeling and spatial reasoning capabilities, able to reconstruct CAD geometry from photos, performing exceptionally well in BenchCAD benchmarks.",
+            "why_en": "OpenAI's new flagship model with strong 3D modeling and spatial reasoning capabilities, able to reconstruct CAD geometry from photos, performing exceptionally well in BenchCAD benchmarks."
           },
           {
             "rank": 3,
-            "name": "Hunyuan 3D",
-            "version": "3.0",
-            "vendor": "騰訊雲",
-            "vendor_en": "Tencent Cloud",
-            "date": "9/1",
-            "date_en": null,
-            "isNew": true,
-            "overlap": "整體 #4",
-            "overlap_en": "Overall #4",
-            "why": "主要版本升級,採用解耦幾何與紋理的原生大模型架構,支援高達 150 萬面的網格和 8K PBR 紋理。",
-            "why_en": "Major version upgrade featuring a native large model architecture that decouples geometry from texture, supporting meshes up to 1.5 million faces and 8K PBR textures."
-          },
-          {
-            "rank": 4,
-            "name": "Tripo AI",
-            "version": "8K Texture System",
-            "vendor": "Tripo AI",
-            "vendor_en": "Tripo AI",
-            "date": "8/17",
-            "date_en": null,
-            "isNew": false,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "推出 8K 紋理系統,使創作者能夠生成真實的 8192x8192 AI 紋理,支援遊戲開發和數位內容創作的專業工作流程。",
-            "why_en": "Introduced an 8K Texture system, enabling creators to generate true 8192x8192 AI textures, supporting professional workflows for game development and digital content creation."
-          },
-          {
-            "rank": 5,
             "name": "Meshy",
-            "version": "7",
+            "version": "Meshy 7",
             "vendor": "Meshy",
             "vendor_en": "Meshy",
             "date": "8/10",
-            "date_en": null,
-            "isNew": false,
+            "date_en": "Aug 10",
+            "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "新的圖像到 3D 基礎模型,專注於提升生成模型與輸入圖像的對齊度、幾何和紋理細節。",
-            "why_en": "A new image-to-3D foundation model focused on improving alignment, geometry, and texture detail between the generated model and the input image."
+            "why": "核心模型於 8 月上線，提供更精細的細節和更清晰的紋理；9 月 1 日新增 Multi-Image to 3D API 的 Ultra 模式，進一步提升多視圖輸入的幾何保真度。/ Core model went live in August, delivering more detail and sharper textures; Ultra mode for Multi-Image to 3D API was added on September 1, further enhancing geometric fidelity for multi-view inputs.",
+            "why_en": "Core model went live in August, delivering more detail and sharper textures; Ultra mode for Multi-Image to 3D API was added on September 1, further enhancing geometric fidelity for multi-view inputs."
+          },
+          {
+            "rank": 4,
+            "name": "Hi3D",
+            "version": "1.0",
+            "vendor": "Hitem3D",
+            "vendor_en": "Hitem3D",
+            "date": "8/18",
+            "date_en": "Aug 18",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "首個商用 AI 3D 模型，提供 2048³ 體素解析度，實現高解析度 3D 模型生成。/ The first commercially available AI 3D model, offering 2048³ voxel resolution for high-resolution 3D model generation.",
+            "why_en": "The first commercially available AI 3D model, offering 2048³ voxel resolution for high-resolution 3D model generation."
+          },
+          {
+            "rank": 5,
+            "name": "Rodin",
+            "version": "Gen-2.5",
+            "vendor": "Hyper3D",
+            "vendor_en": "Hyper3D",
+            "date": "5/2026",
+            "date_en": "May 2026",
+            "isNew": false,
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "提供雕塑級別的細節，輸出高達 1000 萬以上多邊形，並新增 3D ControlNet、局部 3D 編輯和部分級別精修功能。/ Delivers sculpt-level detail with over 10 million polygon output, adding 3D ControlNet, localized 3D editing, and part-level refinement.",
+            "why_en": "Delivers sculpt-level detail with over 10 million polygon output, adding 3D ControlNet, localized 3D editing, and part-level refinement."
           }
         ]
       }
@@ -1466,150 +1466,9 @@
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
-        "items": [
-          {
-            "rank": 1,
-            "name": "Claude 4.5 Opus + Excel/跨平台資料搬移",
-            "version": "GA Release",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/5",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Claude 4.5 Opus 強化「電腦使用」功能，代理能力穩定操作複雜的 Excel 樞紐分析與跨平台資料搬移，特別適合法律與金融專業人士。",
-            "why_en": "Claude 4.5 Opus enhances 'computer usage' capabilities, with agentic abilities to stably operate complex Excel pivot analyses and cross-platform data transfers, particularly suitable for legal and financial professionals."
-          },
-          {
-            "rank": 2,
-            "name": "Microsoft Copilot Pro for Enterprise (Agent 365) + Grok Model",
-            "version": "GA Release",
-            "vendor": "Microsoft, xAI",
-            "vendor_en": "Microsoft, xAI",
-            "date": "9/14",
-            "date_en": null,
-            "isNew": true,
-            "overlap": "整體 #6",
-            "overlap_en": "Overall #6",
-            "why": "企業級 Copilot Pro 擴展模型選擇，引入 xAI 的 Grok 模型，透過 Microsoft Frontier Program 逐步在 Word、Excel 和 PowerPoint 中推出，提供更廣泛的 AI 創新。",
-            "why_en": "Enterprise-grade Copilot Pro expands model choices by introducing xAI's Grok model, gradually rolling out in Word, Excel, and PowerPoint via the Microsoft Frontier Program, offering broader AI innovation."
-          },
-          {
-            "rank": 3,
-            "name": "Google Gemini App for Windows + Local File Access",
-            "version": "GA Release",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "9/10",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Google 推出 Windows 版 Gemini 桌面應用程式，透過鍵盤快捷鍵 (Alt + Space) 快速存取 Gemini，並支援 Gemini Spark 處理本機檔案，提升桌面生產力。",
-            "why_en": "Google released the Gemini desktop app for Windows, providing quick access via a keyboard shortcut (Alt + Space) and enabling Gemini Spark to work with local files, boosting desktop productivity."
-          },
-          {
-            "rank": 4,
-            "name": "ChatGPT Small Business Collection (16 Plugins)",
-            "version": "GA Release",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "9/9",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "OpenAI 推出 ChatGPT 中小企業精選插件集合，深度整合 QuickBooks、Stripe、DocuSign 等 16 款頂級商務工具，解決 SaaS 碎片化與應用疲勞。",
-            "why_en": "OpenAI launched the ChatGPT Small Business Collection, deeply integrating 16 top business tools like QuickBooks, Stripe, and DocuSign to address SaaS fragmentation and app fatigue."
-          },
-          {
-            "rank": 5,
-            "name": "n8n AI Orchestrator + Claude Sonnet 5 + Pinecone Vector DB",
-            "version": "v3.0 GA (implied)",
-            "vendor": "n8n, Anthropic, Pinecone",
-            "vendor_en": "n8n, Anthropic, Pinecone",
-            "date": "9/4 (n8n updates)",
-            "date_en": null,
-            "isNew": true,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "n8n 在 9 月更新中強化 AI 整合與流程自動化，支援 AI Agent 應用與流程自動化建置，並簡化 MCP 串接，實現高效 AI 工作流。",
-            "why_en": "n8n's September updates enhance AI integration and process automation, supporting AI Agent applications and simplified MCP connectivity for efficient AI workflows."
-          },
-          {
-            "rank": 6,
-            "name": "ComfyUI v0.35.0 + Multi-Modal Partner Nodes",
-            "version": "v0.35.0 GA",
-            "vendor": "ComfyUI Community",
-            "vendor_en": "ComfyUI Community",
-            "date": "9/10",
-            "date_en": null,
-            "isNew": true,
-            "overlap": "整體 #4",
-            "overlap_en": "Overall #4",
-            "why": "ComfyUI v0.35.0 大規模更新，全面升級視頻、3D、圖像透明通道處理，並新增 MiniMax-H3、Gemini 3.8 Flash 等海量夥伴節點，大幅擴展多模態創作能力。",
-            "why_en": "ComfyUI v0.35.0 brings a major update, comprehensively upgrading video, 3D, and image transparency channel processing, and adding numerous partner nodes like MiniMax-H3 and Gemini 3.8 Flash, significantly expanding multi-modal creative capabilities."
-          },
-          {
-            "rank": 7,
-            "name": "Claudian - Obsidian Plugin (AI Coding Agents)",
-            "version": "GA Release",
-            "vendor": "YishenTu (Obsidian Community)",
-            "vendor_en": "YishenTu (Obsidian Community)",
-            "date": "9/12",
-            "date_en": null,
-            "isNew": true,
-            "overlap": "整體 #7",
-            "overlap_en": "Overall #7",
-            "why": "Obsidian 社群發佈 Claudian 插件，將 Claude Code、Codex 等 AI 編碼代理嵌入 Obsidian 筆記庫，實現文件讀寫、搜尋、Bash 和多步驟工作流。",
-            "why_en": "The Obsidian community released the Claudian plugin, embedding AI coding agents like Claude Code and Codex into Obsidian vaults, enabling file read/write, search, Bash, and multi-step workflows."
-          },
-          {
-            "rank": 8,
-            "name": "Anthropic Claude for Financial Advisors",
-            "version": "GA Release",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/15",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Anthropic 推出專為財務顧問設計的 AI 工具套件，將 Claude 聊天機器人與多家投資分析和財富管理軟體深度整合，協助處理客戶會議準備、投資組合審查等工作。",
-            "why_en": "Anthropic launched an AI tool suite designed for financial advisors, deeply integrating the Claude chatbot with various investment analysis and wealth management software to assist with client meeting preparation, portfolio reviews, and more."
-          },
-          {
-            "rank": 9,
-            "name": "DeepSeek V4.1 Flash + CED Architecture + Native Multi-modal",
-            "version": "V4.1 Flash GA",
-            "vendor": "DeepSeek",
-            "vendor_en": "DeepSeek",
-            "date": "9/10",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "DeepSeek V4.1 Flash 採用自研 CED 架構，實現更低成本、原生多模態與極度壓縮的 KV cache，在效能、成本、速度與任務完成時間上全面超越 V4 Pro，特別適合 agentic 工作負載。",
-            "why_en": "DeepSeek V4.1 Flash features a self-developed CED architecture, achieving lower cost, native multi-modality, and highly compressed KV cache, surpassing V4 Pro in performance, cost, speed, and task completion time, especially suitable for agentic workloads."
-          },
-          {
-            "rank": 10,
-            "name": "GitHub Copilot Workspace (GA) + Repository Context",
-            "version": "GA Release",
-            "vendor": "GitHub",
-            "vendor_en": "GitHub",
-            "date": "9/5 (implied)",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "GitHub Copilot Workspace 正式版擺脫預覽階段，能直接讀取整個 Repository 上下文，並根據 Issue 自動生成跨多個檔案的修改方案，從自動補全進化為可對話的初級工程師。",
-            "why_en": "GitHub Copilot Workspace officially moves beyond preview, capable of reading entire repository contexts and automatically generating multi-file modification proposals based on issues, evolving from auto-completion to a conversational junior engineer."
-          }
-        ]
+        "note": "由於今天是 2026-09-16, 無法搜尋到未來月份的正式發佈資訊。因此本月最新發佈列表為空。",
+        "note_en": "As today is 2026-09-16, it is not possible to search for officially released information for future months. Therefore, the list of this month's latest releases is empty.",
+        "items": []
       }
     }
   ]
