@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-10-02T04:36:27+08:00",
-  "updatedDateLabel": "2026 年 10 月 2 日",
+  "updatedAt": "2026-10-03T04:11:49+08:00",
+  "updatedDateLabel": "2026 年 10 月 3 日",
   "month": "2026 年 10 月",
   "month_en": "October 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/10/02 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/10/02",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/10/03 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/10/03",
   "changesToday": [
-    "Claude Opus 5.5 (9/22) — 綜合 AI MODEL 排名",
     "GPT-6.1 Sol (9/29) — 綜合 AI MODEL 排名",
+    "Claude Sonnet 5.5 (9/28) — 綜合 AI MODEL 排名",
     "Claude Opus 5.5 (9/22) — 創建遊戲的助手",
     "GPT-6 Astra (9/3) — 創建遊戲的助手",
-    "GPT-6 Astra (9/3) — 創建數據模擬器 & 數據推理",
-    "Claude Opus 5.5 (9/22) — 創建數據模擬器 & 數據推理"
+    "Claude Opus 5.5 (9/22) — 創建數據模擬器 & 數據推理",
+    "GPT-6 Astra (9/3) — 創建數據模擬器 & 數據推理"
   ],
   "changesToday_en": [
-    "Claude Opus 5.5 (9/22) — Overall AI Model Ranking",
     "GPT-6.1 Sol (9/29) — Overall AI Model Ranking",
+    "Claude Sonnet 5.5 (9/28) — Overall AI Model Ranking",
     "Claude Opus 5.5 (9/22) — Game-Building Assistants",
     "GPT-6 Astra (9/3) — Game-Building Assistants",
-    "GPT-6 Astra (9/3) — Data Simulators & Reasoning",
-    "Claude Opus 5.5 (9/22) — Data Simulators & Reasoning"
+    "Claude Opus 5.5 (9/22) — Data Simulators & Reasoning",
+    "GPT-6 Astra (9/3) — Data Simulators & Reasoning"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA、圖片=LMArena Arena)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -107,45 +107,45 @@
         "items": [
           {
             "rank": 1,
-            "name": "Claude Opus 5.5",
-            "version": "5.5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/22",
-            "date_en": "Sep 22",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "本月最新發佈中綜合能力最強，在多個排行榜中位居前列。",
-            "why_en": "The most capable model among this month's new releases, ranking highly across multiple leaderboards."
-          },
-          {
-            "rank": 2,
             "name": "GPT-6.1 Sol",
             "version": "6.1 Sol",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
             "date": "9/29",
-            "date_en": "Sep 29",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "提供接近 GPT-6 Astra 的旗艦級性能，尤其在程式碼和專業任務方面表現卓越。",
-            "why_en": "Offers near-flagship performance comparable to GPT-6 Astra, excelling in coding and professional tasks."
+            "why": "OpenAI最新發佈的旗艦模型，在代理編碼、電腦使用和專業工作方面表現卓越，以更低的成本提供接近Astra的智能。",
+            "why_en": "OpenAI's latest flagship model, demonstrating exceptional performance in agentic coding, computer use, and professional work, offering near-Astra intelligence at a lower cost."
+          },
+          {
+            "rank": 2,
+            "name": "Claude Sonnet 5.5",
+            "version": "5.5",
+            "vendor": "Anthropic",
+            "vendor_en": "Anthropic",
+            "date": "9/28",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Anthropic於九月底發佈的Sonnet系列最新版本，提供更強大的性能。",
+            "why_en": "Anthropic's latest release in the Sonnet series at the end of September, offering enhanced performance."
           },
           {
             "rank": 3,
-            "name": "Claude Fable 5.1",
-            "version": "5.1",
+            "name": "Claude Opus 5.5",
+            "version": "5.5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "9/1",
-            "date_en": "Sep 1",
+            "date": "9/22",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為 Fable 5 的繼任者，在通用智能和代理工作方面有顯著提升。",
-            "why_en": "As the successor to Fable 5, it offers significant improvements in general intelligence and agentic capabilities."
+            "why": "Anthropic推薦用於大多數工作負載的Opus系列最新旗艦模型，性能顯著提升。",
+            "why_en": "Anthropic's latest flagship model in the Opus series, recommended for most workloads, with significant performance improvements."
           },
           {
             "rank": 4,
@@ -153,27 +153,27 @@
             "version": "6 Sol",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
-            "date": "9月",
-            "date_en": "Sep",
+            "date": "9/22",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "OpenAI 推出的新一代旗艦模型，性能強大且廣泛可用。",
-            "why_en": "OpenAI's new generation flagship model, offering powerful and widely available performance."
+            "why": "OpenAI GPT-6系列的新成員，為日常工作帶來前沿智能，平衡了能力與成本。",
+            "why_en": "A new addition to OpenAI's GPT-6 family, bringing frontier intelligence to everyday work with a balance of capability and cost."
           },
           {
             "rank": 5,
-            "name": "Claude Sonnet 5.5",
-            "version": "5.5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/27",
-            "date_en": "Sep 27",
+            "name": "Grok 4.7",
+            "version": "4.7",
+            "vendor": "xAI",
+            "vendor_en": "xAI",
+            "date": "9/21",
+            "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為 Opus 5.5 的高效能補充，以更低的成本提供接近旗艦級的表現。",
-            "why_en": "A high-performance complement to Opus 5.5, offering near-flagship capabilities at a lower cost."
+            "why": "xAI最新發佈的模型，專注於更長的編碼任務、改進的自我修正和專業文檔創建。",
+            "why_en": "xAI's latest model, focusing on longer coding tasks, improved self-correction, and professional document creation."
           }
         ]
       }
@@ -394,22 +394,8 @@
         "items": [
           {
             "rank": 1,
-            "name": "GPT-6 Astra",
-            "version": "GPT-6 Astra",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "9/3",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "作為新一代旗艦模型，在LiveBench Reasoning和ARC-AGI-2等推理基準測試中表現卓越，是數據推理和複雜模擬的強大基礎。",
-            "why_en": "As a new generation flagship model, it demonstrates excellent performance in reasoning benchmarks like LiveBench Reasoning and ARC-AGI-2, serving as a powerful foundation for data reasoning and complex simulations."
-          },
-          {
-            "rank": 2,
             "name": "Claude Opus 5.5",
-            "version": "Opus 5.5",
+            "version": "5.5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "9/22",
@@ -417,27 +403,41 @@
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "專為長時間運行的代理編碼和知識工作設計，具有100萬上下文窗口和自適應思考能力，非常適合複雜數據分析和代理模擬任務。",
-            "why_en": "Designed for long-running agentic coding and knowledge work, featuring a 1 million token context window and adaptive thinking, making it ideal for complex data analysis and agentic simulation tasks."
+            "why": "本月發布中在 Artificial Analysis Intelligence Index 取得最高分 (57.6)，並在進階編碼和代理工作方面表現出色，非常適合數據推理和複雜模擬。",
+            "why_en": "Achieved the highest score (57.6) on the Artificial Analysis Intelligence Index among this month's releases, excelling in advanced coding and agentic work, making it ideal for data reasoning and complex simulations."
+          },
+          {
+            "rank": 2,
+            "name": "GPT-6 Astra",
+            "version": "6 Astra",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "9/3",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "在 GPQA Diamond 基準測試中領先 (96.1%)，並在 Artificial Analysis Intelligence Index 取得高分 (52.7)，是處理複雜多步驟推理、電腦使用和編碼的旗艦模型。",
+            "why_en": "Leads the GPQA Diamond benchmark (96.1%) and scored highly on the Artificial Analysis Intelligence Index (52.7), serving as a flagship model for complex multi-step reasoning, computer use, and coding."
           },
           {
             "rank": 3,
-            "name": "Claude Fable 5.1",
-            "version": "Fable 5.1",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/1",
+            "name": "Gemini 3.8 Flash",
+            "version": "3.8 Flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "9/2",
             "date_en": null,
             "isNew": true,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "作為Fable 5的更新版本，是Anthropic用於要求嚴格的推理和長期代理工作的最新模型，在事實準確性方面表現出色。",
-            "why_en": "An updated version of Fable 5, it is Anthropic's latest model for demanding reasoning and long-horizon agentic work, excelling in factual accuracy."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "在 GPQA Diamond 基準測試中表現優異 (95.6%)，專注於推理、編碼和代理工作流程，提供高效且強大的數據推理能力。",
+            "why_en": "Demonstrated excellent performance on the GPQA Diamond benchmark (95.6%), focusing on reasoning, coding, and agentic workflows, offering efficient and powerful data reasoning capabilities."
           },
           {
             "rank": 4,
             "name": "Claude Sonnet 5.5",
-            "version": "Sonnet 5.5",
+            "version": "5.5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "9/28",
@@ -445,22 +445,22 @@
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "提供強大的推理和編碼能力，並且可在claude.ai上免費使用，使其成為數據推理任務的高度可訪問選項。",
-            "why_en": "Offers strong reasoning and coding capabilities, and is available for free on claude.ai, making it a highly accessible option for data reasoning tasks."
+            "why": "在 Artificial Analysis Intelligence Index 中排名第二 (56.0)，以更快的速度和更高的效率提供強大的推理能力，適用於多種數據分析場景。",
+            "why_en": "Ranked second on the Artificial Analysis Intelligence Index (56.0), offering robust reasoning capabilities with increased speed and efficiency, suitable for various data analysis scenarios."
           },
           {
             "rank": 5,
-            "name": "TypeSafe AI Jev",
-            "version": "Jev",
-            "vendor": "TypeSafe AI",
-            "vendor_en": "TypeSafe AI",
-            "date": "10/1",
+            "name": "Claude Fable 5.1",
+            "version": "5.1",
+            "vendor": "Anthropic",
+            "vendor_en": "Anthropic",
+            "date": "9/1",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "本月最新發佈，是一個專注於決策的模型，直接返回類型化的機率而非文本，非常適合數據模擬和機率建模。",
-            "why_en": "Newly released this month, it is a decision-only model that returns typed probabilities instead of text, making it highly suitable for data simulation and probability modeling."
+            "why": "專為最困難的推理和長時間運行的自主代理任務而設計，在 Artificial Analysis Intelligence Index 取得高分 (53.4)，適合複雜的數據模擬與推理應用。",
+            "why_en": "Designed for the hardest reasoning and long-running autonomous agent tasks, with a high score on the Artificial Analysis Intelligence Index (53.4), making it suitable for complex data simulation and reasoning applications."
           }
         ]
       }
@@ -530,78 +530,78 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 10 月)僅有 1 個新發佈項目,其餘以近期(2026 年 9 月至 8 月)發佈補足。",
-        "note_en": "Only 1 new release in October 2026; the remaining items are filled with recent releases (September to August 2026).",
+        "note": "本月 (2026 年 10 月) 尚未有廣為人知的圖片生成模型正式發佈。此列表包含最近期 (2026 年 7-9 月) 的主要正式發佈模型，並以較早發佈但仍具重要性的模型補足至前五名。",
+        "note_en": "No widely known image generation models have been officially released this month (October 2026). This list includes major official releases from the most recent period (July-September 2026), supplemented by earlier but still significant models to complete the top five.",
         "items": [
           {
             "rank": 1,
-            "name": "ChatGPT Images 2.5",
-            "version": "Flare / Sunburst",
+            "name": "GPT Image",
+            "version": "2.5 Sunburst",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
             "date": "9/8",
-            "date_en": null,
-            "isNew": false,
+            "date_en": "Sep 8",
+            "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "OpenAI 旗艦圖片生成模型的重大更新,提供更快的生成速度、更自然的圖像品質及精準編輯功能。",
-            "why_en": "A significant update to OpenAI's flagship image generation model, offering faster generation, more natural image quality, and precise editing features."
+            "why": "本月最新發佈中表現最佳，在 LMArena 和 Artificial Analysis 圖片競技場中均名列前茅，特別擅長精細創意工作。",
+            "why_en": "Best performing among recent releases, topping both LMArena and Artificial Analysis image arenas, especially adept at detailed creative work."
           },
           {
             "rank": 2,
-            "name": "Google Pics",
-            "version": "GA Release",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "9/1",
-            "date_en": null,
+            "name": "MAI-Image",
+            "version": "2.6",
+            "vendor": "Microsoft",
+            "vendor_en": "Microsoft",
+            "date": "8月",
+            "date_en": "Aug",
             "isNew": false,
-            "overlap": "整體 #4",
-            "overlap_en": "Overall #4",
-            "why": "Google Workspace 中全新的 AI 圖片生成與精準編輯工具,深度整合工作流程並支援物件級別編輯。",
-            "why_en": "A new AI image generation and precise editing tool within Google Workspace, deeply integrated into workflows and supporting object-level editing."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "MAI-Image 2.5 的改進版本，在多個排行榜上表現優異，提供更佳的圖像生成能力。",
+            "why_en": "An improved version of MAI-Image 2.5, demonstrating strong performance across multiple leaderboards with enhanced image generation capabilities."
           },
           {
             "rank": 3,
-            "name": "MixVio AI Unified Creative Workspace",
-            "version": "GA Release",
-            "vendor": "MixVio AI",
-            "vendor_en": "MixVio AI",
-            "date": "10/1",
-            "date_en": null,
-            "isNew": true,
+            "name": "Grok Imagine Image",
+            "version": "2.0",
+            "vendor": "xAI",
+            "vendor_en": "xAI",
+            "date": "8月",
+            "date_en": "Aug",
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "一個全新的統一創意工作空間,將圖片、影片和音訊生成與編輯無縫整合,提升多模態內容創作效率。",
-            "why_en": "A new unified creative workspace that seamlessly integrates image, video, and audio generation and editing, enhancing multimodal content creation efficiency."
+            "why": "在多個獨立評測中持續獲得高排名，以其圖像生成品質和效率廣受認可。",
+            "why_en": "Consistently highly ranked in multiple independent evaluations, widely recognized for its image generation quality and efficiency."
           },
           {
             "rank": 4,
-            "name": "Grok Image Generation",
-            "version": "Aurora",
-            "vendor": "SpaceXAI",
-            "vendor_en": "SpaceXAI",
-            "date": "8/21",
-            "date_en": null,
+            "name": "Muse Image",
+            "version": null,
+            "vendor": "Meta",
+            "vendor_en": "Meta",
+            "date": "7/7",
+            "date_en": "Jul 7",
             "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "SpaceXAI 推出的全新自動迴歸圖片生成模型,擴展了 Grok 在 X 平台上的多模態能力。",
-            "why_en": "A new autoregressive image generation model launched by SpaceXAI, expanding Grok's multimodal capabilities on the X platform."
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "Meta 的首個圖像生成模型，與其生態系統深度整合，特別適用於廣告和社交媒體內容。",
+            "why_en": "Meta's first image generation model, deeply integrated with its ecosystem, particularly strong for advertising and social media content."
           },
           {
             "rank": 5,
-            "name": "Qwen-Image 3.0",
-            "version": "GA Release",
-            "vendor": "Alibaba",
-            "vendor_en": "Alibaba",
-            "date": "8/5",
-            "date_en": null,
+            "name": "Gemini 3.1 Flash Image",
+            "version": "Nano Banana 2",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "2/26",
+            "date_en": "Feb 26",
             "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "阿里巴巴的旗艦圖片模型,以強大的文字渲染能力和多語言支援為特色,適用於複雜的排版和海報設計。",
-            "why_en": "Alibaba's flagship image model, featuring strong text rendering capabilities and multilingual support, suitable for complex typography and poster design."
+            "overlap": "整體 #4",
+            "overlap_en": "Overall #4",
+            "why": "結合了 Flash 模型的速度和 Pro 模型的品質，提供高性價比的寫實圖像生成。",
+            "why_en": "Combines the speed of Flash models with the quality of Pro models, offering cost-effective photorealistic image generation."
           }
         ]
       }
@@ -676,36 +676,78 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 10 月)無足夠的正式發佈項目，故列表以最近 30-60 天內發佈的項目補足。/Insufficient officially released items for October 2026, so the list is supplemented with items released within the last 30-60 days.",
-        "note_en": null,
+        "note": "本月僅 MixVio AI 為全新發佈,其餘四項為近 30-60 天內發佈的知名模型，用於補足榜單。",
+        "note_en": "Only MixVio AI is a new release this month; the other four are well-known models released within the last 30-60 days, included to complete the list.",
         "items": [
           {
             "rank": 1,
-            "name": "Bandicam AI Studio",
-            "version": null,
-            "vendor": "Bandicam Company",
-            "vendor_en": "Bandicam Company",
-            "date": "9/29",
+            "name": "MixVio AI",
+            "version": "Unified Creative Workspace",
+            "vendor": "MixVio AI",
+            "vendor_en": "MixVio AI",
+            "date": "10/1",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "於本月下旬正式發佈,提供一站式 AI 影片生成功能,其『AI 導演』可將簡單文字概念轉化為多場景影片。/Officially launched late this month, offering an all-in-one AI video generation platform with an 'AI Director' to transform simple text ideas into multi-scene videos.",
-            "why_en": "Officially launched late this month, offering an all-in-one AI video generation platform with an 'AI Director' to transform simple text ideas into multi-scene videos."
+            "why": "本月最新發佈的統一創意工作空間，整合多種生成功能，提升影片製作效率。",
+            "why_en": "Newly released this month, offering a unified creative workspace integrating multiple generation functions to enhance video production efficiency."
           },
           {
             "rank": 2,
-            "name": "Dreamina Seedance",
-            "version": "2.5",
-            "vendor": "字節跳動 (ByteDance)",
-            "vendor_en": "ByteDance",
-            "date": "7/31 (全球推廣於 9 月)",
-            "date_en": "July 31 (global rollout in Sep)",
+            "name": "Gemini Omni Flash",
+            "version": "gemini-omni-1.1-flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "August 2026",
+            "date_en": null,
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "雖於 7 月底發佈,但其全球推廣與功能更新在 9 月持續進行,提供長達 30 秒的影片生成、多模態參考及更精準的編輯控制。/Although released in late July, its global rollout and feature updates continued in September, offering up to 30-second video generation, multimodal references, and more precise editing controls.",
-            "why_en": "Although released in late July, its global rollout and feature updates continued in September, offering up to 30-second video generation, multimodal references, and more precise editing controls."
+            "why": "Google 於近期發佈的旗艦級多模態模型，在影片生成質量方面表現出色。",
+            "why_en": "Google's recently released flagship multimodal model, demonstrating excellent performance in video generation quality."
+          },
+          {
+            "rank": 3,
+            "name": "HiDream-O1-Video-1.0",
+            "version": "1.0",
+            "vendor": "HiDream",
+            "vendor_en": "HiDream",
+            "date": "August 2026",
+            "date_en": null,
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "近期在 Artificial Analysis 圖像轉影片排行榜上表現突出，提供高品質的影片生成。",
+            "why_en": "Recently prominent on the Artificial Analysis Image-to-Video leaderboard, offering high-quality video generation."
+          },
+          {
+            "rank": 4,
+            "name": "MiniMax H3 Max",
+            "version": "Max",
+            "vendor": "MiniMax",
+            "vendor_en": "MiniMax",
+            "date": "August 2026",
+            "date_en": null,
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "MiniMax H3 系列的增強版本，提供更銳利的電影級影片生成能力。",
+            "why_en": "An enhanced version of the MiniMax H3 series, providing sharper cinematic video generation capabilities."
+          },
+          {
+            "rank": 5,
+            "name": "Wan 3.0",
+            "version": "3.0",
+            "vendor": "Alibaba",
+            "vendor_en": "Alibaba",
+            "date": "August 2026",
+            "date_en": null,
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "阿里巴巴推出的影片生成模型，以其長影片生成能力和音訊整合而聞名。",
+            "why_en": "Alibaba's video generation model, known for its long clip generation and audio integration."
           }
         ]
       }
