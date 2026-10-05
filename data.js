@@ -1,26 +1,26 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-10-05T02:50:58+08:00",
-  "updatedDateLabel": "2026 年 10 月 5 日",
+  "updatedAt": "2026-10-06T06:13:58+08:00",
+  "updatedDateLabel": "2026 年 10 月 6 日",
   "month": "2026 年 10 月",
   "month_en": "October 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/10/05 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/10/05",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/10/06 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/10/06",
   "changesToday": [
-    "GPT-6.1 Sol (9/28) — 綜合 AI MODEL 排名",
-    "Claude Opus 5.5 (9/22) — 綜合 AI MODEL 排名",
     "Claude Opus 5.5 (9/22) — 創建遊戲的助手",
     "GPT-6.1 Sol (9/29) — 創建遊戲的助手",
-    "Lyria 3.5 (10/2) — 創建聲音特效",
-    "Microsoft Copilot Agent 365 Enterprise Suite (9/25) — AI 工具組合 Combo"
+    "Claude Opus 5.5 (9/22) — 創建數據模擬器 & 數據推理",
+    "GPT-6 Astra (9/3) — 創建數據模擬器 & 數據推理",
+    "FLUX 3 Image (10/1) — 創建圖片美術",
+    "Tripo P2.0 (10/5) — 創建遊戲模組"
   ],
   "changesToday_en": [
-    "GPT-6.1 Sol (9/28) — Overall AI Model Ranking",
-    "Claude Opus 5.5 (9/22) — Overall AI Model Ranking",
     "Claude Opus 5.5 (9/22) — Game-Building Assistants",
     "GPT-6.1 Sol (9/29) — Game-Building Assistants",
-    "Lyria 3.5 (10/2) — Sound Effects & Audio",
-    "Microsoft Copilot Agent 365 Enterprise Suite (9/25) — AI Tool Combos"
+    "Claude Opus 5.5 (9/22) — Data Simulators & Reasoning",
+    "GPT-6 Astra (9/3) — Data Simulators & Reasoning",
+    "FLUX 3 Image (10/1) — Image & Art Generation",
+    "Tripo P2.0 (10/5) — 3D Asset Generation"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA、圖片=LMArena Arena)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -103,78 +103,78 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月(2026 年 10 月)無新發佈的旗艦模型，故列出最近期(2026 年 9 月)正式發佈的模型。",
+        "note_en": "No new flagship models were officially released in October 2026 (as of Oct 6), so models officially released in September 2026 are listed.",
         "items": [
           {
             "rank": 1,
             "name": "GPT-6.1 Sol",
-            "version": "6.1 Sol",
+            "version": "GPT-6.1 Sol",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
-            "date": "9/28",
-            "date_en": "Sep 28",
-            "isNew": true,
+            "date": "9/29",
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "GPT-6 Sol 的重大升級,在代理編碼、電腦使用和專業工作方面表現卓越,以更低成本提供接近 Astra 的智能。",
-            "why_en": "A major upgrade to GPT-6 Sol, offering exceptionally strong performance in agentic coding, computer use, and professional work, delivering near-Astra intelligence at a lower cost."
+            "why": "OpenAI 的最新旗艦模型，在性能和成本效益上超越了先前的 GPT-6 系列。",
+            "why_en": "OpenAI's latest flagship model, surpassing previous GPT-6 series in performance and cost-effectiveness."
           },
           {
             "rank": 2,
             "name": "Claude Opus 5.5",
-            "version": "5.5",
+            "version": "Opus 5.5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "9/22",
-            "date_en": "Sep 22",
-            "isNew": true,
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "最新的 Opus 模型,專為長時間代理編碼和知識工作而設計,相較於 Opus 5 價格降低 20%,性能更優。",
-            "why_en": "The newest Opus model, built for long-running agentic coding and knowledge work, offering improved performance and a 20% price reduction compared to Opus 5."
+            "why": "Anthropic 新一代頂級旗艦模型，在整體智能和程式碼生成基準測試中領先。",
+            "why_en": "Anthropic's next-generation top-tier flagship model, leading benchmarks in overall intelligence and coding."
           },
           {
             "rank": 3,
-            "name": "GPT-6 Astra Ultrafast",
-            "version": "Ultrafast",
+            "name": "GPT-6 Astra",
+            "version": "GPT-6 Astra",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
-            "date": "10/1",
-            "date_en": "Oct 1",
-            "isNew": true,
+            "date": "9/3",
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "旗艦 GPT-6 Astra 的超快速變體,在關鍵工作流程中提供高達 8 倍的令牌生成速度。",
-            "why_en": "An ultrafast variant of the flagship GPT-6 Astra, delivering up to 8x faster token generation for critical workflows."
+            "why": "OpenAI GPT-6 系列的首個模型，為能力設定了新的前沿上限。",
+            "why_en": "OpenAI's initial GPT-6 generation model, setting a new frontier ceiling for capability."
           },
           {
             "rank": 4,
-            "name": "Claude Fable 5.1",
-            "version": "5.1",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/1",
-            "date_en": "Sep 1",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "最新的 Fable 模型,針對要求嚴苛的編碼、知識工作和長期問題解決任務進行了增強。",
-            "why_en": "The latest Fable model, enhanced for demanding coding, knowledge work, and long-running problem-solving tasks."
-          },
-          {
-            "rank": 5,
             "name": "Claude Sonnet 5.5",
-            "version": "5.5",
+            "version": "Sonnet 5.5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "9/27",
-            "date_en": "Sep 27",
-            "isNew": true,
+            "date_en": null,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "以一半的價格提供接近 Opus 級別的性能,是一款高效且功能強大的模型。",
-            "why_en": "Offers near-Opus level performance at half the price, making it a highly efficient and capable model."
+            "why": "Claude Sonnet 的增強版本，為通用任務提供更快、更高效的性能。",
+            "why_en": "An enhanced version of Claude Sonnet, offering faster and more efficient performance for general tasks."
+          },
+          {
+            "rank": 5,
+            "name": "Claude Fable 5.1",
+            "version": "Fable 5.1",
+            "vendor": "Anthropic",
+            "vendor_en": "Anthropic",
+            "date": "9/1",
+            "date_en": null,
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Fable 5 的更新版本，針對高要求程式碼生成、知識工作和長時間任務進行了優化。",
+            "why_en": "An updated version of Fable 5, optimized for demanding coding, knowledge work, and long-running tasks."
           }
         ]
       }
@@ -246,8 +246,8 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月發佈不足 5 個,已用最近期(近 30-60 天)補足。SoonLab 2.0 於 2026 年 8 月發佈,但其作為專為遊戲創建設計的 AI 平台,仍是本範疇近期最相關且廣為人知的更新。",
+        "note_en": "Fewer than 5 new releases this month, supplemented with recent (last 30-60 days) items. SoonLab 2.0 was released in August 2026, but as an AI-native platform specifically for game creation, it remains a highly relevant and widely recognized recent update in this category.",
         "items": [
           {
             "rank": 1,
@@ -258,10 +258,10 @@ window.DIGEST = {
             "date": "9/22",
             "date_en": "Sep 22",
             "isNew": true,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "Anthropic 最強大的模型，在 SWE-bench Pro 上表現卓越，適合複雜的遊戲開發任務。",
-            "why_en": "Anthropic's most powerful model, excelling on SWE-bench Pro, suitable for complex game development tasks."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Anthropic 的旗艦模型更新,在 SWE-bench Pro 上取得最高分 89.9%,並提供更具成本效益的定價,適用於複雜的遊戲邏輯和系統設計。",
+            "why_en": "Anthropic's flagship model update, achieving the highest score of 89.9% on SWE-bench Pro, with more cost-effective pricing, suitable for complex game logic and system design."
           },
           {
             "rank": 2,
@@ -272,15 +272,15 @@ window.DIGEST = {
             "date": "9/29",
             "date_en": "Sep 29",
             "isNew": true,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "OpenAI 最新發布的模型，在代理式編碼和專業工作上表現出色，接近 Astra 的智能但成本更低。",
-            "why_en": "OpenAI's latest release, with exceptionally strong performance on agentic coding and professional work, offering near-Astra intelligence at a lower cost."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "OpenAI Dev Day 2026 發佈,專為代理式編碼和專業工作設計,提供接近 Astra 的智能但成本更低,非常適合遊戲開發的編碼任務。",
+            "why_en": "Released at OpenAI Dev Day 2026, designed for agentic coding and professional work, offering near-Astra intelligence at a lower cost, highly suitable for game development coding tasks."
           },
           {
             "rank": 3,
             "name": "OpenAI Dots",
-            "version": "AI Agent System",
+            "version": "Agent System",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
             "date": "9/29",
@@ -288,36 +288,36 @@ window.DIGEST = {
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "全新的 AI 代理系統，可在後台跨應用程式執行任務，有助於自動化遊戲開發流程。",
-            "why_en": "A new AI agent system capable of executing tasks across applications in the background, useful for automating game development workflows."
+            "why": "在 OpenAI Dev Day 2026 推出,作為一個常駐的 AI 代理系統,能夠與軟體互動並執行任務,對於自動化遊戲開發工作流程具有巨大潛力。",
+            "why_en": "Introduced at OpenAI Dev Day 2026, an always-on AI agent system capable of interacting with software and executing tasks, holding immense potential for automating game development workflows."
           },
           {
             "rank": 4,
-            "name": "Claude Fable 5.1",
-            "version": "5.1",
+            "name": "Claude Code",
+            "version": "v2.1.289",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "10/2",
-            "date_en": "Oct 2",
-            "isNew": true,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "Claude Fable 5 的更新版本，Fable 5 曾被評為最強大的遊戲開發模型，此更新強化其地位。",
-            "why_en": "An updated version of Claude Fable 5, which was previously rated as the most capable game development model, reinforcing its position."
-          },
-          {
-            "rank": 5,
-            "name": "Claude Sonnet 5.5",
-            "version": "5.5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/28",
-            "date_en": "Sep 28",
+            "date": "10/3",
+            "date_en": "Oct 3",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Anthropic 的高效能模型，適合日常、範圍明確的編碼任務，提供成本效益高的遊戲開發解決方案。",
-            "why_en": "Anthropic's high-performance model suitable for everyday, well-scoped coding tasks, offering a cost-effective solution for game development."
+            "why": "Anthropic 專用編碼代理的最新更新,解決了會話恢復和結構化輸出問題,對於長時間運行的代理式編碼會話至關重要。",
+            "why_en": "Latest update to Anthropic's dedicated coding agent, addressing session recovery and structured output issues, crucial for reliable, long-running agentic coding sessions."
+          },
+          {
+            "rank": 5,
+            "name": "SoonLab 2.0",
+            "version": "2.0",
+            "vendor": "SoonLab",
+            "vendor_en": "SoonLab",
+            "date": "8/15",
+            "date_en": "Aug 15",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "一個 AI 原生平台,可透過自然語言創建和分享可玩遊戲,並擴展到 3D 遊戲,提供代理引導的工作流程,直接針對遊戲創建助手範疇。",
+            "why_en": "An AI-native platform for creating and sharing playable games from natural language, expanding to 3D games with an agent-guided workflow, directly addressing the game creation assistant category."
           }
         ]
       }
@@ -390,78 +390,78 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 10 月)發佈的相關模型不足 5 個，故以近期(2026 年 9 月)發佈的模型補足。",
-        "note_en": "Fewer than 5 relevant models were released in October 2026, so recent (September 2026) releases are included to complete the list.",
+        "note": null,
+        "note_en": null,
         "items": [
           {
             "rank": 1,
-            "name": "GPT-6 Astra",
-            "version": null,
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "9/3",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "作為新一代的旗艦模型，GPT-6 Astra 在前沿推理、複雜多步驟推理和專業工作中表現卓越，是數據推理的領導者。",
-            "why_en": "As a new generation flagship model, GPT-6 Astra excels in frontier reasoning, complex multi-step reasoning, and professional work, making it a leader in data reasoning."
-          },
-          {
-            "rank": 2,
             "name": "Claude Opus 5.5",
-            "version": null,
+            "version": "5.5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "9/22",
             "date_en": null,
-            "isNew": false,
+            "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "在多個 AI 模型排行榜上品質指數領先，擅長進階編碼和知識工作，為複雜的數據推理任務提供強大能力。",
-            "why_en": "Leading in quality index across multiple AI model leaderboards, it excels in advanced coding and knowledge work, providing robust capabilities for complex data reasoning tasks."
+            "why": "在 Artificial Analysis 智能指數上獲得最高分，並在多個編碼和知識工作基準測試中領先，展現頂級推理能力。",
+            "why_en": "Achieved the highest score on the Artificial Analysis Intelligence Index and leads multiple coding and knowledge work benchmarks, demonstrating top-tier reasoning capabilities."
           },
           {
-            "rank": 3,
-            "name": "Kolibri",
-            "version": null,
-            "vendor": "Aleph Alpha",
-            "vendor_en": "Aleph Alpha",
-            "date": "10/3",
+            "rank": 2,
+            "name": "GPT-6 Astra",
+            "version": "Astra",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "9/3",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "專為推理、數學和代理行為而設計，支援長達 1M tokens 的上下文長度，適用於主權任務關鍵型工作。",
-            "why_en": "Designed specifically for reasoning, mathematics, and agentic behavior, supporting context lengths up to 1M tokens, suitable for sovereign mission-critical work."
+            "why": "OpenAI 的旗艦模型，專為前沿推理、電腦使用、編碼和專業工作而設計，處理最困難的端到端任務。",
+            "why_en": "OpenAI's flagship model, designed for frontier reasoning, computer use, coding, and professional work, handling the hardest end-to-end tasks."
+          },
+          {
+            "rank": 3,
+            "name": "GPT-6.1 Sol",
+            "version": "6.1 Sol",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "9/29",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "在代理編碼、電腦使用和專業工作方面幾乎與 GPT-6 Astra 匹敵，但成本更低，提供高推理能力與更好的性價比。",
+            "why_en": "Nearly matches GPT-6 Astra's intelligence on agentic coding, computer use, and professional work at a lower cost, offering high reasoning capability with better value."
           },
           {
             "rank": 4,
             "name": "Claude Fable 5.1",
-            "version": null,
+            "version": "5.1",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
             "date": "9/1",
             "date_en": null,
-            "isNew": false,
+            "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "專為高要求編碼、知識工作、研究和長期問題解決而設計，在處理複雜推理任務方面表現出色。",
-            "why_en": "Engineered for demanding coding, knowledge work, research, and long-running problem-solving, demonstrating strong performance in complex reasoning tasks."
+            "why": "專為最困難的推理和長時間運行的自主代理任務而構建，在複雜問題解決方面表現出色。",
+            "why_en": "Built for the hardest reasoning and long-running autonomous agent tasks, excelling in complex problem-solving."
           },
           {
             "rank": 5,
-            "name": "Cloudflare Clef",
-            "version": null,
-            "vendor": "Cloudflare",
-            "vendor_en": "Cloudflare",
+            "name": "TypeSafe Jev",
+            "version": "1.0",
+            "vendor": "TypeSafe AI",
+            "vendor_en": "TypeSafe AI",
             "date": "10/1",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為決策模型，它能為固定答案集返回機率，非常適合路由、分類和安全檢查等機率與數據推理應用。",
-            "why_en": "As a decision model, it returns probabilities for a fixed set of answers, making it highly suitable for probability and data reasoning applications such as routing, triage, and safety checks."
+            "why": "創新的決策專用模型，直接返回帶有概率分佈的類型化決策，非常適合數據推理和自動化動作選擇。",
+            "why_en": "An innovative decision-only model that directly returns typed, probabilistic decisions with confidence values, ideal for data reasoning and automated action selection."
           }
         ]
       }
@@ -531,11 +531,25 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "截至 2026 年 10 月 4 日，本月尚未有正式發佈的圖片生成模型。此列表包含最近 30-60 天內正式發佈且廣受關注的模型和工具。",
-        "note_en": "As of October 4, 2026, there are no officially released image generation models this month. This list includes widely recognized models and tools formally released within the last 30-60 days.",
+        "note": "本月 (2026 年 10 月) 僅有一個圖片生成模型正式發佈，其餘名額由近 30-60 天內發佈的優秀模型補足。",
+        "note_en": "Only one image generation model was officially released this month (October 2026); the remaining spots are filled by excellent models released within the last 30-60 days.",
         "items": [
           {
             "rank": 1,
+            "name": "FLUX 3 Image",
+            "version": "3 Image",
+            "vendor": "Black Forest Labs",
+            "vendor_en": "Black Forest Labs",
+            "date": "10/1",
+            "date_en": null,
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "本月最新發佈，提供精細的像素級控制、多輪迭代編輯和 4K 輸出，特別適合廣告佈局和產品圖像。",
+            "why_en": "Newly released this month, offering granular pixel-level control, multi-turn iterative editing, and 4K output, especially suited for advertising layouts and product imagery."
+          },
+          {
+            "rank": 2,
             "name": "GPT Image 2.5 Sunburst",
             "version": "2.5 Sunburst",
             "vendor": "OpenAI",
@@ -543,66 +557,52 @@ window.DIGEST = {
             "date": "9/8",
             "date_en": null,
             "isNew": false,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "LMArena 榜首,提供全面的圖像生成與編輯能力。",
-            "why_en": "Tops LMArena, offering comprehensive image generation and editing capabilities."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "9月發佈，為 OpenAI 最先進的圖片模型，在圖片生成和編輯方面表現卓越，細節更銳利、編輯更精確。",
+            "why_en": "Released in September, OpenAI's most advanced image model, excelling in image generation and editing with sharper details and more precise editing."
           },
           {
-            "rank": 2,
-            "name": "Google Pics",
-            "version": "GA",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "9/1",
+            "rank": 3,
+            "name": "GPT Image 2.5 Flare",
+            "version": "2.5 Flare",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "9/8",
             "date_en": null,
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "整合 Google 最佳 AI 圖像模型,提供 Workspace 內圖像生成與精確編輯。",
-            "why_en": "Integrates Google's best AI image models, providing image generation and precise editing within Workspace."
-          },
-          {
-            "rank": 3,
-            "name": "Nano Banana 2",
-            "version": "Gemini 3.1 Flash Image",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "2/26",
-            "date_en": null,
-            "isNew": false,
-            "overlap": "整體 #4",
-            "overlap_en": "Overall #4",
-            "why": "具成本效益的寫實圖像模型,提供 4K 解析度與角色一致性。",
-            "why_en": "Cost-effective photorealistic image model, offering 4K resolution and character consistency."
+            "why": "9月發佈，為 GPT Image 2.5 系列的快速版本，提供高質量圖片生成，適合快速原型設計。",
+            "why_en": "Released in September, the faster variant of the GPT Image 2.5 series, offering high-quality image generation suitable for rapid prototyping."
           },
           {
             "rank": 4,
+            "name": "MAI-Image-2.6",
+            "version": "2.6",
+            "vendor": "Microsoft AI",
+            "vendor_en": "Microsoft AI",
+            "date": "8/10",
+            "date_en": null,
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "8月發佈，在 Arena ELO 評分中表現出色，能從文字或圖片提示創建令人驚嘆的設計就緒圖像，且價格更低。",
+            "why_en": "Released in August, it performs excellently in Arena ELO scores, creating stunning, design-ready images from text or photo prompts at a lower price."
+          },
+          {
+            "rank": 5,
             "name": "Grok Imagine Image 2.0",
             "version": "2.0",
             "vendor": "xAI",
             "vendor_en": "xAI",
-            "date": "8/2026",
-            "date_en": null,
+            "date": "8月",
+            "date_en": "August",
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "表現優異,尤其擅長生成設計精良的海報。",
-            "why_en": "Excellent performance, particularly adept at generating well-designed posters."
-          },
-          {
-            "rank": 5,
-            "name": "Qwen-Image 3.0",
-            "version": "3.0",
-            "vendor": "Alibaba",
-            "vendor_en": "Alibaba",
-            "date": "8/5",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "阿里巴巴的圖像模型,擅長處理密集文字與資訊圖表。",
-            "why_en": "Alibaba's image model, excelling in dense text and infographic generation."
+            "why": "8月發佈，提供出色的性價比，在圖片生成和編輯方面表現強勁。",
+            "why_en": "Released in August, it offers an excellent price-to-quality ratio and strong performance in image generation and editing."
           }
         ]
       }
@@ -677,9 +677,80 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 10 月)發佈的項目不足 5 個，因此補足了近期 (2026 年 9 月及之前) 的發佈。",
-        "note_en": "Fewer than 5 items were released this month (October 2026), so recent releases from September 2026 and earlier have been included to complete the list.",
-        "items": []
+        "note": "本月（2026 年 10 月）正式發佈的 AI 影片生成模型數量不足，因此榜單中包含近期（近 30-60 天）發佈的優秀模型以補足數量。",
+        "note_en": "The number of officially released AI video generation models in October 2026 was insufficient, so the list includes excellent models released recently (within the last 30-60 days) to complete the ranking.",
+        "items": [
+          {
+            "rank": 1,
+            "name": "PixVerse R2",
+            "version": "R2",
+            "vendor": "AIsphere (PixVerse)",
+            "vendor_en": "AIsphere (PixVerse)",
+            "date": "9/22",
+            "date_en": "Sep 22",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "作為即時世界模型推出，高度適用於遊戲影片的環境與互動生成。",
+            "why_en": "Introduced as a Real-Time World Model, highly suitable for generating environments and interactions in game videos."
+          },
+          {
+            "rank": 2,
+            "name": "Pika (Unified Creative Platform)",
+            "version": "平台更新",
+            "vendor": "Pika Labs",
+            "vendor_en": "Pika Labs",
+            "date": "9/17",
+            "date_en": "Sep 17",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Pika Labs 將其平台重塑為統一創意工作室，整合多種領先模型，提供更全面的創作體驗，適合風格化與動畫內容。",
+            "why_en": "Pika Labs relaunched its platform as a unified creative studio, integrating multiple leading models to offer a more comprehensive creative experience, suitable for stylized and animated content."
+          },
+          {
+            "rank": 3,
+            "name": "Wan 3.0",
+            "version": "3.0",
+            "vendor": "Alibaba (阿里巴巴)",
+            "vendor_en": "Alibaba",
+            "date": "8/24",
+            "date_en": "Aug 24",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "在整體品質上表現卓越，支援長單次生成影片及豐富的參考輸入，適用於高品質動畫製作。",
+            "why_en": "Excels in overall quality, supporting long single-pass video generation and rich reference inputs, suitable for high-quality animation production."
+          },
+          {
+            "rank": 4,
+            "name": "MiniMax H3",
+            "version": "H3",
+            "vendor": "MiniMax",
+            "vendor_en": "MiniMax",
+            "date": "8/3",
+            "date_en": "Aug 3",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "作為強大的開源模型，提供高品質影片生成，支援原生立體音效，為動畫創作者提供靈活選擇。",
+            "why_en": "A powerful open-weight model offering high-quality video generation with native stereo sound, providing a flexible option for animation creators."
+          },
+          {
+            "rank": 5,
+            "name": "Dreamina Seedance 2.5",
+            "version": "2.5",
+            "vendor": "ByteDance (字節跳動)",
+            "vendor_en": "ByteDance",
+            "date": "7/31",
+            "date_en": "Jul 31",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "專為更長、更可控的 AI 影片創作而設計，支援多模態參考和精確編輯，非常適合故事敘述型遊戲影片。",
+            "why_en": "Designed for longer, more controllable AI video creation, with support for multimodal references and precise editing, ideal for narrative-driven game videos."
+          }
+        ]
       }
     },
     {
@@ -898,78 +969,64 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 10 月)未發現正式發佈的新模型，故列表由近期 (2026 年 8-9 月) 的正式發佈補足。",
-        "note_en": "No new GA models were found for this month (October 2026), so the list is supplemented with recent GA releases from August-September 2026.",
+        "note": "本月(2026 年 10 月)及近期(近 30-60 天)僅有 4 個符合條件的正式發佈項目。",
+        "note_en": "Only 4 officially released items meeting the criteria were found for this month (October 2026) and the recent period (last 30-60 days).",
         "items": [
           {
             "rank": 1,
-            "name": "Tripo",
+            "name": "Tripo P2.0",
             "version": "P2.0",
             "vendor": "Tripo AI",
             "vendor_en": "Tripo AI",
-            "date": "9/22",
-            "date_en": null,
-            "isNew": false,
+            "date": "10/5",
+            "date_en": "Oct 5",
+            "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "業界首創原生四邊形網格生成，大幅提升遊戲資產的生產就緒性。",
-            "why_en": "Industry-first native quad mesh generation, significantly enhancing production readiness for game assets."
+            "why": "首個原生生成四邊形網格的 AI 3D 模型，顯著提升了生成資產在專業製作流程中的可用性。",
+            "why_en": "The first AI 3D model to natively generate quad meshes, significantly improving the usability of generated assets in professional production pipelines."
           },
           {
             "rank": 2,
-            "name": "Meshy",
-            "version": "7.1",
-            "vendor": "Meshy AI",
-            "vendor_en": "Meshy AI",
-            "date": "9/10",
-            "date_en": null,
-            "isNew": false,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "推出 Ultra 4K 模式，將圖像轉 3D 的幾何解析度提升至 4096³。",
-            "why_en": "Introduced Ultra 4K mode, boosting image-to-3D geometry resolution to 4096³."
+            "name": "TRELLIS.2",
+            "version": "2",
+            "vendor": "Microsoft",
+            "vendor_en": "Microsoft",
+            "date": "10/2",
+            "date_en": "Oct 2",
+            "isNew": true,
+            "overlap": "整體 #5",
+            "overlap_en": "Overall #5",
+            "why": "微軟發布的 40 億參數開源模型，能將單一圖像快速轉換為高解析度、帶 PBR 材質的 3D 資產。",
+            "why_en": "Microsoft's 4-billion-parameter open-source model that rapidly converts a single image into high-resolution, PBR-textured 3D assets."
           },
           {
             "rank": 3,
-            "name": "3D AI Studio",
-            "version": "Platform Update",
-            "vendor": "3D AI Studio",
-            "vendor_en": "3D AI Studio",
-            "date": "9/15",
-            "date_en": null,
+            "name": "Meshy 7.1",
+            "version": "7.1 (Ultra 4K)",
+            "vendor": "Meshy",
+            "vendor_en": "Meshy",
+            "date": "9/10",
+            "date_en": "Sep 10",
             "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "作為整合多個領先 AI 模型的一站式平台，提供完整的遊戲資產生成管線。",
-            "why_en": "As a one-stop platform integrating multiple leading AI models, it offers a complete pipeline for game asset generation."
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "Meshy 7 的升級版本，引入 Ultra 4K 模式，將幾何生成解析度提升至 4096³，提供更精細的細節。",
+            "why_en": "An upgrade to Meshy 7, introducing Ultra 4K mode to scale geometry generation resolution to 4096³, offering finer details."
           },
           {
             "rank": 4,
-            "name": "AssetForge AI",
-            "version": "1.0",
-            "vendor": "itch.io",
-            "vendor_en": "itch.io",
-            "date": "8/5",
-            "date_en": null,
+            "name": "Meshy 7",
+            "version": "7",
+            "vendor": "Meshy",
+            "vendor_en": "Meshy",
+            "date": "8/10",
+            "date_en": "Aug 10",
             "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "全新發佈的獨立 AI 工具，專注於生成高品質的遊戲內容，包括角色、武器等。",
-            "why_en": "Newly released standalone AI tool focused on generating high-quality game content, including characters and weapons."
-          },
-          {
-            "rank": 5,
-            "name": "SelfCAD AI Assistant",
-            "version": "N/A (Feature update)",
-            "vendor": "SelfCAD",
-            "vendor_en": "SelfCAD",
-            "date": "8/25",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "新增 AI 助理功能，支援自然語言描述生成 3D 模型，提升設計效率。",
-            "why_en": "Added AI Assistant feature, supporting natural language description for 3D model generation, enhancing design efficiency."
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "Meshy 推出的新基礎模型，專注於提升輸入圖像與生成 3D 結果之間的一致性。",
+            "why_en": "Meshy's new foundation model focused on improving alignment between input images and generated 3D results."
           }
         ]
       }
@@ -1190,13 +1247,27 @@ window.DIGEST = {
         }
       ],
       "monthly": {
-        "note": "本月新發佈不足 5 個，故以近期 (9 月) 發佈補足。",
-        "note_en": "Fewer than 5 new releases this month, so recent (September) releases are included to complete the list.",
+        "note": null,
+        "note_en": null,
         "items": [
           {
             "rank": 1,
-            "name": "Lyria 3.5",
-            "version": "音樂生成模型",
+            "name": "Suno",
+            "version": "v6 / v6-wild / v6-mini",
+            "vendor": "Suno",
+            "vendor_en": "Suno",
+            "date": "9/9",
+            "date_en": "Sep 9",
+            "isNew": true,
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "Suno 的旗艦音樂生成模型重大更新,與華納音樂集團等業界夥伴共同開發,提供更佳的音樂創作體驗。",
+            "why_en": "Major update to Suno's flagship music generation model, co-developed with industry partners like Warner Music Group, offering an enhanced music creation experience."
+          },
+          {
+            "rank": 2,
+            "name": "Lyria",
+            "version": "3.5",
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "10/2",
@@ -1204,55 +1275,41 @@ window.DIGEST = {
             "isNew": true,
             "overlap": "整體 #5",
             "overlap_en": "Overall #5",
-            "why": "Google 最具表現力的音樂生成模型，能創造更豐富的編曲、連貫的歌曲及個人化音訊，並整合至 Gemini、Vertex AI 和 AI Studio。",
-            "why_en": "Google's most expressive music generation model, producing richer arrangements, coherent songs, and personalized audio, integrated into Gemini, Vertex AI, and AI Studio."
+            "why": "Google 音樂生成模型的顯著升級,能產生更豐富的編曲和連貫的歌曲,並整合至多個 Google 產品中。",
+            "why_en": "A significant upgrade to Google's music generation model, capable of producing richer arrangements and coherent songs, integrated across multiple Google products."
           },
           {
-            "rank": 2,
-            "name": "ElevenLabs v4 / v4 Turbo",
-            "version": "語音生成模型",
+            "rank": 3,
+            "name": "Eleven",
+            "version": "v4 / v4 Turbo",
             "vendor": "ElevenLabs",
             "vendor_en": "ElevenLabs",
             "date": "9/28",
             "date_en": "Sep 28",
-            "isNew": false,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "提供更高品質、更具表現力的語音，加快即時使用速度並改進語音複製功能。",
-            "why_en": "Offers higher-quality, more expressive speech, faster real-time use, and improved voice cloning."
-          },
-          {
-            "rank": 3,
-            "name": "Suno v6",
-            "version": "音樂生成模型",
-            "vendor": "Suno",
-            "vendor_en": "Suno",
-            "date": "9/10",
-            "date_en": "Sep 10",
-            "isNew": false,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "新一代音樂生成模型，與華納、BMG 和 Believe 簽訂授權協議，提供更佳的音樂創作能力。",
-            "why_en": "Next-generation music generation model with improved capabilities, built with licensed data from Warner, BMG, and Believe."
+            "isNew": true,
+            "overlap": "整體 #1 (v3 voice)",
+            "overlap_en": "Overall #1 (v3 voice)",
+            "why": "ElevenLabs 旗艦語音模型的重大升級,提升了語音表現力、真實感及多語言支援,適用於文字轉語音和語音複製。",
+            "why_en": "A substantial upgrade to ElevenLabs' flagship voice models, enhancing expressiveness, realism, and multilingual support for text-to-speech and voice cloning."
           },
           {
             "rank": 4,
-            "name": "MAI-Voice models",
-            "version": "語音生成模型",
-            "vendor": "Microsoft",
-            "vendor_en": "Microsoft",
+            "name": "MAI-Voice",
+            "version": "2.1 / 2.1-Flash",
+            "vendor": "Microsoft AI",
+            "vendor_en": "Microsoft AI",
             "date": "10/1",
             "date_en": "Oct 1",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "提供準確、快速、低成本的音訊生成，適用於建構最佳的對話式語音代理。",
-            "why_en": "Offers accurate, fast, and low-cost audio generation for building optimal conversational voice agents."
+            "why": "微軟推出的全新多語言文字轉語音模型,具備跨語言一致語音和低延遲高效能等先進功能。",
+            "why_en": "New multilingual text-to-speech models from Microsoft, offering advanced features such as consistent voice across languages and optimized low-latency performance."
           },
           {
             "rank": 5,
-            "name": "Gemini 3.8 Flash TTS / Flash-Lite TTS",
-            "version": "文字轉語音模型",
+            "name": "Gemini Live",
+            "version": "3.8 Live / 3.8 Live Extended Thinking",
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "10/2",
@@ -1260,8 +1317,8 @@ window.DIGEST = {
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Google 最具表現力的文字轉語音模型，可生成自訂語音並直接引導場景對話。",
-            "why_en": "Google's most expressive text-to-speech models for generating custom voices and directing scene dialogue."
+            "why": "Google 推出的全新語音轉語音模型,專注於自然、低延遲的對話式 AI 體驗,並支援多步驟推理。",
+            "why_en": "New speech-to-speech models from Google, focusing on natural, low-latency conversational AI experiences with multi-step reasoning capabilities."
           }
         ]
       }
