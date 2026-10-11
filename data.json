@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-10-11T03:36:24+08:00",
-  "updatedDateLabel": "2026 年 10 月 11 日",
+  "updatedAt": "2026-10-12T03:46:50+08:00",
+  "updatedDateLabel": "2026 年 10 月 12 日",
   "month": "2026 年 10 月",
   "month_en": "October 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/10/11 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/10/11",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/10/12 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/10/12",
   "changesToday": [
     "Google Playground (10/7) — 創建遊戲的助手",
-    "JetBrains Mellum2.1 Thinking (10/8) — 創建遊戲的助手",
     "Jev Router (10/1) — 創建數據模擬器 & 數據推理",
     "Celeris-1 Decision (10/8) — 創建數據模擬器 & 數據推理",
-    "GPT Image 2.5 Sunburst (9/8) — 創建圖片美術",
-    "GPT Image 2.5 Flare (9/8) — 創建圖片美術"
+    "PixVerse R2 (Sep 22) — 創建遊戲影片",
+    "Kling 4.0 (October 2026) — 創建遊戲影片",
+    "InstructMesh (10/1) — 創建遊戲模組"
   ],
   "changesToday_en": [
     "Google Playground (10/7) — Game-Building Assistants",
-    "JetBrains Mellum2.1 Thinking (10/8) — Game-Building Assistants",
     "Jev Router (10/1) — Data Simulators & Reasoning",
     "Celeris-1 Decision (10/8) — Data Simulators & Reasoning",
-    "GPT Image 2.5 Sunburst (9/8) — Image & Art Generation",
-    "GPT Image 2.5 Flare (9/8) — Image & Art Generation"
+    "PixVerse R2 (Sep 22) — Game / Stylized Video",
+    "Kling 4.0 (October 2026) — Game / Stylized Video",
+    "InstructMesh (10/1) — 3D Asset Generation"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA、圖片=LMArena Arena)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -245,74 +245,78 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 10 月)發佈的項目不足 5 個，已用最近期(2026 年 9 月下旬)的相關發佈補足。/Less than 5 items were released in October 2026, so the list has been supplemented with relevant releases from late September 2026.",
-        "note_en": "Less than 5 items were released in October 2026, so the list has been supplemented with relevant releases from late September 2026.",
+        "note": "本月(2026 年 10 月)發佈的項目不足 5 個，因此使用近期(9 月底)發佈的項目補足。/Fewer than 5 items were released this month (October 2026), so recent releases (late September) were used to complete the list.",
+        "note_en": "Fewer than 5 items were released this month (October 2026), so recent releases (late September) were used to complete the list.",
         "items": [
           {
             "rank": 1,
             "name": "Google Playground",
-            "version": "平台/Platform",
+            "version": "Platform",
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "10/7",
-            "date_en": null,
+            "date_en": "Oct 7",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "一個無需編碼即可透過自然語言提示生成和自訂可玩網頁遊戲的實驗性平台。/An experimental platform for generating and customizing playable web games using natural language prompts without coding.",
-            "why_en": "An experimental platform for generating and customizing playable web games using natural language prompts without coding."
+            "why": "與 Unity 合作推出的實驗性平台，允許用戶透過自然語言提示創建 2D/3D 網頁遊戲，無需編碼，大幅降低遊戲開發門檻。/An experimental platform launched in partnership with Unity, allowing users to create 2D/3D web games with natural language prompts, no coding required, significantly lowering the barrier to game development.",
+            "why_en": "An experimental platform launched in partnership with Unity, allowing users to create 2D/3D web games with natural language prompts, no coding required, significantly lowering the barrier to game development."
           },
           {
             "rank": 2,
-            "name": "JetBrains Mellum2.1 Thinking",
-            "version": "12B MoE 模型/12B MoE Model",
-            "vendor": "JetBrains",
-            "vendor_en": "JetBrains",
-            "date": "10/8",
-            "date_en": null,
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "一個開源的編碼模型，從代碼編寫轉變為像初級工程師一樣工作，具備探索、編輯、運行測試和自我檢查的能力。/An open-source coding model that shifts from code writing to acting like a junior engineer, capable of exploring, editing, running tests, and self-checking."
+            "name": "Claude Opus 5.5",
+            "version": "5.5",
+            "vendor": "Anthropic",
+            "vendor_en": "Anthropic",
+            "date": "9/28",
+            "date_en": "Sep 28",
+            "isNew": false,
+            "overlap": "整體 #1 (Opus 5 的後繼版本)",
+            "overlap_en": "Overall #1 (Successor to Opus 5)",
+            "why": "在 SWE-bench Verified 軟體工程基準測試中以 98.20% 的分數領先，並在 LMArena.ai 上被評為頂級推理和代理編碼模型，極大地提升了 AI 編程能力。/Leads the SWE-bench Verified software engineering benchmark with a score of 98.20% and is rated as a top-tier reasoning and agentic coding model on LMArena.ai, significantly enhancing AI programming capabilities.",
+            "why_en": "Leads the SWE-bench Verified software engineering benchmark with a score of 98.20% and is rated as a top-tier reasoning and agentic coding model on LMArena.ai, significantly enhancing AI programming capabilities."
           },
           {
             "rank": 3,
-            "name": "GPT-6.1 Sol",
-            "version": "模型/Model",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "9/22",
-            "date_en": null,
-            "isNew": false,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "一個功能強大且更輕量、更經濟的語言模型，在代理編碼、電腦使用和專業工作方面接近 GPT-6 Astra 的智能。/A powerful, lighter, and cheaper language model with near-Astra intelligence for agentic coding, computer use, and professional work."
-          },
-          {
-            "rank": 4,
-            "name": "Claude Opus 5.5",
-            "version": "模型/Model",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/22",
-            "date_en": null,
-            "isNew": false,
-            "overlap": "整體 #1",
-            "overlap_en": "Overall #1",
-            "why": "Claude Opus 5 的升級版本，提供更優的價格和推薦用於大多數工作負載，具備強大的編碼能力。/An upgraded version of Claude Opus 5, offering better pricing and recommended for most workloads, with strong coding capabilities."
-          },
-          {
-            "rank": 5,
-            "name": "OpenAI Codex (Agents API with Computer Use)",
-            "version": "API 升級/API Upgrade",
+            "name": "OpenAI Agents API with Computer Use",
+            "version": "API Enhancement",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
             "date": "9/29",
-            "date_en": null,
+            "date_en": "Sep 29",
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "Agents API 支援電腦使用，並對 Codex CLI 進行了改進，增強了代理編碼和電腦互動能力。/Agents API now supports computer use, with improvements to Codex CLI, enhancing agentic coding and computer interaction capabilities."
+            "why": "在 DevDay 2026 發布，使 AI 代理能夠直接與軟體互動以完成任務，並整合了 Codex 的多代理功能，對遊戲開發中的自動化編程和 IDE 互動至關重要。/Released at DevDay 2026, enabling AI agents to directly interact with software to complete tasks and integrating Codex's multi-agent capabilities, crucial for automated programming and IDE interaction in game development.",
+            "why_en": "Released at DevDay 2026, enabling AI agents to directly interact with software to complete tasks and integrating Codex's multi-agent capabilities, crucial for automated programming and IDE interaction in game development."
+          },
+          {
+            "rank": 4,
+            "name": "GPT-6.1 Sol",
+            "version": "6.1 Sol",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "9/29",
+            "date_en": "Sep 29",
+            "isNew": false,
+            "overlap": "整體 #3 (GPT-5.5 的後繼版本)",
+            "overlap_en": "Overall #3 (Successor to GPT-5.5)",
+            "why": "在 OpenAI DevDay 2026 發布，被定位為在代理編碼和專業工作方面幾乎與 GPT-6 Astra 匹敵的高性能模型，提供強大的開發助手能力。/Released at OpenAI DevDay 2026, positioned as a high-performance model that nearly matches GPT-6 Astra in agentic coding and professional work, offering powerful development assistant capabilities.",
+            "why_en": "Released at OpenAI DevDay 2026, positioned as a high-performance model that nearly matches GPT-6 Astra in agentic coding and professional work, offering powerful development assistant capabilities."
+          },
+          {
+            "rank": 5,
+            "name": "Claude Sonnet 5.5",
+            "version": "5.5",
+            "vendor": "Anthropic",
+            "vendor_en": "Anthropic",
+            "date": "9/28",
+            "date_en": "Sep 28",
+            "isNew": false,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "於 9 月底發布，以更快的速度和更高的成本效益提供強大的編碼能力，在 Intelligence Index v4.3.2 上表現優異，是遊戲開發中高效編程的理想選擇。/Released in late September, it offers powerful coding capabilities with increased speed and cost-effectiveness, performing excellently on Intelligence Index v4.3.2, making it an ideal choice for efficient programming in game development.",
+            "why_en": "Released in late September, it offers powerful coding capabilities with increased speed and cost-effectiveness, performing excellently on Intelligence Index v4.3.2, making it an ideal choice for efficient programming in game development."
           }
         ]
       }
@@ -526,8 +530,8 @@
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月(2026 年 10 月)有 2 個正式發佈的圖片生成模型,不足 5 個,故以最近期(2026 年 9 月)的 3 個模型補足。",
+        "note_en": "This month (October 2026) saw 2 officially released image generation models. As there were fewer than 5, the list is supplemented with 3 models from the most recent period (September 2026).",
         "items": [
           {
             "rank": 1,
@@ -537,11 +541,11 @@
             "vendor_en": "OpenAI",
             "date": "9/8",
             "date_en": "Sep 8",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "在 Artificial Analysis 的文生圖與圖片編輯排行榜上均位居第一，提供卓越的精準度與控制能力，是 GPT Image 2 (整體 #1) 的後繼版本。",
-            "why_en": "Ranks first on both Artificial Analysis's Text-to-Image and Image Editing leaderboards, offering superior precision and control. It is the successor to GPT Image 2 (Overall #1)."
+            "isNew": false,
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "在 LMArena 和 Artificial Analysis 圖像競技場中均位居榜首,提供極致的圖像生成精度與細節控制。",
+            "why_en": "Ranks highest in both LMArena and Artificial Analysis Image Arena, offering extreme precision and detailed control for image generation."
           },
           {
             "rank": 2,
@@ -551,14 +555,28 @@
             "vendor_en": "OpenAI",
             "date": "9/8",
             "date_en": "Sep 8",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "在 Artificial Analysis 的文生圖與圖片編輯排行榜上均位居第二，以其快速生成能力著稱，是 GPT Image 2 (整體 #1) 的後繼版本。",
-            "why_en": "Ranks second on both Artificial Analysis's Text-to-Image and Image Editing leaderboards, known for its fast generation capabilities. It is the successor to GPT Image 2 (Overall #1)."
+            "isNew": false,
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "作為 GPT Image 2 的升級版,在圖像品質、編輯速度和效率方面有顯著提升,是日常應用的預設首選。",
+            "why_en": "An upgraded version of GPT Image 2, offering significant improvements in image quality, editing speed, and efficiency, making it the default choice for daily applications."
           },
           {
             "rank": 3,
+            "name": "MAI-Image-2.6",
+            "version": "2.6",
+            "vendor": "Microsoft AI",
+            "vendor_en": "Microsoft AI",
+            "date": "9月",
+            "date_en": "Sep",
+            "isNew": false,
+            "overlap": "整體 #5",
+            "overlap_en": "Overall #5",
+            "why": "在圖像編輯和生成方面表現出色,特別在 Artificial Analysis 圖像編輯競技場中名列前茅,提供高質量輸出。",
+            "why_en": "Excels in image editing and generation, ranking high in the Artificial Analysis Image Editing Arena, providing high-quality output."
+          },
+          {
+            "rank": 4,
             "name": "Nano Banana 2.1",
             "version": "2.1",
             "vendor": "Google",
@@ -568,36 +586,22 @@
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Google 最新發佈的圖像生成模型，顯著降低了 API 價格，並增強了編輯工具和寬高比選項。它是 Gemini 3.1 Flash Image (Nano Banana 2, 整體 #4) 的後繼版本。",
-            "why_en": "Google's latest image generation model, significantly cutting API prices and adding sharper editing tools and wider aspect ratios. It is the successor to Gemini 3.1 Flash Image (Nano Banana 2, Overall #4)."
-          },
-          {
-            "rank": 4,
-            "name": "FLUX 3 Image",
-            "version": "3 Image",
-            "vendor": "Black Forest Labs",
-            "vendor_en": "Black Forest Labs",
-            "date": "10/2",
-            "date_en": "Oct 2",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "專為精細控制、多輪迭代編輯和 4K 輸出而設計，在文生圖排行榜上表現出色，強調像素級精準度。",
-            "why_en": "Designed for granular control, multi-turn iterative edits, and 4K outputs, performing well on text-to-image leaderboards with a focus on pixel-level precision."
+            "why": "Google 最新發佈的圖像生成與編輯模型,基於 Gemini 3.6 Flash,顯著提升了視覺品質、文字渲染和編輯一致性。",
+            "why_en": "Google's latest image generation and editing model, built on Gemini 3.6 Flash, significantly improves visual quality, text rendering, and editing consistency."
           },
           {
             "rank": 5,
-            "name": "Muse Spark 1.3",
-            "version": "1.3",
-            "vendor": "Meta",
-            "vendor_en": "Meta",
-            "date": "9/2",
-            "date_en": "Sep 2",
+            "name": "Flux 3 Image",
+            "version": "3 Image",
+            "vendor": "Black Forest Labs",
+            "vendor_en": "Black Forest Labs",
+            "date": "10/1",
+            "date_en": "Oct 1",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Meta 在九月悄然發佈的新模型，是 Muse Image (整體 #2) 的後繼版本，持續提升圖像生成能力。",
-            "why_en": "Meta's new model quietly shipped in September, serving as the successor to Muse Image (Overall #2) and continuing to enhance image generation capabilities."
+            "why": "提供精確的像素級控制,支援結構化 JSON 場景佈局、多達十個參考圖像和高達 4K 的輸出,適合專業生產工作流程。",
+            "why_en": "Offers precise pixel-level control, supporting structured JSON scene layouts, up to ten reference images, and up to 4K output, ideal for professional production workflows."
           }
         ]
       }
@@ -672,78 +676,78 @@
         }
       ],
       "monthly": {
-        "note": "本月 (2026 年 10 月) 僅 Kling 4.0 為全新發佈，其餘項目為近期 (2026 年 7 月至 9 月) 表現優異且持續受關注的模型。",
-        "note_en": "Only Kling 4.0 is a new release in October 2026; other items are high-performing and continuously relevant models from recent months (July to September 2026).",
+        "note": "本月(2026 年 10 月)僅有 2 個符合條件的正式發佈項目。其餘 3 個為近期(近 30-60 天)發佈的熱門項目,用於補足 Top 5 榜單。",
+        "note_en": "Only 2 officially released items met the criteria for this month (October 2026). The remaining 3 are popular recent releases (within the last 30-60 days) to complete the Top 5 list.",
         "items": [
           {
             "rank": 1,
-            "name": "Kling",
+            "name": "PixVerse R2",
+            "version": "R2",
+            "vendor": "AIsphere (PixVerse)",
+            "vendor_en": "AIsphere (PixVerse)",
+            "date": "Sep 22",
+            "date_en": "Sep 22",
+            "isNew": true,
+            "overlap": "整體 #4",
+            "overlap_en": "Overall #4",
+            "why": "從影片生成進化為可互動的即時生成世界,對遊戲開發具顛覆性意義。",
+            "why_en": "Evolved from video generation to interactive, real-time generated worlds, highly disruptive for game development."
+          },
+          {
+            "rank": 2,
+            "name": "Kling 4.0",
             "version": "4.0",
-            "vendor": "快手",
+            "vendor": "快手 (Kuaishou)",
             "vendor_en": "Kuaishou",
-            "date": "2026年10月",
+            "date": "October 2026",
             "date_en": "October 2026",
             "isNew": true,
             "overlap": "整體 #1",
             "overlap_en": "Overall #1",
-            "why": "帶來 30 秒 4K HDR 影片生成、更精準的唇形同步與多達 10 個關鍵影格控制，是本月最受期待的重大更新。",
-            "why_en": "Delivers 30-second 4K HDR video generation, more precise lip-sync, and up to 10 keyframe controls, making it this month's most anticipated major update."
-          },
-          {
-            "rank": 2,
-            "name": "Dreamina Seedance",
-            "version": "2.5",
-            "vendor": "字节跳动",
-            "vendor_en": "ByteDance",
-            "date": "2026年7月31日",
-            "date_en": "July 31, 2026",
-            "isNew": false,
-            "overlap": "整體 #2",
-            "overlap_en": "Overall #2",
-            "why": "雖非本月發佈，但其 30 秒連續生成、多模態參考與精準編輯能力在業界仍具領先地位，並在十月持續被討論。",
-            "why_en": "Although not released this month, its 30-second continuous generation, multimodal references, and precise editing capabilities remain leading in the industry and are actively discussed in October."
+            "why": "強化了分鏡控制、關鍵影格與多模態參考輸入,極適用於遊戲過場動畫與預告片。",
+            "why_en": "Enhanced storyboard control, keyframes, and multimodal reference inputs, highly suitable for game cutscenes and trailers."
           },
           {
             "rank": 3,
-            "name": "HappyHorse",
-            "version": "1.0",
-            "vendor": "阿里巴巴",
-            "vendor_en": "Alibaba",
-            "date": "2026年4月",
-            "date_en": "April 2026",
+            "name": "Dreamina Seedance 2.5",
+            "version": "2.5",
+            "vendor": "字節跳動 (ByteDance)",
+            "vendor_en": "ByteDance",
+            "date": "Jul 31",
+            "date_en": "Jul 31",
             "isNew": false,
-            "overlap": "整體 #3",
-            "overlap_en": "Overall #3",
-            "why": "作為 Artificial Analysis 榜首模型，以原生 1080p HD 輸出、音視同步及多語言唇形同步功能，持續受到高度關注。",
-            "why_en": "As the top-ranked model on Artificial Analysis, it continues to receive high attention for its native 1080p HD output, audio-visual sync, and multi-language lip-sync capabilities."
+            "overlap": "整體 #2",
+            "overlap_en": "Overall #2",
+            "why": "提供長達 30 秒的連續場景、豐富的多模態參考和精確編輯,確保角色一致性。",
+            "why_en": "Offers up to 30-second continuous scenes, rich multimodal references, and precise editing, ensuring character consistency."
           },
           {
             "rank": 4,
-            "name": "PixVerse",
-            "version": "V6",
-            "vendor": "AIsphere",
-            "vendor_en": "AIsphere",
-            "date": "2026年3月30日",
-            "date_en": "March 30, 2026",
+            "name": "Alibaba Wan 3.0",
+            "version": "3.0",
+            "vendor": "阿里巴巴 (Alibaba)",
+            "vendor_en": "Alibaba",
+            "date": "Aug 24",
+            "date_en": "Aug 24",
             "isNew": false,
-            "overlap": "整體 #4",
-            "overlap_en": "Overall #4",
-            "why": "以其快速生成、圖像轉影片能力及針對短影音內容優化的模板系統，在十月仍是熱門選擇。",
-            "why_en": "Remains a popular choice in October for its fast generation, image-to-video capabilities, and template system optimized for short-form video content."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "在整體品質和長單次生成影片方面表現卓越,適合高品質遊戲影片製作。",
+            "why_en": "Excels in overall quality and long single-pass video generation, suitable for high-quality game video production."
           },
           {
             "rank": 5,
-            "name": "Pika",
-            "version": "2.5",
-            "vendor": "Pika Labs",
-            "vendor_en": "Pika Labs",
-            "date": "2026年9月",
-            "date_en": "September 2026",
+            "name": "MiniMax H3 Max",
+            "version": "H3 Max",
+            "vendor": "MiniMax",
+            "vendor_en": "MiniMax",
+            "date": "Aug 2026",
+            "date_en": "Aug 2026",
             "isNew": false,
-            "overlap": "整體 #5",
-            "overlap_en": "Overall #5",
-            "why": "憑藉其快速、富有表現力的影片生成能力，特別是針對社群媒體內容的優化，在十月仍被廣泛推薦。",
-            "why_en": "Widely recommended in October for its fast, expressive video generation capabilities, especially its optimization for social media content."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "以高解析度輸出和高性價比著稱,適用於需要精細視覺效果的遊戲內容。",
+            "why_en": "Known for high-resolution output and excellent value, suitable for game content requiring detailed visual effects."
           }
         ]
       }
