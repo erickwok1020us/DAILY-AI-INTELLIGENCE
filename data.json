@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-10-12T03:46:50+08:00",
-  "updatedDateLabel": "2026 年 10 月 12 日",
+  "updatedAt": "2026-10-13T06:38:25+08:00",
+  "updatedDateLabel": "2026 年 10 月 13 日",
   "month": "2026 年 10 月",
   "month_en": "October 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/10/12 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/10/12",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/10/13 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/10/13",
   "changesToday": [
+    "GPT-6 Sol (10/6) — 綜合 AI MODEL 排名",
+    "Gemini 2.0 Flash (10/4) — 綜合 AI MODEL 排名",
     "Google Playground (10/7) — 創建遊戲的助手",
-    "Jev Router (10/1) — 創建數據模擬器 & 數據推理",
-    "Celeris-1 Decision (10/8) — 創建數據模擬器 & 數據推理",
-    "PixVerse R2 (Sep 22) — 創建遊戲影片",
-    "Kling 4.0 (October 2026) — 創建遊戲影片",
-    "InstructMesh (10/1) — 創建遊戲模組"
+    "Meta Muse Wonder (10/12) — 創建遊戲的助手",
+    "Clef and Clef-flash (10/1) — 創建數據模擬器 & 數據推理",
+    "Nova 2.5 Sonic (10/5) — 創建數據模擬器 & 數據推理"
   ],
   "changesToday_en": [
+    "GPT-6 Sol (10/6) — Overall AI Model Ranking",
+    "Gemini 2.0 Flash (10/4) — Overall AI Model Ranking",
     "Google Playground (10/7) — Game-Building Assistants",
-    "Jev Router (10/1) — Data Simulators & Reasoning",
-    "Celeris-1 Decision (10/8) — Data Simulators & Reasoning",
-    "PixVerse R2 (Sep 22) — Game / Stylized Video",
-    "Kling 4.0 (October 2026) — Game / Stylized Video",
-    "InstructMesh (10/1) — 3D Asset Generation"
+    "Meta Muse Wonder (10/12) — Game-Building Assistants",
+    "Clef and Clef-flash (10/1) — Data Simulators & Reasoning",
+    "Nova 2.5 Sonic (10/5) — Data Simulators & Reasoning"
   ],
   "notes": [
     "中立聲明:①整體榜以第三方獨立榜為準(綜合=AA 指數、編程=SWE-bench、推理=GPQA、圖片=LMArena Arena)、只列已發佈模型、經人工校正,非本 AI 或任何廠商觀點。",
@@ -102,78 +102,78 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 10 月)無通用旗艦大型語言模型正式發佈，故此列表由最近期(2026 年 9 月)發佈的旗艦模型補足。",
-        "note_en": "No general-purpose flagship large language models were officially released in October 2026. Therefore, this list is supplemented by the most recent flagship models released in September 2026.",
+        "note": null,
+        "note_en": null,
         "items": [
           {
             "rank": 1,
-            "name": "Claude Opus 5.5",
-            "version": "5.5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/22",
+            "name": "GPT-6 Sol",
+            "version": "6",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "10/6",
             "date_en": null,
-            "isNew": false,
+            "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Anthropic 最新的旗艦模型，在多項基準測試中表現卓越，是 Opus 5 的升級版。",
-            "why_en": "Anthropic's latest flagship model, demonstrating excellent performance across multiple benchmarks, an upgrade to Opus 5."
+            "why": "OpenAI 旗艦模型的最新迭代，為 ChatGPT 用戶帶來顯著的性能提升。",
+            "why_en": "The latest iteration of OpenAI's flagship model, bringing significant performance improvements for ChatGPT users."
           },
           {
             "rank": 2,
-            "name": "GPT-6 Astra",
-            "version": "6 Astra",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "9/3",
+            "name": "Gemini 2.0 Flash",
+            "version": "2.0 Flash",
+            "vendor": "Google",
+            "vendor_en": "Google",
+            "date": "10/4",
             "date_en": null,
-            "isNew": false,
+            "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "OpenAI 最高智能的模型系列，專為高要求推理、編碼和專業工作設計。",
-            "why_en": "OpenAI's highest-intelligence model family, designed for demanding reasoning, coding, and professional work."
+            "why": "Google Gemini 系列的重大更新，在速度和能力上超越了 1.5 Pro。",
+            "why_en": "A major update to the Google Gemini series, surpassing 1.5 Pro in speed and capability."
           },
           {
             "rank": 3,
-            "name": "GPT-6.1 Sol",
-            "version": "6.1 Sol",
+            "name": "GPT-6 Luna",
+            "version": "6",
             "vendor": "OpenAI",
             "vendor_en": "OpenAI",
-            "date": "9/29",
+            "date": "10/6",
             "date_en": null,
-            "isNew": false,
+            "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "GPT-6 Sol 的升級版，以更低的成本提供接近 GPT-6 Astra 的智能水平，尤其擅長代理編碼和電腦使用。",
-            "why_en": "An upgrade to GPT-6 Sol, offering intelligence close to GPT-6 Astra at a lower cost, excelling in agentic coding and computer use."
+            "why": "GPT-6 系列的另一款新模型，專為高吞吐量和成本效益而優化。",
+            "why_en": "Another new model in the GPT-6 series, optimized for high throughput and cost-effectiveness."
           },
           {
             "rank": 4,
-            "name": "Claude Fable 5.1",
-            "version": "5.1",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/1",
+            "name": "Muse Wonder",
+            "version": null,
+            "vendor": "Meta",
+            "vendor_en": "Meta",
+            "date": "10/11",
             "date_en": null,
-            "isNew": false,
+            "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Claude Fable 5 的最新版本，專為高要求推理和長期代理工作而設計。",
-            "why_en": "The latest version of Claude Fable 5, designed for demanding reasoning and long-horizon agentic work."
+            "why": "Meta 推出的全新通用型 AI 模型，擴展其 AI 能力。",
+            "why_en": "A new general-purpose AI model from Meta, expanding its AI capabilities."
           },
           {
             "rank": 5,
-            "name": "Claude Sonnet 5.5",
+            "name": "Claude Haiku 5.5",
             "version": "5.5",
             "vendor": "Anthropic",
             "vendor_en": "Anthropic",
-            "date": "9/28",
+            "date": "10/7",
             "date_en": null,
-            "isNew": false,
+            "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "Claude 5.5 系列中功能強大的模型，提供平衡的性能和成本效益。",
-            "why_en": "A capable model in the Claude 5.5 series, offering balanced performance and cost-effectiveness."
+            "why": "Anthropic Claude 系列的最新一代，提供快速且低成本的高吞吐量任務處理。",
+            "why_en": "The latest generation in Anthropic's Claude series, offering fast and low-cost processing for high-volume tasks."
           }
         ]
       }
@@ -245,13 +245,13 @@
         }
       ],
       "monthly": {
-        "note": "本月(2026 年 10 月)發佈的項目不足 5 個，因此使用近期(9 月底)發佈的項目補足。/Fewer than 5 items were released this month (October 2026), so recent releases (late September) were used to complete the list.",
-        "note_en": "Fewer than 5 items were released this month (October 2026), so recent releases (late September) were used to complete the list.",
+        "note": "本月新發佈項目不足五個，已用最近期（2026 年 9 月下旬）的正式發佈項目補足。/ Fewer than five new releases this month, supplemented with recent (late September 2026) officially launched items.",
+        "note_en": "Fewer than five new releases this month, supplemented with recent (late September 2026) officially launched items.",
         "items": [
           {
             "rank": 1,
             "name": "Google Playground",
-            "version": "Platform",
+            "version": "N/A",
             "vendor": "Google",
             "vendor_en": "Google",
             "date": "10/7",
@@ -259,36 +259,36 @@
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "與 Unity 合作推出的實驗性平台，允許用戶透過自然語言提示創建 2D/3D 網頁遊戲，無需編碼，大幅降低遊戲開發門檻。/An experimental platform launched in partnership with Unity, allowing users to create 2D/3D web games with natural language prompts, no coding required, significantly lowering the barrier to game development.",
-            "why_en": "An experimental platform launched in partnership with Unity, allowing users to create 2D/3D web games with natural language prompts, no coding required, significantly lowering the barrier to game development."
+            "why": "一個基於瀏覽器的 AI 遊戲創建工具，允許用戶透過自然語言提示來製作遊戲，無需編寫程式碼，直接符合遊戲創建助手範疇。",
+            "why_en": "A browser-based AI game creation tool that allows users to create games using natural language prompts without writing code, directly fitting the game creation assistant category."
           },
           {
             "rank": 2,
-            "name": "Claude Opus 5.5",
-            "version": "5.5",
-            "vendor": "Anthropic",
-            "vendor_en": "Anthropic",
-            "date": "9/28",
-            "date_en": "Sep 28",
-            "isNew": false,
-            "overlap": "整體 #1 (Opus 5 的後繼版本)",
-            "overlap_en": "Overall #1 (Successor to Opus 5)",
-            "why": "在 SWE-bench Verified 軟體工程基準測試中以 98.20% 的分數領先，並在 LMArena.ai 上被評為頂級推理和代理編碼模型，極大地提升了 AI 編程能力。/Leads the SWE-bench Verified software engineering benchmark with a score of 98.20% and is rated as a top-tier reasoning and agentic coding model on LMArena.ai, significantly enhancing AI programming capabilities.",
-            "why_en": "Leads the SWE-bench Verified software engineering benchmark with a score of 98.20% and is rated as a top-tier reasoning and agentic coding model on LMArena.ai, significantly enhancing AI programming capabilities."
+            "name": "Meta Muse Wonder",
+            "version": "N/A",
+            "vendor": "Meta",
+            "vendor_en": "Meta",
+            "date": "10/12",
+            "date_en": "Oct 12",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "Meta 最新發佈的 AI 模型系列，專為代理式工作流程設計，並已向開發者開放，對於遊戲開發中的複雜程式設計任務極具潛力。",
+            "why_en": "Meta's newly released AI model family, designed for agentic workflows and available to developers, holds significant potential for complex programming tasks in game development."
           },
           {
             "rank": 3,
-            "name": "OpenAI Agents API with Computer Use",
-            "version": "API Enhancement",
-            "vendor": "OpenAI",
-            "vendor_en": "OpenAI",
-            "date": "9/29",
-            "date_en": "Sep 29",
-            "isNew": false,
+            "name": "Claude Haiku 5.5",
+            "version": "5.5",
+            "vendor": "Anthropic",
+            "vendor_en": "Anthropic",
+            "date": "10/7",
+            "date_en": "Oct 7",
+            "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "在 DevDay 2026 發布，使 AI 代理能夠直接與軟體互動以完成任務，並整合了 Codex 的多代理功能，對遊戲開發中的自動化編程和 IDE 互動至關重要。/Released at DevDay 2026, enabling AI agents to directly interact with software to complete tasks and integrating Codex's multi-agent capabilities, crucial for automated programming and IDE interaction in game development.",
-            "why_en": "Released at DevDay 2026, enabling AI agents to directly interact with software to complete tasks and integrating Codex's multi-agent capabilities, crucial for automated programming and IDE interaction in game development."
+            "why": "Anthropic 最快、最經濟高效的小型模型，適合處理高吞吐量、成本敏感的任務，可用於生成遊戲內容或輔助大量程式碼編寫。",
+            "why_en": "Anthropic's fastest and most cost-effective small model, suitable for high-volume, cost-sensitive tasks, useful for generating game content or assisting with large-scale code writing."
           },
           {
             "rank": 4,
@@ -299,10 +299,10 @@
             "date": "9/29",
             "date_en": "Sep 29",
             "isNew": false,
-            "overlap": "整體 #3 (GPT-5.5 的後繼版本)",
-            "overlap_en": "Overall #3 (Successor to GPT-5.5)",
-            "why": "在 OpenAI DevDay 2026 發布，被定位為在代理編碼和專業工作方面幾乎與 GPT-6 Astra 匹敵的高性能模型，提供強大的開發助手能力。/Released at OpenAI DevDay 2026, positioned as a high-performance model that nearly matches GPT-6 Astra in agentic coding and professional work, offering powerful development assistant capabilities.",
-            "why_en": "Released at OpenAI DevDay 2026, positioned as a high-performance model that nearly matches GPT-6 Astra in agentic coding and professional work, offering powerful development assistant capabilities."
+            "overlap": null,
+            "overlap_en": null,
+            "why": "OpenAI 的旗艦推理模型，專為複雜的程式設計、研究和設計工作而設計，作為強大的 AI 編程模型，對遊戲開發有廣泛應用。",
+            "why_en": "OpenAI's flagship reasoning model, designed for complex coding, research, and design work, broadly applicable to game development as a powerful AI programming model."
           },
           {
             "rank": 5,
@@ -315,8 +315,8 @@
             "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "於 9 月底發布，以更快的速度和更高的成本效益提供強大的編碼能力，在 Intelligence Index v4.3.2 上表現優異，是遊戲開發中高效編程的理想選擇。/Released in late September, it offers powerful coding capabilities with increased speed and cost-effectiveness, performing excellently on Intelligence Index v4.3.2, making it an ideal choice for efficient programming in game development.",
-            "why_en": "Released in late September, it offers powerful coding capabilities with increased speed and cost-effectiveness, performing excellently on Intelligence Index v4.3.2, making it an ideal choice for efficient programming in game development."
+            "why": "Anthropic 的新模型，比前代快 30% 以上，適用於日常和程式設計工作，是遊戲開發者的可靠程式設計助手。",
+            "why_en": "Anthropic's new model, over 30% faster than its predecessor, suitable for everyday and coding work, serving as a reliable programming assistant for game developers."
           }
         ]
       }
@@ -389,50 +389,50 @@
         }
       ],
       "monthly": {
-        "note": null,
-        "note_en": null,
+        "note": "本月(2026 年 10 月)發佈的數據模擬與數據推理模型不足 5 個，故以最近期(2026 年 9 月)發佈的 Claude Opus 5.5 補足。",
+        "note_en": "Fewer than 5 data simulation and data reasoning models were released this month (October 2026), so Claude Opus 5.5, released in September 2026, was added to complete the list.",
         "items": [
           {
             "rank": 1,
-            "name": "Jev Router",
-            "version": "Decision Model",
-            "vendor": "TypeSafe",
-            "vendor_en": "TypeSafe",
+            "name": "Clef and Clef-flash",
+            "version": "Decision Models",
+            "vendor": "Cloudflare",
+            "vendor_en": "Cloudflare",
             "date": "10/1",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "專為決策制定設計，提供機率性、嚴格類型化的輸出，非常適合嚴謹的數據推理和模擬結果解釋。",
-            "why_en": "Specifically designed for decision-making, providing probabilistic, strictly typed outputs, making it ideal for rigorous data reasoning and simulation result interpretation."
+            "why": "首批開放權重決策模型，直接提供類型選擇的機率，而非生成文本，非常適合數據推理與機率應用。",
+            "why_en": "The first open-weight decision models that return probabilities for typed choices instead of generating text, making them highly suitable for data reasoning and probability applications."
           },
           {
             "rank": 2,
-            "name": "Celeris-1 Decision",
-            "version": "Decision Model",
-            "vendor": "Celeris",
-            "vendor_en": "Celeris",
-            "date": "10/8",
+            "name": "Nova 2.5 Sonic",
+            "version": "2.5 Sonic",
+            "vendor": "Amazon",
+            "vendor_en": "Amazon",
+            "date": "10/5",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "作為一個專門的決策模型，它直接輸出機率而非文本，對於需要量化不確定性的數據推理和模擬場景極為有用。",
-            "why_en": "As a specialized decision model, it directly outputs probabilities rather than text, which is highly useful for data reasoning and simulation scenarios requiring quantified uncertainty."
+            "why": "一款即時語音轉語音模型，在推理、指令遵循和工具調用準確性方面有顯著改進。",
+            "why_en": "A real-time speech-to-speech model for voice agents, featuring improved reasoning, instruction following, and tool-calling accuracy."
           },
           {
             "rank": 3,
-            "name": "Mellum2.1 Thinking",
-            "version": "Decision Model",
-            "vendor": "JetBrains",
-            "vendor_en": "JetBrains",
-            "date": "10/8",
+            "name": "GPT-6 Luna Decisions",
+            "version": "Decisions",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "10/6",
             "date_en": null,
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "另一個專注於決策的AI模型，其設計目標是提供精確的推理能力，適用於複雜的數據分析和模擬驗證。",
-            "why_en": "Another AI model focused on decision-making, designed to provide precise reasoning capabilities suitable for complex data analysis and simulation validation."
+            "why": "名稱中的「Decisions」明確指出其在決策和推理任務方面的專長。",
+            "why_en": "The 'Decisions' in its name clearly indicates its specialization in decision-making and reasoning tasks."
           },
           {
             "rank": 4,
@@ -445,22 +445,22 @@
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "雖然是通用型模型，但其卓越的成本效益和廣泛可用性使其成為執行各種數據推理任務的實用選擇，尤其是在需要高效率的場景。",
-            "why_en": "Although a general-purpose model, its excellent cost-effectiveness and wide availability make it a practical choice for various data reasoning tasks, especially in scenarios requiring high efficiency."
+            "why": "Claude 5.5 系列中較小但功能強大的模型，在 Artificial Analysis Intelligence Index v4 上得分 43.4，具備推理能力。",
+            "why_en": "The smaller yet capable model in the Claude 5.5 family, scoring 43.4 on the Artificial Analysis Intelligence Index v4, demonstrating reasoning capabilities."
           },
           {
             "rank": 5,
-            "name": "Gemini Nano Banana 2.1",
-            "version": "2.1",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "10/6",
+            "name": "Claude Opus 5.5",
+            "version": "5.5",
+            "vendor": "Anthropic",
+            "vendor_en": "Anthropic",
+            "date": "9/22",
             "date_en": null,
-            "isNew": true,
+            "isNew": false,
             "overlap": null,
             "overlap_en": null,
-            "why": "針對高效圖像處理進行優化，對於涉及視覺數據的數據模擬和推理（例如分析模擬傳感器輸出或數據中的視覺模式）至關重要。",
-            "why_en": "Optimized for efficient image processing, it is crucial for data simulation and reasoning involving visual data, such as analyzing simulated sensor outputs or visual patterns in data."
+            "why": "在 Artificial Analysis Intelligence Index 上排名第一，並在 2026 年 10 月的推理 AI 模型排名中領先，是目前最強大的推理模型之一。",
+            "why_en": "Ranked #1 on the Artificial Analysis Intelligence Index and leading reasoning AI models in October 2026, making it one of the most powerful reasoning models available."
           }
         ]
       }
@@ -1195,8 +1195,22 @@
         "items": [
           {
             "rank": 1,
-            "name": "Suno",
-            "version": "v6 / v6-wild / v6-mini",
+            "name": "Eleven v4 / Eleven v4 Turbo",
+            "version": "v4 / v4 Turbo",
+            "vendor": "ElevenLabs",
+            "vendor_en": "ElevenLabs",
+            "date": "9/28",
+            "date_en": "Sep 28",
+            "isNew": true,
+            "overlap": "整體 #1",
+            "overlap_en": "Overall #1",
+            "why": "ElevenLabs 最新的旗艦語音模型，提供更具情感和表現力的語音合成，並支援更快的即時應用。",
+            "why_en": "ElevenLabs' latest flagship voice model, offering more emotive and expressive speech synthesis and faster real-time applications."
+          },
+          {
+            "rank": 2,
+            "name": "Suno v6",
+            "version": "v6",
             "vendor": "Suno",
             "vendor_en": "Suno",
             "date": "9/9",
@@ -1204,64 +1218,50 @@
             "isNew": true,
             "overlap": "整體 #2",
             "overlap_en": "Overall #2",
-            "why": "Suno 的旗艦音樂生成模型重大更新,與華納音樂集團等業界夥伴共同開發,提供更佳的音樂創作體驗。",
-            "why_en": "Major update to Suno's flagship music generation model, co-developed with industry partners like Warner Music Group, offering an enhanced music creation experience."
-          },
-          {
-            "rank": 2,
-            "name": "Lyria",
-            "version": "3.5",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "10/2",
-            "date_en": "Oct 2",
-            "isNew": true,
-            "overlap": "整體 #5",
-            "overlap_en": "Overall #5",
-            "why": "Google 音樂生成模型的顯著升級,能產生更豐富的編曲和連貫的歌曲,並整合至多個 Google 產品中。",
-            "why_en": "A significant upgrade to Google's music generation model, capable of producing richer arrangements and coherent songs, integrated across multiple Google products."
+            "why": "Suno 領先的音樂生成模型重大更新，在歌曲結構、人聲真實感和整體音質方面有顯著提升。",
+            "why_en": "A major update to Suno's leading music generation model, with significant improvements in song structure, vocal realism, and overall audio quality."
           },
           {
             "rank": 3,
-            "name": "Eleven",
-            "version": "v4 / v4 Turbo",
+            "name": "ElevenLabs Music v2.5",
+            "version": "v2.5",
             "vendor": "ElevenLabs",
             "vendor_en": "ElevenLabs",
-            "date": "9/28",
-            "date_en": "Sep 28",
+            "date": "9/11",
+            "date_en": "Sep 11",
             "isNew": true,
-            "overlap": "整體 #1 (v3 voice)",
-            "overlap_en": "Overall #1 (v3 voice)",
-            "why": "ElevenLabs 旗艦語音模型的重大升級,提升了語音表現力、真實感及多語言支援,適用於文字轉語音和語音複製。",
-            "why_en": "A substantial upgrade to ElevenLabs' flagship voice models, enhancing expressiveness, realism, and multilingual support for text-to-speech and voice cloning."
+            "overlap": "整體 #3",
+            "overlap_en": "Overall #3",
+            "why": "ElevenLabs 音樂生成能力的增強版本，提供更真實的樂器音色和更佳的歌曲編排控制。",
+            "why_en": "An enhanced version of ElevenLabs' music generation capabilities, offering more realistic instrumentals and better control over song arrangement."
           },
           {
             "rank": 4,
-            "name": "MAI-Voice",
-            "version": "2.1 / 2.1-Flash",
-            "vendor": "Microsoft AI",
-            "vendor_en": "Microsoft AI",
+            "name": "GPT-Live 1",
+            "version": "1",
+            "vendor": "OpenAI",
+            "vendor_en": "OpenAI",
+            "date": "9/10",
+            "date_en": "Sep 10",
+            "isNew": true,
+            "overlap": null,
+            "overlap_en": null,
+            "why": "OpenAI 正式發佈的即時全雙工對話式語音模型，對於互動式 AI 應用至關重要。",
+            "why_en": "OpenAI's officially released real-time, full-duplex conversational voice model, crucial for interactive AI applications."
+          },
+          {
+            "rank": 5,
+            "name": "Pollo AI Voice Generator",
+            "version": "N/A",
+            "vendor": "Pollo AI",
+            "vendor_en": "Pollo AI",
             "date": "10/1",
             "date_en": "Oct 1",
             "isNew": true,
             "overlap": null,
             "overlap_en": null,
-            "why": "微軟推出的全新多語言文字轉語音模型,具備跨語言一致語音和低延遲高效能等先進功能。",
-            "why_en": "New multilingual text-to-speech models from Microsoft, offering advanced features such as consistent voice across languages and optimized low-latency performance."
-          },
-          {
-            "rank": 5,
-            "name": "Gemini Live",
-            "version": "3.8 Live / 3.8 Live Extended Thinking",
-            "vendor": "Google",
-            "vendor_en": "Google",
-            "date": "10/2",
-            "date_en": "Oct 2",
-            "isNew": true,
-            "overlap": null,
-            "overlap_en": null,
-            "why": "Google 推出的全新語音轉語音模型,專注於自然、低延遲的對話式 AI 體驗,並支援多步驟推理。",
-            "why_en": "New speech-to-speech models from Google, focusing on natural, low-latency conversational AI experiences with multi-step reasoning capabilities."
+            "why": "一個多功能 AI 語音生成器，能將文字腳本轉換為錄音室品質的語音，並支援語音克隆。",
+            "why_en": "A versatile AI voice generator that converts written scripts into studio-quality speech and supports voice cloning."
           }
         ]
       }
