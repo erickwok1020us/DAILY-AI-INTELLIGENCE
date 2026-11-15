@@ -1,11 +1,11 @@
 /* 自動產生 — ①讀 curated.json、②每日 Gemini 研究;勿手動編輯(改①請編 curated.json) */
 window.DIGEST = {
-  "updatedAt": "2026-11-15T04:11:48+08:00",
-  "updatedDateLabel": "2026 年 11 月 15 日",
+  "updatedAt": "2026-11-16T04:38:19+08:00",
+  "updatedDateLabel": "2026 年 11 月 16 日",
   "month": "2026 年 11 月",
   "month_en": "November 2026",
-  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/11/15 自動更新",
-  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/11/15",
+  "dataConfidence": "①整體=手工校正權威版;②本月最新由 gemini-2.5-flash+Google 搜尋於 2026/11/16 自動更新",
+  "dataConfidence_en": "① curated (hand-verified); ② this-month auto-updated by gemini-2.5-flash+Google Search on 2026/11/16",
   "changesToday": [
     "Hunyuan Hy4 (11/4) — 綜合 AI MODEL 排名",
     "SWE-2 Flash (11/4) — 創建遊戲的助手",
